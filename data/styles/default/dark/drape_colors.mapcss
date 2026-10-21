@@ -4,10 +4,10 @@ colors
   GuiText-opacity: 0.7;
   MyPositionAccuracy-color: #FFFFFF;
   MyPositionAccuracy-opacity: 0.06;
-  Selection-color: #FFFFFF;
+  Selection-color: #3DCFB6;
   Selection-opacity: 0.64;
-  Route-color: #0087FF;
-  RouteOutline-color: #055FCD;
+  Route-color: #3DCFB6;
+  RouteOutline-color: #0F8B7E;
   RouteTrafficG0-color: #5E0F0D;
   RouteTrafficG1-color: #7F1311;
   RouteTrafficG2-color: #7F1311;
@@ -37,7 +37,7 @@ colors
   RouteMaskPedestrian-opacity: 0.5;
   RouteFake-color: #A8A8A8;
   RouteFakeOutline-color: #717171;
-  Arrow3D-color: #41C8FF;
+  Arrow3D-color: #3DCFB6;
   Arrow3DObsolete-color: #82AAC8;
   Arrow3DObsolete-opacity: 0.72;
   Arrow3DShadow-color: #3C3C3C;
@@ -58,7 +58,7 @@ colors
   TrafficUnknown-color: #000000;
   TrafficArrowLight-color: #C4C4C4;
   TrafficArrowDark-color: #191919;
-  TrafficOutline-color: #383838;
+  TrafficOutline-color: #1B2023;
   RoadShieldBlackText-color: #212121;
   RoadShieldWhiteText-color: #B7B6B6;
   RoadShieldUKYellowText-color: #B49E0E;
@@ -74,7 +74,7 @@ colors
   PoiDeletedMask-opacity: 0.3;
   PoiVisitedMask-color: #FFFFFF;
   PoiVisitedMask-opacity: 0.7;
-  DefaultTrackColor-color: #1E96F0;
+  DefaultTrackColor-color: #3DCFB6;
   RouteMarkPrimaryText-color: #888888;
   RouteMarkPrimaryTextOutline-color: #000000;
   RouteMarkSecondaryText-color: #888888;
@@ -113,8 +113,8 @@ colors
   SearchmarkSelectedNotAvailable-color: #F06432;
   RatingBad-color: #F06432;
   RatingGood-color: #3C8C3C;
-  RatingNone-color: #249CF2;
-  SearchmarkDefault-color: #249CF2;
+  RatingNone-color: #3DCFB6;
+  SearchmarkDefault-color: #3DCFB6;
   RatingText-color: #FFFFFF;
   UGCRatingText-color: #B8B8B8;
   SpeedCameraMarkText-color: #FFFFFF;
