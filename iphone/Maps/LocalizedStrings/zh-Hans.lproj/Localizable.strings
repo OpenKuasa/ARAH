@@ -908,3 +908,4 @@
 "stars_3" = "3星";
 "stars_1" = "1星";
 "custom_map_server_message" = "覆盖用于地图下载的默认地图下载服务器。留空则使用默认的 Arah 地图服务器。";
+"about_based_on" = "Based on CoMaps";

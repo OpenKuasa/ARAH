@@ -908,3 +908,4 @@
 "stars_3" = "3-stjernet";
 "stars_1" = "1-stjernet";
 "custom_map_server_message" = "Tilsidesæt den som standard anvendte server til download af kort. Lad feltet være tomt for at bruge Arah' standardserver.";
+"about_based_on" = "Based on CoMaps";

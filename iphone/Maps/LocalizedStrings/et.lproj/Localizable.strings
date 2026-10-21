@@ -908,3 +908,4 @@
 "stars_3" = "3 tärni";
 "stars_1" = "1 tärn";
 "custom_map_server_message" = "Kui tahad kasutada oma kaardiserverit, siis lisa ta siia. Arahi vaikimisi serveri kasutamiseks jäta tühjaks.";
+"about_based_on" = "Based on CoMaps";

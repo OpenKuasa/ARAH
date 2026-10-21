@@ -908,3 +908,4 @@
 "stars_3" = "3 hvězdy";
 "stars_1" = "1 hvězda";
 "custom_map_server_message" = "Přepsat výchozí server používaný ke stahování map. Nechte pole prázdné, pokud chcete použít výchozí server Arah.";
+"about_based_on" = "Based on CoMaps";

@@ -908,3 +908,4 @@
 "stars_3" = "3-estrellas";
 "stars_1" = "1-estrella";
 "custom_map_server_message" = "Sobreescribe el servidor de mapas por defecto. Déjalo en blanco para usar el servidor de Arah por defecto.";
+"about_based_on" = "Based on CoMaps";

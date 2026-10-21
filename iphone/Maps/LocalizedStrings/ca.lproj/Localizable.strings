@@ -908,3 +908,4 @@
 "stars_3" = "3 estrelles";
 "stars_1" = "1 estrella";
 "custom_map_server_message" = "Sobreescriu el servidor de descàrrega de mapes per defecte. Deixeu en blanc per a emprar el servidor de mapes per defecte de Arah.";
+"about_based_on" = "Based on CoMaps";

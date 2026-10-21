@@ -490,7 +490,7 @@
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "المشغل: %@";
 "editor_category_unsuitable_title" = "لا يمكن العثور على فئة مناسبة؟";
-"editor_category_unsuitable_text" = "تسمح الخرائط العضوية بإضافة فئات نقاط بسيطة فقط، وهذا يعني عدم وجود بلدات وطرق وبحيرات ومخططات للمباني وما إلى ذلك. يرجى إضافة هذه الفئات مباشرة إلى <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. راجع موقعنا <a href=\"https://github.com/ARAH-ORG/arah/\">دليل</a> للحصول على تعليمات مفصلة خطوة بخطوة.";
+"editor_category_unsuitable_text" = "تسمح Arah بإضافة فئات نقاط بسيطة فقط، وهذا يعني عدم وجود بلدات وطرق وبحيرات ومخططات للمباني وما إلى ذلك. يرجى إضافة هذه الفئات مباشرة إلى <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. راجع موقعنا <a href=\"https://github.com/ARAH-ORG/arah/\">دليل</a> للحصول على تعليمات مفصلة خطوة بخطوة.";
 "downloader_no_downloaded_maps_title" = "لم تُنزّل أي خرائط";
 "downloader_no_downloaded_maps_message" = "قم بتنزيل خرائط للبحث عن مكان واستخدام الملاحة بدون اتصال بالإنترنت.";
 "current_location_unknown_error_title" = "الموقع الحالي غير معروف.";
@@ -908,3 +908,4 @@
 "stars_3" = "ثلاث نجوم";
 "stars_1" = "نجمة واحدة";
 "custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";
+"about_based_on" = "Based on CoMaps";

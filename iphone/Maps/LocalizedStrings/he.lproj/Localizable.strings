@@ -131,7 +131,7 @@
 /* Used for bookmark editing */
 "done" = "בוצע";
 /* Prints version number in About dialog */
-"version" = "גרסת מפות אורגניות: %@";
+"version" = "גרסת Arah: %@";
 "version %@ (%@)" = "גרסה %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "גרסה: %@ (%@)\nנתוני מפה: %@";
 /* Title for tracks category in bookmarks manager */
@@ -906,3 +906,4 @@
 "stars_3" = "3-star";
 "stars_1" = "1-star";
 "custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";
+"about_based_on" = "Based on CoMaps";

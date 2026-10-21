@@ -908,3 +908,4 @@
 "stars_3" = "3 étoiles";
 "stars_1" = "1 étoile";
 "custom_map_server_message" = "Remplacer le serveur de téléchargement de cartes par défaut utilisé pour le téléchargement des cartes. Laisser ce champ vide pour utiliser le serveur de cartes Arah par défaut.";
+"about_based_on" = "Based on CoMaps";

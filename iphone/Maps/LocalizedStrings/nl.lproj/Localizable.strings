@@ -908,3 +908,4 @@
 "stars_3" = "3-sterren";
 "stars_1" = "1-ster";
 "custom_map_server_message" = "Overschrijf de standaard server voor het downloaden van kaarten. Laat leeg om de standaardserver van Arah te gebruiken.";
+"about_based_on" = "Based on CoMaps";

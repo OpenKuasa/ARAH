@@ -929,3 +929,4 @@
 "stars_3" = "3-Sterne";
 "stars_1" = "1-Stern";
 "custom_map_server_message" = "Standardserver für Kartendownloads überschreiben. Leer lassen, um den Arah-Standardserver zu nutzen.";
+"about_based_on" = "Based on CoMaps";

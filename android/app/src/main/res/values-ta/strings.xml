@@ -199,7 +199,7 @@
     <string name="editor_more_about_osm">OpenStreetMap பற்றி மேலும்</string>
     <string name="editor_operator">செயற்குறி</string>
     <string name="editor_category_unsuitable_title">பொருத்தமான வகையைக் கண்டுபிடிக்க முடியவில்லையா?</string>
-    <string name="editor_category_unsuitable_text">இணைவரைபடங்கள் எளிய புள்ளி வகைகளை மட்டும் சேர்க்க அனுமதிக்கிறது, அதாவது நகரங்கள், சாலைகள், ஏரிகள், கட்டிட அவுட்லைன்கள் போன்றவை இல்லை. அத்தகைய வகைகளை நேரடியாக <a href="https://www.openstreetmap.org">திறந்ததெருவரைபடம்.நிறுவன</a> இல் சேர்க்கவும். விரிவான படிப்படியான வழிமுறைகளுக்கு எங்கள் <a href="https://github.com/ARAH-ORG/arah/">வழிகாட்டியைப்</a> பார்.</string>
+    <string name="editor_category_unsuitable_text">Arah எளிய புள்ளி வகைகளை மட்டும் சேர்க்க அனுமதிக்கிறது, அதாவது நகரங்கள், சாலைகள், ஏரிகள், கட்டிட அவுட்லைன்கள் போன்றவை இல்லை. அத்தகைய வகைகளை நேரடியாக <a href="https://www.openstreetmap.org">திறந்ததெருவரைபடம்.நிறுவன</a> இல் சேர்க்கவும். விரிவான படிப்படியான வழிமுறைகளுக்கு எங்கள் <a href="https://github.com/ARAH-ORG/arah/">வழிகாட்டியைப்</a> பார்.</string>
     <string name="downloader_no_downloaded_maps_title">நீங்கள் எந்த வரைபடத்தையும் பதிவிறக்கம் செய்யவில்லை</string>
     <string name="kilometers_per_hour">கிமீ/ம</string>
     <string name="miles_per_hour">மை/ம</string>
