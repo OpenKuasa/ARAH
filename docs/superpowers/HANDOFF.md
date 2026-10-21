@@ -24,9 +24,18 @@ from `feat-002-move-to-comaps` (kept):
 - CoMaps' map servers stay in use (placeholders); Arah ignores the donate link CoMaps' metaserver hands out.
 - `python3 -I tools/python/arah_brand_check.py --release` lists every value still to supply.
 
+Notes from the Plan 3 review:
+- iOS `.strings` have no per-key fallback to English: a key Arah adds must go into every `*.lproj` (the checker enforces
+  this for `about_based_on`). The internal product/module name stays `CoMaps`; users see `CFBundleDisplayName` "Arah".
+- `https://comaps.at/…` links open CoMaps' web page now (Arah can't claim that domain); `cm://`, `comaps://` and `ge0://`
+  still open in Arah. The new `arah://` scheme opens the app but no parser handles it yet.
+- The website placeholder is written with and without a trailing slash; Android's `HelpFragment` appends paths to it
+  (normalise in Plan 5).
+- `tools/python/arah_name_check.py` lists translations that may name upstream in their own script; rerun after renames.
+
 ## Next step
-Plan 4: iPhone screens and icon. The About screen still shows CoMaps' logo (`Image("comaps")` in `AboutCoMapsView`),
-and the home-screen icon is CoMaps'. Then:
+Plan 4: iPhone screens and icon. CoMaps logos remain: the home-screen icon, `Image("comaps")` in `AboutCoMapsView`, the
+widget's `CoMapsWidgetExtension/LiveActivity/AppLogo.swift`, and the `"Logo"` asset in share link previews. Then:
 - Plan 4 (next): iPhone screens and icon, including a Mapbox-like navigation view the owner showed: tilted 3D, big turn banner,
   arrival card, round floating buttons.
 - Plan 5: Android screens, icon and identity (`appId`, app name, Java links in `Constants.java`/`Utils.java`/`HelpFragment.java`,
@@ -67,6 +76,11 @@ From the Plan M review:
 - Tests: `CategoriesHolder_MalaySynonyms` covers no CoMaps-only categories; the checker doesn't flag Malay keys missing
   from English; the category-button check covers Android only.
 - CoMaps opens in walking mode and picks feet on en-US phones; Arah may want driving and metric.
+
+From the Plan 3 review:
+- `UIKitCategories.m` `rateApp` (no callers) still opens CoMaps' App Store page.
+- OSM changesets are tagged `created_by = "CoMaps iOS …"` (`MWMEditorHelper.mm`); use Arah's name (and on Android).
+- The checker allows any URL in `Social Media.swift`; narrow it to the six current hosts.
 
 ## Build notes
 - Run `./configure.sh` before the first build. It generates drules, symbols, strings and World maps; none are tracked.
