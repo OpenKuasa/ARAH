@@ -17,6 +17,7 @@
 #include <optional>
 #include <string>
 #include <string_view>
+#include <utility>
 #include <vector>
 
 namespace arah_palette_test
@@ -191,6 +192,21 @@ std::optional<uint32_t> AreaCaptionColor(std::vector<std::string_view> const & p
   return {};
 }
 
+// Stored (inverted alpha) primary text color of a line type's name at a scale.
+std::optional<uint32_t> LineTextColor(std::vector<std::string_view> const & path, int scale)
+{
+  auto const & rules = drule::rules();
+  for (auto const & key : GetKeys(path, feature::GeomType::Line, scale))
+  {
+    if (key.m_type != drule::pathtext)
+      continue;
+    auto const * text = rules.Find(key)->GetPathtext();
+    if (text && text->has_primary())
+      return text->primary().color();
+  }
+  return {};
+}
+
 bool IsArahNightStyle(MapStyle mapStyle)
 {
   return mapStyle == MapStyleDefaultDark || mapStyle == MapStyleVehicleDark;
@@ -223,7 +239,7 @@ UNIT_TEST(Arah_DarkRiversVisible)
 {
   styles::RunForEveryMapStyle([](MapStyle mapStyle)
   {
-    if (!IsArahNightStyle(mapStyle))
+    if (!MapStyleIsDark(mapStyle))
       return;
     auto const river = LineFillColor({"waterway", "river"}, 13);
     TEST(river, (mapStyle));
@@ -286,6 +302,74 @@ UNIT_TEST(Arah_DarkParkLabelsReadable)
     uint32_t const text = BlendOver(*caption, *park);
     LOG(LINFO, (mapStyle, "park label/park", Contrast(text, *park)));
     TEST_GREATER_OR_EQUAL(Contrast(text, *park), 3.0, (mapStyle));
+  });
+}
+
+// Street names must stay readable on the lighter Tenang night background, in every dark map mode.
+UNIT_TEST(Arah_DarkRoadNamesReadable)
+{
+  styles::RunForEveryMapStyle([](MapStyle mapStyle)
+  {
+    if (!MapStyleIsDark(mapStyle))
+      return;
+    // Secondary road names use the light, medium and dark label greys at these scales.
+    for (auto const & [scale, minContrast] : {std::pair{12, 3.5}, std::pair{15, 4.5}, std::pair{17, 4.5}})
+    {
+      auto const text = LineTextColor({"highway", "secondary"}, scale);
+      TEST(text, ("No highway-secondary name rule", mapStyle, scale));
+      uint32_t const bg = drule::rules().GetBgColor(scale) & 0xFFFFFF;
+      double const contrast = Contrast(BlendOver(*text, bg), bg);
+      LOG(LINFO, (mapStyle, scale, "secondary name/bg", contrast));
+      TEST_GREATER_OR_EQUAL(contrast, minContrast, (mapStyle, scale));
+    }
+  });
+}
+
+// Vehicle palettes define @water_label twice (CoMaps' extra label block); the last one wins in kothic.
+UNIT_TEST(Arah_VehicleWaterLabels)
+{
+  styles::RunForEveryMapStyle([](MapStyle mapStyle)
+  {
+    if (mapStyle != MapStyleVehicleLight && mapStyle != MapStyleVehicleDark)
+      return;
+    auto const text = LineTextColor({"waterway", "river"}, 15);
+    TEST(text, (mapStyle));
+    TEST_EQUAL(*text & 0xFFFFFF, mapStyle == MapStyleVehicleDark ? 0x7FB3D5u : 0x3F7FAFu, (mapStyle));
+  });
+}
+
+// Pins Tenang accents and base colors beyond the route, so a mis-resolved upstream merge can't revert them.
+UNIT_TEST(Arah_TenangAnchors)
+{
+  struct Named
+  {
+    std::string_view m_name;
+    uint32_t m_light;
+    uint32_t m_dark;
+  };
+  std::array<Named, 7> constexpr kDrape = {{
+      {"Selection", 0x0F8B7E, 0x3DCFB6},
+      {"RouteOutline", 0x0B6F65, 0x0F8B7E},
+      {"Arrow3D", 0x14A593, 0x3DCFB6},
+      {"DefaultTrackColor", 0x0F8B7E, 0x3DCFB6},
+      {"SearchmarkDefault", 0x0F8B7E, 0x3DCFB6},
+      {"RatingNone", 0x0F8B7E, 0x3DCFB6},
+      {"TrafficOutline", 0xF4F1EA, 0x1B2023},
+  }};
+  styles::RunForEveryMapStyle([&](MapStyle mapStyle)
+  {
+    auto const & rules = drule::rules();
+    bool const isDark = MapStyleIsDark(mapStyle);
+    for (auto const & d : kDrape)
+      TEST_EQUAL(rules.GetColor(std::string(d.m_name)) & 0xFFFFFF, isDark ? d.m_dark : d.m_light, (mapStyle, d.m_name));
+
+    if (mapStyle != MapStyleDefaultLight && mapStyle != MapStyleDefaultDark)
+      return;
+    int constexpr kScale = 15;
+    TEST_EQUAL(AreaFillColor({"natural", "water"}, kScale), isDark ? 0x1E3442u : 0xBCDCF3u, (mapStyle));
+    TEST_EQUAL(LineFillColor({"waterway", "river"}, kScale), isDark ? 0x3E86AEu : 0x8EC3E8u, (mapStyle));
+    TEST_EQUAL(LineFillColor({"highway", "residential"}, kScale), isDark ? 0x353B3Fu : 0xFDFDFCu, (mapStyle));
+    TEST_EQUAL(LineFillColor({"highway", "secondary"}, kScale), isDark ? 0x5B5542u : 0xFDC862u, (mapStyle));
   });
 }
 }  // namespace arah_palette_test

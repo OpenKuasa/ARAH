@@ -146,9 +146,9 @@
 /* 6.LABELS COLORS */
 /* 6.1 Main labels */
 
-@label_dark: #888888;
-@label_medium: #8C8C8C;
-@label_light: #666666;
+@label_dark: #9D9D9D;
+@label_medium: #A1A1A1;
+@label_light: #7A7A7A;
 @label_halo_medium: #1B2023;
 @label_halo_light: #060600;
 
@@ -161,14 +161,14 @@
 
 /* 6.3 Place labels */
 
-@city_label: #999999;
-@country_label: #444444;
-@state_label: #444444;
-@district_label: #555555;
-@housenumber: #6C6C6C;
-@building_label: #737373;
-@poi_label: #666666;
-@subway_label: #555555;
+@city_label: #AEAEAE;
+@country_label: #575757;
+@state_label: #575757;
+@district_label: #686868;
+@housenumber: #808080;
+@building_label: #878787;
+@poi_label: #7A7A7A;
+@subway_label: #686868;
 @shop_label: #6B425C;
 @industry_label: #574469;
 @food_label: #8C491C;
@@ -177,7 +177,7 @@
 @hotel_label: #614A43;
 @sport_label: #2B5C4B;
 @nature_label: #91B792;
-@water_label: #0A6074;
+@water_label: #7FB3D5;
 @neutral_label: #51585E;
 @healthcare_label: #983E44;
 @public_transport_label: #2F6499;

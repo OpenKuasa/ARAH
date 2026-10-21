@@ -5,12 +5,14 @@
 
 /* 6.WATER */
 
-line|z10-[waterway=river],
 line|z11-[natural=strait],
 line|z12-[waterway=canal],
 line|z12-[waterway=stream],
 line|z13-[waterway=fish_pass],
 {opacity: 1; color: @water;}
+
+line|z10-[waterway=river],
+{opacity: 1; color: @river;}
 
 /* 6.2 Line water(river,canal etc.) */
 

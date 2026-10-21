@@ -217,9 +217,9 @@
 /* 6.LABELS COLORS */
 /* 6.1 Main labels */
 
-@label_dark: #888888;
-@label_medium: #777777;
-@label_light: #666666;
+@label_dark: #9D9D9D;
+@label_medium: #8B8B8B;
+@label_light: #7A7A7A;
 @label_halo_medium: #1B2023;
 @label_halo_light: #060600;
 
@@ -230,14 +230,14 @@
 
 /* 6.3 Place labels */
 
-@city_label: #999999;
-@country_label: #555555;
-@state_label: #555555;
-@district_label: #7A7A7A;
-@housenumber: #747474;
-@building_label: #767676;
-@poi_label: #8C8C8C;
-@subway_label: #9E9E9E;
+@city_label: #AEAEAE;
+@country_label: #686868;
+@state_label: #686868;
+@district_label: #8F8F8F;
+@housenumber: #888888;
+@building_label: #8A8A8A;
+@poi_label: #A1A1A1;
+@subway_label: #B3B3B3;
 @indigenous_label: #6A512F;
 @shop_label: #6B425C;
 @industry_label: #574469;

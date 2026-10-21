@@ -164,6 +164,6 @@
 @label_light: #444444;
 
 /* NATURAL LABELS */
-@water_label: #4499Bb;
+@water_label: #3F7FAF;
 @park_label: #3E7D5A;
 @halo_park_label: #FFFFFF;
