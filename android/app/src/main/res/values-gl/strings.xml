@@ -32,8 +32,8 @@
     <string name="details">Detalles</string>
     <string name="editor_reset_edits_button">Desbotar cambios</string>
     <string name="category_parking">Aparcamento</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
     <string name="select_cuisine">Seleccionar cociña</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <string name="menu">Menú</string>
@@ -54,7 +54,7 @@
     <string name="pref_zoom_summary">Mostrar no mapa</string>
     <string name="prefs_group_advanced">Avanzado</string>
     <string name="download_resources_custom_url_title">Servidor persoal do mapa</string>
-    <string name="download_resources_custom_url_message">Sobrescribe o servidor predefinido para descargar mapas. Deixar baleiro para usar o servidor por defecto de CoMaps.</string>
+    <string name="download_resources_custom_url_message">Sobrescribe o servidor predefinido para descargar mapas. Deixar baleiro para usar o servidor por defecto de Arah.</string>
     <string name="download_resources_custom_url_summary_none">Sen establecer</string>
     <string name="download_resources_custom_url_error_scheme">Escribe un URL que comece por http:// ou https://</string>
     <string name="downloader_update_all_button">Actualizar todos</string>
@@ -67,7 +67,7 @@
     <string name="mobile_data_option_ask">Preguntar sempre</string>
     <string name="traffic_update_maps_text">Para mostrar os datos de tráfico, deben actualizarse os mapas</string>
     <string name="increase_font_size">Aumentar tamaño do texto no mapa</string>
-    <string name="traffic_update_app">Por favor, actualice CoMaps</string>
+    <string name="traffic_update_app">Por favor, actualice Arah</string>
     <string name="prefs_languages_information_off_link">Para obter máis información, consulte esta guía</string>
     <string name="prefs_group_privacy">Privacidade</string>
     <string name="privacy_policy">Normativa de privacidade</string>
@@ -103,10 +103,10 @@
     <string name="disconnect_usb_cable_title">Desconecte o cable USB</string>
     <string name="enable_keep_screen_on">Manter pantalla acesa</string>
     <string name="app_tip_09">O noso principal obxectivo é crear mapas rápidos, centrados na privacidade e fáciles de utilizar que lle encantarán.</string>
-    <string name="car_used_on_the_phone_screen">Agora usa CoMaps na pantalla do teléfono</string>
-    <string name="aa_location_permissions_request">CoMaps necesita acceder á localización. Cando sexa seguro, comprobe a notificación no teléfono.</string>
+    <string name="car_used_on_the_phone_screen">Agora usa Arah na pantalla do teléfono</string>
+    <string name="aa_location_permissions_request">Arah necesita acceder á localización. Cando sexa seguro, comprobe a notificación no teléfono.</string>
     <string name="aa_request_permission_notification">Esta aplicación necesita o seu permiso</string>
-    <string name="aa_request_permission_activity_text">CoMaps en Android Auto necesita permisos de localización para funcionar eficazmente</string>
+    <string name="aa_request_permission_activity_text">Arah en Android Auto necesita permisos de localización para funcionar eficazmente</string>
     <string name="aa_grant_permissions">Conceder permisos</string>
     <string name="select_option">Selecciona a opción</string>
     <string name="edit_track">Editar traxecto</string>
@@ -161,7 +161,7 @@
     <string name="about_proposition_3">• Sen conexión, rápida e compacta</string>
     <string name="about_developed_by_enthusiasts">Código completamente aberto, sen ánimo de lucro, proceso de toma de decisións económicas transparente.</string>
     <string name="unsupported_phone">A aplicación require OpenGL acelerado por hardware. Lamentablemente, o seu dispositivo non é compatible.</string>
-    <string name="disconnect_usb_cable">por favor, desconecte o cable USB ou insira unha tarxeta de memoria SD para usar CoMaps</string>
+    <string name="disconnect_usb_cable">por favor, desconecte o cable USB ou insira unha tarxeta de memoria SD para usar Arah</string>
     <string name="not_enough_free_space_on_sdcard">Libere espazo na memoria SD ou almacenamento USB para usar a aplicación</string>
     <string name="download_resources">Antes de comezar, permita que descarguemos no seu dispositivo un mapamundi xeral. \nRequírense %s de almacenamento.</string>
     <string name="download_resources_continue">Ir ao mapa</string>
@@ -188,8 +188,8 @@
     <string name="category_children">Lecer en familia</string>
     <string name="category_rv">Instalacións para autocaravanas</string>
     <string name="description">Notas</string>
-    <string name="share_bookmarks_email_subject">Lugares favoritos en CoMaps</string>
-    <string name="share_bookmarks_email_body">Ola! \n \nAdxunto os meus lugares favoritos. Por favor, ábreos en CoMaps. Se non tes esta app instalada podes descargala aquí: https://www.comaps.app/download/ \n \nDesfruta viaxando con CoMaps!</string>
+    <string name="share_bookmarks_email_subject">Lugares favoritos en Arah</string>
+    <string name="share_bookmarks_email_body">Ola! \n \nAdxunto os meus lugares favoritos. Por favor, ábreos en Arah. Se non tes esta app instalada podes descargala aquí: https://github.com/ARAH-ORG/arah/ \n \nDesfruta viaxando con Arah!</string>
     <string name="load_kmz_successful">Os favoritos cargáronse con éxito! Podes atopalos no mapa ou na pantalla de xestión de favoritos.</string>
     <string name="load_kmz_failed">Non se puideron cargar os Favoritos. O arquivo podería ter danos ou defectos.</string>
     <string name="unknown_file_type">A aplicación non recoñece o tipo de arquivo: \n%1$s</string>
@@ -197,8 +197,8 @@
     <string name="unknown_current_position">Aínda non se determinou a súa localización</string>
     <string name="cant_change_this_setting">Sentímolo, a configuración da almacenaxe de mapas está desactivada</string>
     <string name="downloading_is_active">A descarga do mapa está en curso</string>
-    <string name="my_position_share_sms">Olla a miña localización actual en CoMaps! %1$s ou %2$s Non ten mapas offline? Descárgueos aquí: https://www.comaps.app/download/</string>
-    <string name="my_position_share_email_subject">Mira a miña localización actual no mapa en CoMaps!</string>
+    <string name="my_position_share_sms">Olla a miña localización actual en Arah! %1$s ou %2$s Non ten mapas offline? Descárgueos aquí: https://github.com/ARAH-ORG/arah/</string>
+    <string name="my_position_share_email_subject">Mira a miña localización actual no mapa en Arah!</string>
     <string name="copied_to_clipboard">Copiado ao portarretallos: %s</string>
     <string name="data_version">Datos de OpenStreetMap: %s</string>
     <string name="share_my_location">Compartir a miña localización</string>
@@ -220,7 +220,7 @@
     <string name="rate_the_app">Valore a aplicación</string>
     <string name="faq">Preguntas frecuentes</string>
     <string name="donate">Doar</string>
-    <string name="how_to_support_us">Voluntariado para mellorar CoMaps</string>
+    <string name="how_to_support_us">Voluntariado para mellorar Arah</string>
     <string name="copyright">Dereitos de autor</string>
     <string name="report_a_bug">Informar dun fallo</string>
     <string name="compass_calibration_recommended">Mellore a dirección da frecha movendo o teléfono en forma de oito para calibrar o compás.</string>
@@ -316,7 +316,7 @@
     <string name="editor_report_problem_other_title">Un problema diferente</string>
     <string name="message_invalid_feature_position">Non se pode situar ningún obxecto aquí</string>
     <string name="osm_presentation">Datos de OpenStreetMap creados pola comunidade a data de %s. Máis información sobre como editar e actualizar o mapa en OpenStreetMap.org</string>
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) é un proxecto comunitario para construír un mapa libre e aberto. É a principal fonte de datos cartográficos de CoMaps e funciona de forma similar a Wikipedia. Vostede pode engadir ou editar lugares e estes pasan a estar dispoñibles para millóns de usuarios de todo o mundo. \nÚnase á comunidade e axude a crear un mapa mellor para todos!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) é un proxecto comunitario para construír un mapa libre e aberto. É a principal fonte de datos cartográficos de Arah e funciona de forma similar a Wikipedia. Vostede pode engadir ou editar lugares e estes pasan a estar dispoñibles para millóns de usuarios de todo o mundo. \nÚnase á comunidade e axude a crear un mapa mellor para todos!</string>
     <string name="login_to_make_edits_visible">Cre unha conta OpenStreetMap ou inicie sesión para publicar as súas edicións de mapas ao mundo</string>
     <string name="download_over_mobile_header">Descargar con conexión de rede móbil?</string>
     <string name="download_over_mobile_message">Isto podería ser moi caro en certos plans de datos móbiles, especialmente con itinerancia de datos.</string>
@@ -325,12 +325,12 @@
     <string name="error_enter_correct_zip_code">Introduza un código postal válido</string>
     <string name="editor_about_osm">As súas edicións cárganse na base de datos pública <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a>. Por favor, non engada información persoal ou protexida por dereitos de autor.</string>
     <string name="editor_other_info">Nota para os voluntarios de OpenStreetMap (opcional)</string>
-    <string name="editor_note_hint">Describa os erros no mapa ou as cousas que non se poden editar con CoMaps</string>
+    <string name="editor_note_hint">Describa os erros no mapa ou as cousas que non se poden editar con Arah</string>
     <string name="editor_more_about_osm">Máis sobre OpenStreetMap</string>
     <string name="editor_osm_history">O seu historial de edicións</string>
     <string name="editor_osm_notes">As miñas notas de datos do mapa</string>
     <string name="editor_category_unsuitable_title">Non acha unha categoría adecuada?</string>
-    <string name="editor_category_unsuitable_text">CoMaps permite engadir unicamente categorías de puntos sinxelos, é dicir, nada de cidades, estradas, lagos, contornos de edificios, etc. Por favor, engada ditas categorías directamente en <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte a nosa <a href="https://www.comaps.app/support/advanced-map-editing/">guía</a> para obter instrucións detalladas paso a paso.</string>
+    <string name="editor_category_unsuitable_text">Arah permite engadir unicamente categorías de puntos sinxelos, é dicir, nada de cidades, estradas, lagos, contornos de edificios, etc. Por favor, engada ditas categorías directamente en <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Consulte a nosa <a href="https://github.com/ARAH-ORG/arah/">guía</a> para obter instrucións detalladas paso a paso.</string>
     <string name="downloader_no_downloaded_maps_title">Non descargou ningún mapa</string>
     <string name="downloader_no_downloaded_maps_message">Descargue mapas para atopar a localización e navegar sen conexión</string>
     <string name="current_location_unknown_error_title">Descoñécese a localización actual</string>
@@ -371,7 +371,7 @@
     <string name="placepage_remove_stop">Eliminar parada</string>
     <string name="placepage_add_stop">Engadir parada</string>
     <string name="dialog_error_storage_title">Problema de acceso ao almacenamento</string>
-    <string name="dialog_error_storage_message">Non se pode acceder ao almacenamento externo. É posible que a tarxeta SD fose eliminada, danada ou que o sistema de ficheiros sexa só de lectura. Comprobe a súa tarxeta SD ou póñase en contacto connosco en support@comaps.app</string>
+    <string name="dialog_error_storage_message">Non se pode acceder ao almacenamento externo. É posible que a tarxeta SD fose eliminada, danada ou que o sistema de ficheiros sexa só de lectura. Comprobe a súa tarxeta SD ou póñase en contacto connosco en support@arah.invalid</string>
     <string name="error_enter_correct_name">Por favor, introduza o nome correcto</string>
     <string name="bookmark_lists_show_all">Amosar todo</string>
     <string name="bookmarks_create_new_group">Crear nova lista</string>
@@ -425,7 +425,7 @@
     <string name="enable_show_on_lock_screen_description">Cando se activa, non ten que desbloquear o dispositivo para executar a aplicación.</string>
     <string name="change_map_locale">Idioma do mapa</string>
     <string name="splash_subtitle">Datos do mapa de OpenStreetMap</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="app_tip_00">Grazas por utilizar os nosos mapas creados pola comunidade!</string>
     <string name="app_tip_01">Coas súas doazóns e apoio, podemos crear os mellores mapas do mundo!</string>
     <string name="app_tip_02">Gústalle a nosa aplicación? Por favor doe para apoiar o seu desenvolvemento! Aínda non lle gusta? Díganos por que e arranxarémolo!</string>
@@ -435,7 +435,7 @@
     <string name="app_tip_06">Pode axudar a traducir a nosa aplicación ao seu idioma.</string>
     <string name="app_tip_07">A nosa aplicación está desenvolta por uns poucos entusiastas e a comunidade.</string>
     <string name="app_tip_08">Pode arranxar e mellorar facilmente os datos do mapa.</string>
-    <string name="car_used_on_the_car_screen">Agora usa CoMaps na pantalla do coche</string>
+    <string name="car_used_on_the_car_screen">Agora usa Arah na pantalla do coche</string>
     <string name="aa_connected_title">Conectouse a Android Auto</string>
     <string name="car_continue_on_the_phone">Pasar ao teléfono</string>
     <string name="car_continue_in_the_car">Á pantalla do coche</string>
@@ -470,7 +470,7 @@
     <string name="settings">Configuración</string>
     <string name="next_button">Seguinte</string>
     <string name="editor_report_problem_send_button">Enviar</string>
-    <string name="translated_om_site_url">https://comaps.app/gl/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="category_shopping">Compras</string>
     <string name="placepage_distance">Distancia</string>
     <string name="category_toilet">Baño</string>
@@ -526,7 +526,7 @@
     <string name="mobile_data_option_never">Non usar nunca</string>
     <string name="enable_logging">Activar rexistros</string>
     <string name="bookmark_lists_hide_all">Ocultar todo</string>
-    <string name="about_menu_title">Sobre CoMaps</string>
+    <string name="about_menu_title">Sobre Arah</string>
     <string name="profile">Perfil de OpenStreetMap</string>
     <string name="place_description_title">Descrición do lugar</string>
     <string name="avoid_tolls">Evitar peaxes</string>
@@ -557,7 +557,7 @@
     <string name="saved">Gardado</string>
     <string name="pref_left_button_disable">Desactivar</string>
     <string name="pref_left_button_title">Configurar botón esquerdo</string>
-    <string name="app_site_url">https://comaps.app/gl/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="about_help">Sobre e Axuda</string>
     <string name="bicycle">En bicicleta</string>
     <string name="vehicle">Vehículo</string>
@@ -638,7 +638,7 @@
     <string name="editor_mark_business_vacant_title">Marcar como dispoñible para negocios</string>
     <string name="place_page_map_too_old_title">Datos do mapa desactualizados</string>
     <string name="place_page_map_too_old_description">Os datos do mapa son moi antigos, por favor actualiza o mapa.</string>
-    <string name="place_page_app_too_old_description">Os datos do mapa actual son moi antigos, actualiza a app CoMaps.</string>
+    <string name="place_page_app_too_old_description">Os datos do mapa actual son moi antigos, actualiza a app Arah.</string>
     <string name="place_page_update_too_old_map">Actualizar rexión do mapa</string>
     <string name="place_page_too_old_to_edit">A edición de OpenStreetMap está desactivada porque o mapa é demasiado antigo.</string>
     <string name="prefs_speed_cameras_information">Os avisos de radares están desactivados nos paises onde a lei local prohibe estas alertas.</string>
@@ -682,7 +682,7 @@
     <string name="not_following_route">Non se está seguindo a ruta</string>
     <string name="route_recalculating">Recalculando a ruta…</string>
     <string name="pref_openexternallinks_title">Abrir automaticamente as ligazóns de terceiros</string>
-    <string name="pref_openexternallinks_summary">Abrir ligazóns de terceiros en CoMaps por defecto</string>
+    <string name="pref_openexternallinks_summary">Abrir ligazóns de terceiros en Arah por defecto</string>
     <string name="pref_enable_auto_reroute_title">Re-enrutado automático</string>
     <string name="pref_enable_auto_reroute_description">Se estiver habilitado, unha nova ruta será automaticamente creada cando se abandone a ruta planeada.</string>
     <string name="recalculate_route">Recalcular</string>
@@ -693,7 +693,7 @@
     <string name="capacity_charging">Prazas con cargadores: %s</string>
     <string name="capacity_charging_yes">Ten prazas con cargadores</string>
     <string name="capacity_charging_no">Non ten prazas con cargadores</string>
-    <string name="permission_read_navigation_label">Ler os datos de navegación do CoMaps</string>
+    <string name="permission_read_navigation_label">Ler os datos de navegación do Arah</string>
     <string name="permission_read_navigation_description">ler información de navegación en directo, como viraxes ou nomes da vía na que se encontre</string>
     <string name="pref_about_summary">Informe de problemas, consiga axuda, doe\nVersión: v%1$s</string>
     <string name="prefs_group_map_appearance">Aparencia do mapa</string>

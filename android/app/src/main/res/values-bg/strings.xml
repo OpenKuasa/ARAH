@@ -142,7 +142,7 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Бележки</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Споделени са с вас отметки за CoMaps</string>
+    <string name="share_bookmarks_email_subject">Споделени са с вас отметки за Arah</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Зареждане на отметки</string>
     <!-- Kmz file successful loading -->
@@ -162,9 +162,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">Изтеглянето на картата вече е в ход.</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">Хей, виж текущото ми местоположение в CoMaps! %1$s или %2$s</string>
+    <string name="my_position_share_sms">Хей, виж текущото ми местоположение в Arah! %1$s или %2$s</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">Хей, виж текущото ми местоположение на картата в CoMaps!</string>
+    <string name="my_position_share_email_subject">Хей, виж текущото ми местоположение на картата в Arah!</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Споделяне</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -424,7 +424,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Създадени от общността данни от OpenStreetMap към %s. Научете повече за това как да редактирате и актуализирате картата в OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) е общностен проект за създаване на безплатна и отворена карта. Той е основният източник на картографски данни в CoMaps и работи подобно на Wikipedia. Можете да добавяте или редактирате места и те стават достъпни за милиони потребители по целия свят. \nПрисъединете се към общността и помогнете за създаването на по-добра карта за всички!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) е общностен проект за създаване на безплатна и отворена карта. Той е основният източник на картографски данни в Arah и работи подобно на Wikipedia. Можете да добавяте или редактирате места и те стават достъпни за милиони потребители по целия свят. \nПрисъединете се към общността и помогнете за създаването на по-добра карта за всички!</string>
     <string name="login_to_make_edits_visible">Създайте акаунт в OpenStreetMap или влезте в него, за да публикувате своите редакции на картата в света.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d от %2$d</string>
@@ -438,7 +438,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Забележка към доброволците на OpenStreetMap (по избор)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Описване на грешки в картата или неща, които не могат да бъдат редактирани с CoMaps</string>
+    <string name="editor_note_hint">Описване на грешки в картата или неща, които не могат да бъдат редактирани с Arah</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Вашите редакции се качват в публичната база данни <a href="https://wiki.openstreetmap.org/wiki/Bg:About">OpenStreetMap</a>. Моля, не добавяйте лична информация или информация, защитена с авторски права.</string>
     <string name="editor_more_about_osm">Повече за OpenStreetMap</string>
@@ -448,7 +448,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">Оператор: %s</string>
     <string name="editor_category_unsuitable_title">Не можете да намерите подходяща категория?</string>
-    <string name="editor_category_unsuitable_text">CoMaps позволява да се добавят само прости категории точки, т.е. без градове, пътища, езера, очертания на сгради и т.н. Моля, добавяйте такива категории директно в <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Вижте нашето <a href="https://www.comaps.app/support/advanced-map-editing/">ръководство</a> за подробни инструкции стъпка по стъпка.</string>
+    <string name="editor_category_unsuitable_text">Arah позволява да се добавят само прости категории точки, т.е. без градове, пътища, езера, очертания на сгради и т.н. Моля, добавяйте такива категории директно в <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Вижте нашето <a href="https://github.com/ARAH-ORG/arah/">ръководство</a> за подробни инструкции стъпка по стъпка.</string>
     <string name="downloader_no_downloaded_maps_title">Не сте изтеглили никакви карти</string>
     <string name="downloader_no_downloaded_maps_message">Изтеглете картите, от които се нуждаете, за да намирате места и да навигирате без интернет.</string>
     <string name="current_location_unknown_error_title">Настоящото местоположение е неизвестно.</string>
@@ -490,7 +490,7 @@
     <string name="mobile_data_option_ask">Винаги питай</string>
     <string name="traffic_update_maps_text">За да се показват данни за трафика, картите трябва да са актуализирани.</string>
     <string name="increase_font_size">Увеличаване на размера на шрифта в картата</string>
-    <string name="traffic_update_app">Моля, актуализирайте CoMaps</string>
+    <string name="traffic_update_app">Моля, актуализирайте Arah</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">Няма налични данни за трафика</string>
     <string name="enable_logging">Активиране на запис на дневник</string>
@@ -510,7 +510,7 @@
     <string name="placepage_remove_stop">Премахване на спирка</string>
     <string name="placepage_add_stop">Добавяне на спирка</string>
     <string name="dialog_error_storage_title">Проблем с достъпа до хранилището</string>
-    <string name="dialog_error_storage_message">Външната памет на устройството не е налична, SD картата може да е била извадена, повредена или файловата система е само за четене. Проверете това и се свържете с нас support@comaps.app</string>
+    <string name="dialog_error_storage_message">Външната памет на устройството не е налична, SD картата може да е била извадена, повредена или файловата система е само за четене. Проверете това и се свържете с нас support@arah.invalid</string>
     <string name="setting_emulate_bad_storage">Емулация на грешки с външна памет</string>
     <string name="error_enter_correct_name">Моля, въведете правилно име</string>
     <string name="bookmark_lists">Списъци</string>
@@ -657,9 +657,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">Нашата основна цел е да създаваме бързи, фокусирани върху поверителността, лесни за използване карти, които ще харесате.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Вече използвате CoMaps на екрана на телефона</string>
+    <string name="car_used_on_the_phone_screen">Вече използвате Arah на екрана на телефона</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Вече използвате CoMaps на екрана на автомобила</string>
+    <string name="car_used_on_the_car_screen">Вече използвате Arah на екрана на автомобила</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Свързани сте с Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -667,11 +667,11 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Към екрана на автомобила</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">CoMaps се нуждае от достъп до местоположението. Когато е безопасно, проверете известието на телефона си.</string>
+    <string name="aa_location_permissions_request">Arah се нуждае от достъп до местоположението. Когато е безопасно, проверете известието на телефона си.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Това приложение се нуждае от вашето разрешение</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">CoMaps в Android Auto се нуждае от разрешение за местоположение, за да работи ефективно</string>
+    <string name="aa_request_permission_activity_text">Arah в Android Auto се нуждае от разрешение за местоположение, за да работи ефективно</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Предоставяне на разрешения</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
@@ -724,7 +724,7 @@
     <string name="nav_auto">Автоматично в навигацията</string>
     <string name="parks">Паркове</string>
     <string name="deep_purple">Тъмно Лилаво</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
     <string name="placepage_distance">Разстояние</string>
     <string name="menu">Меню</string>
     <string name="light_blue">Светло Синьо</string>
@@ -741,8 +741,8 @@
     <string name="money">Пари</string>
     <string name="parkings">Паркинги</string>
     <string name="fuel_places">Бензиностанции</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="moreyear_ago_sorttype">Преди повече от година</string>
     <string name="deep_orange">Тъмно Оранжево</string>
     <string name="maps_storage_free_size">%1$s свободни от %2$s</string>
@@ -763,7 +763,7 @@
     <string name="miles_per_hour">мили/ч</string>
     <string name="animals">Животни</string>
     <string name="buildings">Сгради</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="hotels">Хотели</string>
     <string name="others_sorttype">Други</string>
     <string name="month_ago_sorttype">Преди месец</string>
@@ -773,7 +773,7 @@
     <string name="downloader_loading_ios">Изтегляне</string>
     <string name="wikimedia_commons">Общомедия</string>
     <string name="panoramax">Panoramax Снимка</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="saved">Запазено</string>
     <string name="about_headline">Отворен проект, захранван от общността</string>
 </resources>

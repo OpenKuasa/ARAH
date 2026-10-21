@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="back">Kembali</string>
     <string name="cancel">Batal</string>
     <string name="delete">Padam</string>
@@ -18,7 +18,7 @@
     <string name="zoom_to_country">Tunjuk di peta</string>
     <string name="country_status_download_failed">Muat turun gagal</string>
     <string name="try_again">Cuba Lagi</string>
-    <string name="about_menu_title">Perihal CoMaps</string>
+    <string name="about_menu_title">Perihal Arah</string>
     <string name="about_headline">Projek terbuka yang digerakkan oleh komuniti</string>
     <string name="about_proposition_1">• Mudah digunakan dan kemas</string>
     <string name="about_proposition_2">• Mengutamakan privasi dan tanpa iklan</string>
@@ -28,7 +28,7 @@
     <string name="close">Tutup</string>
     <string name="unsupported_phone">Aplikasi ini memerlukan OpenGL dengan pecutan perkakasan. Malangnya, peranti anda tidak disokong.</string>
     <string name="download">Muat turun</string>
-    <string name="disconnect_usb_cable">Sila cabut kabel USB atau masukkan kad memori untuk menggunakan CoMaps</string>
+    <string name="disconnect_usb_cable">Sila cabut kabel USB atau masukkan kad memori untuk menggunakan Arah</string>
     <string name="not_enough_free_space_on_sdcard">Sila kosongkan sedikit ruang pada kad SD/storan USB dahulu untuk menggunakan aplikasi ini</string>
     <string name="download_resources">Sebelum mula menggunakan aplikasi, sila muat turun peta gambaran dunia ke peranti anda.\nIa akan menggunakan %s storan.</string>
     <string name="download_resources_continue">Pergi ke Peta</string>
@@ -79,12 +79,12 @@
     <string name="category_water">Air</string>
     <string name="category_rv">Kemudahan karavan</string>
     <string name="description">Nota</string>
-    <string name="share_bookmarks_email_subject">Penanda CoMaps Saya</string>
+    <string name="share_bookmarks_email_subject">Penanda Arah Saya</string>
     <string name="share_bookmarks_email_body">Hai!
 \n
-\nBersama ini penanda saya; sila buka dalam CoMaps. Jika anda belum memasangnya, anda boleh memuat turunnya di sini: https://www.comaps.app/download/
+\nBersama ini penanda saya; sila buka dalam Arah. Jika anda belum memasangnya, anda boleh memuat turunnya di sini: https://github.com/ARAH-ORG/arah/
 \n
-\nSelamat mengembara dengan CoMaps!</string>
+\nSelamat mengembara dengan Arah!</string>
     <string name="load_kmz_title">Memuatkan Penanda</string>
     <string name="load_kmz_successful">Penanda berjaya dimuatkan! Anda boleh menemuinya di peta atau di skrin Pengurus Penanda.</string>
     <string name="load_kmz_failed">Penanda tidak dapat dimuatkan. Fail mungkin rosak atau tidak sah.</string>
@@ -94,9 +94,9 @@
     <string name="unknown_current_position">Lokasi anda belum dapat dikenal pasti</string>
     <string name="cant_change_this_setting">Maaf, tetapan Storan Peta tidak dapat digunakan buat masa ini</string>
     <string name="downloading_is_active">Muat turun peta sedang berjalan sekarang</string>
-    <string name="my_position_share_sms">Lihat lokasi semasa saya dalam CoMaps! %1$s atau %2$s Tiada peta luar talian? Muat turun di sini: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">Lihat lokasi semasa saya dalam Arah! %1$s atau %2$s Tiada peta luar talian? Muat turun di sini: https://github.com/ARAH-ORG/arah/</string>
     <string name="bookmark_share_email_subject">Ikuti pautan ini %1$s atau tampal koordinat ini %2$s ke dalam aplikasi peta anda untuk melihat lokasi ini.</string>
-    <string name="my_position_share_email_subject">Hei, lihat lokasi semasa saya di peta CoMaps!</string>
+    <string name="my_position_share_email_subject">Hei, lihat lokasi semasa saya di peta Arah!</string>
     <string name="my_position_share_email">Ikuti pautan ini %1$s atau tampal koordinat ini %2$s ke dalam aplikasi peta anda untuk melihat lokasi saya.</string>
     <string name="share">Kongsi</string>
     <string name="email">E-mel</string>
@@ -121,7 +121,7 @@
     <string name="prefs_group_advanced">Lanjutan</string>
     <string name="prefs_group_advanced_summary">Hidupkan pengelogan</string>
     <string name="download_resources_custom_url_title">Pelayan Peta Tersuai</string>
-    <string name="download_resources_custom_url_message">Gantikan pelayan lalai yang digunakan untuk memuat turun peta. Biarkan kosong untuk menggunakan pelayan lalai CoMaps.</string>
+    <string name="download_resources_custom_url_message">Gantikan pelayan lalai yang digunakan untuk memuat turun peta. Biarkan kosong untuk menggunakan pelayan lalai Arah.</string>
     <string name="download_resources_custom_url_summary_none">Belum ditetapkan</string>
     <string name="download_resources_custom_url_error_scheme">Sila masukkan URL yang bermula dengan http:// atau https://</string>
     <string name="pref_map_style_title">Mod Malam</string>
@@ -152,7 +152,7 @@
     <string name="help">Bantuan</string>
     <string name="faq">Soalan Lazim</string>
     <string name="donate">Derma</string>
-    <string name="how_to_support_us">Jadi sukarelawan dan bantu baiki CoMaps</string>
+    <string name="how_to_support_us">Jadi sukarelawan dan bantu baiki Arah</string>
     <string name="copyright">Hak cipta</string>
     <string name="report_a_bug">Laporkan pepijat</string>
     <string name="compass_calibration_recommended">Tingkatkan ketepatan arah anak panah dengan menggerakkan telefon dalam bentuk angka lapan untuk menentukur kompas.</string>
@@ -330,7 +330,7 @@
     <string name="editor_report_problem_other_title">Masalah lain</string>
     <string name="message_invalid_feature_position">Tiada objek boleh diletakkan di sini</string>
     <string name="osm_presentation">Data OpenStreetMap ciptaan komuniti setakat %s. Ketahui lebih lanjut cara menyunting dan mengemas kini peta di OpenStreetMap.org</string>
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) ialah projek komuniti untuk membina peta yang percuma dan terbuka. Ia sumber utama data peta dalam CoMaps dan berfungsi seperti Wikipedia. Anda boleh menambah atau menyunting tempat, dan ia akan tersedia kepada jutaan pengguna di seluruh dunia.
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) ialah projek komuniti untuk membina peta yang percuma dan terbuka. Ia sumber utama data peta dalam Arah dan berfungsi seperti Wikipedia. Anda boleh menambah atau menyunting tempat, dan ia akan tersedia kepada jutaan pengguna di seluruh dunia.
 \nSertai komuniti dan bantu hasilkan peta yang lebih baik untuk semua!</string>
     <string name="login_to_make_edits_visible">Cipta akaun OpenStreetMap atau log masuk untuk menerbitkan suntingan peta anda kepada dunia</string>
     <string name="downloader_of">%1$d daripada %2$d</string>
@@ -342,7 +342,7 @@
     <string name="editor_zip_code">Poskod</string>
     <string name="error_enter_correct_zip_code">Masukkan poskod yang sah</string>
     <string name="editor_other_info">Nota kepada sukarelawan OpenStreetMap (pilihan)</string>
-    <string name="editor_note_hint">Terangkan kesilapan di peta atau perkara yang tidak boleh disunting dengan CoMaps</string>
+    <string name="editor_note_hint">Terangkan kesilapan di peta atau perkara yang tidak boleh disunting dengan Arah</string>
     <string name="editor_about_osm">Suntingan anda dimuat naik ke pangkalan data awam <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a>. Sila jangan tambah maklumat peribadi atau yang dilindungi hak cipta.</string>
     <string name="editor_more_about_osm">Lagi tentang OpenStreetMap</string>
     <string name="editor_osm_history">Sejarah suntingan anda</string>
@@ -350,7 +350,7 @@
     <string name="editor_operator">Pengendali</string>
     <string name="operator">Pengendali: %s</string>
     <string name="editor_category_unsuitable_title">Tidak jumpa kategori yang sesuai?</string>
-    <string name="editor_category_unsuitable_text">CoMaps hanya boleh menambah kategori titik ringkas, bukan bandar, jalan, tasik, garis bentuk bangunan dan sebagainya. Sila tambah kategori sebegini terus ke <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Rujuk <a href="https://www.comaps.app/support/advanced-map-editing/">panduan</a> kami untuk arahan langkah demi langkah yang terperinci.</string>
+    <string name="editor_category_unsuitable_text">Arah hanya boleh menambah kategori titik ringkas, bukan bandar, jalan, tasik, garis bentuk bangunan dan sebagainya. Sila tambah kategori sebegini terus ke <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Rujuk <a href="https://github.com/ARAH-ORG/arah/">panduan</a> kami untuk arahan langkah demi langkah yang terperinci.</string>
     <string name="downloader_no_downloaded_maps_title">Anda belum memuat turun sebarang peta</string>
     <string name="downloader_no_downloaded_maps_message">Muat turun peta untuk mencari dan menavigasi di luar talian</string>
     <string name="current_location_unknown_error_title">Lokasi semasa tidak diketahui</string>
@@ -388,7 +388,7 @@
     <string name="placepage_add_place_button">Tambah Tempat ke OpenStreetMap</string>
     <string name="place_page_map_too_old_title">Data peta lapuk</string>
     <string name="place_page_map_too_old_description"> Data peta semasa anda sudah sangat lama, sila kemas kini peta.</string>
-    <string name="place_page_app_too_old_description"> Data peta semasa anda sudah sangat lama, sila kemas kini aplikasi CoMaps.</string>
+    <string name="place_page_app_too_old_description"> Data peta semasa anda sudah sangat lama, sila kemas kini aplikasi Arah.</string>
     <string name="place_page_update_too_old_map">Kemas kini kawasan peta</string>
     <string name="place_page_too_old_to_edit">Penyuntingan OpenStreetMap dilumpuhkan kerana data peta terlalu lama.</string>
     <string name="osm_note_hint">Atau, tinggalkan nota untuk komuniti OpenStreetMap supaya orang lain boleh menambah atau membetulkan tempat di sini.</string>
@@ -412,7 +412,7 @@
     <string name="pref_font_size">Saiz fon untuk label peta</string>
     <string name="increase_font_size">Besarkan saiz label peta</string>
     <string name="decrease_font_size">Kecilkan saiz label peta</string>
-    <string name="traffic_update_app">Sila kemas kini CoMaps</string>
+    <string name="traffic_update_app">Sila kemas kini Arah</string>
     <string name="traffic_data_unavailable">Data trafik tidak tersedia</string>
     <string name="enable_logging">Dayakan pengelogan</string>
     <string name="feedback_general">Maklum balas umum</string>
@@ -433,7 +433,7 @@
     <string name="placepage_add_stop">Tambah titik henti</string>
     <string name="saved">Disimpan</string>
     <string name="dialog_error_storage_title">Masalah akses storan</string>
-    <string name="dialog_error_storage_message">Storan luaran tidak dapat diakses. Kad SD mungkin telah dikeluarkan, rosak, atau sistem failnya hanya boleh dibaca. Sila semak kad SD anda atau hubungi kami di support@comaps.app</string>
+    <string name="dialog_error_storage_message">Storan luaran tidak dapat diakses. Kad SD mungkin telah dikeluarkan, rosak, atau sistem failnya hanya boleh dibaca. Sila semak kad SD anda atau hubungi kami di support@arah.invalid</string>
     <string name="setting_emulate_bad_storage">Emulasi storan rosak</string>
     <string name="error_enter_correct_name">Sila masukkan nama yang betul</string>
     <string name="bookmark_lists">Senarai Penanda</string>
@@ -577,10 +577,10 @@
     <string name="change_app_locale">Bahasa aplikasi</string>
     <string name="pref_maplanguage_local">Bahasa Tempatan</string>
     <string name="splash_subtitle">Data peta daripada OpenStreetMap</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <string name="app_tip_00">Terima kasih kerana menggunakan peta yang dibina oleh komuniti kami!</string>
@@ -593,14 +593,14 @@
     <string name="app_tip_07">Aplikasi kami dibangunkan oleh beberapa peminat dan komuniti.</string>
     <string name="app_tip_08">Anda boleh membetulkan dan menambah baik data peta dengan mudah.</string>
     <string name="app_tip_09">Matlamat utama kami adalah membina peta yang pantas, menjaga privasi dan mudah digunakan yang pasti anda sukai.</string>
-    <string name="car_used_on_the_phone_screen">Anda sedang menggunakan CoMaps pada skrin telefon</string>
-    <string name="car_used_on_the_car_screen">Anda sedang menggunakan CoMaps pada skrin kereta</string>
+    <string name="car_used_on_the_phone_screen">Anda sedang menggunakan Arah pada skrin telefon</string>
+    <string name="car_used_on_the_car_screen">Anda sedang menggunakan Arah pada skrin kereta</string>
     <string name="aa_connected_title">Anda telah disambungkan ke Android Auto</string>
     <string name="car_continue_on_the_phone">Teruskan di telefon</string>
     <string name="car_continue_in_the_car">Ke skrin kereta</string>
-    <string name="aa_location_permissions_request">CoMaps memerlukan akses lokasi. Apabila selamat, semak pemberitahuan pada telefon anda.</string>
+    <string name="aa_location_permissions_request">Arah memerlukan akses lokasi. Apabila selamat, semak pemberitahuan pada telefon anda.</string>
     <string name="aa_request_permission_notification">Aplikasi ini memerlukan kebenaran anda</string>
-    <string name="aa_request_permission_activity_text">CoMaps dalam Android Auto memerlukan kebenaran lokasi untuk berfungsi dengan berkesan</string>
+    <string name="aa_request_permission_activity_text">Arah dalam Android Auto memerlukan kebenaran lokasi untuk berfungsi dengan berkesan</string>
     <string name="aa_grant_permissions">Beri kebenaran</string>
     <string name="button_layer_outdoor">Aktiviti Luar</string>
     <string name="browser_not_available">Pelayar web tidak tersedia</string>
@@ -713,7 +713,7 @@
     <string name="not_following_route">Tidak mengikut laluan</string>
     <string name="route_recalculating">Mengira semula laluan…</string>
     <string name="pref_openexternallinks_title">Buka pautan pihak ketiga secara automatik</string>
-    <string name="pref_openexternallinks_summary">Buka pautan pihak ketiga dalam CoMaps secara lalai</string>
+    <string name="pref_openexternallinks_summary">Buka pautan pihak ketiga dalam Arah secara lalai</string>
     <string name="pref_aa_support_title">Android Auto</string>
     <string name="pref_aa_support_summary_yes">Aplikasi ini dipasang daripada Google Play, anda boleh menggunakannya dalam kereta.</string>
     <string name="pref_aa_support_summary_no">Aplikasi ini tidak dipasang daripada Google Play, anda tidak boleh menggunakannya dalam kereta. Tekan tetapan ini untuk butiran lanjut dalam FAQ kami.</string>
@@ -728,7 +728,7 @@
     <string name="capacity_charging">Petak dengan pengecas: %s</string>
     <string name="capacity_charging_yes">Ada petak dengan pengecas</string>
     <string name="capacity_charging_no">Tiada petak dengan pengecas</string>
-    <string name="permission_read_navigation_label">Baca data navigasi CoMaps</string>
+    <string name="permission_read_navigation_label">Baca data navigasi Arah</string>
     <string name="permission_read_navigation_description">membaca maklumat navigasi langsung seperti selekoh akan datang atau nama jalan yang anda lalui</string>
     <string name="place_reviews_title">Ulasan Tempat</string>
     <string name="place_reviews">%1$s Ulasan</string>

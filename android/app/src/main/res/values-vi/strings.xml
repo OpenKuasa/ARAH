@@ -34,7 +34,7 @@
     <string name="country_status_download_failed">Tải xuống đã thất bại</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Thử lại</string>
-    <string name="about_menu_title">Giới thiệu về CoMaps</string>
+    <string name="about_menu_title">Giới thiệu về Arah</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Dễ sử dụng và chỉn chu</string>
     <!-- Text in About screen -->
@@ -49,7 +49,7 @@
     <string name="unsupported_phone">Cần có OpenGL được tăng tốc phần cứng. Thật không may, thiết bị của bạn không được hỗ trợ.</string>
     <string name="download">Tải xuống</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Bạn vui lòng tháo cáp USB hoặc lắp thẻ nhớ vào để sử dụng CoMaps</string>
+    <string name="disconnect_usb_cable">Bạn vui lòng tháo cáp USB hoặc lắp thẻ nhớ vào để sử dụng Arah</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Bạn vui lòng giải phóng dung lượng trên ổ lưu trữ thẻ SD/USB để có thể sử dụng ứng dụng</string>
     <string name="download_resources">Trước khi bạn bắt đầu, hãy để chúng tôi tải bản đồ thế giới vào thiết bị của bạn. \nBản đồ này cần %s dữ liệu.</string>
@@ -142,7 +142,7 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Ghi chú</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Điểm CoMaps Ưa thích của tôi</string>
+    <string name="share_bookmarks_email_subject">Điểm Arah Ưa thích của tôi</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Đang tải Ưa thích</string>
     <!-- Kmz file successful loading -->
@@ -162,9 +162,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">Đang tải xuống bản đồ</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">Này, hãy xem vị trí hiện tại của tôi tại CoMaps! %1$s hoặc %2$s Bạn không có bản đồ ngoại tuyến? Tải xuống tại đây: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">Này, hãy xem vị trí hiện tại của tôi tại Arah! %1$s hoặc %2$s Bạn không có bản đồ ngoại tuyến? Tải xuống tại đây: https://github.com/ARAH-ORG/arah/</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">Này, hãy xem vị trí hiện tại của tôi trên ứng dụng CoMaps!</string>
+    <string name="my_position_share_email_subject">Này, hãy xem vị trí hiện tại của tôi trên ứng dụng Arah!</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Chia sẻ</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -185,7 +185,7 @@
     <string name="pref_zoom_summary">Hiển thị trên bản đồ</string>
     <string name="prefs_group_advanced">Nâng cao</string>
     <string name="download_resources_custom_url_title">Tùy chỉnh máy chủ bản đồ</string>
-    <string name="download_resources_custom_url_message">Ghi đè máy chủ tải xuống bản đồ mặc định. Để trống để sử dụng máy chủ mặc định của CoMaps.</string>
+    <string name="download_resources_custom_url_message">Ghi đè máy chủ tải xuống bản đồ mặc định. Để trống để sử dụng máy chủ mặc định của Arah.</string>
     <string name="download_resources_custom_url_summary_none">Chưa đặt</string>
     <string name="download_resources_custom_url_error_scheme">Vui lòng nhập một URL bắt đầu bằng http:// hoặc https://</string>
     <!-- Settings «Map» category: «Night style» title -->
@@ -234,7 +234,7 @@
     <!-- Button in the main menu -->
     <string name="donate">Quyên tặng</string>
     <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Giúp cải thiện CoMaps</string>
+    <string name="how_to_support_us">Giúp cải thiện Arah</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Bản quyền</string>
     <!-- Text in menu + Button in the main Help dialog -->
@@ -442,7 +442,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Dữ liệu OpenStreetMap do cộng đồng tạo ra tính đến %s. Tìm hiểu thêm về cách chỉnh sửa và cập nhật bản đồ tại OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) là một dự án cộng đồng nhằm xây dựng bản đồ mở và miễn phí. Đây là nguồn dữ liệu bản đồ chính trong CoMaps và hoạt động tương tự như Wikipedia. Bạn có thể thêm hoặc chỉnh sửa địa điểm và chúng sẽ có sẵn cho hàng triệu người dùng trên toàn thế giới. \nTham gia cộng đồng và giúp tạo bản đồ tốt hơn cho mọi người!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) là một dự án cộng đồng nhằm xây dựng bản đồ mở và miễn phí. Đây là nguồn dữ liệu bản đồ chính trong Arah và hoạt động tương tự như Wikipedia. Bạn có thể thêm hoặc chỉnh sửa địa điểm và chúng sẽ có sẵn cho hàng triệu người dùng trên toàn thế giới. \nTham gia cộng đồng và giúp tạo bản đồ tốt hơn cho mọi người!</string>
     <string name="login_to_make_edits_visible">Tạo tài khoản OpenStreetMap hoặc đăng nhập để xuất bản các chỉnh sửa bản đồ của bạn với thế giới</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d trên %2$d</string>
@@ -456,7 +456,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Lưu ý dành cho tình nguyện viên OpenStreetMap (tùy chọn)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Mô tả lỗi trên bản đồ hoặc những gì không thể chỉnh sửa bằng CoMaps</string>
+    <string name="editor_note_hint">Mô tả lỗi trên bản đồ hoặc những gì không thể chỉnh sửa bằng Arah</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Các chỉnh sửa của bạn sẽ được tải lên cơ sở dữ liệu <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> công khai. Vui lòng không thêm thông tin cá nhân hoặc có bản quyền.</string>
     <string name="editor_more_about_osm">Thông tin bổ sung về OpenStreetMap</string>
@@ -466,7 +466,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">Đơn vị vận hành: %s</string>
     <string name="editor_category_unsuitable_title">Không thể tìm thấy một danh mục phù hợp?</string>
-    <string name="editor_category_unsuitable_text">CoMaps chỉ có thể thêm các danh mục điểm đơn giản, nó không thể thêm thị trấn, đường, hồ, đường viền tòa nhà, v.v. Vui lòng thêm các danh mục đó trực tiếp vào <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Hãy xem <a href="https://www.comaps.app/support/advanced-map-editing/">hướng dẫn</a> của chúng tôi để biết chỉ dẫn chi tiết từng bước.</string>
+    <string name="editor_category_unsuitable_text">Arah chỉ có thể thêm các danh mục điểm đơn giản, nó không thể thêm thị trấn, đường, hồ, đường viền tòa nhà, v.v. Vui lòng thêm các danh mục đó trực tiếp vào <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Hãy xem <a href="https://github.com/ARAH-ORG/arah/">hướng dẫn</a> của chúng tôi để biết chỉ dẫn chi tiết từng bước.</string>
     <string name="downloader_no_downloaded_maps_title">Bạn chưa tải về bất kỳ bản đồ nào</string>
     <string name="downloader_no_downloaded_maps_message">Tải về bản đồ để tìm kiếm và tìm đường ngoại tuyến</string>
     <string name="current_location_unknown_error_title">Vị trí hiện tại không xác định được</string>
@@ -512,7 +512,7 @@
     <string name="mobile_data_option_ask">Luôn Hỏi</string>
     <string name="traffic_update_maps_text">Để hiển thị dữ liệu giao thông, cần cập nhật bản đồ</string>
     <string name="increase_font_size">Tăng kích thước các nhãn trên bản đồ</string>
-    <string name="traffic_update_app">Vui lòng cập nhật CoMaps</string>
+    <string name="traffic_update_app">Vui lòng cập nhật Arah</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">Dữ liệu giao thông không khả dụng</string>
     <string name="enable_logging">Bật nhật ký hoạt động</string>
@@ -532,7 +532,7 @@
     <string name="placepage_remove_stop">Xóa điểm dừng</string>
     <string name="placepage_add_stop">Thêm điểm dừng</string>
     <string name="dialog_error_storage_title">Vấn đề truy cập bộ nhớ</string>
-    <string name="dialog_error_storage_message">Bộ nhớ bên ngoài không truy cập được. Thẻ SD có thể đã bị tháo, bị hỏng hoặc hệ thống tập tin được thiết lập chỉ đọc. Vui lòng kiểm tra thẻ SD hoặc liên hệ với chúng tôi qua support@comaps.app</string>
+    <string name="dialog_error_storage_message">Bộ nhớ bên ngoài không truy cập được. Thẻ SD có thể đã bị tháo, bị hỏng hoặc hệ thống tập tin được thiết lập chỉ đọc. Vui lòng kiểm tra thẻ SD hoặc liên hệ với chúng tôi qua support@arah.invalid</string>
     <string name="setting_emulate_bad_storage">Giả lập bộ nhớ hỏng</string>
     <string name="error_enter_correct_name">Vui lòng nhập một tên chính xác</string>
     <string name="bookmark_lists">Danh sách Ưa thích</string>
@@ -697,9 +697,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">Mục tiêu chính của chúng tôi là xây dựng các bản đồ nhanh chóng, tập trung vào quyền riêng tư, dễ sử dụng mà bạn sẽ yêu thích.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Bạn hiện đang sử dụng CoMaps trên màn hình điện thoại</string>
+    <string name="car_used_on_the_phone_screen">Bạn hiện đang sử dụng Arah trên màn hình điện thoại</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Bạn hiện đang sử dụng bản CoMaps trên màn hình ô tô</string>
+    <string name="car_used_on_the_car_screen">Bạn hiện đang sử dụng bản Arah trên màn hình ô tô</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Bạn đã kết nối với Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -707,11 +707,11 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Đến màn hình ô tô</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">CoMaps cần quyền truy cập vị trí. Khi an toàn, hãy kiểm tra thông báo trên điện thoại của bạn.</string>
+    <string name="aa_location_permissions_request">Arah cần quyền truy cập vị trí. Khi an toàn, hãy kiểm tra thông báo trên điện thoại của bạn.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Ứng dụng này cần sự cho phép của bạn</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">CoMaps trong Android Auto cần có quyền truy cập vị trí để hoạt động hiệu quả</string>
+    <string name="aa_request_permission_activity_text">Arah trong Android Auto cần có quyền truy cập vị trí để hoạt động hiệu quả</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Cấp quyền</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
@@ -762,18 +762,18 @@
     <string name="uri_open_location_failed">Không có ứng dụng nào được cài đặt có thể mở vị trí</string>
     <!-- preference string for using auto theme only in navigation mode -->
     <string name="nav_auto">Tự động điều hướng</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="app_site_url">https://comaps.app/</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
     <string name="panoramax">Ảnh Panoramax</string>
     <string name="saved">Đã lưu</string>
     <string name="about_headline">Dự án mở được vận hành bởi cộng đồng</string>
     <string name="maps_storage_free_size">%1$s trống của %2$s</string>
     <string name="move_maps_error">Lỗi khi chuyển các tệp bản đồ</string>
-    <string name="share_bookmarks_email_body">Xin chào! \n \nĐính kèm là các điểm Ưa thích của tôi; vui lòng mở chúng trong CoMaps. Nếu bạn chưa cài đặt nó thì bạn có thể tải nó xuống ở đây: https://www.comaps.app/download/ \n \nTận hưởng hành trình với CoMaps nhé!</string>
+    <string name="share_bookmarks_email_body">Xin chào! \n \nĐính kèm là các điểm Ưa thích của tôi; vui lòng mở chúng trong Arah. Nếu bạn chưa cài đặt nó thì bạn có thể tải nó xuống ở đây: https://github.com/ARAH-ORG/arah/ \n \nTận hưởng hành trình với Arah nhé!</string>
     <string name="bookmark_share_email_subject">Theo đường dẫn này %1$s hoặc dán tọa độ này %2$s vào ứng dụng bản đồ của bạn để xem vị trí này.</string>
     <string name="my_position_share_email">Theo đường dẫn này %1$s hoặc dán tọa độ này %2$s vào ứng dụng bản đồ của bạn để xem vị trí của tôi.</string>
     <string name="prefs_group_information">Thông tin</string>
@@ -857,7 +857,7 @@
     <string name="error_enter_correct_bluesky_page">Nhập một tên người dùng Bluesky hoặc địa chỉ web hợp lệ</string>
     <string name="place_page_map_too_old_title">Dữ liệu bản đồ đã lỗi thời</string>
     <string name="place_page_map_too_old_description">Dữ liệu bản đồ hiện tại của bạn rất cũ, vui lòng cập nhật bản đồ.</string>
-    <string name="place_page_app_too_old_description">Dữ liệu bản đồ hiện tại của bạn rất cũ, vui lòng cập nhật ứng dụng CoMaps.</string>
+    <string name="place_page_app_too_old_description">Dữ liệu bản đồ hiện tại của bạn rất cũ, vui lòng cập nhật ứng dụng Arah.</string>
     <string name="place_page_update_too_old_map">Cập nhật khu vực bản đồ</string>
     <string name="place_page_too_old_to_edit">Việc chỉnh sửa OpenStreetMap đã bị tắt vì dữ liệu bản đồ quá cũ.</string>
     <string name="osm_note_hint">Hoặc, một cách khác là để lại ghi chú cho cộng đồng OpenStreetMap để người khác có thể thêm hoặc sửa địa điểm ở đây.</string>
@@ -914,7 +914,7 @@
     <string name="not_following_route">Đang lệch khỏi tuyến đường</string>
     <string name="route_recalculating">Đang tính lại tuyến đường…</string>
     <string name="pref_openexternallinks_title">Tự động mở các đường dẫn bên thứ ba</string>
-    <string name="pref_openexternallinks_summary">Mặc định mở các đường dẫn bên thứ ba trong CoMaps</string>
+    <string name="pref_openexternallinks_summary">Mặc định mở các đường dẫn bên thứ ba trong Arah</string>
     <string name="tts_toggle_enable">Bật chỉ dẫn bằng giọng nói</string>
     <string name="tts_toggle_disable">Tắt chỉ dẫn bằng giọng nói</string>
     <string name="downloader_check_updates_button">Kiểm tra cập nhật</string>
@@ -959,6 +959,6 @@
     <string name="capacity_charging">Số chỗ đỗ có cây sạc: %s</string>
     <string name="capacity_charging_yes">Có chỗ đỗ có cây sạc</string>
     <string name="capacity_charging_no">Không có chỗ đỗ có cây sạc</string>
-    <string name="permission_read_navigation_label">Đọc dữ liệu điều hướng CoMaps</string>
+    <string name="permission_read_navigation_label">Đọc dữ liệu điều hướng Arah</string>
     <string name="permission_read_navigation_description">đọc thông tin điều hướng trực tiếp ví dụ như các lối rẽ tiếp theo hoặc tên đường bạn đang đi</string>
 </resources>

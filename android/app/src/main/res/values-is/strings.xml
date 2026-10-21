@@ -262,7 +262,7 @@
     <string name="download_has_failed">Mistókst að sækja. Ýttu til að reyna aftur.</string>
     <string name="search_map">Leita á korti</string>
     <string name="try_again">Reyndu aftur</string>
-    <string name="about_menu_title">Um CoMaps</string>
+    <string name="about_menu_title">Um Arah</string>
     <string name="about_headline">Ókeypis fyrir alla, unnið af alúð</string>
     <string name="location_settings">Staðsetningarstillingar</string>
     <string name="download_resources_continue">Fara á kort</string>
@@ -297,8 +297,8 @@
     <string name="disconnect_usb_cable_title">Aftengja USB-kapal</string>
     <string name="enable_keep_screen_on">Halda kveiktu á skjánum</string>
     <string name="enable_show_on_lock_screen">Birta á læsiskjánum</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <string name="browser_not_available">Vafri er ekki tiltækur</string>
     <string name="open_in_app">Opna í öðru forriti</string>
@@ -351,7 +351,7 @@
     <string name="mobile_data_option_today">Aðeins í dag</string>
     <string name="mobile_data_option_not_today">Ekki nota í dag</string>
     <string name="mobile_data">Farsímagögn</string>
-    <string name="traffic_update_app">Endilega uppfærðu CoMaps</string>
+    <string name="traffic_update_app">Endilega uppfærðu Arah</string>
     <string name="traffic_data_unavailable">Umferðargögn eru ekki tiltæk</string>
     <string name="enable_logging">Virkja atvikaskráningu</string>
     <string name="feedback_general">Almennar umsagnir</string>
@@ -373,7 +373,7 @@
     <string name="about_proposition_1">• Engar auglýsingar, engar njósnir, engin gagnasöfnun</string>
     <string name="bookmark_set_name">Heiti bókamerkjalista</string>
     <string name="category_children">Fjölskylduafþreying</string>
-    <string name="share_bookmarks_email_subject">CoMaps bókamerkjum var deilt með þér</string>
+    <string name="share_bookmarks_email_subject">Arah bókamerkjum var deilt með þér</string>
     <string name="load_kmz_title">Hleð inn bókamerkjum</string>
     <string name="downloading_is_active">Verið er að sækja landakort.</string>
     <string name="pref_tts_enable_title">Talaðar leiðbeiningar</string>
@@ -403,7 +403,7 @@
     <string name="location_is_disabled_long_text">Allar staðsetningarþjónustur eru óvirkar fyrir þetta forrit eða tæki. Virkjaðu þær í stillingunum.</string>
     <string name="precise_location_is_disabled_long_text">Til að tryggja nákvæma leiðsögn ættirðu að virkja nákvæma staðsetningu í stillingunum.</string>
     <string name="unsupported_phone">Forritið krefst OpenGL-vélbúnaðarhröðunar. Því miður er tækið þitt ekki stutt.</string>
-    <string name="disconnect_usb_cable">Aftengdu USB-kapal eða settu inn minniskort til að nota CoMaps</string>
+    <string name="disconnect_usb_cable">Aftengdu USB-kapal eða settu inn minniskort til að nota Arah</string>
     <string name="not_enough_free_space_on_sdcard">Losaðu fyrst um eitthvað pláss á SD-minniskorti/USB-geymslu til að nota forritið</string>
     <string name="download_resources">Áður en þú byrjar skaltu sækja heims-yfirlitskortið yfir á tækið þitt. \nÞað mun nota %s af tiltæku minni.</string>
     <string name="load_kmz_failed">Mistókst að hlaða inn bókamerkjum. Skráin gæti verið skemmd eða gölluð.</string>
@@ -416,10 +416,10 @@
     <string name="placepage_personal_notes_hint">Persónulegir minnispunktar (texti eða html)</string>
     <string name="editor_reset_edits_message">Henda öllum staðværum breytingum?</string>
     <string name="downloading_country_can_proceed">Sæki %1$s (%2$s). Þú getur núna \nfarið yfir á landakortið.</string>
-    <string name="share_bookmarks_email_body">Halló! \n \nMeðfylgjandi eru bókamerkin mín; endilega opnaðu þau í CoMaps forritinu. Ef þú ert ekki með það uppsett geturðu sótt það hér: https://www.comaps.app/download/ \n \nNjóttu ferðarinnar með CoMaps!</string>
+    <string name="share_bookmarks_email_body">Halló! \n \nMeðfylgjandi eru bókamerkin mín; endilega opnaðu þau í Arah forritinu. Ef þú ert ekki með það uppsett geturðu sótt það hér: https://github.com/ARAH-ORG/arah/ \n \nNjóttu ferðarinnar með Arah!</string>
     <string name="load_kmz_successful">Tókst að hlaða inn bókamerkjum! Þú getur skoðað þau á landakortinu eða í bókamerkjasafninu.</string>
-    <string name="my_position_share_sms">Skoðaðu núverandi staðsetninguna mína á CoMaps landakortinu! %1$s eða %2$s Ertu ekki með ónettengd kort? Sæktu þau hér: https://www.comaps.app/download/</string>
-    <string name="my_position_share_email_subject">Hæ, skoðaðu núverandi staðsetninguna mína á CoMaps landakortinu!</string>
+    <string name="my_position_share_sms">Skoðaðu núverandi staðsetninguna mína á Arah landakortinu! %1$s eða %2$s Ertu ekki með ónettengd kort? Sæktu þau hér: https://github.com/ARAH-ORG/arah/</string>
+    <string name="my_position_share_email_subject">Hæ, skoðaðu núverandi staðsetninguna mína á Arah landakortinu!</string>
     <string name="pref_use_google_play">Ákvarðaðu í skyndi staðsetninguna þína með Bluetooth, WiFi eða farsímaneti</string>
     <string name="mobile_data_description">Farsímagagnatenging er nauðsynleg fyrir tilkynningar um uppfærslur á korti og til að senda inn breytingar.</string>
     <string name="category_post">Póstur</string>
@@ -457,8 +457,8 @@
     <string name="app_tip_07">Forritið er hannað af nokkrum áhugasömum notendum og samfélaginu í kringum þá.</string>
     <string name="app_tip_08">Þú getur auðveldlega lagfært og bætt kortagögnin.</string>
     <string name="app_tip_09">Meginmarkmið okkar er að byggja hraðvirk og auðveld landakort sm þú kannt að meta og sem passa upp á persónuupplýsingar þínar.</string>
-    <string name="car_used_on_the_phone_screen">Þú ert núna að nota CoMaps á símaskjánum</string>
-    <string name="aa_request_permission_activity_text">CoMaps í Android Auto þarf heimildir fyrir staðsetningar til að virka eðlilega</string>
+    <string name="car_used_on_the_phone_screen">Þú ert núna að nota Arah á símaskjánum</string>
+    <string name="aa_request_permission_activity_text">Arah í Android Auto þarf heimildir fyrir staðsetningar til að virka eðlilega</string>
     <string name="routing_add_finish_point">Notaðu leit eða ýttu á kortið til að bæta við áfangastað</string>
     <string name="dialog_routing_disclaimer_title">Þegar ferðast er eftir leið, skaltu hafa eftirfarandi í huga:</string>
     <string name="dialog_routing_disclaimer_beware">Vertu vakandi og settu öryggið ofar öllu á vegum úti!</string>
@@ -490,7 +490,7 @@
     <string name="editor_other_info">Minnispunktur til sjálfboðaliða OpenStreetMap (valfrjálst)</string>
     <string name="editor_category_unsuitable_title">Finnurðu ekki hentugan flokk?</string>
     <string name="downloader_no_downloaded_maps_message">Sæktu landakort til að leita og rata um án nettengingar.</string>
-    <string name="editor_note_hint">Lýstu villum á kortinu eða atriðum sem ekki er hægt að breyta með CoMaps</string>
+    <string name="editor_note_hint">Lýstu villum á kortinu eða atriðum sem ekki er hægt að breyta með Arah</string>
     <string name="delete_place_empty_comment_error">Lýstu ástæðunni fyrir því að eyða staðnum</string>
     <string name="editor_share_to_all_dialog_message_1">Gakktu úr skugga um að þú hafir ekki sett inn nein einkagögn eða persónulegar upplýsingar.</string>
     <string name="editor_share_to_all_dialog_message_2">Ritstjórar OpenStreetMap munu yfirfara breytingarnar og hafa samband við þig ef þeir eru með spurningar.</string>
@@ -520,9 +520,9 @@
     <string name="app_tip_00">Takk fyrir að nota landakortin frá samfélaginu okkar!</string>
     <string name="app_tip_01">Með framlögum þínum og stuðningi getum við búið til bestu landakortin í heiminum!</string>
     <string name="app_tip_02">Líkar þér forritið okkar? Styrktu okkur til að styðja áframhaldandi þróun þess! Líkar þér ekki eitthvað? Láttu okkur vita og við munum laga það!</string>
-    <string name="car_used_on_the_car_screen">Þú ert núna að nota CoMaps á bílskjánum</string>
+    <string name="car_used_on_the_car_screen">Þú ert núna að nota Arah á bílskjánum</string>
     <string name="car_continue_in_the_car">Yfir á skjá bílsins</string>
-    <string name="aa_location_permissions_request">CoMaps þarf aðgang að staðsetningu. Við gott tækifæri, þegar það er öruggt, skaltu skoða tilkynninguna á símanum þínum.</string>
+    <string name="aa_location_permissions_request">Arah þarf aðgang að staðsetningu. Við gott tækifæri, þegar það er öruggt, skaltu skoða tilkynninguna á símanum þínum.</string>
     <string name="aa_request_permission_notification">Þetta forrit þarf heimild frá þér</string>
     <string name="pref_tts_open_system_settings">Kerfisstillingar talgervils</string>
     <string name="pref_tts_no_system_tts">Stillingar talgervils fundust ekki, ertu viss um að tækið þitt sé með stuðning við slíkt?</string>
@@ -538,17 +538,17 @@
     <string name="search_not_found_query">Sæktu kortið af því svæði sem þú ert að leita á eða prófaðu að bæta við nafni á nálægum bæ eða þorpi.</string>
     <string name="editor_focus_map_on_location">Dragðu kortið þannig að krossinn lendi á staðnum eða fyrirtækinu.</string>
     <string name="osm_presentation">OpenStreetMap-gögn gerð af þátttakendum eins og þau voru %s. Fræðstu betur um hvernig hægt sé að breyta og uppfæra landakortið á OpenStreetMap.org</string>
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) er samfélagsverkefni sem stefnir að uppbyggingu á frjálsu og opnu landakorti. Þetta er meginuppistaðan í CoMaps og virkar svipað og Wikipedia. Þú getur bætt við eð breytt stöðum, og verða þeir þá aðgengilegir milljónum notenda um víða veröld. \nTaktu þátt og hjálpaðu til við að gera betri landakort fyrir alla!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) er samfélagsverkefni sem stefnir að uppbyggingu á frjálsu og opnu landakorti. Þetta er meginuppistaðan í Arah og virkar svipað og Wikipedia. Þú getur bætt við eð breytt stöðum, og verða þeir þá aðgengilegir milljónum notenda um víða veröld. \nTaktu þátt og hjálpaðu til við að gera betri landakort fyrir alla!</string>
     <string name="editor_about_osm">Breytingarnar þínar eru sendar inn í opinbera <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a>-gagnagrunninn. Ekki bæta við neinum persónulegum upplýsingum eða upplýsingum með höfundarrétti.</string>
-    <string name="editor_category_unsuitable_text">CoMaps leyfir aðeins að bæta við flokkum eins-punkts staða, sem þýðir engin sveitarfélagamörk, vegir, vötn, útlínur bygginga o.s.frv. Bættu slíkum atriðum beint inn í <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Skoðaðu <a href="https://www.comaps.app/support/advanced-map-editing/">leiðbeiningarnar</a> okkar til að sjá hvernig það er gert, skref-fyrir-skref.</string>
+    <string name="editor_category_unsuitable_text">Arah leyfir aðeins að bæta við flokkum eins-punkts staða, sem þýðir engin sveitarfélagamörk, vegir, vötn, útlínur bygginga o.s.frv. Bættu slíkum atriðum beint inn í <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Skoðaðu <a href="https://github.com/ARAH-ORG/arah/">leiðbeiningarnar</a> okkar til að sjá hvernig það er gert, skref-fyrir-skref.</string>
     <string name="prefs_languages_information">Við notum TTS-talgervil kerfisins fyrir talaðar leiðbeiningar. Mörg Android-tæki nota TTS-kerfi Google, þú getur sótt það eða uppfært á Google Play (https://play.google.com/store/apps/details?id=com.google.android.tts)</string>
     <string name="prefs_languages_information_off">Fyrir sum tungumál þarftu að setja upp talgervil eða viðbótar-tungumálapakka úr hugbúnaðarsöfnum (Google Play, Galaxy Store, App Gallery, FDroid). \nOpnaðu stillingar tækisins þíns → Tungumál og innsláttur → Tal → Texti-í-tal úttak upplesturs. \nHér geturðu sýslað með stillingar fyrir talgervilinn (til dæmis sótt tungumálapakka til notkunar án nettengingar) og valið önnur texti-í-tal kerfi.</string>
-    <string name="dialog_error_storage_message">Ytra geymsluminnið er ekki aðgengilegt. SD-minniskortið gæti hafa verið fjarlægt, það skemmst eða að skráakerfið sé skrifvarið. Athugaðu SD-minniskortið þitt eða hafðu samband á support@comaps.app</string>
+    <string name="dialog_error_storage_message">Ytra geymsluminnið er ekki aðgengilegt. SD-minniskortið gæti hafa verið fjarlægt, það skemmst eða að skráakerfið sé skrifvarið. Athugaðu SD-minniskortið þitt eða hafðu samband á support@arah.invalid</string>
     <string name="enable_logging_warning_message">Virkjaðu þennan valkost tímabundið til að skrá og senda síðan handvirkt nákvæma greiningarskrá um vandamálið þitt með því að nota \"Tilkynna um villu\" í hjálparglugganum. Slíkar atvikaskrár geta innihaldið upplýsingar um staðsetningu.</string>
     <string name="error_no_file_manager_app">Mistókst að birta val á möppum þar sem ekkert hentugt forrit er uppsett á tækinu þínu. Settu upp skráastjóra og prófaðu svo aftur.</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="panoramax">Panoramax mynd</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="saved">Vistað</string>
 </resources>

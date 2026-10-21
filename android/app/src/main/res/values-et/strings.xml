@@ -34,7 +34,7 @@
     <string name="country_status_download_failed">Allalaadimine ei õnnestunud</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Proovi uuesti</string>
-    <string name="about_menu_title">CoMapsi teave</string>
+    <string name="about_menu_title">Arahi teave</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Privaatsuskeskne ja reklaamivaba</string>
     <!-- Text in About screen -->
@@ -45,7 +45,7 @@
     <string name="unsupported_phone">Rakendus vajab riistvaralist OpenGLi tuge. Kahjuks sinu nutiseade ei ole toetatud.</string>
     <string name="download">Laadi alla</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">CoMaps kasutamiseks palun ühenda USB kaabel lahti või sisesta mälukaart</string>
+    <string name="disconnect_usb_cable">Arah kasutamiseks palun ühenda USB kaabel lahti või sisesta mälukaart</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Rakenduse kasutamiseks palun vabasta kõigepealt piisavalt ruumi mälukaardil/USB salvestusseadmel</string>
     <string name="download_resources">Enne rakenduse kasutamise alustamist luba meil laadida seadmesse alla maailma üldkaart. \nSee kasutab %s mälumahtu.</string>
@@ -142,8 +142,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Märkmed</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Minu lemmikud CoMapsis</string>
-    <string name="share_bookmarks_email_body">Tere! \n\nManuses on minu lemmikud rakendusest CoMaps. Palun ava need kui Sul CoMaps on nutiseadmesse paigaldatud. Või kui ei ole, laadi rakendus alla oma iOSi või Androidi seadmesse, järgides seda linki: https://www.comaps.app/download/ \n \nNaudi reisimist CoMapsiga!</string>
+    <string name="share_bookmarks_email_subject">Minu lemmikud Arahis</string>
+    <string name="share_bookmarks_email_body">Tere! \n\nManuses on minu lemmikud rakendusest Arah. Palun ava need kui Sul Arah on nutiseadmesse paigaldatud. Või kui ei ole, laadi rakendus alla oma iOSi või Androidi seadmesse, järgides seda linki: https://github.com/ARAH-ORG/arah/ \n \nNaudi reisimist Arahiga!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Laadin lemmikuid</string>
     <!-- Kmz file successful loading -->
@@ -163,9 +163,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">Kaardi allalaadimine on hetkel pooleli</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">Hei, vaata minu praegust asukohta CoMapsi kaardil! %1$s või %2$s Võrguühenduseta kaardid puuduvad? Laadi siit: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">Hei, vaata minu praegust asukohta Arahi kaardil! %1$s või %2$s Võrguühenduseta kaardid puuduvad? Laadi siit: https://github.com/ARAH-ORG/arah/</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">Hei, vaata minu praegust asukohta CoMapsi kaardil!</string>
+    <string name="my_position_share_email_subject">Hei, vaata minu praegust asukohta Arahi kaardil!</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Jaga</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -188,7 +188,7 @@
     <string name="pref_zoom_summary">Kuva kaardil</string>
     <string name="prefs_group_advanced">Täiendavad seadistused</string>
     <string name="download_resources_custom_url_title">Sinu oma kaardiserver</string>
-    <string name="download_resources_custom_url_message">Kui tahad kasutada oma kaardiserverit, siis lisa ta siia. CoMapsi vaikimisi serveri kasutamiseks jäta tühjaks.</string>
+    <string name="download_resources_custom_url_message">Kui tahad kasutada oma kaardiserverit, siis lisa ta siia. Arahi vaikimisi serveri kasutamiseks jäta tühjaks.</string>
     <string name="download_resources_custom_url_summary_none">Pole määratud</string>
     <string name="download_resources_custom_url_error_scheme">Palun sisesta täismahuline võrguaadress, mille alguses on http:// või https://</string>
     <!-- Settings «Map» category: «Night style» title -->
@@ -237,7 +237,7 @@
     <!-- Button in the main menu -->
     <string name="donate">Anneta</string>
     <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Osale ühistöös CoMapsi täiendamisel</string>
+    <string name="how_to_support_us">Osale ühistöös Arahi täiendamisel</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Autoriõigused</string>
     <!-- Text in menu + Button in the main Help dialog -->
@@ -452,7 +452,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Kogukonna loodud OpenStreetMapi andmed seisuga %s. Lisateavet kaardi muutmise ja uuendamise kohta leiad OpenStreetMap.org saidist</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) on kogukonna projekt, mille eesmärk on luua tasuta ja avatud kaart. See on CoMapsi peamine kaardiandmete allikas ja toimib sarnaselt Vikipeediaga. Saad lisada või muuta kohti ja need muutuvad kättesaadavaks miljonitele kasutajatele üle kogu maailma.\nLiitu kogukonnaga ja aita luua kõigi jaoks paremat kaarti!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) on kogukonna projekt, mille eesmärk on luua tasuta ja avatud kaart. See on Arahi peamine kaardiandmete allikas ja toimib sarnaselt Vikipeediaga. Saad lisada või muuta kohti ja need muutuvad kättesaadavaks miljonitele kasutajatele üle kogu maailma.\nLiitu kogukonnaga ja aita luua kõigi jaoks paremat kaarti!</string>
     <string name="login_to_make_edits_visible">Loo OpenStreetMapi konto või logi sisse, et avaldada oma kaardimuudatused kogu maailmale</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d/%2$d</string>
@@ -466,7 +466,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Märkus OpenStreetMapi vabatahtlikele (valikuline)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Kirjelda kaardil olevaid vigu või objekte, mida ei saa CoMapsiga muuta</string>
+    <string name="editor_note_hint">Kirjelda kaardil olevaid vigu või objekte, mida ei saa Arahiga muuta</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Sinu muudatused laaditakse üles avalikku <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> andmebaasi. Palun ära lisa isiklikku või autoriõigusega kaitstud teavet.</string>
     <string name="editor_more_about_osm">Lisateave OpenStreetMapi kohta</string>
@@ -476,7 +476,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">Käitaja: %s</string>
     <string name="editor_category_unsuitable_title">Ei leia sobivat kategooriat?</string>
-    <string name="editor_category_unsuitable_text">CoMaps võimaldab lisada ainult lihtsaid huvipunkte, see tähendab, et ei mingeid linnu, teid, järvi, hoonete piirjooni jne. Palun lisa sellised kategooriad otse <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> saidis. Vaata meie <a href="https://www.comaps.app/support/advanced-map-editing/">juhendit</a> üksikasjalike samm-sammuliste juhiste saamiseks.</string>
+    <string name="editor_category_unsuitable_text">Arah võimaldab lisada ainult lihtsaid huvipunkte, see tähendab, et ei mingeid linnu, teid, järvi, hoonete piirjooni jne. Palun lisa sellised kategooriad otse <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> saidis. Vaata meie <a href="https://github.com/ARAH-ORG/arah/">juhendit</a> üksikasjalike samm-sammuliste juhiste saamiseks.</string>
     <string name="downloader_no_downloaded_maps_title">Sa ei ole kaarte alla laadinud</string>
     <string name="downloader_no_downloaded_maps_message">Laadi alla kaardid asukoha otsimiseks ja võrguühenduseta tee juhatamiseks</string>
     <string name="current_location_unknown_error_title">Praegune asukoht pole teada</string>
@@ -529,7 +529,7 @@
     <string name="mobile_data_option_ask">Küsi alati</string>
     <string name="traffic_update_maps_text">Liiklusinfo kuvamiseks palun uuenda kaardid</string>
     <string name="increase_font_size">Suurenda teksti suurust kaardil</string>
-    <string name="traffic_update_app">Palun uuenda CoMapsi rakendust</string>
+    <string name="traffic_update_app">Palun uuenda Arahi rakendust</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">Liiklusinfo ei ole saadaval</string>
     <string name="enable_logging">Lülita logimine sisse</string>
@@ -549,7 +549,7 @@
     <string name="placepage_remove_stop">Eemalda peatus</string>
     <string name="placepage_add_stop">Lisa peatus</string>
     <string name="dialog_error_storage_title">Probleem ligipääsul andmeruumile</string>
-    <string name="dialog_error_storage_message">Väline andmeruum pole juurdepääsetav. SD-kaart võib olla eemaldatud, kahjustatud või failisüsteem on kirjutuskaitstud. Palun kontrolli oma SD-kaarti või võta meiega ühendust aadressil support@comaps.app</string>
+    <string name="dialog_error_storage_message">Väline andmeruum pole juurdepääsetav. SD-kaart võib olla eemaldatud, kahjustatud või failisüsteem on kirjutuskaitstud. Palun kontrolli oma SD-kaarti või võta meiega ühendust aadressil support@arah.invalid</string>
     <string name="setting_emulate_bad_storage">Imiteeri vigast andmeruumi</string>
     <string name="error_enter_correct_name">Palun sisesta korrektne nimi</string>
     <string name="bookmark_lists">Lemmikute loendid</string>
@@ -735,9 +735,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">Meie põhieesmärk on luua kiireid, privaatsusele keskenduvaid ja hõlpsasti kasutatavaid kaarte, mis sulle meeldivad.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Nüüd kasutad telefoni ekraanil CoMapsi</string>
+    <string name="car_used_on_the_phone_screen">Nüüd kasutad telefoni ekraanil Arahi</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Nüüd kasutad auto ekraanil CoMapsi</string>
+    <string name="car_used_on_the_car_screen">Nüüd kasutad auto ekraanil Arahi</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Oled ühendatud Android Auto\'ga</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -745,11 +745,11 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Auto ekraanile</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">CoMaps vajab juurdepääsu asukohale. Kui see on turvaline, kontrolli oma telefonis olevat teadet.</string>
+    <string name="aa_location_permissions_request">Arah vajab juurdepääsu asukohale. Kui see on turvaline, kontrolli oma telefonis olevat teadet.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">See rakendus vajab sinu luba</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Android Auto liidestusega CoMaps vajavab tõhusaks tööks luba asukoha tuvastamiseks</string>
+    <string name="aa_request_permission_activity_text">Android Auto liidestusega Arah vajavab tõhusaks tööks luba asukoha tuvastamiseks</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Anna luba</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
@@ -806,13 +806,13 @@
     <string name="level_value_generic">Korrus: %s</string>
     <string name="menu">Menüü</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
-    <string name="translated_om_site_url">https://comaps.app/et/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <string name="about_developed_by_enthusiasts">Täielikult avatud lähtekoodiga, kasumit mittetaotlev, läbipaistva otsustusprotsessiga ning rahastamisega.</string>
-    <string name="app_site_url">https://comaps.app/et/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="error_enter_correct_fediverse_page">Sisesta korrektne Mastodoni kasutajanimi või veebiaadress</string>
     <string name="error_enter_correct_bluesky_page">Sisesta korrektne Bluesky kasutajanimi või veebiaadress</string>
     <string name="saved">Salvestatud</string>
@@ -901,7 +901,7 @@
     <string name="navigation_start_tts_message">"Alustan tee juhatamist, hääljuhiste keel: "</string>
     <string name="place_page_map_too_old_title">Kaardiandmed on aegunud</string>
     <string name="place_page_map_too_old_description">Sinu kasutatavad kaardiandmed on väga vanad. Palun uuenda andmeid.</string>
-    <string name="place_page_app_too_old_description">Sinu kasutatavad kaardiandmed on väga vanad. Palun uuenda CoMapsi rakendust.</string>
+    <string name="place_page_app_too_old_description">Sinu kasutatavad kaardiandmed on väga vanad. Palun uuenda Arahi rakendust.</string>
     <string name="place_page_update_too_old_map">Uuenda piirkonna kaardiandmeid</string>
     <string name="place_page_too_old_to_edit">Kuna kaardiandmed on liiga vanad, siis OpenStreetMapi muutmise võimalus on lülitatud välja.</string>
     <string name="navigation_start_tts_disabled_message">Hääljuhiste kasutamine on lülitatud välja: kõnesünteesimootorit pole saadaval</string>
@@ -923,7 +923,7 @@
     <string name="pref_alt_map_lang_handling">Alternatiivsed kaardikeeled</string>
     <string name="pref_alt_map_lang_handling_system_order">Kasuta süsteemi järjestuses</string>
     <string name="pref_openexternallinks_title">Ava kolmandate osapoolte lingid automaatselt</string>
-    <string name="pref_openexternallinks_summary">Ava Comapsis leiduvad kolmandate osapoolte lingid vaikimisi</string>
+    <string name="pref_openexternallinks_summary">Ava Arahis leiduvad kolmandate osapoolte lingid vaikimisi</string>
     <string name="bookmark_share_email_subject">Selle asukoha nägemiseks palun klõpsa %1$s linki või kopeeri need koordinaadid kaardile: %2$s .</string>
     <string name="my_position_share_email">Minu asukoha nägemiseks palun klõpsa %1$s linki või kopeeri need koordinaadid kaardile: %2$s .</string>
     <string name="destination">Sihtpunkt</string>
@@ -961,7 +961,7 @@
     <string name="prefs_group_power_summary">Ekraani väljalülitumine, mobiilne andmeside</string>
     <string name="capacity_disabled_yes">On eraldi parkimiskohti puuetega inimeste jaoks</string>
     <string name="capacity_charging">Laadijatega parkimiskohti: %s</string>
-    <string name="permission_read_navigation_label">CoMapsi teejuhatamise teabe ettelugemine</string>
+    <string name="permission_read_navigation_label">Arahi teejuhatamise teabe ettelugemine</string>
     <string name="permission_read_navigation_description">teejuhatamise teabe ettelugemine reaalajas, näiteks järgmised pöörded ja hetkel kasutusel tee nimi</string>
     <string name="planning_route_preview">Eelvaade</string>
     <string name="prefs_group_interface">Kasutajaliides</string>

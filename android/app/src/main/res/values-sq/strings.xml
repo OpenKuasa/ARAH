@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Sq:About_OpenStreetMap</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="wikimedia_commons">\"Wikimedia Commons\"</string>
     <string name="self_service">Vetëshërbim</string>
     <string name="panoramax">Fotografia Panoramax</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="kilometres">Kilometra</string>
     <string name="saved">U ruajt</string>
     <string name="about_proposition_3">• Jashtë linje, i shpejtë dhe kompakt</string>
@@ -70,7 +70,7 @@
     <string name="load_kmz_successful">Vendet e pëlqyera u ngarkuan me sukses! Mund t\'i gjeni ato në hartë ose te Të pëlqyerat.</string>
     <string name="edit">Redakto</string>
     <string name="unknown_current_position">Vendndodhja juaj nuk është caktuar akoma</string>
-    <string name="my_position_share_email_subject">Hej, shiko vendndodhjen time aktuale në hartën e CoMaps!</string>
+    <string name="my_position_share_email_subject">Hej, shiko vendndodhjen time aktuale në hartën e Arah!</string>
     <string name="email">Posta Elektronike</string>
     <string name="done">Përfundo</string>
     <string name="tracks_title">Itineraret</string>

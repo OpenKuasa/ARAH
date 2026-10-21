@@ -34,7 +34,7 @@
     <string name="country_status_download_failed">بارگیری ناکام بود</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">تلاش دوباره</string>
-    <string name="about_menu_title">درباره CoMaps</string>
+    <string name="about_menu_title">درباره Arah</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• بکارگیری آسان اود پیراسته</string>
     <!-- Text in About screen -->
@@ -433,7 +433,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">داده های OpenStreetMap ایجاد شده توسط انجمن از %s. درباره نحوه ویرایش و به روز رسانی نقشه در OpenStreetMap.org بیشتر بیاموزید</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) یک پروژه اجتماعی برای ساخت یک نقشه رایگان و باز است. این منبع اصلی داده های نقشه در CoMaps است و مشابه ویکی پدیا کار می کند. می توانید مکان ها را اضافه یا ویرایش کنید تا در دسترس میلیون ها کاربر در سراسر جهان قرار گیرند. \nبه انجمن بپیوندید و به ایجاد نقشه بهتر برای همه کمک کنید!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) یک پروژه اجتماعی برای ساخت یک نقشه رایگان و باز است. این منبع اصلی داده های نقشه در Arah است و مشابه ویکی پدیا کار می کند. می توانید مکان ها را اضافه یا ویرایش کنید تا در دسترس میلیون ها کاربر در سراسر جهان قرار گیرند. \nبه انجمن بپیوندید و به ایجاد نقشه بهتر برای همه کمک کنید!</string>
     <string name="login_to_make_edits_visible">یک حساب OpenStreetMap ایجاد کنید یا وارد شوید تا ویرایش های نقشه خود را در جهان منتشر کنید</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d از %2$d</string>
@@ -447,7 +447,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">توجه به داوطلبان OpenStreetMap (اختیاری)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">خطاهای موجود در نقشه یا مواردی که با استفاده از CoMaps قابل ویرایش نیستند را شرح دهید</string>
+    <string name="editor_note_hint">خطاهای موجود در نقشه یا مواردی که با استفاده از Arah قابل ویرایش نیستند را شرح دهید</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">ویرایش های شما در پایگاه داده عمومی <a href="https://wiki.openstreetmap.org/wiki/Fa:About_OpenStreetMap">OpenStreetMap</a> آپلود می شود. لطفا اطلاعات شخصی یا دارای حق چاپ را اضافه نکنید.</string>
     <string name="editor_more_about_osm">در مورد OpenStreetMap بیشتر بدانید</string>
@@ -457,7 +457,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">اپراتور: %s</string>
     <string name="editor_category_unsuitable_title">آیا نمی توانید یک دسته بندی مناسب پیدا کنید؟</string>
-    <string name="editor_category_unsuitable_text">CoMaps اجازه می دهد فقط دسته های نقطه ای ساده را اضافه کند، یعنی هیچ شهر، جاده، دریاچه، طرح کلی ساختمان و غیره وجود ندارد. لطفاً این دسته ها را مستقیماً به <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> اضافه کنید. برای دستورالعمل های گام به گام، <a href="https://www.comaps.app/support/advanced-map-editing/">راهنمای</a> ما را بررسی کنید.</string>
+    <string name="editor_category_unsuitable_text">Arah اجازه می دهد فقط دسته های نقطه ای ساده را اضافه کند، یعنی هیچ شهر، جاده، دریاچه، طرح کلی ساختمان و غیره وجود ندارد. لطفاً این دسته ها را مستقیماً به <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> اضافه کنید. برای دستورالعمل های گام به گام، <a href="https://github.com/ARAH-ORG/arah/">راهنمای</a> ما را بررسی کنید.</string>
     <string name="downloader_no_downloaded_maps_title">شما هیچ نقشه دانلود شده ای ندارید</string>
     <string name="downloader_no_downloaded_maps_message">برای جست وجو یک مکان و استفاده از قابلیت ناوبری، نقشه‌ها را دانلود کنید</string>
     <string name="current_location_unknown_error_title">مکان فعلیتان ناشناس است</string>
@@ -503,7 +503,7 @@
     <string name="mobile_data_option_ask">همیشه بپرس</string>
     <string name="traffic_update_maps_text">برای نمایش ترافیک، نقشه می بایستی بروزرسانی شود</string>
     <string name="increase_font_size">افزایش اندازه متن بر روی نقشه</string>
-    <string name="traffic_update_app">لطفا CoMaps را بروزرسانی کنید</string>
+    <string name="traffic_update_app">لطفا Arah را بروزرسانی کنید</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">اطلاعات ترافیکی موجود نیست</string>
     <string name="enable_logging">ورود به سیستم را فعال کنید</string>
@@ -523,7 +523,7 @@
     <string name="placepage_remove_stop">توقف را بستردانید</string>
     <string name="placepage_add_stop">افزودن توقف</string>
     <string name="dialog_error_storage_title">مشکل دسترسی به ذخیره‌سازی</string>
-    <string name="dialog_error_storage_message">ذخیره سازی خارجی در دسترس نیست کارت SD ممکن است برداشته شده باشد، آسیب دیده باشد یا سیستم فایل فقط خواندنی باشد. لطفا کارت SD خود را بررسی کنید یا با ما در support@comaps.app تماس بگیرید</string>
+    <string name="dialog_error_storage_message">ذخیره سازی خارجی در دسترس نیست کارت SD ممکن است برداشته شده باشد، آسیب دیده باشد یا سیستم فایل فقط خواندنی باشد. لطفا کارت SD خود را بررسی کنید یا با ما در support@arah.invalid تماس بگیرید</string>
     <string name="setting_emulate_bad_storage">شبیه سازی ذخیره سازی بد</string>
     <string name="error_enter_correct_name">لطفا نام صحیح را وارد کنید</string>
     <string name="bookmark_lists">سیاهه‌های دلخواه</string>
@@ -585,7 +585,7 @@
     <string name="power_managment_setting_never">هرگز</string>
     <string name="power_managment_setting_auto">خودکار</string>
     <string name="power_managment_setting_manual_max">حداکثر ذخیره انرژی</string>
-    <string name="enable_logging_warning_message">این گزینه ثبت گزارش را برای اهداف تشخیصی فعال می‌کند. برای کارکنان بخش پشتیبانی که مشکلات برنامه را عیب یابی می‌کنند، مفید باشد. این گزینه را تنها در صورت درخواست پشتیبانی CoMaps فعال کنید.</string>
+    <string name="enable_logging_warning_message">این گزینه ثبت گزارش را برای اهداف تشخیصی فعال می‌کند. برای کارکنان بخش پشتیبانی که مشکلات برنامه را عیب یابی می‌کنند، مفید باشد. این گزینه را تنها در صورت درخواست پشتیبانی Arah فعال کنید.</string>
     <string name="routing_options_title">گزینه‌های رانندگی</string>
     <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
     <string name="avoid_tolls">از جاده های عوارضی خودداری کنید</string>
@@ -697,9 +697,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">هدف اصلی ما ساختن نقشه هایی سریع، متمرکز بر حریم خصوصی و با کاربری آسان است که شما عاشق آن خواهید شد.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">اکنون در حال استفاده از CoMaps در صفحه گوشی هستید</string>
+    <string name="car_used_on_the_phone_screen">اکنون در حال استفاده از Arah در صفحه گوشی هستید</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">اکنون از CoMaps در صفحه ماشین استفاده می کنید</string>
+    <string name="car_used_on_the_car_screen">اکنون از Arah در صفحه ماشین استفاده می کنید</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">شما به Android Auto متصل هستید</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -707,11 +707,11 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">به صفحه ماشین</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">CoMaps به دسترسی به مکان نیاز دارد. وقتی ایمن است، اعلان گوشی خود را بررسی کنید.</string>
+    <string name="aa_location_permissions_request">Arah به دسترسی به مکان نیاز دارد. وقتی ایمن است، اعلان گوشی خود را بررسی کنید.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">این برنامه به اجازه شما نیاز دارد</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">CoMaps در Android Auto برای کارکرد مؤثر به مجوز مکان نیاز دارد</string>
+    <string name="aa_request_permission_activity_text">Arah در Android Auto برای کارکرد مؤثر به مجوز مکان نیاز دارد</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">اعطای مجوزها</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
@@ -762,13 +762,13 @@
     <string name="uri_open_location_failed">هیچ برنامه ای نصب نشده است که بتواند مکان را باز کند</string>
     <!-- preference string for using auto theme only in navigation mode -->
     <string name="nav_auto">خودکار در ناوبری</string>
-    <string name="telegram_url">https://t.me/CoMapsApp</string>
-    <string name="translated_om_site_url">https://comaps.app</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah</string>
     <string name="wikimedia_commons">ویکی‌انبار</string>
     <string name="panoramax">تصویر Panoramax</string>
-    <string name="app_site_url">https://comaps.app</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah</string>
     <string name="saved">ذخیره شد</string>
     <string name="about_headline">پروژه‌ای باز نیرو گرفته از انجمن</string>
     <string name="pedestrian">پیاده</string>
@@ -776,7 +776,7 @@
     <string name="backup_interval_every_week">هفتگی</string>
     <string name="backup_interval_manual_only">خاموش (تنها به شیوه دستی)</string>
     <string name="backup_interval_every_day">روزانه</string>
-    <string name="disconnect_usb_cable">برای بکارگیری CoMaps، لطفا USB را بگسلانید یا کارت‌ویر را اندرون گذارید.</string>
+    <string name="disconnect_usb_cable">برای بکارگیری Arah، لطفا USB را بگسلانید یا کارت‌ویر را اندرون گذارید.</string>
     <string name="bookmark_set_name">نام پهرست نشانگ‌ها</string>
     <string name="share_track">همرسانی راه</string>
     <string name="about_help">درباره اود یاری</string>

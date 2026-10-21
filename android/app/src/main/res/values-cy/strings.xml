@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="back">Nôl</string>
     <string name="delete">Dileu</string>
     <string name="download_maps">Lawrlwytho Mapiau</string>
@@ -21,7 +21,7 @@
     <string name="editor_operator">Gweithredwr</string>
     <string name="power_managment_setting_never">Byth</string>
     <string name="sort">Trefnu…</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="placepage_distance">Pellter</string>
     <string name="show">Dangos</string>
     <string name="decline">Gwrthod</string>
@@ -32,7 +32,7 @@
     <string name="subway">Tanlwybr</string>
     <string name="downloader_retry">Ailgeisio</string>
     <string name="button_plan">Cynllunio</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="list">Rhestr</string>
     <string name="settings">Gosodiadau</string>
     <string name="category_food">Bwyd</string>
@@ -147,8 +147,8 @@
     <string name="elevation_profile_distance">Pell.:</string>
     <string name="elevation_profile_time">Amser:</string>
     <string name="downloader_loading_ios">Wrthi\'n lawrlwytho</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <string name="volume">Sain</string>
     <string name="drive_through">Gyrru trwodd</string>
@@ -160,7 +160,7 @@
     <string name="elevation_profile_descent">Disgyniad</string>
     <string name="yes_available">Ie</string>
     <string name="try_again">Ceisio Eto</string>
-    <string name="about_menu_title">CoMaps</string>
+    <string name="about_menu_title">Arah</string>
     <string name="location_settings">Gosodiadau Lleoliad</string>
     <string name="maps_storage_downloaded">Mapiau wedi\'u lawrlwytho</string>
     <string name="move_maps">Symud mapiau?</string>
@@ -309,5 +309,5 @@
     <string name="move_maps_error">Gwall wrth symud ffeiliau map</string>
     <string name="wait_several_minutes">Gall hyn gymryd ychydig funudau. \nArhoswch…</string>
     <string name="measurement_units_summary">Dewis rhwng milltiroedd a chilomedrau</string>
-    <string name="share_bookmarks_email_subject">Fy Ffefrynnau CoMaps</string>
+    <string name="share_bookmarks_email_subject">Fy Ffefrynnau Arah</string>
 </resources>

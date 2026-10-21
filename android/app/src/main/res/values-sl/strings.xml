@@ -17,7 +17,7 @@
     <string name="zoom_to_country">Pokaži na zemljevidu</string>
     <string name="country_status_download_failed">Prenos ni uspel</string>
     <string name="try_again">Poskusi ponovno</string>
-    <string name="about_menu_title">O programu CoMaps</string>
+    <string name="about_menu_title">O programu Arah</string>
     <string name="about_headline">Odprt projekt, ki ga vzdržuje skupnost</string>
     <string name="about_proposition_1">• Enostaven za uporabo in domišljen</string>
     <string name="about_proposition_2">• Osredotočen na zasebnost in brez oglasov</string>
@@ -30,8 +30,8 @@
     <string name="dialog_routing_location_turn_on">Omogoči zaznavanje položaja</string>
     <string name="download_over_mobile_message">To je lahko precej drago z nekaterimi mobilnimi naročninami ali če gostujete v tujem mobilnem omrežju.</string>
     <string name="error_enter_correct_house_number">Vnesite veljavno številko stavbe</string>
-    <string name="app_site_url">https://comaps.app/sl/</string>
-    <string name="disconnect_usb_cable">Pred uporabo CoMaps iztaknite kabel USB ali vstavite spominsko kartico</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="disconnect_usb_cable">Pred uporabo Arah iztaknite kabel USB ali vstavite spominsko kartico</string>
     <string name="not_enough_free_space_on_sdcard">Pred uporabo aplikacije najprej sprostite nekaj prostora na SD kartici/USB shrambi</string>
     <string name="download_resources">Preden začnete uporabljati aplikacijo, najprej prenesite pregledni zemljevid sveta na svojo napravo. \nZemljevid bo porabil %s prostora.</string>
     <string name="download_resources_continue">Na zemljevid</string>
@@ -80,8 +80,8 @@
     <string name="category_water">Voda</string>
     <string name="category_rv">Prostori za avtodome</string>
     <string name="description">Pripis</string>
-    <string name="share_bookmarks_email_subject">Moji zaznamki CoMaps</string>
-    <string name="share_bookmarks_email_body">Živjo! \n \nV priponki so moji zaznamki. Prosim, odpri jih v orodju CoMaps. Če ga še nisi namestil, ga lahko preneseš tukaj: https://www.comaps.app/download/ \n \nUživaj v potovanju s CoMaps!</string>
+    <string name="share_bookmarks_email_subject">Moji zaznamki Arah</string>
+    <string name="share_bookmarks_email_body">Živjo! \n \nV priponki so moji zaznamki. Prosim, odpri jih v orodju Arah. Če ga še nisi namestil, ga lahko preneseš tukaj: https://github.com/ARAH-ORG/arah/ \n \nUživaj v potovanju s Arah!</string>
     <string name="load_kmz_title">Nalaganje zaznamkov</string>
     <string name="load_kmz_successful">Zaznamki so uspešno naloženi! Najdete jih lahko na zemljevidu ali v upravitelju Zaznamkov.</string>
     <string name="load_kmz_failed">Zaznamkov ni bilo mogoče naložiti. Datoteka je morda okvarjena.</string>
@@ -92,8 +92,8 @@
     <string name="cant_change_this_setting">Žal so nastavitve shranjevanja zemljevidov trenutno onemogočene</string>
     <string name="downloading_is_active">Poteka prenašanje zemljevida</string>
     <string name="bookmarks_and_tracks">Zaznamki</string>
-    <string name="my_position_share_sms">Oglej si moj trenutni položaj na CoMaps! %1$s ali %2$s Nimaš zemljevidov brez povezave? Prenesi jih tukaj: https://www.comaps.app/download/</string>
-    <string name="my_position_share_email_subject">Živjo, poglej si moj trenutni položaj na zemljevidu CoMaps!</string>
+    <string name="my_position_share_sms">Oglej si moj trenutni položaj na Arah! %1$s ali %2$s Nimaš zemljevidov brez povezave? Prenesi jih tukaj: https://github.com/ARAH-ORG/arah/</string>
+    <string name="my_position_share_email_subject">Živjo, poglej si moj trenutni položaj na zemljevidu Arah!</string>
     <string name="share">Deli</string>
     <string name="email">E-pošta</string>
     <string name="copied_to_clipboard">Kopirano na odložišče: %s</string>
@@ -108,7 +108,7 @@
     <string name="pref_zoom_summary">Prikaži na zemljevidu</string>
     <string name="prefs_group_advanced">Napredno</string>
     <string name="download_resources_custom_url_title">Strežnik zemljevida po meri</string>
-    <string name="download_resources_custom_url_message">Prepiše privzeti strežnik za prenos zemljevidov, ki se uporablja za prenos zemljevidov. Pustite prazno, če želite uporabiti privzeti strežnik CoMaps.</string>
+    <string name="download_resources_custom_url_message">Prepiše privzeti strežnik za prenos zemljevidov, ki se uporablja za prenos zemljevidov. Pustite prazno, če želite uporabiti privzeti strežnik Arah.</string>
     <string name="download_resources_custom_url_summary_none">Ni nastavljeno</string>
     <string name="download_resources_custom_url_error_scheme">Vnesite polni URL, ki se začne z http:// ali https://</string>
     <string name="pref_map_style_title">Nočni način</string>
@@ -137,7 +137,7 @@
     <string name="help">Pomoč</string>
     <string name="faq">Pogosta vprašanja</string>
     <string name="donate">Daruj</string>
-    <string name="how_to_support_us">Prispevajte in izboljšajte CoMaps</string>
+    <string name="how_to_support_us">Prispevajte in izboljšajte Arah</string>
     <string name="copyright">Avtorske pravice</string>
     <string name="report_a_bug">Prijavite napako</string>
     <string name="compass_calibration_recommended">Če usmeritev puščic ni dovolj dobra, lahko umerite kompas na napravi tako, da jo premikate v obliki osmice.</string>
@@ -294,7 +294,7 @@
     <string name="editor_report_problem_other_title">Druga težava</string>
     <string name="message_invalid_feature_position">Tukaj ni mogoče postaviti objekta</string>
     <string name="osm_presentation">Javno ustvarjeni podatki OpenStreetMap z dne %s. Več o urejanju in posodabljanju zemljevida izveste na OpenStreetMap.org</string>
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) je projekt splošne javnosti za izdelavo brezplačnega in odprtega zemljevida. Je glavni vir zemljepisnih podatkov v CoMaps in deluje na podoben način kot Wikipedija. Lahko dodajate in urejate kraje, ti pa bodo potem na voljo milijonom ljudi povsem svetu. \nPridružite se skupnosti in pomagajte izboljšati zemljevid za vse!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) je projekt splošne javnosti za izdelavo brezplačnega in odprtega zemljevida. Je glavni vir zemljepisnih podatkov v Arah in deluje na podoben način kot Wikipedija. Lahko dodajate in urejate kraje, ti pa bodo potem na voljo milijonom ljudi povsem svetu. \nPridružite se skupnosti in pomagajte izboljšati zemljevid za vse!</string>
     <string name="login_to_make_edits_visible">Ustvarite račun OpenStreetMap ali pa se prijavite, da priobčite svoja urejanja na zemljevidu</string>
     <string name="downloader_of">%1$d od %2$d</string>
     <string name="download_over_mobile_header">Naj prenesem prek povezave mobilnega omrežja?</string>
@@ -303,7 +303,7 @@
     <string name="editor_zip_code">Poštna številka</string>
     <string name="error_enter_correct_zip_code">Vnesite veljavno poštno številko</string>
     <string name="editor_other_info">Komentar za prostovoljce na OpenStreetMap (neobvezno)</string>
-    <string name="editor_note_hint">Opišite napake na zemljevidu ali stvari, ki jih ni mogoče urediti prek CoMaps</string>
+    <string name="editor_note_hint">Opišite napake na zemljevidu ali stvari, ki jih ni mogoče urediti prek Arah</string>
     <string name="editor_about_osm">Vaša urejanja se naložijo v javno podatkovno bazo <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a>. Ne dodajajte osebnih ali avtorsko zaščitenih podatkov.</string>
     <string name="editor_more_about_osm">Več o OpenStreetMap</string>
     <string name="editor_osm_history">Vaša zgodovina urejanja</string>
@@ -311,7 +311,7 @@
     <string name="operator">Izvajalec: %s</string>
     <string name="editor_operator">Izvajalec</string>
     <string name="editor_category_unsuitable_title">Ne najdete primerne kategorije?</string>
-    <string name="editor_category_unsuitable_text">CoMaps omogoča zgolj dodajanje preprostih točkovnih kategorij, ne pa mest, cest, jezer, obrisov stavb itd. Tovrstne kategorije dodajte neposredno na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Natančna navodila si preberite v <a href="https://www.comaps.app/support/advanced-map-editing/">vodiču</a>.</string>
+    <string name="editor_category_unsuitable_text">Arah omogoča zgolj dodajanje preprostih točkovnih kategorij, ne pa mest, cest, jezer, obrisov stavb itd. Tovrstne kategorije dodajte neposredno na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Natančna navodila si preberite v <a href="https://github.com/ARAH-ORG/arah/">vodiču</a>.</string>
     <string name="downloader_no_downloaded_maps_title">Prenesli niste nobenih zemljevidov</string>
     <string name="downloader_no_downloaded_maps_message">Prenesite zemljevide, da jih lahko uporabite tudi brez spletne povezave</string>
     <string name="current_location_unknown_error_title">Trenutni položaj ni znan</string>
@@ -361,7 +361,7 @@
     <string name="mobile_data_option_ask">Vedno vprašaj</string>
     <string name="traffic_update_maps_text">Za prikazovanje podatkov o prometu je treba posodobiti zemljevide</string>
     <string name="increase_font_size">Povečaj velikost oznak na zemljevidu</string>
-    <string name="traffic_update_app">Posodobite CoMaps</string>
+    <string name="traffic_update_app">Posodobite Arah</string>
     <string name="traffic_data_unavailable">Prometni podatki niso na voljo</string>
     <string name="enable_logging">Omogoči dnevniške zapise</string>
     <string name="feedback_general">Splošne povratne informacije</string>
@@ -377,7 +377,7 @@
     <string name="placepage_add_stop">Dodaj postanek</string>
     <string name="saved">Shranjeno</string>
     <string name="dialog_error_storage_title">Težava z dostopom do pomnilnika</string>
-    <string name="dialog_error_storage_message">Zunanja shramba ni dostopna. SD kartica je bila morda odstranjena, je poškodovana ali pa datotečni sistem ne podpira zapisovanja. Preverite svojo SD kartico ali stopite v stik z nami prek support@comaps.app</string>
+    <string name="dialog_error_storage_message">Zunanja shramba ni dostopna. SD kartica je bila morda odstranjena, je poškodovana ali pa datotečni sistem ne podpira zapisovanja. Preverite svojo SD kartico ali stopite v stik z nami prek support@arah.invalid</string>
     <string name="setting_emulate_bad_storage">Emuliraj pokvarjeno shrambo</string>
     <string name="error_enter_correct_name">Vnesite pravilno ime</string>
     <string name="bookmark_lists">Seznam zaznamkov</string>
@@ -514,9 +514,9 @@
     <string name="enable_show_on_lock_screen_description">Kadar je to omogočeno, bo orodje delovalo na zaslonu tudi, ko bo naprava zaklenjena.</string>
     <string name="change_map_locale">Jezik zemljevida</string>
     <string name="splash_subtitle">Kartografski podatki OpenStreetMap</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <string name="app_tip_00">Hvala, ker uporabljate naše javno narejene zemljevide!</string>
     <string name="app_tip_01">Z vašo podporo lahko ustvarimo najboljše zemljevide na svetu!</string>
@@ -528,7 +528,7 @@
     <string name="app_tip_07">Našo aplikacijo razvija nekaj zanesenjakov in skupnost.</string>
     <string name="app_tip_08">Enostavno lahko popravite in izboljšate kartografske podatke.</string>
     <string name="app_tip_09">Naš cilj je ustvariti učinkovite in enostavne zemljevide, ki spoštujejo zasebnost in vam koristijo.</string>
-    <string name="car_used_on_the_phone_screen">CoMaps zdaj uporabljate na zaslonu telefona</string>
+    <string name="car_used_on_the_phone_screen">Arah zdaj uporabljate na zaslonu telefona</string>
     <string name="error_invalid_number">Neveljavno število</string>
     <string name="offline_explanation_title">Zemljevidi brez povezave</string>
     <string name="offline_explanation_text">Zemljevid morate prenesti, da siga lahko ogledujete in se po njem usmerjate.\nPrenesite zemljevide za območja, kjer nameravate potovati.</string>
@@ -538,15 +538,15 @@
     <string name="prefs_languages_information_off">Za nekatere jezike boste morali namestiti sintetizator govora ali dodatni jezikovni paket iz trgovine z orodji (Google Play, Galaxy Store, App Gallery, FDroid).\nOdprite nastavitve naprave → Jezik in vnos → Govor → Izhod besedila v govor.\nTukaj lahko upravljate nastavitve za sintezo govora (na primer prenesete jezikovni paket za uporabo brez povezave) in izberete drug gonilnik za pretvorbo besedila v govor.</string>
     <string name="category_desc_more">… več</string>
     <string name="avoid_steps">Izogni se stopnicam</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
-    <string name="car_used_on_the_car_screen">Trenutno uporabljate CoMaps na zaslonu vozila</string>
+    <string name="car_used_on_the_car_screen">Trenutno uporabljate Arah na zaslonu vozila</string>
     <string name="aa_connected_title">Trenutno ste povezani z Android Auto</string>
     <string name="car_continue_on_the_phone">Nadaljuj na telefonu</string>
     <string name="car_continue_in_the_car">Na zaslon vozila</string>
-    <string name="aa_location_permissions_request">CoMaps potrebuje dostop do trenutnega položaja. Ko bo varno, preverite obvestila na vašem telefonu.</string>
+    <string name="aa_location_permissions_request">Arah potrebuje dostop do trenutnega položaja. Ko bo varno, preverite obvestila na vašem telefonu.</string>
     <string name="aa_request_permission_notification">To orodje potrebuje vaše dovoljenje</string>
-    <string name="aa_request_permission_activity_text">CoMaps v Android Auto za učinkovito delovanje potrebuje položajna dovoljenja</string>
+    <string name="aa_request_permission_activity_text">Arah v Android Auto za učinkovito delovanje potrebuje položajna dovoljenja</string>
     <string name="aa_grant_permissions">Podeli dovoljenja</string>
     <string name="button_layer_outdoor">Na prostem</string>
     <string name="browser_not_available">Spletni brskalnik ni na voljo</string>
@@ -644,7 +644,7 @@
     <string name="editor_submit">Potrdi</string>
     <string name="place_page_map_too_old_title">Podatki zemljevida so zastareli</string>
     <string name="place_page_map_too_old_description">Vaši trenutni podatki zemljevida so zelo stari, posodobite zemljevid.</string>
-    <string name="place_page_app_too_old_description">Vaši trenutni podatki zemljevida so zelo stari, posodobite orodje CoMaps.</string>
+    <string name="place_page_app_too_old_description">Vaši trenutni podatki zemljevida so zelo stari, posodobite orodje Arah.</string>
     <string name="place_page_update_too_old_map">Posodobi področje zemljevida</string>
     <string name="place_page_too_old_to_edit">Urejanje OpenStreetMap je onemogočeno, ker so podatki zemljevida prestari.</string>
     <string name="prefs_speed_cameras_information">Opozorila o merilnikih hitrosti so onemogočena v državah, kjer so prepovedana s tamkajšnjimi zakoni.</string>
@@ -672,7 +672,7 @@
     <string name="pref_alt_map_lang_handling_system_order">Uporabi v sistemskem vrstnem redu</string>
     <string name="pref_alt_map_lang_handling_local_only">Uporabljaj prednostno in samo kjer so domači</string>
     <string name="pref_openexternallinks_title">Samodejno odpri zunanje povezave</string>
-    <string name="pref_openexternallinks_summary">Privzeto odpre zunanje povezave v CoMaps</string>
+    <string name="pref_openexternallinks_summary">Privzeto odpre zunanje povezave v Arah</string>
     <string name="bookmark_share_email_subject">Odpri povezavo %1$s ali vnesi koordinate %2$s v svoji aplikaciji z zemljevidi za ogled te lokacije.</string>
     <string name="my_position_share_email">Odpri povezavo %1$s ali vnesi koordinate %2$s v svoji aplikaciji z zemljevidi za ogled moje lokacije.</string>
     <string name="population">Prebivalcev: %s</string>
@@ -710,7 +710,7 @@
     <string name="capacity_charging">Mesa za polnjenje: %s</string>
     <string name="capacity_charging_yes">Ima mesta za polnjenje</string>
     <string name="capacity_charging_no">Nima mest za polnjenje</string>
-    <string name="permission_read_navigation_label">Branje CoMaps navigacijskih podatkov</string>
+    <string name="permission_read_navigation_label">Branje Arah navigacijskih podatkov</string>
     <string name="permission_read_navigation_description">branje trenutnih navigacijskih podatkov, kot so prihodnji zavoji ali ime trenutne ulice</string>
     <string name="prefs_group_map_appearance">Izgled zemljevida</string>
     <string name="prefs_group_map_appearance_summary">Jezik zemljevida, velikost napisov, 2D/3D stavbe</string>

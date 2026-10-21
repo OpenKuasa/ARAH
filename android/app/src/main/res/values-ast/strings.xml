@@ -33,7 +33,7 @@
     <string name="no">Non</string>
     <string name="network">Rede: %s</string>
     <string name="export_file_gpx">Esportar GPX</string>
-    <string name="about_menu_title">Tocante a CoMaps</string>
+    <string name="about_menu_title">Tocante a Arah</string>
     <string name="search_show_on_map">Ver nel mapa</string>
     <string name="downloader_delete_map">Desaniciar mapa</string>
     <string name="edit">Editar</string>
@@ -66,7 +66,7 @@
     <string name="editor_edit_place_name_hint">Nome del llugar</string>
     <string name="current_location_unknown_error_title">Desconózse l’allugamientu actual.</string>
     <string name="elevation_profile_ascent">Ascensu</string>
-    <string name="traffic_update_app">Anueva CoMaps</string>
+    <string name="traffic_update_app">Anueva Arah</string>
     <string name="placepage_add_stop">Amestar parada</string>
     <string name="placepage_remove_stop">Desaniciar parada</string>
     <string name="prefs_group_privacy">Privacidá</string>
@@ -153,14 +153,14 @@
     <string name="choose_street">Escueyi una cai</string>
     <string name="select_option">Esbilla una opción</string>
     <string name="choose_color">Escueyi un color</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="wikimedia_commons">Wikimedia Commons</string>
     <string name="panoramax">Panoramax Foto</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="saved">Archivos</string>
     <string name="about_proposition_3">• Offline, rápidu y compactu</string>
     <string name="back">Atrás</string>

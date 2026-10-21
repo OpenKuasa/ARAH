@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_site_url">https://comaps.app/gsw/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="back">Zrugg</string>
     <string name="cancel">Abbräche</string>
     <string name="delete">Lösche</string>
@@ -18,7 +18,7 @@
     <string name="zoom_to_country">Uf de Charte azeige</string>
     <string name="country_status_download_failed">Abelade fehlgschlage</string>
     <string name="try_again">Nomal versueche</string>
-    <string name="about_menu_title">Über CoMaps</string>
+    <string name="about_menu_title">Über Arah</string>
     <string name="about_headline">Offnigs Projekt, vo de Gmeinschaft entwicklet</string>
     <string name="about_proposition_1">• Uusgriift und eifach z bediene</string>
     <string name="about_proposition_2">• Dateschutzorientiert und werbefrei</string>
@@ -29,7 +29,7 @@
     <string name="dialog_routing_change_start_or_end">Bitte pass din Startpunkt oder dis Ziil a.</string>
     <string name="daily">Täglich</string>
     <string name="autodownload">Charte automatisch abelade</string>
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) isch es Gmeinschaftsprojekt zum Erstelle vonere freie und offene Charte. Es isch d Hauptquelle für Chartedate in CoMaps und funktioniert ähnlich wie Wikipedia. Du chasch Ort hinzuefüege oder bearbeite, wo denn Millione vo Nutzende uf de ganze Welt zur Verfüegig stönd. \nTritt de Gmeinschaft bii und hilf mit, d Charte für alli besser z mache!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) isch es Gmeinschaftsprojekt zum Erstelle vonere freie und offene Charte. Es isch d Hauptquelle für Chartedate in Arah und funktioniert ähnlich wie Wikipedia. Du chasch Ort hinzuefüege oder bearbeite, wo denn Millione vo Nutzende uf de ganze Welt zur Verfüegig stönd. \nTritt de Gmeinschaft bii und hilf mit, d Charte für alli besser z mache!</string>
     <string name="editor_building_levels">Etage (inkl. Erdgschoss, ohni Dach)</string>
     <string name="error_enter_correct_storey_number">S Gebäude cha nöd meh als %d Etage ha</string>
     <string name="editor_osm_history">Din Bearbeitigsverlauf</string>
@@ -43,7 +43,7 @@
     <string name="learn_more">Wiiteri Informatione</string>
     <string name="routing_add_finish_point">Nutz d Suechi oder tipp uf d Charte, zum en Ziilpunkt hinzuezfüege</string>
     <string name="placepage_add_stop">Stopp hinzuefüege</string>
-    <string name="dialog_error_storage_message">De externi Speicher isch nöd verfüegbar, eventuell isch d SD-Charte entfernt worde oder sie isch beschädigt oder s Dateisystem isch schriibgschützt. Überprüef das bitte oder kontaktier eus under support@comaps.app</string>
+    <string name="dialog_error_storage_message">De externi Speicher isch nöd verfüegbar, eventuell isch d SD-Charte entfernt worde oder sie isch beschädigt oder s Dateisystem isch schriibgschützt. Überprüef das bitte oder kontaktier eus under support@arah.invalid</string>
     <string name="bookmarks_error_title_list_name_already_taken">De Name isch scho vergeh</string>
     <string name="define_to_avoid_btn">Routeoptione iistelle</string>
     <string name="no">Nei</string>
@@ -89,7 +89,7 @@
     <string name="app_tip_04">Tipp irgendwo uf d Charte, zum öppis uuszwähle. Tipp lang, zum d Oberflächi uus- und wieder iizblende.</string>
     <string name="app_tip_06">Du chasch debi helfe, eusi App i dini Spraach z übersetze.</string>
     <string name="app_tip_09">Euses Hauptziel ischs, schnelli, dateschutzorientierti und benutzerfründlichi Charte z erstelle, wo du wirsch liebe.</string>
-    <string name="aa_location_permissions_request">CoMaps bruucht Zuegriff uf de Standort. Wenns sicher isch, prüef d Benachrichtigung uf dim Telefon.</string>
+    <string name="aa_location_permissions_request">Arah bruucht Zuegriff uf de Standort. Wenns sicher isch, prüef d Benachrichtigung uf dim Telefon.</string>
     <string name="pref_tts_no_system_tts">D Iistellige für d Sprachsynthese sind nöd gfunde worde. Bisch du sicher, dass dis Grät sie unterstützt?</string>
     <string name="error_no_file_manager_app">S Dialogfeld zur Ordneruuswahl cha nöd aazeigt werde, will kei geigneti App uf dim Grät installiert isch. Bitte installier e Dateimanager-App und versuechs nomal.</string>
     <string name="pref_backup_now_summary_ok">Sicherig erfolgriich abgschlosse</string>
@@ -140,7 +140,7 @@
     <string name="pref_backup_summary">Sicher automatisch in en Ordner uf dim Grät</string>
     <string name="unsupported_phone">S Programm bruucht OpenGL, zum funktioniere. Leider wird dis Grät nöd unterstützt.</string>
     <string name="download">Abelade</string>
-    <string name="disconnect_usb_cable">Bitte USB-Kabel entferne oder Speichercharte iisetze, zum CoMaps z verwende</string>
+    <string name="disconnect_usb_cable">Bitte USB-Kabel entferne oder Speichercharte iisetze, zum Arah z verwende</string>
     <string name="not_enough_free_space_on_sdcard">Bitte zerst Speicherplatz uf de SD-Charte/USB-Speicher freigeh, zum d Aawendig z nutze</string>
     <string name="download_resources">Bevor d App nutzisch, lad bitte di weltwiiti Übersichtscharte abe. \nEs wird %s Speicherplatz bruucht.</string>
     <string name="download_resources_continue">Zu de Charte</string>
@@ -186,7 +186,7 @@
     <string name="category_recycling">Recycling</string>
     <string name="category_rv">Iirichtige für Wohnmobil</string>
     <string name="description">Notize</string>
-    <string name="share_bookmarks_email_subject">Miini CoMaps-Favorite</string>
+    <string name="share_bookmarks_email_subject">Miini Arah-Favorite</string>
     <string name="load_kmz_title">Favorite werded glade</string>
     <string name="load_kmz_successful">Favorite erfolgriich glade! Du chasch sie uf de Charte oder im Favorite-Manager aazeige.</string>
     <string name="load_kmz_failed">Lade vo de Favorite fehlgschlage. D Datei chönnt beschädigt oder defekt sii.</string>
@@ -196,8 +196,8 @@
     <string name="unknown_current_position">Din Standort het nonig chönne ermittlet werde</string>
     <string name="cant_change_this_setting">Leider sind d Iistellige für d Chartespeicherig aktuell deaktiviert</string>
     <string name="downloading_is_active">D Charte wird abeglade</string>
-    <string name="my_position_share_sms">Lueg dir min aktuelle Standort uf CoMaps aa! %1$s oder %2$s Kei Offline-Charte installiert? Da abelade: https://www.comaps.app/download/</string>
-    <string name="my_position_share_email_subject">Hey, lueg dir min aktuelle Standort uf de CoMaps-Charte aa!</string>
+    <string name="my_position_share_sms">Lueg dir min aktuelle Standort uf Arah aa! %1$s oder %2$s Kei Offline-Charte installiert? Da abelade: https://github.com/ARAH-ORG/arah/</string>
+    <string name="my_position_share_email_subject">Hey, lueg dir min aktuelle Standort uf de Arah-Charte aa!</string>
     <string name="share">Teile</string>
     <string name="email">E-Mail</string>
     <string name="done">Fertig</string>
@@ -211,7 +211,7 @@
     <string name="pref_zoom_summary">Uf de Charte aazeige</string>
     <string name="prefs_group_advanced">Fortgschritte</string>
     <string name="download_resources_custom_url_title">Benutzerdefinierte Charteserver</string>
-    <string name="download_resources_custom_url_message">Standardserver für Chartedownloads überschriibe. Leer laa, zum de CoMaps-Standardserver z bruuche.</string>
+    <string name="download_resources_custom_url_message">Standardserver für Chartedownloads überschriibe. Leer laa, zum de Arah-Standardserver z bruuche.</string>
     <string name="download_resources_custom_url_summary_none">Nöd konfiguriert</string>
     <string name="download_resources_custom_url_error_scheme">Bitte e vollständigi URL iigeh, wo mit https:// oder http:// aafangt</string>
     <string name="pref_map_style_title">Nachtmodus</string>
@@ -240,7 +240,7 @@
     <string name="help">Hilf</string>
     <string name="faq">Hüüfigi Frage und Antworte</string>
     <string name="donate">Spende</string>
-    <string name="how_to_support_us">Freiwillig helfe und CoMaps verbessere</string>
+    <string name="how_to_support_us">Freiwillig helfe und Arah verbessere</string>
     <string name="copyright">Copyright</string>
     <string name="report_a_bug">App-Fehler melde</string>
     <string name="compass_calibration_recommended">Verbesser d Pfiilrichtig, indem du s Telefon inere Achterbewegig bewegsch, zum de Kompass z kalibriere.</string>
@@ -388,7 +388,7 @@
     <string name="download_over_mobile_header">Über e Mobilfunktnetzverbindig abelade?</string>
     <string name="download_over_mobile_message">Das chönnt mit gwüssne Tarif oder bim Roaming sehr tüür werde</string>
     <string name="error_enter_correct_zip_code">Gib die richtigi Postleitzahl ii</string>
-    <string name="editor_note_hint">Beschrib Chartefehler oder Sache, wo mit CoMaps nöd chönd bearbeitet werde</string>
+    <string name="editor_note_hint">Beschrib Chartefehler oder Sache, wo mit Arah nöd chönd bearbeitet werde</string>
     <string name="editor_more_about_osm">Meh Informatione über OpenStreetMap</string>
     <string name="downloader_no_downloaded_maps_title">Kei Charte abeglade</string>
     <string name="hour">h</string>
@@ -426,7 +426,7 @@
     <string name="mobile_data_option_ask">Immer fröge</string>
     <string name="traffic_update_maps_text">Zum Verchehrsdate aazzeige, müend d Charte aktualisiert werde</string>
     <string name="increase_font_size">Schrift uf de Charte vergrössere</string>
-    <string name="traffic_update_app">Bitte aktualisier CoMaps</string>
+    <string name="traffic_update_app">Bitte aktualisier Arah</string>
     <string name="enable_logging">Protokollierig aktiviere</string>
     <string name="planning_route_manage_route">Route verwalte</string>
     <string name="button_plan">Plane</string>
@@ -485,21 +485,21 @@
     <string name="enable_show_on_lock_screen">Uf em Sperrbildschirm aazeige</string>
     <string name="change_map_locale">Charte-Spraach</string>
     <string name="splash_subtitle">Chartedate vo OpenStreetMap</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <string name="app_tip_00">Danke, dass du eusi vo de Community erstellte Charte bruuchsch!</string>
     <string name="app_tip_01">Mit dinere Spend und dinere Unterstützig chönd mir die beste Charte vo de Welt erstelle!</string>
     <string name="app_tip_07">Eusi App wird vo einige Enthusiaste und de Community entwicklet.</string>
     <string name="app_tip_08">Du chasch d Chartedate eifach korrigiere und verbessere.</string>
-    <string name="car_used_on_the_phone_screen">Du verwendsch jetzt CoMaps uf dim Telefondisplay</string>
-    <string name="car_used_on_the_car_screen">Du verwendsch jetzt CoMaps uf em Bildschirm vom Auto</string>
+    <string name="car_used_on_the_phone_screen">Du verwendsch jetzt Arah uf dim Telefondisplay</string>
+    <string name="car_used_on_the_car_screen">Du verwendsch jetzt Arah uf em Bildschirm vom Auto</string>
     <string name="aa_connected_title">Du bisch mit Android Auto verbunde</string>
     <string name="car_continue_on_the_phone">Wiiter am Telefon</string>
     <string name="car_continue_in_the_car">Zum Autobildschirm</string>
     <string name="aa_request_permission_notification">Die App bruucht dini Erlaubnis</string>
-    <string name="aa_request_permission_activity_text">CoMaps in Android Auto bruucht Standortberechtigunge, zum effektiv z funktioniere</string>
+    <string name="aa_request_permission_activity_text">Arah in Android Auto bruucht Standortberechtigunge, zum effektiv z funktioniere</string>
     <string name="aa_grant_permissions">Erlaubnis erteile</string>
     <string name="button_layer_outdoor">Wandere</string>
     <string name="browser_not_available">Webbrowser isch nöd verfüegbar</string>
@@ -546,11 +546,11 @@
     <string name="bookmarks_error_message_share_empty">E leeri Lischte cha nöd teilt werde</string>
     <string name="bookmarks_error_message_empty_list_name">Bitte gib en Lischtename ii</string>
     <string name="unable_to_calc_alert_title">Route cha nöd berechnet werde</string>
-    <string name="share_bookmarks_email_body">Hallo! \n \nIm Ahang sind mini Favorite; bitte öffne sie in CoMaps. Wenn du d App nöd installiert hesch, chasch sie da abelade: https://comaps.app/download/ \n \nViel Spass bim Reise mit CoMaps!</string>
+    <string name="share_bookmarks_email_body">Hallo! \n \nIm Ahang sind mini Favorite; bitte öffne sie in Arah. Wenn du d App nöd installiert hesch, chasch sie da abelade: https://github.com/ARAH-ORG/arah/ \n \nViel Spass bim Reise mit Arah!</string>
     <string name="pink">Rosa</string>
     <string name="editor_other_info">Hiiwiis a Freiwilligi vo OpenStreetMap (optional)</string>
     <string name="editor_category_unsuitable_title">Kei passendi Kategorie gfunde?</string>
-    <string name="editor_category_unsuitable_text">Mit CoMaps cha mer nur eifachi Punktkategorie hinzuefüege, drum kei Städt, Strasse, See, Gebäudeumriss etc. Bitte füeg sottigi Kategorie direkt bi <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> hinzue. I eusem <a href="https://www.comaps.app/support/advanced-map-editing/">Leitfade</a> findsch du e detaillierti Schritt-für-Schritt-Aaleitig.</string>
+    <string name="editor_category_unsuitable_text">Mit Arah cha mer nur eifachi Punktkategorie hinzuefüege, drum kei Städt, Strasse, See, Gebäudeumriss etc. Bitte füeg sottigi Kategorie direkt bi <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> hinzue. I eusem <a href="https://github.com/ARAH-ORG/arah/">Leitfade</a> findsch du e detaillierti Schritt-für-Schritt-Aaleitig.</string>
     <string name="current_location_unknown_error_title">Aktuelle Standort isch unbekannt</string>
     <string name="editor_share_to_all_dialog_title">A alli Benutzer sende?</string>
     <string name="placepage_remove_stop">Stopp entferne</string>
@@ -589,7 +589,7 @@
     <string name="toll_road">Mautstrass</string>
     <string name="ok">OK</string>
     <string name="sort_bookmarks">Favorite sortiere</string>
-    <string name="translated_om_site_url">https://comaps.app/gsw/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="open_now">Jetzt offe</string>
     <string name="closed_now">Jetzt zue</string>
     <string name="at">am %s</string>
@@ -640,7 +640,7 @@
     <string name="power_management">Energiemanagement</string>
     <string name="place_page_map_too_old_title">Chartedate veraltet</string>
     <string name="place_page_map_too_old_description">Die aktuelle Chartedate sind sehr alt, bitte aktualisier d Charte.</string>
-    <string name="place_page_app_too_old_description">Die aktuelle Chartedate sind sehr alt, bitte aktualisier d CoMaps-App.</string>
+    <string name="place_page_app_too_old_description">Die aktuelle Chartedate sind sehr alt, bitte aktualisier d Arah-App.</string>
     <string name="place_page_update_too_old_map">Charteregion aktualisiere</string>
     <string name="place_page_too_old_to_edit">OpenStreetMap-Bearbeitig isch deaktiviert, will d Chartedate z alt sind.</string>
     <string name="prefs_speed_cameras_information">Blitzerwarnige sind i Länder deaktiviert, wo Warnige dur lokali Gsetz verbote sind.</string>
