@@ -39,7 +39,7 @@ struct CustomMapServerView: View {
                 HStack {
                     ZStack(alignment: .leading) {
                         if customMapDownloadUrl.isEmpty {
-                            Text(verbatim: "https://cdn-fi-1.comaps.app/")
+                            Text(verbatim: "https://maps.example.org/")
                                 .foregroundColor(.gray)
                                 .allowsHitTesting(false)
                         }

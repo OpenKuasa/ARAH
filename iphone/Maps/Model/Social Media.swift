@@ -14,7 +14,7 @@ enum SocialMedia: CaseIterable, Identifiable {
     // MARK: Properties
     
     /// The e-mail address
-    static let emailAddress: String = "ios@comaps.app"
+    static let emailAddress: String = ArahConfig.supportEmail
     
     
     /// The id

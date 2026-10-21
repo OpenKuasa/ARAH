@@ -87,26 +87,32 @@ struct InformationView: View {
                     }
                     .tint(.alternativeAccent)
                     
-                    Button {
-                        openUrl(URL(string: "https://www.comaps.app/news/")!)
-                    } label: {
-                        Label("news", systemImage: "newspaper")
+                    if let newsURL = ArahConfig.newsURL {
+                        Button {
+                            openUrl(newsURL)
+                        } label: {
+                            Label("news", systemImage: "newspaper")
+                        }
+                        .tint(.alternativeAccent)
                     }
-                    .tint(.alternativeAccent)
                     
-                    Button {
-                        openUrl(URL(string: String(localized: "translated_om_site_url") + "community/#volunteer-section")!)
-                    } label: {
-                        Label("volunteer", systemImage: "person.wave.2")
+                    if let volunteerURL = ArahConfig.volunteerURL {
+                        Button {
+                            openUrl(volunteerURL)
+                        } label: {
+                            Label("volunteer", systemImage: "person.wave.2")
+                        }
+                        .tint(.alternativeAccent)
                     }
-                    .tint(.alternativeAccent)
                     
-                    Button {
-                        openUrl(URL(string: "https://apps.apple.com/app/comaps/id6747180809?action=write-review")!)
-                    } label: {
-                        Label("rate_the_app", systemImage: "star")
+                    if let appStoreReviewURL = ArahConfig.appStoreReviewURL {
+                        Button {
+                            openUrl(appStoreReviewURL)
+                        } label: {
+                            Label("rate_the_app", systemImage: "star")
+                        }
+                        .tint(.alternativeAccent)
                     }
-                    .tint(.alternativeAccent)
                 }
                 
                 Section {
@@ -132,7 +138,7 @@ struct InformationView: View {
                 }
                 
                 Section {
-                    ForEach(SocialMedia.allCases) { socialMedia in
+                    ForEach(ArahConfig.socialMediaEnabled ? SocialMedia.allCases : []) { socialMedia in
                         Button {
                             openUrl(socialMedia.url)
                         } label: {
@@ -147,7 +153,9 @@ struct InformationView: View {
                         .tint(.alternativeAccent)
                     }
                 } header: {
-                    Text("follow_us")
+                    if ArahConfig.socialMediaEnabled {
+                        Text("follow_us")
+                    }
                 } footer: {
                     VStack(spacing: 8) {
                         Button {
@@ -156,7 +164,7 @@ struct InformationView: View {
                             Text("privacy_policy")
                         }
                         .sheet(isPresented: $showPrivacyPolicy) {
-                            SafariView(url: URL(string: String(localized: "translated_om_site_url") + "privacy/")!, dismissButton: .close)
+                            SafariView(url: ArahConfig.privacyURL, dismissButton: .close)
                         }
                         
                         Button {
@@ -165,7 +173,7 @@ struct InformationView: View {
                             Text("terms_of_use")
                         }
                         .sheet(isPresented: $showTermsOfUse) {
-                            SafariView(url: URL(string: String(localized: "translated_om_site_url") + "terms/")!, dismissButton: .close)
+                            SafariView(url: ArahConfig.termsURL, dismissButton: .close)
                         }
                         
                         NavigationLink {
@@ -173,6 +181,8 @@ struct InformationView: View {
                         } label: {
                             Text("copyright")
                         }
+                        
+                        Text("about_based_on")
                     }
                     .tint(.secondary)
                     .padding(.top)

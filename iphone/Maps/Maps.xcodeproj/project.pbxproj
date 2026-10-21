@@ -5246,7 +5246,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2026.01.01;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps.debug;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app.debug;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -5282,7 +5282,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2026.01.01;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
@@ -5296,7 +5296,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app.tests;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoMaps (Debug).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoMaps (Debug)";
 			};
@@ -5311,7 +5311,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app.tests;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoMaps (Debug).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoMaps (Debug)";
 			};
@@ -5329,7 +5329,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoMapsWidgetExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CoMaps;
+				INFOPLIST_KEY_CFBundleDisplayName = Arah;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 CoMaps Contributors. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5340,7 +5340,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2026.01.01;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps.debug.widgetextension;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app.debug.widgetextension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -5359,7 +5359,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoMapsWidgetExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CoMaps;
+				INFOPLIST_KEY_CFBundleDisplayName = Arah;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 CoMaps Contributors. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5369,7 +5369,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2026.01.01;
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps.widgetextension;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app.widgetextension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -5386,7 +5386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Debug Icon";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_IDENTIFIER = app.comaps.debug;
+				BUNDLE_IDENTIFIER = my.arah.app.debug;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 534D2KJBUK;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -5410,7 +5410,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "-cxx-interoperability-mode=default $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_IDENTIFIER}";
-				PRODUCT_NAME = "CoMaps (Debug)";
+				PRODUCT_NAME = "Arah (Debug)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -5429,7 +5429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_IDENTIFIER = app.comaps;
+				BUNDLE_IDENTIFIER = my.arah.app;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 534D2KJBUK;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -5453,7 +5453,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -cxx-interoperability-mode=default";
 				PRODUCT_BUNDLE_IDENTIFIER = "${BUNDLE_IDENTIFIER}";
-				PRODUCT_NAME = CoMaps;
+				PRODUCT_NAME = Arah;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
