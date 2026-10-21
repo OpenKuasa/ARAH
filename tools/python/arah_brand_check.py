@@ -107,7 +107,7 @@ def find_placeholders(root):
     for rel in tracked_files(root):
         if rel.startswith(("3party/", "tools/python/arah_brand_check.py", "tools/python/test_arah_brand_check.py")):
             continue
-        if rel.startswith("docs/"):
+        if rel.startswith("docs/") or rel == "CLAUDE.md":
             continue
         try:
             lines = read_lines(root, rel)

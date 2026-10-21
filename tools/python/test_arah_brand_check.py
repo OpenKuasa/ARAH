@@ -60,6 +60,10 @@ class BrandCheckTest(unittest.TestCase):
         self.assertEqual(len(found), 1)
         self.assertIn("ARAH-PLACEHOLDER", found[0])
 
+    def test_instructions_not_listed(self):
+        root = make_repo({"CLAUDE.md": "values are marked `ARAH-PLACEHOLDER`.\n"})
+        self.assertEqual(arah_brand_check.find_placeholders(root), [])
+
     def test_release_fails_on_placeholder(self):
         root = make_repo({"libs/platform/arah_config.hpp": "x = 1;  // ARAH-PLACEHOLDER: x\n"})
         self.assertEqual(arah_brand_check.main(["--root", root]), 0)
