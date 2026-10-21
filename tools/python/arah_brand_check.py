@@ -34,7 +34,22 @@ PLAIN_FILES = [
     "iphone/Maps/UI/Settings/CustomMapServerView.swift",
 ]
 PBXPROJ = "iphone/Maps/Maps.xcodeproj/project.pbxproj"
-PBX_IDENTITY = re.compile(r"PRODUCT_NAME|CFBundleDisplayName|PRODUCT_BUNDLE_IDENTIFIER")
+PBX_IDENTITY = re.compile(r"PRODUCT_NAME|CFBundleDisplayName|BUNDLE_IDENTIFIER")
+# Lines that may keep an upstream name, each with the reason: (path, substring, reason).
+ALLOWED_LINES = [
+    ("iphone/Maps/CoMaps.plist", "<key>comaps.app</key>",
+     "network exception for CoMaps' map servers, which Arah uses until its own hosting (Plan 6)"),
+    ("iphone/Maps/CoMaps.plist", "<key>comaps.at</key>", "network exception for incoming CoMaps share links"),
+    ("iphone/Maps/CoMaps.plist", "app.comaps.3daction.", "internal home-screen shortcut IDs matched in code"),
+    ("iphone/Maps/UI/Information/InformationView.swift", "AboutCoMapsView()",
+     "Swift type name; the logo it shows is replaced with the Arah icon (Plan 4)"),
+    ("iphone/Maps/Model/Social Media.swift", "return URL(string:",
+     "CoMaps social accounts; the section is hidden by ArahConfig.socialMediaEnabled until Arah has accounts"),
+]
+
+
+def allowed_line(rel, line):
+    return any(rel == path and sub in line for path, sub, _ in ALLOWED_LINES)
 ANDROID_ENTRY = re.compile(r'<(string|plurals) name="([^"]+)"([^>]*)>(.*?)</\1>', re.S)
 IOS_LINE = re.compile(r'^\s*"((?:[^"\\]|\\.)*)"\s*=\s*"((?:[^"\\]|\\.)*)"\s*;')
 COMMENT = re.compile(r"^\s*(//|/\*|\*|<!--)")
@@ -86,7 +101,7 @@ def find_brand_leaks(root):
                 leaks.append(f"{rel}: [{key}] {value['defaultMessage'][:120]}")
     for rel in expand(root, PLAIN_FILES):
         for n, line in enumerate(read_lines(root, rel), 1):
-            if BRAND.search(line) and not COMMENT.match(line):
+            if BRAND.search(line) and not COMMENT.match(line) and not allowed_line(rel, line):
                 leaks.append(f"{rel}:{n}: {line.strip()[:120]}")
     for n, line in enumerate(read_lines(root, PBXPROJ), 1):
         if PBX_IDENTITY.search(line) and BRAND.search(line):

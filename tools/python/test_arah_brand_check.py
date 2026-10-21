@@ -60,6 +60,16 @@ class BrandCheckTest(unittest.TestCase):
         self.assertEqual(len(found), 1)
         self.assertIn("ARAH-PLACEHOLDER", found[0])
 
+    def test_bundle_identifier_setting_found(self):
+        root = make_repo({"iphone/Maps/Maps.xcodeproj/project.pbxproj": "\t\t\t\tBUNDLE_IDENTIFIER = app.comaps;\n"})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)
+
+    def test_allowed_line_not_reported(self):
+        root = make_repo({"iphone/Maps/CoMaps.plist": "\t\t\t<key>comaps.app</key>\n\t\t\t<string>CoMaps</string>\n"})
+        leaks = arah_brand_check.find_brand_leaks(root)
+        self.assertEqual(len(leaks), 1)
+        self.assertIn("<string>CoMaps</string>", leaks[0])
+
     def test_instructions_not_listed(self):
         root = make_repo({"CLAUDE.md": "values are marked `ARAH-PLACEHOLDER`.\n"})
         self.assertEqual(arah_brand_check.find_placeholders(root), [])
