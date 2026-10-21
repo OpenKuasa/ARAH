@@ -6,7 +6,7 @@ import sys
 LANGUAGES = (
     'af', 'ar', 'be', 'bg', 'ca', 'cs', 'da', 'de', 'el', 'en', 'en-AU',
     'en-GB', 'en-US', 'es', 'es-MX', 'et', 'eu', 'fa', 'fi', 'fr', 'fr-CA',
-    'he', 'hi', 'hu', 'id', 'it', 'ja', 'ko', 'lt', 'lv', 'mr', 'nb', 'nl',
+    'he', 'hi', 'hu', 'id', 'it', 'ja', 'ko', 'lt', 'lv', 'mr', 'ms', 'nb', 'nl',
     'pl', 'pt', 'pt-BR', 'ro', 'ru', 'sk', 'sr', 'sv', 'sw', 'th', 'tr', 'uk',
     'vi', 'zh-Hans', 'zh-Hant'
 )

@@ -67,7 +67,7 @@ public:
   // CategoriesHolder::MapIntegerToLocale() as their implementations
   // strongly depend on the contents of the variable.
   // TODO: Refactor for more flexibility and to avoid breaking rules in two methods mentioned above.
-  static std::array<CategoriesHolder::Mapping, 46> constexpr kLocaleMapping = {{
+  static std::array<CategoriesHolder::Mapping, 47> constexpr kLocaleMapping = {{
       {"en", kEnglishCode},
       {"en-AU", 2},
       {"en-GB", 3},
@@ -114,6 +114,7 @@ public:
       {"vi", 44},
       {"zh-Hans", kSimplifiedChineseCode},
       {"zh-Hant", kTraditionalChineseCode},
+      {"ms", 47},
   }};
 
   explicit CategoriesHolder(std::unique_ptr<Reader> && reader);

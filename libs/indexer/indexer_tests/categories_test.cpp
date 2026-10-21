@@ -11,6 +11,7 @@
 #include "base/string_utils.hpp"
 
 #include <memory>
+#include <string_view>
 #include <vector>
 
 using namespace indexer;
@@ -288,6 +289,44 @@ UNIT_TEST(CategoriesIndex_Groups)
   testTypes("shop", {type1, type2});
   testTypes("магазин", {type1, type2});
   testTypes("http", {});
+}
+
+UNIT_TEST(CategoriesHolder_Malay)
+{
+  int8_t constexpr kMalayCode = 47;
+  for (char const * locale : {"ms", "ms_MY", "ms-MY", "ms_MY.UTF-8"})
+    TEST_EQUAL(CategoriesHolder::MapLocaleToInteger(locale), kMalayCode, (locale));
+  TEST_EQUAL(CategoriesHolder::MapIntegerToLocale(kMalayCode), "ms", ());
+}
+
+// Everyday Malaysian words must find the right places.
+UNIT_TEST(CategoriesHolder_MalaySynonyms)
+{
+  classificator::Load();
+  int8_t const malay = CategoriesHolder::MapLocaleToInteger("ms");
+  auto const & holder = GetDefaultCategories();
+  auto const & c = classif();
+
+  auto const finds = [&](std::string_view word, std::vector<std::string_view> const & path)
+  {
+    uint32_t const expected = c.GetTypeByPath(path);
+    bool found = false;
+    holder.ForEachTypeByName(malay, strings::MakeUniString(word), [&](uint32_t type)
+    {
+      if (type == expected)
+        found = true;
+    });
+    return found;
+  };
+
+  TEST(finds("minyak", {"amenity", "fuel"}), ());
+  TEST(finds("petrol", {"amenity", "fuel"}), ());
+  TEST(finds("tandas", {"amenity", "toilets"}), ());
+  TEST(finds("masjid", {"amenity", "place_of_worship", "muslim"}), ());
+  TEST(finds("surau", {"amenity", "place_of_worship", "muslim"}), ());
+  TEST(finds("restoran", {"amenity", "restaurant"}), ());
+  TEST(finds("makan", {"amenity", "restaurant"}), ());
+  TEST(finds("hospital", {"amenity", "hospital"}), ());
 }
 
 #ifdef DEBUG
