@@ -32,7 +32,12 @@ PLAIN_FILES = [
     "iphone/Maps/UI/Information/*.swift",
     "iphone/Maps/Model/Social Media.swift",
     "iphone/Maps/UI/Settings/CustomMapServerView.swift",
+    "iphone/Maps/UI/MailComposer/*.swift",
 ]
+# Placeholder values written into app text; listed per file so --release fails until real values replace them.
+PLACEHOLDER_VALUES = re.compile(r"ARAH-ORG|arah\.invalid")
+# Keys Arah adds to iOS text. iOS has no per-key fallback to English, so every language needs them.
+ARAH_IOS_KEYS = ["about_based_on"]
 PBXPROJ = "iphone/Maps/Maps.xcodeproj/project.pbxproj"
 PBX_IDENTITY = re.compile(r"PRODUCT_NAME|CFBundleDisplayName|BUNDLE_IDENTIFIER")
 # Lines that may keep an upstream name, each with the reason: (path, substring, reason).
@@ -43,6 +48,10 @@ ALLOWED_LINES = [
     ("iphone/Maps/CoMaps.plist", "app.comaps.3daction.", "internal home-screen shortcut IDs matched in code"),
     ("iphone/Maps/UI/Information/InformationView.swift", "AboutCoMapsView()",
      "Swift type name; the logo it shows is replaced with the Arah icon (Plan 4)"),
+    ("iphone/Maps/Maps.xcodeproj/project.pbxproj", "PRODUCT_NAME = \"CoMaps (Debug)\";",
+     "internal product/module name kept for the upstream test target; users see INFOPLIST_KEY_CFBundleDisplayName"),
+    ("iphone/Maps/Maps.xcodeproj/project.pbxproj", "PRODUCT_NAME = CoMaps;",
+     "internal product/module name kept for the upstream test target; users see INFOPLIST_KEY_CFBundleDisplayName"),
     ("iphone/Maps/Model/Social Media.swift", "return URL(string:",
      "CoMaps social accounts; the section is hidden by ArahConfig.socialMediaEnabled until Arah has accounts"),
 ]
@@ -104,7 +113,7 @@ def find_brand_leaks(root):
             if BRAND.search(line) and not COMMENT.match(line) and not allowed_line(rel, line):
                 leaks.append(f"{rel}:{n}: {line.strip()[:120]}")
     for n, line in enumerate(read_lines(root, PBXPROJ), 1):
-        if PBX_IDENTITY.search(line) and BRAND.search(line):
+        if PBX_IDENTITY.search(line) and BRAND.search(line) and not allowed_line(PBXPROJ, line):
             leaks.append(f"{PBXPROJ}:{n}: {line.strip()}")
     return leaks
 
@@ -131,14 +140,26 @@ def find_placeholders(root):
         for n, line in enumerate(lines, 1):
             if PLACEHOLDER in line:
                 found.append(f"{rel}:{n}: {line.strip()}")
+    for rel in expand(root, ANDROID_STRINGS + IOS_STRINGS + IOS_PLURALS):
+        count = sum(1 for line in read_lines(root, rel) if PLACEHOLDER_VALUES.search(line))
+        if count:
+            found.append(f"{rel}: {count} placeholder value(s) (Arah website/email placeholders in text)")
     return found
+
+
+def find_missing_arah_keys(root):
+    missing = []
+    for rel in expand(root, ["iphone/Maps/LocalizedStrings/*.lproj/Localizable.strings"]):
+        keys = {m.group(1) for m in (IOS_LINE.match(line) for line in read_lines(root, rel)) if m}
+        missing += [f"{rel}: missing [{key}]" for key in ARAH_IOS_KEYS if key not in keys]
+    return missing
 
 
 def main(argv):
     root = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
     if "--root" in argv:
         root = argv[argv.index("--root") + 1]
-    leaks = find_brand_leaks(root)
+    leaks = find_brand_leaks(root) + find_missing_arah_keys(root)
     placeholders = find_placeholders(root)
     for line in leaks:
         print("LEAK", line)

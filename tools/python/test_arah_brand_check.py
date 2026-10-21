@@ -70,6 +70,28 @@ class BrandCheckTest(unittest.TestCase):
         self.assertEqual(len(leaks), 1)
         self.assertIn("<string>CoMaps</string>", leaks[0])
 
+    def test_placeholder_values_in_strings_listed(self):
+        root = make_repo({"android/app/src/main/res/values-de/strings.xml":
+                          '<resources><string name="a">https://github.com/ARAH-ORG/arah/</string>\n'
+                          '<string name="b">support@arah.invalid</string></resources>\n'})
+        found = arah_brand_check.find_placeholders(root)
+        self.assertEqual(len(found), 1)
+        self.assertIn("2 placeholder value", found[0])
+        self.assertEqual(arah_brand_check.main(["--root", root, "--release"]), 1)
+
+    def test_mail_composer_scanned(self):
+        root = make_repo({"iphone/Maps/UI/MailComposer/MailComposer.swift": '    let body = "- CoMaps %@-%@"\n'})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)
+
+    def test_arah_keys_in_every_ios_language(self):
+        root = make_repo({
+            "iphone/Maps/LocalizedStrings/en.lproj/Localizable.strings": '"about_based_on" = "Based on CoMaps";\n',
+            "iphone/Maps/LocalizedStrings/fr.lproj/Localizable.strings": '"k" = "v";\n',
+        })
+        missing = arah_brand_check.find_missing_arah_keys(root)
+        self.assertEqual(len(missing), 1)
+        self.assertIn("fr.lproj", missing[0])
+
     def test_instructions_not_listed(self):
         root = make_repo({"CLAUDE.md": "values are marked `ARAH-PLACEHOLDER`.\n"})
         self.assertEqual(arah_brand_check.find_placeholders(root), [])
