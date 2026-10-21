@@ -1,162 +1,238 @@
-# Arah Plan 3: Core Rebrand — Implementation Plan
+# Arah Plan 3: Core Rebrand on CoMaps — Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Users see "Arah", not "Organic Maps", in the shared core and on iPhone. Organic Maps' servers can no longer steer Arah. Every value the owner still has to supply sits in one clearly marked place.
+> **Rewritten 2026-10-21 for CoMaps.** The Organic Maps version of this plan is in git history (`git log -- docs/superpowers/plans/2026-10-21-arah-plan3-core-rebrand.md`), and its partial work is in `~/Documents/arah-archive/files-feat-004/`.
 
-**Architecture:** One new header, `arah_config.hpp`, holds every Arah-specific value: name, IDs, URLs, emails. Each value not yet supplied is marked `ARAH-PLACEHOLDER`. Shared C++ and `private.h` read from it. User-visible text changes through `data/strings/` (all languages) and is regenerated. iOS identity (name, bundle IDs, iCloud, associated domains) changes in the Xcode project and entitlements. A brand checker (`tools/python/arah_brand_check.py`) is the test: it fails while user-visible Organic Maps branding remains, and lists the open placeholders.
+**Goal:** Users see "Arah", not "CoMaps" (or "Organic Maps"), in the app text of every language, the shared core and on iPhone. Every value the owner still has to supply sits in clearly marked places, and a checker lists them.
 
-**Tech Stack:** C++ (core), Objective-C++/Swift (iOS), Twine strings, Xcode project files, Python 3 checker.
+**Architecture:**
+- **Config:** Arah-specific values live in `libs/platform/arah_config.hpp` (C++) and `iphone/Maps/Arah/ArahConfig.swift` (iOS). Each value not yet supplied is marked `ARAH-PLACEHOLDER`.
+- **Strings:** CoMaps has no Twine; Weblate edits the platform string files directly. So the rename is applied by a reviewed script to every language's Android `values*/` and iOS `*.lproj/` files.
+- **Servers:** they stay CoMaps' until Plan 6 (spec amendment: "until the owner supplies them they stay as marked placeholders"). So map downloads and CoMaps' live map updates keep working, but Arah ignores the donate link the metaserver hands out.
+- **Test:** `tools/python/arah_brand_check.py` is rewritten for CoMaps' files. It fails while user-visible CoMaps / Organic Maps branding remains, and lists the open placeholders.
 
-**Spec:** `docs/superpowers/specs/2026-10-21-arah-phase1-rebrand-design.md` §3 Rebrand throughout, §5 Map hosting, §6 Repository.
+**Tech Stack:** C++ (core), Swift/Objective-C++ (iOS), Android XML resources (values only), iOS `.strings`, Xcode project and entitlements, Python 3.
+
+**Spec:** `docs/superpowers/specs/2026-10-21-arah-phase1-rebrand-design.md`. Read the Amendment first (attribution is now "Based on CoMaps"; servers stay placeholders), then §3 Rebrand, §5 Map hosting and the Constraints.
 
 ### Scope (rulings made while planning)
-- **Android identity** (`appId`, app name, icons, Android-only links) goes to Plan 5, which needs the Android SDK to build and test. Shared strings and core changes here already reach Android.
-- **The app icon** and visual restyle of the screens go to Plans 4 and 5. **Store metadata, hosting the mirror and metaserver, and the GitHub repo** go to Plan 6.
-- **Placeholders, since the owner hasn't supplied the values yet:**
-  - Map download servers **keep Organic Maps' CDN for now**, so the app stays testable. They are marked `ARAH-PLACEHOLDER`, and the brand checker lists them.
-  - **The metaserver is switched off now** (`METASERVER_URL ""`). Downloads then use the built-in server list, and Organic Maps can no longer push donate prompts or settings into Arah. That is the spec §5 intent, available immediately.
-  - Bundle ID `my.arah.app`, website `https://github.com/ARAH-ORG/arah` and support email `support@arah.invalid` are placeholders.
-  - OSM OAuth keeps Organic Maps' credentials until the owner registers Arah on openstreetmap.org. The redirect scheme changes once that registration exists.
+- **In Plan 5, not here:**
+  - Android identity: `appId` (`app.comaps`, `android/app/build.gradle.kts`), app name, icons.
+  - Android Java/Kotlin links: `Constants.java`, `Utils.java`, `HelpFragment.java`.
+  - The Android About screen.
+
+  The Android *string files* are renamed here: that is value-only and checkable without the Android SDK.
+- **Icon and screen restyle:** Plans 4 and 5.
+- **Store metadata** (`iphone/metadata/`, `android/app/src/*/play/`), hosting, signing key and repo: Plan 6. The checker skips store metadata until then.
+- **Placeholders**, because the owner hasn't supplied the values yet:
+  - **Servers:** `METASERVER_URL`, `DEFAULT_URLS_JSON`, `DEFAULT_CONNECTION_CHECK_IP`, `COUNTRIES_TXT_SIGNATURE_HEX` and `MAP_SERIES` keep CoMaps' values, marked as placeholders.
+  - **OSM login:** OAuth client IDs and the `cm://oauth2/osm/callback` redirect keep CoMaps' values until the owner registers Arah on openstreetmap.org.
+  - **iOS IDs:** bundle IDs become `my.arah.app` (+ `.debug`, `.tests`, `.widgetextension`) and the iCloud container `iCloud.my.arah.app` (+ `.debug`).
+  - **Web:** website `https://github.com/ARAH-ORG/arah`, support email `support@arah.invalid`, privacy policy and terms URLs `https://github.com/ARAH-ORG/arah/blob/main/PRIVACY.md` and `…/TERMS.md`.
+  - **Hidden until supplied:** the App Store review link, news page and social links. An empty value hides the row.
+- **Kayak:** already removed in CoMaps. No task.
+- **Malay place names on the map** (Plan M finding) are an open owner decision. Not part of this plan.
 
 ## Global Constraints
 
-- **The brand name is "Arah"** in every language: a proper noun, never translated or declined.
-- **Required attribution stays.** The About screen keeps "Based on Organic Maps" and the Apache-2.0 LICENSE/NOTICE. The map keeps "© OpenStreetMap" (spec Constraints). The map label changes from "Map data © OpenStreetMap © Organic Maps" to "Map data © OpenStreetMap".
-- **Stay mergeable:** change values, not structure. Keep any new Arah logic in Arah-named files (`arah_config.hpp`, `arah_*.py`). Don't delete upstream code paths that a value can disable.
-- **No visible Organic Maps leftovers** (spec anti-goal): "Organic Maps", organicmaps.app, omaps.app, Organic Maps social/donate/news links. The only exception is the attribution above.
-- **Incoming `omaps.app`, `ge0` and `om://` links still open in Arah** (spec §3). Only outgoing links change.
-- **Generated files** are committed separately as `[strings] Regenerated`. Commits use `[subsystem] Summary`, ≤80 chars, `git commit -s`.
-- **Branch** `feat-004-core-rebrand` from `feat-001-arah-phase1-design`. Don't push.
+- **The brand name is "Arah"** in every language: a proper noun, never translated, declined or transliterated.
+- **Required attribution stays.** iPhone About shows "Based on CoMaps" (Malay: "Berasaskan CoMaps"). LICENSE, NOTICE and `copyright.html` stay. The map keeps "Map data © OpenStreetMap" (already CoMaps' label).
+- **Stay mergeable:** change values, not structure. New Arah logic goes in `arah_*` / `Arah*` files. Upstream code paths are disabled through a value (an empty URL hides a row; a constant turns a branch off), never deleted.
+- **No visible leftovers** (spec anti-goal): "CoMaps", "Organic Maps", `comaps.app`, `comaps.at`, `comaps.tech`, `organicmaps.app`, `omaps.app`, or CoMaps social/donate/news links. The only exception is the attribution above.
+- **Incoming links keep working:** `https://comaps.at/…`, `comaps://`, `cm://`, `ge0://`, `om://`, `https://omaps.app/…` (spec §3). Only outgoing links change.
+- **Malay stays complete:** `tools/python/arah_ms_check.py` still reports 0 problems on all nine Malay files.
+- **Commits and branch:**
+  - Commit style is `[subsystem] Summary` (≤80 chars), always with `git commit -s`.
+  - Work on branch `feat-003-core-rebrand` from `feat-001-arah-setup`. Don't push. Merge locally only when the owner says so.
+  - Build dirs are `build-<agent-name>`.
+- **Build machine:** follow `HANDOFF.md` "Build notes" and `~/Documents/arah-archive/plan-m/machine-notes.md` (simulator recipes, zsh quoting).
 
 ## Review Focus
 
-1. **Sharing a place with no domain:** the text must still be useful (name, address, coordinates, a standard map link) and must not contain omaps.app. Pinned by Task 4's share-text test.
-2. **Map downloads still work after the metaserver is switched off:** the app falls back to the built-in server list. Pinned by Task 2's test that `MapFilesDownloader` uses `DefaultUrlsJSON` servers when `MetaServerUrl()` is empty (or by a check that `GetServersList` returns the default list), plus a manual download of Malaysia in the simulator in Task 6.
-3. **Strings in all ~45 languages:** "Organic Maps" is replaced even when declined or quoted (e.g. «Organic Maps», "Organic Maps-ის"). Pinned by Task 3's brand checker, which runs over every language value.
-4. **Deep links from old Organic Maps shares** (`https://omaps.app/…`, `om://`, `ge0://`) still open in Arah. Pinned by the existing ge0/mwm_url tests staying green (Task 4) and a manual check in Task 6.
-5. **Placeholders must not ship silently:** the brand checker reports each `ARAH-PLACEHOLDER` occurrence, and `--release` turns them into failures. Pinned by Task 1's tests.
+1. **Translations where the name is inflected, quoted or transliterated** (e.g. «CoMaps», "CoMaps-ის", "CoMapsista", or the name in Cyrillic, Arabic, CJK or Thai script) must become "Arah" too.
+   - Pinned in Task 3: the checker's brand pattern matches "CoMaps" as a substring, without word boundaries.
+   - Also pinned in Task 3: a script-agnostic diff check. For every key whose `en` value contains "CoMaps", each other language's value must contain "Arah" after the rename, or be on a reviewed exception list.
+2. **Sharing a place with no Arah domain** must still be useful (name, coordinates, a standard map link) and contain no comaps.at/comaps.app. Pinned by Task 4's share-text test.
+3. **CoMaps' metaserver can't show a donate prompt in Arah**, while downloads still use its server list. Pinned by Task 2's `ParseMetaConfig` test.
+4. **Old shared links** (`https://comaps.at/…`, `cm://`, `ge0://`, `om://`) still open a place. Pinned by Task 4's parser test plus the existing ge0/mwm_url tests staying green.
+5. **Placeholders must not ship silently:** the checker lists each `ARAH-PLACEHOLDER`, and `--release` fails on them. Pinned by Task 1's tests.
 
 ---
 
-### Task 1: Brand checker and Arah config
+### Task 1: Brand checker for CoMaps, and Arah config
 
 **Files:**
-- Create: `tools/python/arah_brand_check.py`, `tools/python/test_arah_brand_check.py`
-- Create: `libs/platform/arah_config.hpp`
-- Modify: `libs/platform/CMakeLists.txt` (list the header)
+- Modify: `tools/python/arah_brand_check.py`, `tools/python/test_arah_brand_check.py` (rewrite the scanned-file lists for CoMaps)
+- Create: `libs/platform/arah_config.hpp`, listed in `libs/platform/CMakeLists.txt`
+- Create: `iphone/Maps/Arah/ArahConfig.swift`, added to the CoMaps target in the pbxproj
 
 **Interfaces:**
-- Produces: CLI `python3 tools/python/arah_brand_check.py [--release]`, which exits 1 if it finds problems. Functions:
-  - `find_brand_leaks(repo_root) -> list[str]`: scans the user-visible sources, i.e. `data/strings/*.txt` (every language value), `iphone/Maps/OMaps.plist`, the `PRODUCT_NAME` and `INFOPLIST_KEY_CFBundleDisplayName` lines in `iphone/Maps/Maps.xcodeproj/project.pbxproj`, `iphone/Maps/*.entitlements`, `libs/drape_frontend/gui/copyright_label.cpp`, `libs/map/share.cpp` and `libs/ge0/url_generator.cpp` (outgoing link generation only). Each line containing `Organic Maps`, `organicmaps.app` or `omaps.app` is reported, unless it is in `ALLOWED`, an explicit list of `(path, substring)` pairs such as the About attribution key.
-  - `find_placeholders(repo_root) -> list[str]`: every line containing `ARAH-PLACEHOLDER` in tracked text files.
-- Produces: `libs/platform/arah_config.hpp`, namespace `arah`, with `inline constexpr std::string_view`:
+- **CLI:** `python3 -I tools/python/arah_brand_check.py [--release]`. It exits 1 on leaks, and with `--release` also on placeholders.
+- **`find_brand_leaks(root) -> list[str]`**
+  - Pattern: `re.compile(r"co ?maps|comaps\.(app|at|tech)|organic ?maps|omaps\.app", re.I)`.
+  - Scans user-visible sources:
+    - Android `android/{app,sdk}/src/main/res/values*/*.xml` (string values only; skip `translatable="false"`).
+    - iOS `iphone/Maps/LocalizedStrings/*.lproj/*.strings` and `*.stringsdict`.
+    - `data/translations/sound-strings/*.json/localize.json`.
+    - `iphone/Maps/CoMaps.plist` and `iphone/Maps/*.entitlements`.
+    - The `PRODUCT_NAME`, `INFOPLIST_KEY_CFBundleDisplayName` and `PRODUCT_BUNDLE_IDENTIFIER` lines of the pbxproj.
+    - Outgoing-link code: `libs/ge0/url_generator.cpp`, `iphone/Maps/Classes/Share/*.mm`, `iphone/Maps/UI/Information/*.swift`, `iphone/Maps/Model/Social Media.swift`, `iphone/Maps/UI/Settings/CustomMapServerView.swift`.
+  - Reports `path:line: [key] text`.
+  - `ALLOWED` is an explicit list of `(path glob, key-or-substring, reason)`. Entries:
+    - the `about_based_on` key (attribution);
+    - `CoMaps.plist`'s own file name;
+    - comment lines.
+- **`find_placeholders(root) -> list[str]`:** unchanged from the current checker.
+- **`arah_config.hpp`**, namespace `arah`, `inline constexpr std::string_view`:
   - `kAppName = "Arah"`
-  - `kWebsiteUrl = "https://github.com/ARAH-ORG/arah"` (placeholder)
-  - `kSupportEmail = "support@arah.invalid"` (placeholder)
-  - `kShareLinkBase = ""` (no domain yet; empty means "share a geo: link")
+  - `kWebsiteUrl`, `kSupportEmail`, `kPrivacyUrl`, `kTermsUrl`: the placeholder values in Scope, each with `// ARAH-PLACEHOLDER: …`
+  - `kShareLinkBase = ""` (no domain yet)
+  - `inline constexpr bool kAcceptMetaserverDonateUrl = false;`
+  - Port the header from `~/Documents/arah-archive/files-feat-004/libs/platform/arah_config.hpp` and extend it.
+- **`ArahConfig.swift`**, `enum ArahConfig` with `static let`:
+  - `appName = "Arah"`
+  - `websiteURL`, `privacyURL`, `termsURL`, `supportEmail`: same values as the C++ header, each with an `// ARAH-PLACEHOLDER` comment.
+  - `appStoreReviewURL: URL? = nil`, `newsURL: URL? = nil`, `socialMediaEnabled = false`.
 
-  Each placeholder line carries a `// ARAH-PLACEHOLDER: <what the owner must supply>` comment.
+- [ ] **Step 1: Write the failing tests** in `test_arah_brand_check.py` (temp-dir repos):
+  - `test_android_leak_found`: `values-ru/strings.xml` with `<string name="k">О «CoMaps»</string>` gives 1 leak naming `k`.
+  - `test_untranslatable_skipped`: `<string name="project_name" translatable="false">CoMaps</string>` gives 0 leaks.
+  - `test_ios_leak_found`: `ms.lproj/Localizable.strings` with `"k" = "Versi CoMaps: %@";` gives 1 leak.
+  - `test_url_leak_found`: `https://www.comaps.app/news/` in `InformationView.swift` gives 1 leak.
+  - `test_attribution_allowed`: `"about_based_on" = "Based on CoMaps";` gives 0 leaks.
+  - `test_release_fails_on_placeholder`: `main(["--release"])` returns 1 with a placeholder present. `main([])` returns 0 when there are only placeholders.
+- [ ] **Step 2: Run** `python3 -I tools/python/test_arah_brand_check.py`. Expected: FAIL (the old checker scans `data/strings`).
+- [ ] **Step 3: Implement** the checker changes and create both config files.
+- [ ] **Step 4: Run** the tests (expected: PASS). Then run the checker on the repo and record the leak count per file group in the ledger (expected: exit 1 with many leaks; this is the baseline for Tasks 2–5). Build `platform_tests` (expected: compiles, so the header is valid).
+- [ ] **Step 5: Commit** `[tools] Check CoMaps branding in Arah` and `[platform] Add Arah config` (the latter includes `ArahConfig.swift` and the pbxproj reference).
 
-- [ ] **Step 1: Write the failing tests** (`unittest`, temp dirs):
-  - `test_leak_found`: a fake `data/strings/strings.txt` with `ru = «Organic Maps»` produces one leak naming the file and key line.
-  - `test_allowed_not_reported`: a line matching an `ALLOWED` entry is not reported.
-  - `test_placeholder_listed`: a file containing `// ARAH-PLACEHOLDER: x` is listed.
-  - `test_release_fails_on_placeholder`: `main(["--release"])` returns 1 when a placeholder exists; `main([])` returns 0 when only placeholders exist and there are no leaks.
-- [ ] **Step 2: Run** `python3 -I tools/python/test_arah_brand_check.py`. Expected: ImportError/FAIL.
-- [ ] **Step 3: Implement** the checker and create `arah_config.hpp`.
-- [ ] **Step 4: Run** the tests (expected: PASS). Then run `python3 -I tools/python/arah_brand_check.py | tail -1`. Expected: exit 1, with many leaks reported. That is the baseline for Tasks 2–5.
-- [ ] **Step 5: Commit** `[tools] Add Arah brand checker and config header`.
-
-### Task 2: Servers, metaserver, Kayak, OSM placeholders
-
-**Files:**
-- Modify: `private.h`
-- Test: `libs/storage/storage_tests/` (find the downloader/servers test with `grep -rn DefaultUrlsJSON libs/storage libs/platform`)
-
-- [ ] **Step 1: Write the failing test** `UNIT_TEST(Arah_NoMetaserver)` in `libs/platform/platform_tests/` (new file `arah_config_tests.cpp`, registered in that `CMakeLists.txt`). It asserts:
-  - `GetPlatform().MetaServerUrl()` is empty.
-  - `downloader::ParseMetaConfig(GetPlatform().DefaultUrlsJSON())->servers` is non-empty.
-  - `std::string_view(KAYAK_AFFILIATE_ID).empty()` holds.
-- [ ] **Step 2: Run** `cmake --build build-claude --target platform_tests && ctest --test-dir build-claude --output-on-failure -R platform_tests`. Expected: FAIL (metaserver set, Kayak set).
-- [ ] **Step 3: Edit `private.h`.**
-  - Set `METASERVER_URL ""`.
-  - Set `KAYAK_AFFILIATE_ID ""`.
-  - Keep `DEFAULT_URLS_JSON` and `DEFAULT_CONNECTION_CHECK_IP`, each with a `// ARAH-PLACEHOLDER: Arah map server URLs (spec §5)` comment.
-  - Add `// ARAH-PLACEHOLDER: register Arah on openstreetmap.org, then replace client id/secret and redirect scheme` above the OSM OAuth block.
-  - `storage_tests/downloader_tests.cpp` skips when `METASERVER_URL` is empty, so check nothing else assumes it.
-- [ ] **Step 4: Run** platform_tests and storage_tests. Expected: PASS.
-- [ ] **Step 5: Commit** `[platform] Stop using Organic Maps metaserver and Kayak id in Arah`.
-
-### Task 3: "Arah" in all user-visible text
+### Task 2: Server placeholders, and no donate link from CoMaps' metaserver
 
 **Files:**
-- Modify: `data/strings/strings.txt`, `data/strings/types_strings.txt`, `data/strings/sound.txt` (all language values)
-- Generated: Android `values-*/strings.xml`, iOS `*.lproj/*`
+- Modify: `private.h`: add `// ARAH-PLACEHOLDER: …` comments above:
+  - `METASERVER_URL`, `DEFAULT_URLS_JSON`, `DEFAULT_CONNECTION_CHECK_IP`, `COUNTRIES_TXT_SIGNATURE_HEX`, `MAP_SERIES` ("Arah map hosting and signing key, spec §5 / Plan 6");
+  - the OSM OAuth block ("register Arah on openstreetmap.org; replace client IDs and the cm:// redirect").
+
+  The values themselves don't change.
+- Modify: `libs/platform/servers_list.cpp`: skip `settings::kDonateUrl` when `!arah::kAcceptMetaserverDonateUrl` (a one-condition change inside the existing `if`).
+- Test: `libs/platform/platform_tests/arah_config_tests.cpp` (new; port the archive's file of that name), registered in that `CMakeLists.txt`.
+
+**Interfaces:**
+- Consumes: `arah::kAcceptMetaserverDonateUrl` (Task 1), `downloader::ParseMetaConfig(std::string const &) -> std::optional<MetaConfig>`.
+
+- [ ] **Step 1: Write the failing test** `UNIT_TEST(Arah_MetaserverDonateIgnored)`. Parse `{"servers":["https://a.example/"],"settings":{"DonateUrl":"https://comaps.app/donate/","NY":"1"}}` and assert:
+  - the result has a value;
+  - `m_serversList == {"https://a.example/"}`;
+  - `m_settings` has no `DonateUrl` key;
+  - `m_settings` still has `NY`.
+
+  Add `UNIT_TEST(Arah_DefaultServersStillParse)`: `ParseMetaConfig(GetPlatform().DefaultUrlsJSON())` has a non-empty server list.
+- [ ] **Step 2: Run** `./build-<agent>/platform_tests --data_path=data/ --user_resource_path=data/ --filter=Arah`. Expected: `Arah_MetaserverDonateIgnored` FAILs and the other passes.
+- [ ] **Step 3: Implement** the `servers_list.cpp` condition and the `private.h` comments.
+- [ ] **Step 4: Run** `platform_tests` and `storage_tests`. Expected: the Arah tests pass, and storage_tests is unchanged from its baseline (run it on the branch base first, and ledger any upstream failures).
+- [ ] **Step 5: Commit** `[platform] Ignore the CoMaps donate link in Arah and mark server placeholders`.
+
+### Task 3: "Arah" in all app text (every language, Android and iOS)
+
+**Files:**
+- Modify:
+  - `android/app/src/main/res/values*/strings.xml` and `android/sdk/src/main/res/values*/strings.xml` (all languages);
+  - `iphone/Maps/LocalizedStrings/*.lproj/{Localizable,InfoPlist}.strings` and `Localizable.stringsdict`;
+  - `data/translations/sound-strings/*.json/localize.json`, only if any voice string names the brand.
+- Add the key `about_based_on` to iOS only: `en.lproj` "Based on CoMaps" and `ms.lproj` "Berasaskan CoMaps". Other languages fall back to English. Android gets it in Plan 5.
 
 **Rules:**
-- **Name:** replace `Organic Maps` with `Arah` in every language, keeping surrounding punctuation and grammar. Where a language transliterated the name (e.g. Cyrillic or Arabic script forms of "Organic Maps"), replace that form too: grep each language's values for the `en` key's position.
+- **Name:** replace "CoMaps" (and any leftover "Organic Maps") with "Arah", keeping punctuation and grammar. Transliterated forms in non-Latin scripts are found with Review Focus 1's diff check and replaced too.
 - **URLs:**
-  - Website and help/FAQ links: `organicmaps.app`/`omaps.app` website URLs become `kWebsiteUrl`'s value.
-  - Social-media keys (Instagram, Telegram, Mastodon, Facebook, X, LinkedIn, Matrix, Bluesky…): their URL values get an empty `en` only if the UI hides empty links. Check `SocialMedia.swift` and the Android about screen; otherwise point them to `kWebsiteUrl` and note it.
-  - Support emails: `*@organicmaps.app` becomes `support@arah.invalid`, marked as a placeholder in the key's `comment`.
-- **Donate** strings stay. The feature turns off with the metaserver (no `DonateUrl`). Don't delete the keys (mergeability).
-- **Allowed:** one new key `about_based_on` with `en = Based on Organic Maps` and `ms = Berasaskan Organic Maps` (attribution), added to the checker's `ALLOWED`.
+  - Website, help and FAQ links on `comaps.app`, plus `translated_om_site_url` in every language, become `kWebsiteUrl`'s value (`https://github.com/ARAH-ORG/arah`).
+  - Privacy and terms are built from `translated_om_site_url` in `InformationView.swift`; Task 5 switches them to `ArahConfig`.
+  - Download links (`…/download/`) become `kWebsiteUrl`.
+- **Support emails:** `*@comaps.app` becomes `support@arah.invalid`.
+- **Donate, news and social strings stay** (their UI is hidden by values in Tasks 2 and 5; deleting keys hurts mergeability).
 
-- [ ] **Step 1: Run the failing check** `python3 -I tools/python/arah_brand_check.py | grep data/strings | tail -1`. Expected: leaks reported.
-- [ ] **Step 2: Apply the replacements** with a reviewed script in the session scratchpad. Print every changed value for a spot check of 30 across scripts (Latin, Cyrillic, Arabic, CJK, Thai).
-- [ ] **Step 3: Check.** Run the brand checker restricted to `data/strings` (expected: 0 leaks), then `python3 -I tools/python/arah_ms_check.py data/strings/strings.txt` (expected: 0 problems; the Malay is still complete).
-- [ ] **Step 4: Regenerate** with `tools/unix/generate_localizations.sh`, reverting the unrelated `cy.lproj` drift as in Plan 2. Expected: exit 0.
-- [ ] **Step 5: Commit** `[strings] Rename Organic Maps to Arah in all languages`, then `[strings] Regenerated`.
+- [ ] **Step 1: Run the failing checks:**
+  - `python3 -I tools/python/arah_brand_check.py | grep -cE "values|lproj"`. Expected: many leaks.
+  - The Review Focus 1 diff check (a scratch script) prints every key whose `en` contains "CoMaps", and every language value that doesn't contain "CoMaps"/"Arah" after the rename. Expected: the list of transliterations to handle.
+- [ ] **Step 2: Apply the replacements** with a scratch script:
+  - Android XML: edit text in place, without re-serialising the file, so diffs stay one-line.
+  - iOS `.strings`: line-based edit.
+  - Print every changed value. Spot-check 30 across scripts: Latin, Cyrillic, Arabic, CJK, Thai, and Malay.
+  - Add the two `about_based_on` lines.
+- [ ] **Step 3: Check:**
+  - brand checker over strings: 0 leaks;
+  - the diff check: 0 unexplained values;
+  - `python3 -I tools/python/arah_ms_check.py` on the nine Malay files: 0 problems;
+  - `python3 -I tools/python/test_arah_ms_check.py`: OK;
+  - `xmllint --noout` on every changed Android file, and `plutil -lint` on every changed iOS file: all OK.
+- [ ] **Step 4: Commit** `[android] Rename CoMaps to Arah in app text` and `[ios] Rename CoMaps to Arah in app text`.
 
-### Task 4: Outgoing links and map attribution (core)
+### Task 4: Outgoing share links without a domain
 
 **Files:**
-- Modify: `libs/ge0/url_generator.cpp`, `libs/map/share.cpp`, `libs/drape_frontend/gui/copyright_label.cpp`
-- Test: `libs/ge0/ge0_tests/` and `libs/map/map_tests/` (find the share/url tests: `grep -rln "GenerateShortShowMapUrl\|share" libs/ge0/ge0_tests libs/map/map_tests`)
+- Create: `libs/map/arah_share.hpp`, `libs/map/arah_share.cpp` (listed in `libs/map/CMakeLists.txt`)
+- Modify: `iphone/Maps/Classes/Share/MWMShareActivityItem.mm`: when `arah::kShareLinkBase` is empty, use `arah::ShareLink` instead of rewriting `comaps://` to `https://comaps.at/`.
+- Modify: `iphone/Maps/Classes/Share/MWMEditorViralActivityItem.mm`: replace the `comaps.app/get` / `fb-editor-v1` links with `arah::kWebsiteUrl`.
+- Test: `libs/map/map_tests/arah_share_tests.cpp` (registered in that `CMakeLists.txt`); `libs/ge0/ge0_tests/` (existing parser tests).
+
+**Interfaces:**
+- Produces: `namespace arah { std::string ShareLink(double lat, double lon, int zoom); }`. It returns `https://www.openstreetmap.org/?mlat=<lat>&mlon=<lon>#map=<zoom>/<lat>/<lon>`, with coordinates to 5 decimals.
+- Produces: `std::string ShareText(std::string_view name, std::string_view address, double lat, double lon, int zoom)`. It returns the lines below, joined by `\n`, skipping empty name or address lines:
+  - `name`
+  - `address`
+  - `<lat>, <lon>` (5 decimals)
+  - `ShareLink(...)`
+- `GenerateShortShowMapUrl` and the ge0 parser stay unchanged, so incoming links keep working.
 
 - [ ] **Step 1: Write the failing tests:**
-  - `UNIT_TEST(Arah_ShareTextHasNoOmapsLink)`: build share text for a place named "Masjid Jamek" at 3.1489, 101.6958 with the existing share API (read `share.hpp`). Assert it contains `"Masjid Jamek"` and `"3.1489"`, contains `"geo:3.1489"` or `"https://www.openstreetmap.org/?mlat=3.1489"`, and does not contain `"omaps.app"`.
-  - `UNIT_TEST(Arah_IncomingOmapsLinksStillParse)`: the existing ge0 parser accepts `https://omaps.app/o4B4pYZsRs/Zoo_Zürich` (copy a case from the existing parser tests).
-- [ ] **Step 2: Run** `ge0_tests` and `map_tests`. Expected: the share test FAILs and the parser test PASSes (already supported).
-- [ ] **Step 3: Implement.**
-  - When `arah::kShareLinkBase` is empty, outgoing share URLs use `geo:<lat>,<lon>?q=<lat>,<lon>(<name>)` in text and an OpenStreetMap link (`https://www.openstreetmap.org/?mlat=…&mlon=…#map=<zoom>/<lat>/<lon>`) in HTML.
-  - The "get the app" anchor in `share.cpp` points to `arah::kWebsiteUrl`.
-  - The copyright label reads `"Map data © OpenStreetMap"`.
-  - Keep each change a minimal branch on `arah::` constants.
-- [ ] **Step 4: Run** `ge0_tests`, `map_tests` and `drape_frontend_tests` (offscreen, per `CLAUDE.md`). Expected: PASS. Update any upstream test that asserted the old omaps.app output; ledger each such change.
-- [ ] **Step 5: Commit** `[map] Share Arah places without omaps.app links`.
+  - `UNIT_TEST(Arah_ShareTextHasNoCoMapsLink)`: `ShareText("Masjid Jamek", "Jalan Tun Perak, Kuala Lumpur", 3.14893, 101.69585, 17)` contains:
+    - `"Masjid Jamek"`
+    - `"3.14893, 101.69585"`
+    - `"https://www.openstreetmap.org/?mlat=3.14893&mlon=101.69585#map=17/3.14893/101.69585"`
 
-### Task 5: iPhone identity
+    It contains none of `"comaps"`, `"omaps"` or `"ge0"` (case-insensitive).
+  - `UNIT_TEST(Arah_ShareTextSkipsEmptyAddress)`: with an empty address, there's no blank line.
+  - `UNIT_TEST(Arah_OldLinksStillParse)` in `ge0_tests`: `ge0::Ge0Parser` parses a `https://comaps.at/…`, a `cm://…` and a `ge0://…` URL to the same lat/lon. Take the URLs from an existing parser test case.
+- [ ] **Step 2: Run** `map_tests` and `ge0_tests` with `--filter=Arah`. Expected: the share tests FAIL (no such functions); `Arah_OldLinksStillParse` passes.
+- [ ] **Step 3: Implement** `arah_share.cpp` and switch the two iOS share items to it. For the HTML/email share variant, use `ShareLink` as the anchor.
+- [ ] **Step 4: Run** `map_tests`, `ge0_tests` and the brand checker on the share files. Expected: the Arah tests pass, and the checker shows 0 leaks in `Classes/Share`.
+- [ ] **Step 5: Commit** `[map] Share Arah places as OpenStreetMap links`.
+
+### Task 5: iPhone identity and About screen
 
 **Files:**
 - Modify: `iphone/Maps/Maps.xcodeproj/project.pbxproj`:
-  - `PRODUCT_NAME` becomes `"Arah"` / `"Arah (Debug)"`.
-  - Widget `INFOPLIST_KEY_CFBundleDisplayName` becomes `Arah`.
-  - Bundle IDs `app.organicmaps*` become `my.arah.app*` (placeholder; keep the `.debug`, `.tests` and `.widgetextension` suffixes).
-- Modify: `iphone/Maps/OMaps-Debug.entitlements`, `iphone/Maps/OMaps-Release.entitlements`:
-  - iCloud containers become `iCloud.my.arah.app` (+`.debug`).
-  - Remove `applinks:omaps.app`.
-- Modify: `iphone/Maps/OMaps.plist`: add URL scheme `arah` (keep `om`, `geo` and the others for incoming links).
-- Modify: iOS Swift/ObjC files with hard-coded Organic Maps text or links (listed by `grep -rlnE "Organic Maps|organicmaps\.app|omaps\.app" iphone/Maps iphone/CoreApi --include='*.swift' --include='*.mm' --include='*.m'`).
-  - User-visible text moves to `L("…")` keys, or uses `arah::kAppName`/`kWebsiteUrl` via a small `ArahConfig` ObjC wrapper.
-  - Leave purely internal identifiers alone: file names, log tags, iCloud folder names (renaming those breaks sync), and `DeepLinkHandler` incoming hosts.
-- Test: the brand checker covers `PRODUCT_NAME`, display name, entitlements and plist.
+  - `PRODUCT_NAME` becomes `Arah` / `Arah (Debug)`.
+  - The widget's `INFOPLIST_KEY_CFBundleDisplayName` becomes `Arah`.
+  - Every `app.comaps*` bundle ID becomes `my.arah.app*`, keeping the suffixes. Also set the `${BUNDLE_IDENTIFIER}` setting's source; find it with `grep -rn "BUNDLE_IDENTIFIER" xcode iphone`.
+- Modify: `iphone/Maps/CoMaps-Debug.entitlements`, `iphone/Maps/CoMaps-Release.entitlements`:
+  - iCloud containers become `iCloud.my.arah.app(.debug)`.
+  - Remove `applinks:comaps.at` (no Arah domain).
+- Modify: `iphone/Maps/CoMaps.plist`: add URL scheme `arah`, keeping `cm`, `ge0`, `geo` and the others.
+- Modify: `iphone/Maps/UI/Information/InformationView.swift`:
+  - News, volunteer, review and social rows show only when their `ArahConfig` value is set.
+  - Privacy and terms open `ArahConfig.privacyURL` / `termsURL`.
+  - Add a "Based on CoMaps" line (`about_based_on`) next to the copyright row.
+- Modify: `iphone/Maps/Model/Social Media.swift` (email becomes `ArahConfig.supportEmail`) and `CustomMapServerView.swift` (example URL becomes `https://maps.example.org/`).
+- Leave internal identifiers alone: file names (`CoMaps.plist`), error domains, Spotlight domains, log tags, and the incoming-link hosts in `DeepLinkHandler.swift`.
 
-- [ ] **Step 1: Run the failing check:** `python3 -I tools/python/arah_brand_check.py | grep -E "pbxproj|entitlements|plist" | tail -3`. Expected: leaks reported.
-- [ ] **Step 2: Apply the edits** above. Add `// ARAH-PLACEHOLDER` comments wherever the format allows (xcconfig/plist comments; for the pbxproj, list the placeholder bundle ID in `arah_config.hpp`'s comment instead).
-- [ ] **Step 3: Check.** Run `plutil -lint` on the pbxproj, entitlements and plist (expected: OK). The brand checker should report 0 leaks for iOS files.
-- [ ] **Step 4: Build** the iOS app for the iPhone 17 Pro simulator. Expected: BUILD SUCCEEDED, with the app at `Arah (Debug).app` and its home-screen name "Arah (Debug)".
-- [ ] **Step 5: Commit** `[ios] Rename the iPhone app to Arah`.
+- [ ] **Step 1: Run the failing check:** `python3 -I tools/python/arah_brand_check.py | grep -E "pbxproj|entitlements|plist|Information|Social|CustomMap"`. Expected: leaks reported.
+- [ ] **Step 2: Apply the edits.** The pbxproj can't hold comments next to build settings, so `arah_config.hpp` lists the placeholder bundle and iCloud IDs, already marked in Task 1.
+- [ ] **Step 3: Check:**
+  - `plutil -lint` on the pbxproj, both entitlements files and `CoMaps.plist`: OK.
+  - Brand checker: 0 leaks for iOS files.
+  - Build iOS for the iPhone 17 Pro simulator (`-destination 'id=0A66D354-92E6-4D43-83C4-D7C82FE5C6F9'`, `CODE_SIGNING_ALLOWED=NO`, `-derivedDataPath build-<agent>-ios`). Expected: BUILD SUCCEEDED, producing `Arah (Debug).app` with `CFBundleIdentifier` `my.arah.app.debug` and `CFBundleDisplayName` "Arah (Debug)" (read both with PlistBuddy).
+- [ ] **Step 4: Commit** `[ios] Rename the iPhone app to Arah`.
 
 ### Task 6: Verify end to end
 
-- [ ] **Step 1: Run the full brand check.** `python3 -I tools/python/arah_brand_check.py` should report 0 leaks and print the placeholder list. Then `python3 -I tools/python/arah_brand_check.py --release` should exit 1, listing exactly the placeholders: servers, connection IP, OSM OAuth, bundle ID, website, support email.
-- [ ] **Step 2: Run the suite:** `ctest -j --test-dir build-claude --output-on-failure -R "platform_tests|storage_tests|ge0_tests|map_tests|indexer_tests|search_tests|routing_tests|style_tests"`. Expected: all pass.
-- [ ] **Step 3: Simulator pass** (Review Focus 2, 4):
-  - Fresh install. The home-screen name reads "Arah (Debug)".
-  - Delete and re-download Malaysia_West in the app's downloader (or via file removal plus the in-app prompt). Download succeeds with the metaserver off.
-  - Share a place: the text has no omaps.app.
-  - `xcrun simctl openurl` an `https://omaps.app/…` link and an `om://map?ll=3.15,101.70` link: both open in Arah.
-  - Screenshot each step for the owner.
-- [ ] **Step 4: Commit** any fixes found, each with its test.
+- [ ] **Step 1: Brand check:**
+  - `python3 -I tools/python/arah_brand_check.py`: 0 leaks; the placeholder list printed.
+  - `--release`: exit 1, listing exactly the Scope placeholders (servers, connection IP, signing key, map series, OSM OAuth, bundle and iCloud IDs, website, support email, privacy, terms).
+- [ ] **Step 2: Test suite:** `platform_tests`, `storage_tests`, `ge0_tests`, `map_tests`, `indexer_tests`, `i18n_tests` and `style_tests --filter=Arah`, plus both Python checkers. Expected: all Arah tests pass; upstream suites unchanged from their branch-base baseline (ledgered).
+- [ ] **Step 3: Simulator pass** (Review Focus 2–4). Avoid `simctl openurl`: it shows an undismissable dialog.
+  - Fresh install of `my.arah.app.debug`. The home-screen label reads "Arah (Debug)" (screenshot via `simctl io`).
+  - The app opens in Malay, as before, and the main map renders with the Malaysia map placed under `Documents/<version>/`.
+  - The core log shows the metaserver servers list was used (`Requesting metaserver`) and no `DonateUrl` was stored. Check with `defaults read`/`settings.ini`.
+  - Screenshot each check for the owner.
+- [ ] **Step 4: Update `HANDOFF.md`:** Plan 3 is done and the placeholder list is current. Commit `[docs] Update Arah handoff after Plan 3`.
