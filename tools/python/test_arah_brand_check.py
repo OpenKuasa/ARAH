@@ -19,20 +19,40 @@ def make_repo(files):
 
 
 class BrandCheckTest(unittest.TestCase):
-    def test_leak_found(self):
-        root = make_repo({"data/strings/strings.txt": "[about]\nen = About\nru = О «Organic Maps»\n"})
+    def test_android_leak_found(self):
+        root = make_repo({"android/app/src/main/res/values-ru/strings.xml":
+                          '<resources>\n    <string name="k">О «CoMaps»</string>\n</resources>\n'})
         leaks = arah_brand_check.find_brand_leaks(root)
         self.assertEqual(len(leaks), 1)
-        self.assertIn("data/strings/strings.txt", leaks[0])
-        self.assertIn("Organic Maps", leaks[0])
+        self.assertIn("[k]", leaks[0])
 
-    def test_joined_spelling_found(self):
-        root = make_repo({"data/strings/strings.txt": "[telegram_url]\nen = https://t.me/OrganicMapsApp\n"})
+    def test_untranslatable_skipped(self):
+        root = make_repo({"android/app/src/main/res/values/strings.xml":
+                          '<resources>\n    <string name="project_name" translatable="false">CoMaps</string>\n'
+                          '</resources>\n'})
+        self.assertEqual(arah_brand_check.find_brand_leaks(root), [])
+
+    def test_ios_leak_found(self):
+        root = make_repo({"iphone/Maps/LocalizedStrings/ms.lproj/Localizable.strings":
+                          '/* About CoMaps */\n"k" = "Versi CoMaps: %@";\n'})
+        leaks = arah_brand_check.find_brand_leaks(root)
+        self.assertEqual(len(leaks), 1)
+        self.assertIn("[k]", leaks[0])
+
+    def test_url_leak_found(self):
+        root = make_repo({"iphone/Maps/UI/Information/InformationView.swift":
+                          '        openUrl(URL(string: "https://www.comaps.app/news/")!)\n'})
         self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)
 
-    def test_allowed_not_reported(self):
-        root = make_repo({"data/strings/strings.txt": "[about_based_on]\nen = Based on Organic Maps\n"})
+    def test_attribution_allowed(self):
+        root = make_repo({"iphone/Maps/LocalizedStrings/en.lproj/Localizable.strings":
+                          '"about_based_on" = "Based on CoMaps";\n'})
         self.assertEqual(arah_brand_check.find_brand_leaks(root), [])
+
+    def test_old_brand_still_found(self):
+        root = make_repo({"android/sdk/src/main/res/values/strings.xml":
+                          '<resources><string name="t">https://t.me/OrganicMapsApp</string></resources>\n'})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)
 
     def test_placeholder_listed(self):
         root = make_repo({"libs/platform/arah_config.hpp": "x = 1;  // ARAH-PLACEHOLDER: x\n"})

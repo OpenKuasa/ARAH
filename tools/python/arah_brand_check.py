@@ -1,63 +1,95 @@
 #!/usr/bin/env python3
-"""Finds user-visible Organic Maps branding left in Arah, and lists ARAH-PLACEHOLDER values.
+"""Finds user-visible CoMaps / Organic Maps branding left in Arah, and lists ARAH-PLACEHOLDER values.
 
 Usage: arah_brand_check.py [--root DIR] [--release]
 
 Exits 1 if branding leaks remain, or (with --release) if any placeholder is left.
 """
+import glob
+import json
 import os
+import plistlib
 import re
 import subprocess
 import sys
 
-BRAND = re.compile(r"organic ?maps|omaps\.app", re.IGNORECASE)
+BRAND = re.compile(r"co ?maps|organic ?maps|omaps\.app", re.IGNORECASE)
 PLACEHOLDER = "ARAH-PLACEHOLDER"
 
-# String keys whose text must keep the Organic Maps name (license attribution).
+# String keys whose text must keep the upstream name (license attribution).
 ALLOWED_KEYS = {"about_based_on"}
 
-KEY_LINE = re.compile(r"^\s*\[([^\[\]]+)\]\s*$")
-VALUE_LINE = re.compile(r"^\s*([a-z]{2,3}(?:-[A-Za-z]+)?(?::[a-z]+)?)\s*=")
-
-STRING_FILES = ["data/strings/strings.txt", "data/strings/types_strings.txt", "data/strings/sound.txt"]
-# Files where every non-comment line is user-visible or ships as identity.
+# User-visible app text, in every language.
+ANDROID_STRINGS = ["android/app/src/main/res/values*/*.xml", "android/sdk/src/main/res/values*/*.xml"]
+IOS_STRINGS = ["iphone/Maps/LocalizedStrings/*.lproj/*.strings"]
+IOS_PLURALS = ["iphone/Maps/LocalizedStrings/*.lproj/*.stringsdict"]
+JSON_STRINGS = ["data/translations/sound-strings/*.json/localize.json"]
+# Files where every non-comment line ships as identity or builds an outgoing link.
 PLAIN_FILES = [
-    "iphone/Maps/OMaps.plist",
-    "iphone/Maps/OMaps-Debug.entitlements",
-    "iphone/Maps/OMaps-Release.entitlements",
-    "libs/drape_frontend/gui/copyright_label.cpp",
-    "libs/map/share.cpp",
-    "libs/ge0/url_generator.cpp",
+    "iphone/Maps/CoMaps.plist",
+    "iphone/Maps/*.entitlements",
+    "iphone/Maps/Classes/Share/*.mm",
+    "iphone/Maps/UI/Information/*.swift",
+    "iphone/Maps/Model/Social Media.swift",
+    "iphone/Maps/UI/Settings/CustomMapServerView.swift",
 ]
 PBXPROJ = "iphone/Maps/Maps.xcodeproj/project.pbxproj"
 PBX_IDENTITY = re.compile(r"PRODUCT_NAME|CFBundleDisplayName|PRODUCT_BUNDLE_IDENTIFIER")
+ANDROID_ENTRY = re.compile(r'<(string|plurals) name="([^"]+)"([^>]*)>(.*?)</\1>', re.S)
+IOS_LINE = re.compile(r'^\s*"((?:[^"\\]|\\.)*)"\s*=\s*"((?:[^"\\]|\\.)*)"\s*;')
+COMMENT = re.compile(r"^\s*(//|/\*|\*|<!--)")
+
+
+def expand(root, patterns):
+    out = []
+    for pattern in patterns:
+        out += sorted(os.path.relpath(p, root) for p in glob.glob(os.path.join(root, pattern)))
+    return out
+
+
+def read_text(root, rel):
+    path = os.path.join(root, rel)
+    if not os.path.exists(path):
+        return ""
+    with open(path, encoding="utf-8") as f:
+        return f.read()
 
 
 def read_lines(root, rel):
-    path = os.path.join(root, rel)
-    if not os.path.exists(path):
-        return []
-    with open(path, encoding="utf-8") as f:
-        return f.read().split("\n")
+    return read_text(root, rel).split("\n")
 
 
 def find_brand_leaks(root):
     leaks = []
-    for rel in STRING_FILES:
-        key = None
-        for n, line in enumerate(read_lines(root, rel), 1):
-            m = KEY_LINE.match(line)
-            if m:
-                key = m.group(1)
+    for rel in expand(root, ANDROID_STRINGS):
+        text = read_text(root, rel)
+        for m in ANDROID_ENTRY.finditer(text):
+            if 'translatable="false"' in m.group(3) or m.group(2) in ALLOWED_KEYS:
                 continue
-            if VALUE_LINE.match(line) and BRAND.search(line) and key not in ALLOWED_KEYS:
-                leaks.append(f"{rel}:{n}: [{key}] {line.strip()}")
-    for rel in PLAIN_FILES:
+            if BRAND.search(m.group(4)):
+                line = text.count("\n", 0, m.start()) + 1
+                leaks.append(f"{rel}:{line}: [{m.group(2)}] {m.group(4).strip()[:120]}")
+    for rel in expand(root, IOS_STRINGS):
         for n, line in enumerate(read_lines(root, rel), 1):
-            if BRAND.search(line) and not line.strip().startswith("//"):
-                leaks.append(f"{rel}:{n}: {line.strip()}")
+            m = IOS_LINE.match(line)
+            if m and m.group(1) not in ALLOWED_KEYS and BRAND.search(m.group(2)):
+                leaks.append(f"{rel}:{n}: [{m.group(1)}] {m.group(2)[:120]}")
+    for rel in expand(root, IOS_PLURALS):
+        with open(os.path.join(root, rel), "rb") as f:
+            data = plistlib.load(f)
+        for key, entry in data.items():
+            if BRAND.search(json.dumps(entry, ensure_ascii=False)):
+                leaks.append(f"{rel}: [{key}]")
+    for rel in expand(root, JSON_STRINGS):
+        for key, value in json.loads(read_text(root, rel)).items():
+            if BRAND.search(value.get("defaultMessage", "")):
+                leaks.append(f"{rel}: [{key}] {value['defaultMessage'][:120]}")
+    for rel in expand(root, PLAIN_FILES):
+        for n, line in enumerate(read_lines(root, rel), 1):
+            if BRAND.search(line) and not COMMENT.match(line):
+                leaks.append(f"{rel}:{n}: {line.strip()[:120]}")
     for n, line in enumerate(read_lines(root, PBXPROJ), 1):
-        if PBX_IDENTITY.search(line) and re.search(r"Organic Maps|organicmaps", line):
+        if PBX_IDENTITY.search(line) and BRAND.search(line):
             leaks.append(f"{PBXPROJ}:{n}: {line.strip()}")
     return leaks
 
