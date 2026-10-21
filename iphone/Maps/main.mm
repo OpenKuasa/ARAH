@@ -8,7 +8,8 @@ static void ApplyArahDefaultLanguage()
 {
   NSString * const kAppliedKey = @"ArahDefaultLanguageApplied";
   NSUserDefaults * defaults = NSUserDefaults.standardUserDefaults;
-  if ([defaults boolForKey:kAppliedKey])
+  // Unit tests run inside the app and expect upstream's English.
+  if ([defaults boolForKey:kAppliedKey] || NSProcessInfo.processInfo.environment[@"XCTestConfigurationFilePath"])
     return;
   [defaults setObject:@[@"ms"] forKey:@"AppleLanguages"];
   [defaults setBool:YES forKey:kAppliedKey];
