@@ -3,7 +3,7 @@
         "defaultMessage": "Tempat Makan|makan|makanan"
     },
     "@category_food": {
-        "defaultMessage": "4Barangan Runcit|runcit|makanan"
+        "defaultMessage": "4Barangan Runcit|runcit|makanan|barang runcit"
     },
     "@category_transport": {
         "defaultMessage": "5Pengangkutan|transport"
@@ -36,7 +36,7 @@
         "defaultMessage": "ATM|mesin ATM"
     },
     "@category_rv": {
-        "defaultMessage": "2Kemudahan RV|karavan|campervan|motorhome"
+        "defaultMessage": "2Kemudahan RV|karavan|campervan|motorhome|kemudahan karavan"
     },
     "amenity-atm|@category_atm": {
         "defaultMessage": "ATM|mesin ATM|duit|wang|cash"
