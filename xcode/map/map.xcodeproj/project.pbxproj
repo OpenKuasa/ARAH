@@ -15,6 +15,7 @@
 		348AB57C1D7EE0C6009F8301 /* chart_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 348AB57A1D7EE0C6009F8301 /* chart_generator.cpp */; };
 		348AB57D1D7EE0C6009F8301 /* chart_generator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 348AB57B1D7EE0C6009F8301 /* chart_generator.hpp */; };
 		34921F661BFA0A6900737D6E /* api_mark_point.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 34921F611BFA0A6900737D6E /* api_mark_point.hpp */; };
+		54FD29A662FC671A3CB89115 /* arah_share.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3E6027E842F91B278833ECF6 /* arah_share.hpp */; };
 		39E3C60323312BA800FB0C37 /* features_fetcher.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 39E3C60123312BA800FB0C37 /* features_fetcher.hpp */; };
 		39E3C60423312BA800FB0C37 /* features_fetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39E3C60223312BA800FB0C37 /* features_fetcher.cpp */; };
 		3D4E99821FB462B60025B48C /* everywhere_search_params.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3D4E99801FB462B60025B48C /* everywhere_search_params.hpp */; };
@@ -35,6 +36,7 @@
 		3DEE1AE121EE03B400054A91 /* power_management_schemas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DEE1ADD21EE03B400054A91 /* power_management_schemas.cpp */; };
 		3DF528D8237DC82E000ED0D5 /* position_provider.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3DF528D5237DC82E000ED0D5 /* position_provider.hpp */; };
 		45201E931CE4AC90008A4842 /* api_mark_point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45201E921CE4AC90008A4842 /* api_mark_point.cpp */; };
+		ECEC7B395F118FF903976EAE /* arah_share.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C84014B7E15C8B6F391B8 /* arah_share.cpp */; };
 		45580ABE1E2CBD5E00CD535D /* benchmark_tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45580ABC1E2CBD5E00CD535D /* benchmark_tools.cpp */; };
 		45580ABF1E2CBD5E00CD535D /* benchmark_tools.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 45580ABD1E2CBD5E00CD535D /* benchmark_tools.hpp */; };
 		456E1B3A1F9A3C2A009C32E1 /* search_mark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 456E1B381F9A3C29009C32E1 /* search_mark.cpp */; };
@@ -158,6 +160,7 @@
 		348AB57A1D7EE0C6009F8301 /* chart_generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = chart_generator.cpp; sourceTree = "<group>"; };
 		348AB57B1D7EE0C6009F8301 /* chart_generator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = chart_generator.hpp; sourceTree = "<group>"; };
 		34921F611BFA0A6900737D6E /* api_mark_point.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = api_mark_point.hpp; sourceTree = "<group>"; };
+		3E6027E842F91B278833ECF6 /* arah_share.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = arah_share.hpp; sourceTree = "<group>"; };
 		34AF87E91DBE5AD000E5E7DC /* common-debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "common-debug.xcconfig"; path = "../common-debug.xcconfig"; sourceTree = "<group>"; };
 		34AF87EA1DBE5AD000E5E7DC /* common-release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "common-release.xcconfig"; path = "../common-release.xcconfig"; sourceTree = "<group>"; };
 		39E3C60123312BA800FB0C37 /* features_fetcher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = features_fetcher.hpp; sourceTree = "<group>"; };
@@ -182,6 +185,7 @@
 		40ACC79323191C2600238E21 /* check_mwms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = check_mwms.cpp; sourceTree = "<group>"; };
 		40ACC79523191C2600238E21 /* power_manager_tests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = power_manager_tests.cpp; sourceTree = "<group>"; };
 		45201E921CE4AC90008A4842 /* api_mark_point.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = api_mark_point.cpp; sourceTree = "<group>"; };
+		8F8C84014B7E15C8B6F391B8 /* arah_share.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arah_share.cpp; sourceTree = "<group>"; };
 		45580ABC1E2CBD5E00CD535D /* benchmark_tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = benchmark_tools.cpp; sourceTree = "<group>"; };
 		45580ABD1E2CBD5E00CD535D /* benchmark_tools.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = benchmark_tools.hpp; sourceTree = "<group>"; };
 		456E1B381F9A3C29009C32E1 /* search_mark.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = search_mark.cpp; sourceTree = "<group>"; };
@@ -391,7 +395,9 @@
 			isa = PBXGroup;
 			children = (
 				45201E921CE4AC90008A4842 /* api_mark_point.cpp */,
+				8F8C84014B7E15C8B6F391B8 /* arah_share.cpp */,
 				34921F611BFA0A6900737D6E /* api_mark_point.hpp */,
+				3E6027E842F91B278833ECF6 /* arah_share.hpp */,
 				45580ABC1E2CBD5E00CD535D /* benchmark_tools.cpp */,
 				45580ABD1E2CBD5E00CD535D /* benchmark_tools.hpp */,
 				BBA014AB2073C783007402E4 /* bookmark_helpers.cpp */,
@@ -497,6 +503,7 @@
 				3D4E99831FB462B60025B48C /* viewport_search_params.hpp in Headers */,
 				34583BD01C88556800F94664 /* place_page_info.hpp in Headers */,
 				34921F661BFA0A6900737D6E /* api_mark_point.hpp in Headers */,
+				54FD29A662FC671A3CB89115 /* arah_share.hpp in Headers */,
 				3DBD7B93240D523400ED9FE8 /* elevation_info.hpp in Headers */,
 				3D4E99821FB462B60025B48C /* everywhere_search_params.hpp in Headers */,
 				675346751A4054E800A0A8C3 /* mwm_url.hpp in Headers */,
@@ -700,6 +707,7 @@
 				39E3C60423312BA800FB0C37 /* features_fetcher.cpp in Sources */,
 				348AB57C1D7EE0C6009F8301 /* chart_generator.cpp in Sources */,
 				45201E931CE4AC90008A4842 /* api_mark_point.cpp in Sources */,
+				ECEC7B395F118FF903976EAE /* arah_share.cpp in Sources */,
 				BBA014AD2073C784007402E4 /* bookmark_helpers.cpp in Sources */,
 				F6D2CE7E1EDEB7F500636DFD /* routing_manager.cpp in Sources */,
 				F6B283071C1B03320081957A /* gps_track_storage.cpp in Sources */,

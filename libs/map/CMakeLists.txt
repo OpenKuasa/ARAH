@@ -3,6 +3,8 @@ project(map)
 set(SRC
   api_mark_point.cpp
   api_mark_point.hpp
+  arah_share.cpp
+  arah_share.hpp
   benchmark_tools.hpp
   benchmark_tools.cpp
   bookmark.cpp

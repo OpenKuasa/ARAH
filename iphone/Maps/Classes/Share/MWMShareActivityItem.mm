@@ -7,10 +7,14 @@
 #import <CoreApi/PlacePagePhone.h>
 #import <LinkPresentation/LPLinkMetadata.h>
 
+#include "map/arah_share.hpp"
+#include "platform/arah_config.hpp"
+
 NSString * httpGe0Url(NSString * shortUrl)
 {
-  // Replace 'comaps://' with 'https://comaps.at/'
-  return [shortUrl stringByReplacingCharactersInRange:NSMakeRange(0, 9) withString:@"https://comaps.at/"];
+  // Replace the 'comaps://' scheme with Arah's share-link domain (only used once Arah has one).
+  return [shortUrl stringByReplacingCharactersInRange:NSMakeRange(0, 9)
+                                           withString:@(std::string(arah::kShareLinkBase).c_str())];
 }
 
 @interface MWMShareActivityItem ()
@@ -82,6 +86,21 @@ NSString * httpGe0Url(NSString * shortUrl)
   return [url substringWithRange:NSMakeRange(0, kGe0UrlLength)];
 }
 
+- (ms::LatLon)latLon
+{
+  return self.data ? ms::LatLon(self.data.locationCoordinate.latitude, self.data.locationCoordinate.longitude)
+                   : ms::LatLon(self.location.latitude, self.location.longitude);
+}
+
+// Arah has no share-link domain yet, so places are shared as OpenStreetMap links.
+- (NSString *)shareLink
+{
+  if (!arah::kShareLinkBase.empty())
+    return httpGe0Url([self url:NO]);
+  ms::LatLon const ll = [self latLon];
+  return @(arah::ShareLink(ll.m_lat, ll.m_lon, GetFramework().GetDrawScale()).c_str());
+}
+
 #pragma mark - UIActivityItemSource
 
 - (id)activityViewControllerPlaceholderItem:(UIActivityViewController *)activityViewController
@@ -107,7 +126,7 @@ NSString * httpGe0Url(NSString * shortUrl)
 - (LPLinkMetadata *)activityViewControllerLinkMetadata:(UIActivityViewController *)activityViewController API_AVAILABLE(ios(13.0))
 {
   LPLinkMetadata * metadata = [[LPLinkMetadata alloc] init];
-  metadata.originalURL = [NSURL URLWithString:httpGe0Url([self url:NO])];
+  metadata.originalURL = [NSURL URLWithString:[self shareLink]];
   metadata.title = self.isMyPosition ? L(@"core_my_position") : self.data.previewData.title;
   metadata.iconProvider = [[NSItemProvider alloc] initWithObject:[UIImage imageNamed:@"Logo"]];
   return metadata;
@@ -117,16 +136,14 @@ NSString * httpGe0Url(NSString * shortUrl)
 
 - (NSString *)itemForTwitter
 {
-  NSString * shortUrl = [self url:YES];
-  return [NSString stringWithFormat:@"%@\n%@", httpGe0Url(shortUrl),
+  return [NSString stringWithFormat:@"%@\n%@", [self shareLink],
                                     self.isMyPosition ? L(@"my_position_share_email_subject")
                                                       : self.data.previewData.title];
 }
 
 - (NSString *)itemDefaultWithActivityType:(NSString *)activityType
 {
-  NSString * ge0Url = [self url:NO];
-  NSString * url = httpGe0Url(ge0Url);
+  NSString * url = [self shareLink];
   if (self.isMyPosition)
   {
     BOOL const hasSubject = [activityType isEqualToString:UIActivityTypeMail];
@@ -141,20 +158,19 @@ NSString * httpGe0Url(NSString * shortUrl)
     [phones addObject:phone.phone];
   }];
 
-  NSMutableString * result = [L(@"sharing_call_action_look") mutableCopy];
-  std::vector<NSString *> strings{self.data.previewData.title,
-                                 self.data.previewData.subtitle,
-                                 self.data.previewData.secondarySubtitle,
-                                 [phones componentsJoinedByString:@"; "],
-                                 url};
-
-  for (auto const & str : strings)
+  NSMutableArray<NSString *> * details = [NSMutableArray new];
+  for (NSString * str in @[self.data.previewData.subtitle ?: @"", self.data.previewData.secondarySubtitle ?: @"",
+                           [phones componentsJoinedByString:@"; "]])
   {
     if (str.length)
-      [result appendString:[NSString stringWithFormat:@"\n%@", str]];
+      [details addObject:str];
   }
 
-  return result;
+  ms::LatLon const ll = [self latLon];
+  std::string const text = arah::ShareText((self.data.previewData.title ?: @"").UTF8String,
+                                           [details componentsJoinedByString:@"\n"].UTF8String, ll.m_lat, ll.m_lon,
+                                           GetFramework().GetDrawScale());
+  return [NSString stringWithFormat:@"%@\n%@", L(@"sharing_call_action_look"), @(text.c_str())];
 }
 
 #pragma mark - Subject
