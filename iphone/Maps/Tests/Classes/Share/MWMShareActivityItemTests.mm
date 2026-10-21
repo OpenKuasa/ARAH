@@ -2,6 +2,9 @@
 #import "MWMShareActivityItem.h"
 
 #include "ge0/url_generator.hpp"
+#include "platform/arah_config.hpp"
+
+#include <string>
 
 extern NSString * httpGe0Url(NSString * shortUrl);
 
@@ -12,8 +15,12 @@ extern NSString * httpGe0Url(NSString * shortUrl);
 
 @implementation MWMShareActivityItemTests
 
+// Arah: the ge0 link uses Arah's share domain (empty until Arah has one; places are then shared as OSM links).
+static NSString * ArahShareBase() { return @(std::string(arah::kShareLinkBase).c_str()); }
+
 - (void)testHttpGe0UrlReplacesPrefix {
-    XCTAssertEqualObjects(httpGe0Url(@"comaps://o4CoCoCoCo/Test_Location"), @"https://comaps.at/o4CoCoCoCo/Test_Location");
+    XCTAssertEqualObjects(httpGe0Url(@"comaps://o4CoCoCoCo/Test_Location"),
+                          [ArahShareBase() stringByAppendingString:@"o4CoCoCoCo/Test_Location"]);
 }
 
 @end
@@ -38,7 +45,7 @@ extern NSString * httpGe0Url(NSString * shortUrl);
     
     NSString * const httpUrl = httpGe0Url(@(url.c_str()));
     
-    XCTAssertEqualObjects(httpUrl, @"https://comaps.at/o4CoCoCoCo/Test_Location");
+    XCTAssertEqualObjects(httpUrl, [@(std::string(arah::kShareLinkBase).c_str()) stringByAppendingString:@"o4CoCoCoCo/Test_Location"]);
 }
 
 @end
