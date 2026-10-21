@@ -2,6 +2,7 @@
 
 #include "storage/downloading_policy.hpp"
 
+#include "platform/arah_meta.hpp"
 #include "platform/downloader_utils.hpp"
 #include "platform/http_client.hpp"
 #include "platform/locale.hpp"
@@ -30,7 +31,7 @@ void MapFilesDownloader::RunMetaConfigAsync(std::function<void()> && callback)
     GetMetaConfig([this, callback = std::move(callback)](MetaConfig const & metaConfig)
     {
       m_serversList = metaConfig.m_serversList;
-      settings::Update(metaConfig.m_settings);
+      settings::Update(arah::FilterMetaSettings(metaConfig.m_settings));
       callback();
 
       // Reset flag to invoke servers list downloading next time if current request has failed.

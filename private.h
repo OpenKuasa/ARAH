@@ -1,5 +1,6 @@
 #pragma once
 
+// ARAH-PLACEHOLDER: register Arah on openstreetmap.org; replace the client IDs and the cm:// redirect.
 #define OSM_OAUTH2_REDIRECT_URI "cm://oauth2/osm/callback"
 #define OSM_OAUTH2_SCOPE "read_prefs write_api write_notes"
 #define OSM_OAUTH2_CLIENT_ID_PROD "feHq7fMSmKzZD6XLgPPah3whHPbavSTrJCgwhLMmqT0"
@@ -10,6 +11,8 @@
 
 #define MWM_GEOLOCATION_SERVER ""
 #define DIFF_LIST_URL ""
+// ARAH-PLACEHOLDER: Arah map hosting (spec §5 / Plan 6): metaserver, servers, connection-check IP, signing key
+// and map series. CoMaps' values keep downloads and live map updates working until then.
 #define METASERVER_URL "https://cdn-us-1.comaps.app"
 #define DEFAULT_URLS_JSON R"([ "https://comaps.firewall-gateway.de/", "https://cdn-us-2.comaps.tech/", "https://cdn-fi-1.comaps.app/", "https://comaps.openstreetmap.fr/", "https://comaps-it1.unfoxo.it/", "https://comaps-cdn.s3-website.cloud.ru/", "https://mapgen-fi-1.comaps.app/" ])"
 #define DEFAULT_CONNECTION_CHECK_IP "151.101.195.52"  // For now the IP of comaps.app (Fastly CDN)
