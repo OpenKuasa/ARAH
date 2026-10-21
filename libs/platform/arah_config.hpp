@@ -3,7 +3,7 @@
 #include <string_view>
 
 // Arah-specific values, kept in one place so upstream CoMaps code stays easy to merge.
-// Lines marked ARAH-PLACEHOLDER must get the owner's real value before release
+// Lines marked with the placeholder tag must get the owner's real value before release
 // (tools/python/arah_brand_check.py --release fails while any remain).
 namespace arah
 {
