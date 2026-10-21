@@ -85,7 +85,9 @@
 		675343CE1A3F5D5A00A0A8C3 /* preferred_languages.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 675343A31A3F5D5A00A0A8C3 /* preferred_languages.cpp */; };
 		675343CF1A3F5D5A00A0A8C3 /* preferred_languages.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 675343A41A3F5D5A00A0A8C3 /* preferred_languages.hpp */; };
 		675343D11A3F5D5A00A0A8C3 /* servers_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 675343A61A3F5D5A00A0A8C3 /* servers_list.cpp */; };
+		1C276A080B26E1FA1CB167F4 /* arah_meta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6669A2020470E86D2D26E652 /* arah_meta.cpp */; };
 		675343D21A3F5D5A00A0A8C3 /* servers_list.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 675343A71A3F5D5A00A0A8C3 /* servers_list.hpp */; };
+		EF8455799625302ED5DBFA89 /* arah_meta.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 58C5173F2B0C93CCC94DCC4D /* arah_meta.hpp */; };
 		675343D31A3F5D5A00A0A8C3 /* settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 675343A81A3F5D5A00A0A8C3 /* settings.cpp */; };
 		675343D41A3F5D5A00A0A8C3 /* settings.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 675343A91A3F5D5A00A0A8C3 /* settings.hpp */; };
 		678338951C6DE59200FD6263 /* testingmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 675341141C58C4D8002CF0D9 /* testingmain.cpp */; };
@@ -237,7 +239,9 @@
 		675343A31A3F5D5A00A0A8C3 /* preferred_languages.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = preferred_languages.cpp; sourceTree = "<group>"; };
 		675343A41A3F5D5A00A0A8C3 /* preferred_languages.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = preferred_languages.hpp; sourceTree = "<group>"; };
 		675343A61A3F5D5A00A0A8C3 /* servers_list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = servers_list.cpp; sourceTree = "<group>"; };
+		6669A2020470E86D2D26E652 /* arah_meta.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arah_meta.cpp; sourceTree = "<group>"; };
 		675343A71A3F5D5A00A0A8C3 /* servers_list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = servers_list.hpp; sourceTree = "<group>"; };
+		58C5173F2B0C93CCC94DCC4D /* arah_meta.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = arah_meta.hpp; sourceTree = "<group>"; };
 		675343A81A3F5D5A00A0A8C3 /* settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = settings.cpp; sourceTree = "<group>"; };
 		675343A91A3F5D5A00A0A8C3 /* settings.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = settings.hpp; sourceTree = "<group>"; };
 		675E889E1DB7B0F200F8EBDA /* test_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_socket.cpp; sourceTree = "<group>"; };
@@ -473,7 +477,9 @@
 				451E329D1F73A8B000964C9F /* secure_storage_ios.mm */,
 				451E329E1F73A8B000964C9F /* secure_storage_qt.cpp */,
 				675343A71A3F5D5A00A0A8C3 /* servers_list.hpp */,
+				58C5173F2B0C93CCC94DCC4D /* arah_meta.hpp */,
 				675343A61A3F5D5A00A0A8C3 /* servers_list.cpp */,
+				6669A2020470E86D2D26E652 /* arah_meta.cpp */,
 				675343A91A3F5D5A00A0A8C3 /* settings.hpp */,
 				675343A81A3F5D5A00A0A8C3 /* settings.cpp */,
 				34C624BC1DABCCD100510300 /* socket.hpp */,
@@ -539,6 +545,7 @@
 				67AB92DD1B7B3D7300AB5194 /* mwm_version.hpp in Headers */,
 				675343CA1A3F5D5A00A0A8C3 /* platform_unix_impl.hpp in Headers */,
 				675343D21A3F5D5A00A0A8C3 /* servers_list.hpp in Headers */,
+				EF8455799625302ED5DBFA89 /* arah_meta.hpp in Headers */,
 				675343BA1A3F5D5A00A0A8C3 /* http_thread_callback.hpp in Headers */,
 				675343B41A3F5D5A00A0A8C3 /* chunks_download_strategy.hpp in Headers */,
 				3DFACF322432421C00A29A94 /* background_downloader_ios.h in Headers */,
@@ -698,6 +705,7 @@
 				44486DC42A1F9AC800A5DD6C /* utm_mgrs_utils.cpp in Sources */,
 				3DEE1AE721F7091100054A91 /* battery_tracker.cpp in Sources */,
 				675343D11A3F5D5A00A0A8C3 /* servers_list.cpp in Sources */,
+				1C276A080B26E1FA1CB167F4 /* arah_meta.cpp in Sources */,
 				675343C91A3F5D5A00A0A8C3 /* platform_unix_impl.cpp in Sources */,
 				67AB92DC1B7B3D7300AB5194 /* mwm_version.cpp in Sources */,
 				67A2526B1BB40E520063F8A8 /* platform_mac.mm in Sources */,
