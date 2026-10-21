@@ -15,14 +15,23 @@ from `feat-002-move-to-comaps` (kept):
 - **iPhone opens in Malay** on first launch (`iphone/Maps/main.mm`).
 - Evidence (before/after screenshots, scripts, the full decision log): `~/Documents/arah-archive/plan-m/`.
 
-## Next step
-Run **Plan 3, core rebrand on CoMaps**: `docs/superpowers/plans/2026-10-21-arah-plan3-core-rebrand.md`
-(rewritten for CoMaps; the brand is "CoMaps" and the attribution is "Based on CoMaps").
+**Plan 3 is done** (`docs/superpowers/plans/2026-10-21-arah-plan3-core-rebrand.md`), on branch `feat-003-core-rebrand`:
+- "CoMaps" is "Arah" in the app text of every language (Android and iOS), checked by `tools/python/arah_brand_check.py`
+  (0 leaks; each allowed upstream name carries its reason in the checker).
+- The iPhone app is "Arah": placeholder IDs `my.arah.app` / `iCloud.my.arah.app`, an `arah://` scheme, and About credits
+  "Based on CoMaps" and hides CoMaps' news, review and social links until Arah has its own.
+- Places are shared as OpenStreetMap links (no Arah domain yet); old CoMaps/ge0 links still open.
+- CoMaps' map servers stay in use (placeholders); Arah ignores the donate link CoMaps' metaserver hands out.
+- `python3 -I tools/python/arah_brand_check.py --release` lists every value still to supply.
 
-Then:
-- Plan 4: iPhone screens and icon, including a Mapbox-like navigation view the owner showed: tilted 3D, big turn banner,
+## Next step
+Plan 4: iPhone screens and icon. The About screen still shows CoMaps' logo (`Image("comaps")` in `AboutCoMapsView`),
+and the home-screen icon is CoMaps'. Then:
+- Plan 4 (next): iPhone screens and icon, including a Mapbox-like navigation view the owner showed: tilted 3D, big turn banner,
   arrival card, round floating buttons.
-- Plan 5: Android screens, icon and identity, Malay by default via CoMaps' existing language screen. Needs the Android SDK.
+- Plan 5: Android screens, icon and identity (`appId`, app name, Java links in `Constants.java`/`Utils.java`/`HelpFragment.java`,
+  About screen with "Based on CoMaps", share via `arah::ShareText`), Malay by default via CoMaps' language screen. Needs the
+  Android SDK.
 - Plan 6: Arah GitHub repo, map hosting, signing key and metaserver (CoMaps has `docs/DEPLOY_OWN_MAP_SERVER.md`),
   store listings.
 
