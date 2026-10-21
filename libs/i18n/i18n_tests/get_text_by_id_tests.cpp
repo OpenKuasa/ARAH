@@ -118,3 +118,15 @@ UNIT_TEST(GetTextByIdFrenchTest)
   TEST_EQUAL((*getFrench)(""), "", ());
   TEST_EQUAL((*getFrench)(" "), "", ());
 }
+
+UNIT_TEST(GetTextByIdMalayTest)
+{
+  std::string jsonBuffer;
+  TEST(platform::GetJsonBuffer(platform::TextSource::TtsSound, "ms", jsonBuffer), ());
+  auto getMalay = platform::ForTestingGetTextByIdFactory(jsonBuffer, "ms");
+  TEST_EQUAL((*getMalay)("make_a_right_turn"), "Belok kanan.", ());
+  TEST_EQUAL((*getMalay)("make_a_slight_right_turn"), "Ikut kanan.", ());
+  TEST_EQUAL((*getMalay)("in_500_meters"), "Dalam lima ratus meter", ());
+  TEST_EQUAL((*getMalay)("you_have_reached_the_destination"), "Anda telah tiba di destinasi.", ());
+  TEST_EQUAL((*getMalay)("then"), "Kemudian", ());
+}
