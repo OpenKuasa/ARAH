@@ -1,0 +1,5 @@
+"search" = "Cari";
+"bookmarks_and_tracks" = "Penanda";
+"route" = "Laluan";
+"NSLocationAlwaysUsageDescription" = "Pengesanan lokasi di latar belakang diperlukan untuk menikmati sepenuhnya fungsi aplikasi. Ia digunakan untuk navigasi dan menyimpan jejak perjalanan terkini anda.";
+"NSLocationWhenInUseUsageDescription" = "Lokasi anda diperlukan untuk navigasi dan untuk menyimpan jejak perjalanan terkini anda.";
