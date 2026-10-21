@@ -107,7 +107,7 @@
 "category_water" = "Νερό";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Για RV";
-"share_bookmarks_email_body" = "Γειά σου! \n\nΣου επισυνάπτω τα αποθηκευμένα μου μέρη. Παρακαλώ άνοιξε τα με το CoMaps. Αν δεν το έχεις εγκατεστημένο, μπορείς να το κατεβάσεις από εδώ: https://www.comaps.app/download/ \n\nΚαλή διασκέδαση ταξιδεύοντας με το CoMaps!";
+"share_bookmarks_email_body" = "Γειά σου! \n\nΣου επισυνάπτω τα αποθηκευμένα μου μέρη. Παρακαλώ άνοιξε τα με το Arah. Αν δεν το έχεις εγκατεστημένο, μπορείς να το κατεβάσεις από εδώ: https://github.com/ARAH-ORG/arah/ \n\nΚαλή διασκέδαση ταξιδεύοντας με το Arah!";
 /* message title of loading file */
 "load_kmz_title" = "Φορτώνονται τα Αγαπημένα";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Η τοποθεσία σας δεν έχει προσδιοριστεί ακόμη";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Γεια, δες τις τοποθεσίες που έχω καρφιτσώσει στο CoMaps!";
+"bookmark_share_email_subject" = "Γεια, δες τις τοποθεσίες που έχω καρφιτσώσει στο Arah!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Γεια, δες την τρέχουσα τοποθεσία μου στο χάρτη του CoMaps!";
+"my_position_share_email_subject" = "Γεια, δες την τρέχουσα τοποθεσία μου στο χάρτη του Arah!";
 /* Share by email button text, also used in editor and About. */
 "email" = "Email";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Έτοιμο";
 /* Prints version number in About dialog */
-"version" = "Έκδοση CoMaps: %@";
+"version" = "Έκδοση Arah: %@";
 "version %@ (%@)" = "Έκδοση %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Έκδοση: %@ (%@)\nΔεδομένα χάρτη: %@";
 /* Title for tracks category in bookmarks manager */
@@ -229,7 +229,7 @@
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Αναφορά ή διόρθωση λανθασμένων δεδομένων χάρτη";
 /* Button in the About screen */
-"volunteer" = "Γίνετε εθελοντής και βελτιώστε το CoMaps";
+"volunteer" = "Γίνετε εθελοντής και βελτιώστε το Arah";
 /* "Social media" section header in the About screen */
 "follow_us" = "Συνδεθείτε μαζί μας";
 /* Alert text */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "Προφίλ OpenStreetMap";
 "osm_profile_promt" = "Δημιουργήστε έναν λογαριασμό OpenStreetMap ή συνδεθείτε για να δημοσιεύσετε τις επεξεργασίες του χάρτη σας στον κόσμο.";
-"osm_profile_explanation" = "Το [OpenStreetMap.org](https://openstreetmap.org) (OSM) είναι ένα κοινοτικό έργο για τη δημιουργία ενός ελεύθερου και ανοικτού χάρτη. Είναι η κύρια πηγή δεδομένων χάρτη στους CoMaps και λειτουργεί παρόμοια με τη Wikipedia. Μπορείτε να προσθέσετε ή να επεξεργαστείτε τοποθεσίες και αυτές γίνονται διαθέσιμες σε εκατομμύρια χρήστες σε όλο τον κόσμο. \nΕνταχθείτε στην κοινότητα και βοηθήστε να φτιάξουμε έναν καλύτερο χάρτη για όλους!";
+"osm_profile_explanation" = "Το [OpenStreetMap.org](https://openstreetmap.org) (OSM) είναι ένα κοινοτικό έργο για τη δημιουργία ενός ελεύθερου και ανοικτού χάρτη. Είναι η κύρια πηγή δεδομένων χάρτη στους Arah και λειτουργεί παρόμοια με τη Wikipedia. Μπορείτε να προσθέσετε ή να επεξεργαστείτε τοποθεσίες και αυτές γίνονται διαθέσιμες σε εκατομμύρια χρήστες σε όλο τον κόσμο. \nΕνταχθείτε στην κοινότητα και βοηθήστε να φτιάξουμε έναν καλύτερο χάρτη για όλους!";
 "osm_profile_login" = "Σύνδεση στον λογαριασμό OpenStreetMap";
 "osm_profile_reauthorize_promt" = "Ο λογαριασμός OpenStreetMap αποσυνδέθηκε από αυτήν την εφαρμογή";
 "osm_profile_reauthorize" = "Επανασύνδεση με το OpenStreetMap";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "Δε μπορεί να τοποθετηθεί αντικείμενο εδώ";
 /* Error dialog no space */
 "migration_no_space_message" = "Για να το κατεβάσετε, χρειάζεστε περισσότερο χώρο. Διαγράψτε μη απαραίτητα δεδομένα.";
-"editor_sharing_title" = "Βελτίωσα τους χάρτες CoMaps";
+"editor_sharing_title" = "Βελτίωσα τους χάρτες Arah";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d από %2$d";
 "download_over_mobile_header" = "Να γίνει λήψη μέσω δικτύου κινητής τηλεφωνίας;";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Σημείωση για τους εθελοντές του OpenStreetMap (προαιρετική)";
 "editor_detailed_description_hint" = "Λεπτομερές σχόλιο";
-"editor_detailed_description" = "Οι προτεινόμενες αλλαγές θα σταλούν στην Κοινότητα του OpenStreetMap. Περιγράψτε τυχόν πρόσθετα στοιχεία που δεν μπορείτε να επεξεργαστείτε στο CoMaps.";
+"editor_detailed_description" = "Οι προτεινόμενες αλλαγές θα σταλούν στην Κοινότητα του OpenStreetMap. Περιγράψτε τυχόν πρόσθετα στοιχεία που δεν μπορείτε να επεξεργαστείτε στο Arah.";
 "editor_more_about_osm" = "Περισσότερα σχετικά με το OpenStreetMap";
 "editor_operator" = "Χειριστής";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Χειριστής: %@";
 "editor_category_unsuitable_title" = "Δεν μπορείτε να βρείτε την κατάλληλη κατηγορία;";
-"editor_category_unsuitable_text" = "Το CoMaps επιτρέπει την προσθήκη κατηγοριών απλών σημείων μόνο, δηλαδή όχι την προσθήκη πόλεων, δρόμων, λιμνών, περιγραμμάτων κτιρίων κ.λπ. Παρακαλούμε προσθέστε τέτοιες κατηγορίες απευθείας στο <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Ελέγξτε τον <a href=\"https://www.comaps.app/support/advanced-map-editing/\">οδηγό μας</a> για λεπτομερείς οδηγίες βήμα προς βήμα.";
+"editor_category_unsuitable_text" = "Το Arah επιτρέπει την προσθήκη κατηγοριών απλών σημείων μόνο, δηλαδή όχι την προσθήκη πόλεων, δρόμων, λιμνών, περιγραμμάτων κτιρίων κ.λπ. Παρακαλούμε προσθέστε τέτοιες κατηγορίες απευθείας στο <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Ελέγξτε τον <a href=\"https://github.com/ARAH-ORG/arah/\">οδηγό μας</a> για λεπτομερείς οδηγίες βήμα προς βήμα.";
 "downloader_no_downloaded_maps_title" = "Δεν έχετε κατεβάσει χάρτες";
 "downloader_no_downloaded_maps_message" = "Κατεβάστε χάρτες για να κάνετε αναζήτηση και να πλοηγηθείτε χωρίς σύνδεση.";
 "current_location_unknown_error_title" = "Η τρέχουσα τοποθεσία είναι άγνωστη.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Επιλέξτε Απόρρητο";
 "location_services_disabled_on_device_3" = "3. Επιλέξτε Υπηρεσίες τοποθεσίας";
 "location_services_disabled_on_device_4" = "4. Ενεργοποιήστε τις Υπηρεσίες τοποθεσίας";
-"location_services_disabled_on_device_additional_message" = "Ή συνεχίστε να χρησιμοποιείτε το CoMaps χωρίς Τοποθεσία";
+"location_services_disabled_on_device_additional_message" = "Ή συνεχίστε να χρησιμοποιείτε το Arah χωρίς Τοποθεσία";
 /* abbreviation for meters */
 "m" = "μ";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Απενεργοποίηση";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Τσέκαρε";
-"recent_track_background_dialog_message" = "Το CoMaps χρησιμοποιεί την τοποθεσία σας στο παρασκήνιο για την καταγραφή των πρόσφατων διαδρομών σας.";
+"recent_track_background_dialog_message" = "Το Arah χρησιμοποιεί την τοποθεσία σας στο παρασκήνιο για την καταγραφή των πρόσφατων διαδρομών σας.";
 "general_settings" = "Γενικές ρυθμίσεις";
 /* For the first routing */
 "accept" = "Συμφωνώ";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Ίχνος";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Σας ευχαριστούμε που χρησιμοποιείτε τους χάρτες μας που δημιουργήθηκαν από την κοινότητα!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "Ο κύριος στόχος μας είναι να δημιουργήσουμε γρήγορους, εύχρηστους και με σεβασμό στην ιδιωτικότητα χάρτες που θα λατρέψετε.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Τώρα χρησιμοποιείτε το CoMaps στην οθόνη του κινητού";
+"car_used_on_the_phone_screen" = "Τώρα χρησιμοποιείτε το Arah στην οθόνη του κινητού";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Τώρα χρησιμοποιείτε το CoMaps στην οθόνη του αυτοκινήτου";
+"car_used_on_the_car_screen" = "Τώρα χρησιμοποιείτε το Arah στην οθόνη του αυτοκινήτου";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Συνέχεια στο κινητό";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Σύνδεσμος μενού";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Θα θέλατε να στείλετε μια αναφορά σφάλματος στους προγραμματιστές;\nΒασιζόμαστε στους χρήστες μας, καθώς οι CoMaps δεν συλλέγουν αυτόματα καμία πληροφορία σφάλματος. Σας ευχαριστούμε εκ των προτέρων για την υποστήριξη των CoMaps!";
+"bugreport_alert_message" = "Θα θέλατε να στείλετε μια αναφορά σφάλματος στους προγραμματιστές;\nΒασιζόμαστε στους χρήστες μας, καθώς οι Arah δεν συλλέγουν αυτόματα καμία πληροφορία σφάλματος. Σας ευχαριστούμε εκ των προτέρων για την υποστήριξη των Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "Συγχρονισμός iCloud (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -808,7 +808,7 @@
 /* Title for the "iCloud Is Disabled" alert. */
 "icloud_disabled_title" = "Το iCloud είναι απενεργοποιημένο";
 /* Message for the "iCloud is Disabled" alert. */
-"icloud_disabled_message" = "Ενεργοποιήστε το iCloud για το CoMaps στις ρυθμίσεις του Apple λογαριασμού σας για να χρησιμοποιήσετε αυτή τη λειτουργία.";
+"icloud_disabled_message" = "Ενεργοποιήστε το iCloud για το Arah στις ρυθμίσεις του Apple λογαριασμού σας για να χρησιμοποιήσετε αυτή τη λειτουργία.";
 /* Title for the "Enable iCloud Synchronization" alert's "Enable" action button. */
 "enable" = "Ενεργοποίηση";
 /* Title for the "Enable iCloud Synchronization" alert's "Backup" action button. */
@@ -902,9 +902,9 @@
 "custom_map_server_error_scheme" = "Το URL πρέπει να ξεκινά με http:// ή https://";
 "stars_4" = "4 αστέρια";
 "stars_2" = "2 αστέρια";
-"custom_map_server_map_series" = "Αυτή η έκδοση του CoMaps χρησιμοποιεί χάρτες σειράς %@.";
+"custom_map_server_map_series" = "Αυτή η έκδοση του Arah χρησιμοποιεί χάρτες σειράς %@.";
 "not_set" = "Δεν έχει οριστεί";
 "custom_map_server" = "Προσαρμοσμένος διακομιστής χάρτη";
 "stars_3" = "3 αστέρια";
 "stars_1" = "1 αστέρι";
-"custom_map_server_message" = "Παρακάμπτει τον προσαρμοσμένο διακομιστή λήψης χάρτη που χρησιμοποιείται για λήψεις χάρτη. Αφήστε το κενό για να χρησιμοποιήσετε τον προεπιλεγμένο διακομιστή χάρτη του CoMaps.";
+"custom_map_server_message" = "Παρακάμπτει τον προσαρμοσμένο διακομιστή λήψης χάρτη που χρησιμοποιείται για λήψεις χάρτη. Αφήστε το κενό για να χρησιμοποιήσετε τον προεπιλεγμένο διακομιστή χάρτη του Arah.";

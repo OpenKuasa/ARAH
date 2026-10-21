@@ -107,7 +107,7 @@
 "category_water" = "Vatten";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "För husbil";
-"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in CoMaps. If you don't have it installed you can download it here: https://www.comaps.app/download/\n\nEnjoy travelling with CoMaps!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Arah. If you don't have it installed you can download it here: https://github.com/ARAH-ORG/arah/\n\nEnjoy travelling with Arah!";
 /* message title of loading file */
 "load_kmz_title" = "Läser in bokmärken";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Din position har inte fastslagits ännu";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Hej, kolla min kartnål på CoMaps!";
+"bookmark_share_email_subject" = "Hej, kolla min kartnål på Arah!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Hej, kolla på min nuvarande position på CoMaps kartan!";
+"my_position_share_email_subject" = "Hej, kolla på min nuvarande position på Arah kartan!";
 /* Share by email button text, also used in editor and About. */
 "email" = "E-post";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Klar";
 /* Prints version number in About dialog */
-"version" = "CoMaps-version: %@";
+"version" = "Arah-version: %@";
 "version %@ (%@)" = "Version %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Version: %@ (%@)\nKartdata: %@";
 /* Title for tracks category in bookmarks manager */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "OpenStreetMap profil";
 "osm_profile_promt" = "Skapa ett OpenStreetMap-konto eller logga in för att publicera dina kartredigeringar till hela världen.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) är ett community-projekt för att bygga en fri och öppen karta. Det är den huvudsakliga källan till kartdata i CoMaps och fungerar på samma sätt som Wikipedia. Du kan lägga till eller redigera platser och de blir tillgängliga för miljontals användare över hela världen.\nGå med i samhället och hjälp till att skapa en bättre karta för alla!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) är ett community-projekt för att bygga en fri och öppen karta. Det är den huvudsakliga källan till kartdata i Arah och fungerar på samma sätt som Wikipedia. Du kan lägga till eller redigera platser och de blir tillgängliga för miljontals användare över hela världen.\nGå med i samhället och hjälp till att skapa en bättre karta för alla!";
 "osm_profile_login" = "Logga in på OpenStreetMap-konto";
 "osm_profile_reauthorize_promt" = "OpenStreetMap-kontot kopplades bort från den här appen";
 "osm_profile_reauthorize" = "Återanslut till OpenStreetMap";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "Ett objekt kan inte placeras här";
 /* Error dialog no space */
 "migration_no_space_message" = "Du behöver mer utrymme för att ladda ned. Radera onödig data.";
-"editor_sharing_title" = "Jag förbättrade kartorna åt CoMaps";
+"editor_sharing_title" = "Jag förbättrade kartorna åt Arah";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d av %2$d";
 "download_over_mobile_header" = "Ladda ned med mobildata?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Meddelande till OpenStreetMap-volontärer (valfritt)";
 "editor_detailed_description_hint" = "Detaljerad kommentar";
-"editor_detailed_description" = "Dina föreslagna ändringar kommer att skickas till OpenStreetMap-communityt. Beskriv detaljerna som inte kan redigeras i CoMaps.";
+"editor_detailed_description" = "Dina föreslagna ändringar kommer att skickas till OpenStreetMap-communityt. Beskriv detaljerna som inte kan redigeras i Arah.";
 "editor_more_about_osm" = "Mer om OpenStreetMap";
 "editor_operator" = "Operatör";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Operatör: %@";
 "editor_category_unsuitable_title" = "Hittar du ingen lämplig kategori?";
-"editor_category_unsuitable_text" = "CoMaps tillåter endast att lägga till enkla punktkategorier, det betyder inga städer, vägar, sjöar, byggnadskonturer etc. Lägg till sådana kategorier direkt till <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Kontrollera vår <a href=\"https://www.comaps.app/support/advanced-map-editing/\">guide</a> för detaljerade steg-för-steg-instruktioner.";
+"editor_category_unsuitable_text" = "Arah tillåter endast att lägga till enkla punktkategorier, det betyder inga städer, vägar, sjöar, byggnadskonturer etc. Lägg till sådana kategorier direkt till <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Kontrollera vår <a href=\"https://github.com/ARAH-ORG/arah/\">guide</a> för detaljerade steg-för-steg-instruktioner.";
 "downloader_no_downloaded_maps_title" = "Du har inte laddat ner några kartor";
 "downloader_no_downloaded_maps_message" = "Ladda ner kartor för att hitta platsen och navigera offline.";
 "current_location_unknown_error_title" = "Den nuvarande platsen är okänd.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Välj Sekretess";
 "location_services_disabled_on_device_3" = "3. Välj Platstjänster";
 "location_services_disabled_on_device_4" = "4. Aktivera platstjänster";
-"location_services_disabled_on_device_additional_message" = "Eller fortsätt använda CoMaps utan Plats";
+"location_services_disabled_on_device_additional_message" = "Eller fortsätt använda Arah utan Plats";
 /* abbreviation for meters */
 "m" = "m";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Avaktivera";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Kolla in";
-"recent_track_background_dialog_message" = "CoMaps använder din geografiska position i bakgrunden för att spela in din senaste resta rutt.";
+"recent_track_background_dialog_message" = "Arah använder din geografiska position i bakgrunden för att spela in din senaste resta rutt.";
 "general_settings" = "Allmänna inställningar";
 /* For the first routing */
 "accept" = "Acceptera";
@@ -643,7 +643,7 @@
 "power_managment_setting_never" = "Aldrig";
 "power_managment_setting_auto" = "Vid lågt batteri";
 "power_managment_setting_manual_max" = "Alltid";
-"enable_logging_warning_message" = "Aktivera denna funktion för att logga detaljer för diagnostiska ändamål. Detta hjälper utvecklarna att identifiera problem med appen. Slå på funktionen endast på begäran av CoMaps supporttjänst.";
+"enable_logging_warning_message" = "Aktivera denna funktion för att logga detaljer för diagnostiska ändamål. Detta hjälper utvecklarna att identifiera problem med appen. Slå på funktionen endast på begäran av Arah supporttjänst.";
 "driving_options_title" = "Ruttinställningar";
 /* Recommended length for CarPlay and Android Auto is around 25-27 characters */
 "avoid_tolls" = "Undvik avgiftsbelagda vägar";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Rutt";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/sv/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Tack för att du använder våra community-byggda kartor!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "Vårt huvudmål är att bygga snabba, integritetsfokuserade, lättanvända kartor som du kommer att älska.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Du använder nu CoMaps på telefonens skärm";
+"car_used_on_the_phone_screen" = "Du använder nu Arah på telefonens skärm";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Du använder nu CoMaps på bilskärmen";
+"car_used_on_the_car_screen" = "Du använder nu Arah på bilskärmen";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Fortsätt i telefonen";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Länk till meny";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Vill du skicka en felrapport till utvecklarna?\nVi förlitar oss på våra användare eftersom CoMaps inte samlar in någon felinformation automatiskt. Tack på förhand för att du stöder CoMaps!";
+"bugreport_alert_message" = "Vill du skicka en felrapport till utvecklarna?\nVi förlitar oss på våra användare eftersom Arah inte samlar in någon felinformation automatiskt. Tack på förhand för att du stöder Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud Syncronization (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -902,9 +902,9 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";

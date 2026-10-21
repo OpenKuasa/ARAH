@@ -107,7 +107,7 @@
 "category_water" = "Víz";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Lakókocsis létesítmények";
-"share_bookmarks_email_body" = "Üdvözlöm!\n\nMellékeltem a könyvjelzőimet; nyissa meg őket az CoMaps alkalmazásban. Ha még nem telepítette, akkor innen tudja letölteni: https://www.comaps.app/download/\n\nJó utat kívánok az CoMaps alkalmazással!";
+"share_bookmarks_email_body" = "Üdvözlöm!\n\nMellékeltem a könyvjelzőimet; nyissa meg őket az Arah alkalmazásban. Ha még nem telepítette, akkor innen tudja letölteni: https://github.com/ARAH-ORG/arah/\n\nJó utat kívánok az Arah alkalmazással!";
 /* message title of loading file */
 "load_kmz_title" = "Kedvencek betöltése";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Az Ön tartózkodási helye még nincs meghatározva";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Tekintse meg a térképjelzőmet a CoMaps alkalmazásban!";
+"bookmark_share_email_subject" = "Tekintse meg a térképjelzőmet a Arah alkalmazásban!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Tekintse meg a tartózkodási helyemet a CoMaps alkalmazásban!";
+"my_position_share_email_subject" = "Tekintse meg a tartózkodási helyemet a Arah alkalmazásban!";
 /* Share by email button text, also used in editor and About. */
 "email" = "E-mail-cím";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Kész";
 /* Prints version number in About dialog */
-"version" = "Az CoMaps verziója: %@";
+"version" = "Az Arah verziója: %@";
 "version %@ (%@)" = "%@ (%@) verzió";
 "version: %@ (%@)\nmap data: %@" = "Vverzió: %@ (%@)\nTérképadatok: %@";
 /* Title for tracks category in bookmarks manager */
@@ -229,7 +229,7 @@
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Hibás térképadatok jelentése vagy javítása";
 /* Button in the About screen */
-"volunteer" = "Önkéntes munka és a CoMaps fejlesztése";
+"volunteer" = "Önkéntes munka és a Arah fejlesztése";
 /* "Social media" section header in the About screen */
 "follow_us" = "Csatlakozzon hozzánk";
 /* Alert text */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "OpenStreetMap profil";
 "osm_profile_promt" = "Hozzon létre egy OpenStreetMap-fiókot, vagy jelentkezzen be, hogy a világ számára közzétehesse az Ön térképszerkesztéseit.";
-"osm_profile_explanation" = "Az [OpenStreetMap.org](https://openstreetmap.org) (OSM) egy közösségi projekt, amelynek célja egy ingyenes és nyílt térkép létrehozása. Ez az CoMaps alkalmazás térképadatainak fő forrása, és a Wikipédiához hasonlóan működik. Helyeket adhat hozzá vagy szerkeszthet, és azok világszerte felhasználók milliói számára válnak elérhetővé. \nCsatlakozzon a közösséghez, és segítsen egy jobb térképet készíteni mindenki számára!";
+"osm_profile_explanation" = "Az [OpenStreetMap.org](https://openstreetmap.org) (OSM) egy közösségi projekt, amelynek célja egy ingyenes és nyílt térkép létrehozása. Ez az Arah alkalmazás térképadatainak fő forrása, és a Wikipédiához hasonlóan működik. Helyeket adhat hozzá vagy szerkeszthet, és azok világszerte felhasználók milliói számára válnak elérhetővé. \nCsatlakozzon a közösséghez, és segítsen egy jobb térképet készíteni mindenki számára!";
 "osm_profile_login" = "Bejelentkezés az OpenStreetMap fiókba";
 "osm_profile_reauthorize_promt" = "Az OpenStreetMap fiókot leválasztották erről az alkalmazásról";
 "osm_profile_reauthorize" = "Újracsatlakozás az OpenStreetMap-hez";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "Itt nem található objektum";
 /* Error dialog no space */
 "migration_no_space_message" = "A letöltéshez több szabad tárhelyre van szükség. Törölje a szükségtelen adatokat.";
-"editor_sharing_title" = "Fejlesztettem a CoMaps térképeket";
+"editor_sharing_title" = "Fejlesztettem a Arah térképeket";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d / %2$d";
 "download_over_mobile_header" = "Biztosan letölti mobiladat-kapcsolaton keresztül?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Megjegyzés az OpenStreetMap közreműködőinek (nem kötelező)";
 "editor_detailed_description_hint" = "Részletes megjegyzés";
-"editor_detailed_description" = "Az Ön által javasolt térképmódosításokat elküldjük az OpenStreetMap közösségnek. Írja le azokat a további részleteket, amelyek nem szerkeszthetők az CoMapsben.";
+"editor_detailed_description" = "Az Ön által javasolt térképmódosításokat elküldjük az OpenStreetMap közösségnek. Írja le azokat a további részleteket, amelyek nem szerkeszthetők az Arahben.";
 "editor_more_about_osm" = "További részletek az OpenStreetMap adatbázisról";
 "editor_operator" = "Üzemeltető";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Üzemeltető: %@";
 "editor_category_unsuitable_title" = "Nem találja a megfelelő kategóriát?";
-"editor_category_unsuitable_text" = "A CoMaps csak egyszerű pontkategóriák hozzáadását teszi lehetővé, azaz nem tartalmaz városokat, utakat, tavakat, épületek körvonalait stb., az ilyen kategóriákat közvetlenül az <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> oldalon adhatja hozzá. A részletes, lépésről lépésre történő útmutatásért tekintse meg az <a href=\"https://www.comaps.app/support/advanced-map-editing/\">útmutatónkat</a>.";
+"editor_category_unsuitable_text" = "A Arah csak egyszerű pontkategóriák hozzáadását teszi lehetővé, azaz nem tartalmaz városokat, utakat, tavakat, épületek körvonalait stb., az ilyen kategóriákat közvetlenül az <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> oldalon adhatja hozzá. A részletes, lépésről lépésre történő útmutatásért tekintse meg az <a href=\"https://github.com/ARAH-ORG/arah/\">útmutatónkat</a>.";
 "downloader_no_downloaded_maps_title" = "Még nem töltött le térképet";
 "downloader_no_downloaded_maps_message" = "Térképek letöltése internetkapcsolat nélküli kereséshez és navigáláshoz.";
 "current_location_unknown_error_title" = "A jelenlegi helyzet ismeretlen.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Válassza az „Adatvédelem” menüpontot";
 "location_services_disabled_on_device_3" = "3. Válassza a „Helymeghatározási szolgáltatások” menüpontot";
 "location_services_disabled_on_device_4" = "4. Engedélyezze a „Helymeghatározási szolgáltatások lehetőséget";
-"location_services_disabled_on_device_additional_message" = "Vagy folytassa az CoMaps használatát helymeghatározás nélkül";
+"location_services_disabled_on_device_additional_message" = "Vagy folytassa az Arah használatát helymeghatározás nélkül";
 /* abbreviation for meters */
 "m" = "m";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Letiltás";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Tekintse meg";
-"recent_track_background_dialog_message" = "Az CoMaps a háttérben az Ön tartózkodási helyét használja a nemrég megtett útvonal rögzítéséhez.";
+"recent_track_background_dialog_message" = "Az Arah a háttérben az Ön tartózkodási helyét használja a nemrég megtett útvonal rögzítéséhez.";
 "general_settings" = "Általános beállítások";
 /* For the first routing */
 "accept" = "Elfogadás";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Nyomvonal";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/hu/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Köszönjük, hogy használja a közösség által készített térképeinket!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "A fő célunk az, hogy gyors, az adatvédelemre fókuszáló, könnyen használható térképeket készítsünk, amelyeket szeretni fog.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Ön most a CoMaps alkalmazást használja az eszköz képernyőjén";
+"car_used_on_the_phone_screen" = "Ön most a Arah alkalmazást használja az eszköz képernyőjén";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Ön most a CoMaps alkalmazást használja az autó képernyőjén";
+"car_used_on_the_car_screen" = "Ön most a Arah alkalmazást használja az autó képernyőjén";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Folytatás az eszközön";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Menühivatkozás";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Szeretne hibajelentést küldeni a fejlesztőknek?\nA felhasználóinkra támaszkodunk, mivel az CoMaps nem gyűjt automatikusan hibainformációkat. Előre is köszönjük, hogy támogatja az CoMaps csapatát!";
+"bugreport_alert_message" = "Szeretne hibajelentést küldeni a fejlesztőknek?\nA felhasználóinkra támaszkodunk, mivel az Arah nem gyűjt automatikusan hibainformációkat. Előre is köszönjük, hogy támogatja az Arah csapatát!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud-szinkronizálás (Béta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -902,9 +902,9 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";

@@ -107,7 +107,7 @@
 "category_water" = "Вода";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "За кампер возила";
-"share_bookmarks_email_body" = "Здраво! \n \nУ прилогу су моји маркери; молим те да их отвориш у CoMaps-у. Ако га немаш већ инсталираног, можеш да га преузмеш одавде: https://www.comaps.app/download/ \n \nУживај у путовању са CoMaps-ом!";
+"share_bookmarks_email_body" = "Здраво! \n \nУ прилогу су моји маркери; молим те да их отвориш у Arah-у. Ако га немаш већ инсталираног, можеш да га преузмеш одавде: https://github.com/ARAH-ORG/arah/ \n \nУживај у путовању са Arah-ом!";
 /* message title of loading file */
 "load_kmz_title" = "Учитавање маркера";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Ваша локација још није одређена";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Хеј, види мој маркер у CoMaps-у!";
+"bookmark_share_email_subject" = "Хеј, види мој маркер у Arah-у!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Хеј, види моју тренутну локацију на CoMaps мапи!";
+"my_position_share_email_subject" = "Хеј, види моју тренутну локацију на Arah мапи!";
 /* Share by email button text, also used in editor and About. */
 "email" = "Email";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Готово";
 /* Prints version number in About dialog */
-"version" = "CoMaps верзија: %@";
+"version" = "Arah верзија: %@";
 "version %@ (%@)" = "Верзија %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Верзија: %@ (%@)\nПодаци мапе: %@";
 /* Title for tracks category in bookmarks manager */
@@ -229,7 +229,7 @@
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Пријавите или поправите нетачне податке на мапи";
 /* Button in the About screen */
-"volunteer" = "Волонтирајте и побољшајте CoMaps";
+"volunteer" = "Волонтирајте и побољшајте Arah";
 /* "Social media" section header in the About screen */
 "follow_us" = "Повежите се с нама";
 /* Alert text */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "OpenStreetMap профил";
 "osm_profile_promt" = "Пријавите се на openstreetmap.org да бисте објавили ваше промене остатку света.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) је пројекат заједнице који има за циљ прављење бесплатне, слободне и отворене мапе. OSM је главни извор података за мапе у CoMaps-у и функционише на сличан начин као Википедија. Можете додати или променити места и ваше промене постају видљиве милионима корисника широм света. \nПридружите се заједници и помозите да направимо бољу мапу која је доступна свима!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) је пројекат заједнице који има за циљ прављење бесплатне, слободне и отворене мапе. OSM је главни извор података за мапе у Arah-у и функционише на сличан начин као Википедија. Можете додати или променити места и ваше промене постају видљиве милионима корисника широм света. \nПридружите се заједници и помозите да направимо бољу мапу која је доступна свима!";
 "osm_profile_login" = "Пријави се на OpenStreetMap налог";
 "osm_profile_reauthorize_promt" = "OpenStreetMap налог је искључен из ове апликације";
 "osm_profile_reauthorize" = "Поново се повежи са OpenStreetMap-ом";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "Објекат не може бити на овом месту";
 /* Error dialog no space */
 "migration_no_space_message" = "Да бисте завршили преузимање потребно је више слободног простора. Молим Вас да обришете непотребне податке.";
-"editor_sharing_title" = "Ја сам поправио/ла мапе у CoMaps-у";
+"editor_sharing_title" = "Ја сам поправио/ла мапе у Arah-у";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d од %2$d";
 "download_over_mobile_header" = "Преузимање преко мобилне мреже?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Напомена за OpenStreetMap волонтере (није обавезна)";
 "editor_detailed_description_hint" = "Детаљан коментар";
-"editor_detailed_description" = "Ваши предлози промена на мапи ће бити послати OpenStreetMap заједници. Молим Вас опишите евентуалне додатне детаље који не могу да се промене помоћу CoMaps-а.";
+"editor_detailed_description" = "Ваши предлози промена на мапи ће бити послати OpenStreetMap заједници. Молим Вас опишите евентуалне додатне детаље који не могу да се промене помоћу Arah-а.";
 "editor_more_about_osm" = "Више о OpenStreetMap-у";
 "editor_operator" = "Оператор";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Оператор: %@";
 "editor_category_unsuitable_title" = "Не можете да пронађете одговарајућу категорију?";
-"editor_category_unsuitable_text" = "CoMaps омогућава додавање једноставних категорија за тачке на мапи, што искључује градове, путеве, језера, тлоцрте зграда, итд. Молимо Вас да такве категорије додате директно на <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Прочитајте наше <a href=\"https://www.comaps.app/support/advanced-map-editing/\">упутство</a> за детаљне инструкције, корак по корак.";
+"editor_category_unsuitable_text" = "Arah омогућава додавање једноставних категорија за тачке на мапи, што искључује градове, путеве, језера, тлоцрте зграда, итд. Молимо Вас да такве категорије додате директно на <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Прочитајте наше <a href=\"https://github.com/ARAH-ORG/arah/\">упутство</a> за детаљне инструкције, корак по корак.";
 "downloader_no_downloaded_maps_title" = "Нисте преузели ни једну мапу";
 "downloader_no_downloaded_maps_message" = "Преузмите мапе да бисте претраживали и користили навигацију без интернета.";
 "current_location_unknown_error_title" = "Тренутна локација није позната.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Изаберите Приватност";
 "location_services_disabled_on_device_3" = "3. Изаберите Локацијски сервиси";
 "location_services_disabled_on_device_4" = "4. Укључите Локацијске сервисе";
-"location_services_disabled_on_device_additional_message" = "Или наставите да користите CoMaps без локације";
+"location_services_disabled_on_device_additional_message" = "Или наставите да користите Arah без локације";
 /* abbreviation for meters */
 "m" = "м";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Искључи";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Погледај";
-"recent_track_background_dialog_message" = "CoMaps користи у позадини вашу локацију да би сачувао вашу недавно пређену руту.";
+"recent_track_background_dialog_message" = "Arah користи у позадини вашу локацију да би сачувао вашу недавно пређену руту.";
 "general_settings" = "Општа подешавања";
 /* For the first routing */
 "accept" = "Прихвати";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Путања";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Хвала што користите мапе које је направила заједница!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "Наш главни циљ је да направимо брзу апликацију за мапе, једноставну за коришћење, оријентисану на приватност, коју ћете волети.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Ви сада користите CoMaps на екрану телефона";
+"car_used_on_the_phone_screen" = "Ви сада користите Arah на екрану телефона";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Ви сада користите CoMaps на екрану аутомобила";
+"car_used_on_the_car_screen" = "Ви сада користите Arah на екрану аутомобила";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Настави на телефону";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Линк менија";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Да ли желите да пошаљете пријаву бага програмерима?\nОслањамо се на кориснике пошто CoMaps не прикупља податке о грешкама аутоматски. Хвала унапред што подржавате CoMaps!";
+"bugreport_alert_message" = "Да ли желите да пошаљете пријаву бага програмерима?\nОслањамо се на кориснике пошто Arah не прикупља податке о грешкама аутоматски. Хвала унапред што подржавате Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud синхронизација (бета)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -808,7 +808,7 @@
 /* Title for the "iCloud Is Disabled" alert. */
 "icloud_disabled_title" = "iCloud је искључен";
 /* Message for the "iCloud is Disabled" alert. */
-"icloud_disabled_message" = "Молим Вас да укључите iCloud за CoMaps у подешавањима вашег Apple налога да бисте користили ову опцију.";
+"icloud_disabled_message" = "Молим Вас да укључите iCloud за Arah у подешавањима вашег Apple налога да бисте користили ову опцију.";
 /* Title for the "Enable iCloud Synchronization" alert's "Enable" action button. */
 "enable" = "Укључи";
 /* Title for the "Enable iCloud Synchronization" alert's "Backup" action button. */
@@ -902,9 +902,9 @@
 "custom_map_server_error_scheme" = "Линк мора да почиње са http:// или https://";
 "stars_4" = "4 звездице";
 "stars_2" = "2 звездице";
-"custom_map_server_map_series" = "Ова верзија CoMaps-а користи серију мапа %@.";
+"custom_map_server_map_series" = "Ова верзија Arah-а користи серију мапа %@.";
 "not_set" = "Није унето";
 "custom_map_server" = "Сопствени сервер мапа";
 "stars_3" = "3 звездице";
 "stars_1" = "1 звездица";
-"custom_map_server_message" = "Замените подразумевани сервер за преузимање мапа. Оставите празно да бисте користили подразумевани CoMaps сервер.";
+"custom_map_server_message" = "Замените подразумевани сервер за преузимање мапа. Оставите празно да бисте користили подразумевани Arah сервер.";

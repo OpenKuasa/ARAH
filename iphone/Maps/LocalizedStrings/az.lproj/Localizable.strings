@@ -107,7 +107,7 @@
 "category_water" = "Su";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Karvan qurğuları";
-"share_bookmarks_email_body" = "Salam!\n\nCoMaps əlfəcinlərim əlavə olunub. Zəhmət olmasa CoMaps-da onları açın. Əgər onu quraşdırmamısınızsa, bu linkə daxil olub cihazınıza yükləyə bilərsiniz: https://www.comaps.app/download/\n\nCoMaps ilə səyahətdən həzz alın!";
+"share_bookmarks_email_body" = "Salam!\n\nArah əlfəcinlərim əlavə olunub. Zəhmət olmasa Arah-da onları açın. Əgər onu quraşdırmamısınızsa, bu linkə daxil olub cihazınıza yükləyə bilərsiniz: https://github.com/ARAH-ORG/arah/\n\nArah ilə səyahətdən həzz alın!";
 /* message title of loading file */
 "load_kmz_title" = "Əlfəcinlər yüklənir";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Məkanınız hələ müəyyən edilməyib";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Salam, CoMaps xəritəsində mənim pin kodumu yoxlayın!";
+"bookmark_share_email_subject" = "Salam, Arah xəritəsində mənim pin kodumu yoxlayın!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Hey, CoMaps'da mənim hal-hazırda olduğum ünvana baxın!";
+"my_position_share_email_subject" = "Hey, Arah'da mənim hal-hazırda olduğum ünvana baxın!";
 /* Share by email button text, also used in editor and About. */
 "email" = "E-poçt";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Bitdi";
 /* Prints version number in About dialog */
-"version" = "CoMaps versiyası: %@";
+"version" = "Arah versiyası: %@";
 "version %@ (%@)" = "Versiya %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Versiya: %@ (%@)\nXəritə Data: %@";
 /* Title for tracks category in bookmarks manager */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "OpenStreetMap profili";
 "osm_profile_promt" = "OpenStreetMap hesabı yaradın və ya xəritə redaktələrinizi dünyada dərc etmək üçün daxil olun.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) pulsuz və açıq xəritə yaratmaq üçün icma layihəsidir. O, CoMaps xəritə məlumatlarının əsas mənbəyidir və Vikipediyaya oxşar işləyir. Siz yerlər əlavə edə və ya redaktə edə bilərsiniz və onlar bütün dünyada milyonlarla istifadəçi üçün əlçatan olur. \nİcmaya qoşulun və hər kəs üçün daha yaxşı xəritə yaratmağa kömək edin!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) pulsuz və açıq xəritə yaratmaq üçün icma layihəsidir. O, Arah xəritə məlumatlarının əsas mənbəyidir və Vikipediyaya oxşar işləyir. Siz yerlər əlavə edə və ya redaktə edə bilərsiniz və onlar bütün dünyada milyonlarla istifadəçi üçün əlçatan olur. \nİcmaya qoşulun və hər kəs üçün daha yaxşı xəritə yaratmağa kömək edin!";
 "osm_profile_login" = "OpenStreetMap hesabına daxil olun";
 "osm_profile_reauthorize_promt" = "OpenStreetMap hesabının bu proqramla əlaqəsi kəsildi";
 "osm_profile_reauthorize" = "OpenStreetMap ilə yenidən əlaqə qurun";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "Burada obyekti yerləşdirmək mümkün deyil";
 /* Error dialog no space */
 "migration_no_space_message" = "Endirmək üçün daha çox yerə ehtiyacınız var. Zəhmət olmasa önəmli olmayan məlumatları silin.";
-"editor_sharing_title" = "CoMaps xəritələrini təkmilləşdirdim";
+"editor_sharing_title" = "Arah xəritələrini təkmilləşdirdim";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d/%2$d";
 "download_over_mobile_header" = "Mobil şəbəkə vasitəsilə endirilsin?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "OpenStreetMap könüllüləri üçün qeyd (isteğe bağlı)";
 "editor_detailed_description_hint" = "Ətraflı şərh";
-"editor_detailed_description" = "Təklif etdiyiniz dəyişikliklər OpenStreetMap icmasına yerləşdiriləcək. Zəhmət olmasa CoMaps'da redaktə edilə bilməyən əlavə detalları izah edin.";
+"editor_detailed_description" = "Təklif etdiyiniz dəyişikliklər OpenStreetMap icmasına yerləşdiriləcək. Zəhmət olmasa Arah'da redaktə edilə bilməyən əlavə detalları izah edin.";
 "editor_more_about_osm" = "OpenStreetMap haqqında əlavə məlumat";
 "editor_operator" = "Operator";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Operator: %@";
 "editor_category_unsuitable_title" = "Uyğun kateqoriya tapa bilmirsiniz?";
-"editor_category_unsuitable_text" = "CoMaps yalnız sadə nöqtə kateqoriyaları əlavə etməyə imkan verir, bu o deməkdir ki, şəhərlər, yollar, göllər, bina konturları və s. yoxdur. Lütfən, belə kateqoriyaları birbaşa <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> saytına əlavə edin. Ətraflı addım-addım təlimatlar üçün <a href=\"https://www.comaps.app/support/advanced-map-editing/\">bələdçimizi</a> yoxlayın.";
+"editor_category_unsuitable_text" = "Arah yalnız sadə nöqtə kateqoriyaları əlavə etməyə imkan verir, bu o deməkdir ki, şəhərlər, yollar, göllər, bina konturları və s. yoxdur. Lütfən, belə kateqoriyaları birbaşa <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> saytına əlavə edin. Ətraflı addım-addım təlimatlar üçün <a href=\"https://github.com/ARAH-ORG/arah/\">bələdçimizi</a> yoxlayın.";
 "downloader_no_downloaded_maps_title" = "Siz heç bir xəritə endirməmisiniz";
 "downloader_no_downloaded_maps_message" = "Ünvanları tapmaq və oflayn naviqasiya etmək üçün xəritələri endirin.";
 "current_location_unknown_error_title" = "Cari yer məlum deyil.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Məxfilik seçin";
 "location_services_disabled_on_device_3" = "3. Məkan Xidmətləri seçin";
 "location_services_disabled_on_device_4" = "4. Məkan Xidmətlərini yandırın";
-"location_services_disabled_on_device_additional_message" = "Və ya Məkan olmadan CoMapsdən istifadə etməyə davam edin";
+"location_services_disabled_on_device_additional_message" = "Və ya Məkan olmadan Arahdən istifadə etməyə davam edin";
 /* abbreviation for meters */
 "m" = "m";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Deaktiv edin";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Yoxla";
-"recent_track_background_dialog_message" = "CoMaps son səyahət etdiyiniz marşrutu qeyd etmək üçün arxa fonda geolokasiyadan istifadə edir.";
+"recent_track_background_dialog_message" = "Arah son səyahət etdiyiniz marşrutu qeyd etmək üçün arxa fonda geolokasiyadan istifadə edir.";
 "general_settings" = "Ümumi Parametrlər";
 /* For the first routing */
 "accept" = "Qəbul et";
@@ -692,7 +692,7 @@
 "ok" = "Yaxşı";
 "speedcams_alert_title_carplay_1" = "Sürət kameraları";
 "speedcams_alert_title_carplay_2" = "Sürət xəbərdarlıqları";
-"download_map_carplay" = "CoMaps tətbiqindən xəritələri cihazınıza endirin";
+"download_map_carplay" = "Arah tətbiqindən xəritələri cihazınıza endirin";
 "carplay_roundabout_exit" = "%@ çıxın";
 /* max. 10 symbols, both iOS and Android */
 "sort" = "Çeşid…";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Yol qeydi";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/tr/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "İcma tərəfindən yaradılmış xəritələrimizdən istifadə etdiyiniz üçün təşəkkür edirik!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "Our main goal is to build fast, privacy-focused, easy-to-use maps that you will love.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "İndi telefon ekranında CoMaps istifadə edirsiniz";
+"car_used_on_the_phone_screen" = "İndi telefon ekranında Arah istifadə edirsiniz";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Hazırda avtomobil ekranında CoMaps istifadə edirsiniz";
+"car_used_on_the_car_screen" = "Hazırda avtomobil ekranında Arah istifadə edirsiniz";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Telefonda davam edin";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Menyu keçidi";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Tərtibatçılara səhv hesabatı göndərmək istərdinizmi?\nCoMaps heç bir səhv məlumatını avtomatik toplamadığından istifadəçilərimizə etibar edirik. CoMaps dəstəklədiyiniz üçün əvvəlcədən təşəkkür edirik!";
+"bugreport_alert_message" = "Tərtibatçılara səhv hesabatı göndərmək istərdinizmi?\nArah heç bir səhv məlumatını avtomatik toplamadığından istifadəçilərimizə etibar edirik. Arah dəstəklədiyiniz üçün əvvəlcədən təşəkkür edirik!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud Syncronization (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -902,9 +902,9 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";

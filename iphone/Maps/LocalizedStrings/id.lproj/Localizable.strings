@@ -107,7 +107,7 @@
 "category_water" = "Air";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Fasilitas Karavan";
-"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in CoMaps. If you don't have it installed you can download it here: https://www.comaps.app/download/\n\nEnjoy travelling with CoMaps!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Arah. If you don't have it installed you can download it here: https://github.com/ARAH-ORG/arah/\n\nEnjoy travelling with Arah!";
 /* message title of loading file */
 "load_kmz_title" = "Memuat Favorit";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Lokasi Anda belum ditentukan";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Hei, lihat pinku di CoMaps!";
+"bookmark_share_email_subject" = "Hei, lihat pinku di Arah!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Hei, lihat lokasi saya saat ini di peta CoMaps!";
+"my_position_share_email_subject" = "Hei, lihat lokasi saya saat ini di peta Arah!";
 /* Share by email button text, also used in editor and About. */
 "email" = "Email";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Selesai";
 /* Prints version number in About dialog */
-"version" = "Versi CoMaps: %@";
+"version" = "Versi Arah: %@";
 "version %@ (%@)" = "Versi %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Versi: %@ (%@)\nData Peta: %@";
 /* Title for tracks category in bookmarks manager */
@@ -409,7 +409,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "Profil OpenStreetMap";
 "osm_profile_promt" = "Buat akun OpenStreetMap atau masuk untuk mempublikasikan hasil editan peta Anda ke seluruh dunia.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) adalah sebuah proyek komunitas untuk membuat sebuah peta yang bebas dan terbuka. OSM merupakan sumber utama data peta di CoMaps dan berfungsi mirip dengan Wikipedia. Anda dapat menambahkan atau mengedit tempat dan tempat tersebut tersedia untuk jutaan pengguna di seluruh Dunia. \nBergabunglah dengan komunitas dan bantu membuat peta yang lebih baik untuk semua orang!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) adalah sebuah proyek komunitas untuk membuat sebuah peta yang bebas dan terbuka. OSM merupakan sumber utama data peta di Arah dan berfungsi mirip dengan Wikipedia. Anda dapat menambahkan atau mengedit tempat dan tempat tersebut tersedia untuk jutaan pengguna di seluruh Dunia. \nBergabunglah dengan komunitas dan bantu membuat peta yang lebih baik untuk semua orang!";
 "osm_profile_login" = "Masuk ke akun OpenStreetMap";
 "osm_profile_reauthorize_promt" = "Akun OpenStreetMap terputus dari aplikasi ini";
 "osm_profile_reauthorize" = "Hubungkan kembali dengan OpenStreetMap";
@@ -466,7 +466,7 @@
 "message_invalid_feature_position" = "Tidak ada objek yang dapat ditempatkan di sini";
 /* Error dialog no space */
 "migration_no_space_message" = "Untuk mengunduh, Anda perlu ruang lebih banyak. Harap menghapus data yang tidak diperlukan.";
-"editor_sharing_title" = "Saya meningkatkan peta CoMaps";
+"editor_sharing_title" = "Saya meningkatkan peta Arah";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d dari %2$d";
 "download_over_mobile_header" = "Unduh melalui koneksi jaringan seluler?";
@@ -482,13 +482,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Catatan untuk sukarelawan OpenStreetMap (opsional)";
 "editor_detailed_description_hint" = "Komentar mendetail";
-"editor_detailed_description" = "Saran perubahan Anda akan dikirimkan ke komunitas OpenStreetMap. Jelaskan detail yang tidak dapat diedit di CoMaps.";
+"editor_detailed_description" = "Saran perubahan Anda akan dikirimkan ke komunitas OpenStreetMap. Jelaskan detail yang tidak dapat diedit di Arah.";
 "editor_more_about_osm" = "Lebih lanjut tentang OpenStreetMap";
 "editor_operator" = "Operator";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Operator: %@";
 "editor_category_unsuitable_title" = "Tidak dapat menemukan kategori yang sesuai?";
-"editor_category_unsuitable_text" = "CoMaps hanya memungkinkan untuk menambahkan kategori titik sederhana, yang berarti tidak ada kota, jalan, danau, garis besar bangunan, dll. Silahkan tambahkan kategori tersebut secara langsung ke <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Lihat <a href=\"https://www.comaps.app/support/advanced-map-editing/\">panduan</a> kami untuk petunjuk langkah demi langkah yang terperinci.";
+"editor_category_unsuitable_text" = "Arah hanya memungkinkan untuk menambahkan kategori titik sederhana, yang berarti tidak ada kota, jalan, danau, garis besar bangunan, dll. Silahkan tambahkan kategori tersebut secara langsung ke <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Lihat <a href=\"https://github.com/ARAH-ORG/arah/\">panduan</a> kami untuk petunjuk langkah demi langkah yang terperinci.";
 "downloader_no_downloaded_maps_title" = "Anda belum mengunduh peta apa pun";
 "downloader_no_downloaded_maps_message" = "Unduh peta untuk menemukan lokasi dan bernavigasi secara offline.";
 "current_location_unknown_error_title" = "Lokasi saat ini tidak diketahui.";
@@ -502,7 +502,7 @@
 "location_services_disabled_on_device_2" = "2. Pilih Privasi";
 "location_services_disabled_on_device_3" = "3. Pilih Layanan Lokasi";
 "location_services_disabled_on_device_4" = "4. Aktifkan Layanan Lokasi";
-"location_services_disabled_on_device_additional_message" = "Atau lanjutkan menggunakan CoMaps tanpa Lokasi";
+"location_services_disabled_on_device_additional_message" = "Atau lanjutkan menggunakan Arah tanpa Lokasi";
 /* abbreviation for meters */
 "m" = "m";
 /* abbreviation for kilometers */
@@ -550,7 +550,7 @@
 "off_recent_track_background_button" = "Nonaktifkan";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Lihat";
-"recent_track_background_dialog_message" = "CoMaps menggunakan geoposisi di latar belakang untuk merekam rute yang baru Anda lalui.";
+"recent_track_background_dialog_message" = "Arah menggunakan geoposisi di latar belakang untuk merekam rute yang baru Anda lalui.";
 "general_settings" = "Setelan umum";
 /* For the first routing */
 "accept" = "Terima";
@@ -690,7 +690,7 @@
 "ok" = "OK";
 "speedcams_alert_title_carplay_1" = "Speedcam";
 "speedcams_alert_title_carplay_2" = "Info kecepatan";
-"download_map_carplay" = "Silakan unduh peta di apl CoMaps pada perangkat Anda";
+"download_map_carplay" = "Silakan unduh peta di apl Arah pada perangkat Anda";
 "carplay_roundabout_exit" = "Jalan keluar ke %@";
 /* max. 10 symbols, both iOS and Android */
 "sort" = "Urutkan…";
@@ -757,7 +757,7 @@
 /* edit track screen title */
 "track_title" = "Trek";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/id/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Terima kasih telah menggunakan peta buatan komunitas kami!";
 /* App tip #01 */
@@ -779,9 +779,9 @@
 /* App tip #09 */
 "app_tip_09" = "Tujuan utama kami adalah membangun peta yang cepat, berfokus pada privasi, dan mudah digunakan yang akan Anda sukai.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Anda sekarang menggunakan CoMaps di layar ponsel";
+"car_used_on_the_phone_screen" = "Anda sekarang menggunakan Arah di layar ponsel";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Anda sekarang menggunakan CoMaps di layar mobil";
+"car_used_on_the_car_screen" = "Anda sekarang menggunakan Arah di layar mobil";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Lanjutkan di ponsel";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -796,7 +796,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Tautan Menu";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Apakah Anda ingin mengirim laporan bug ke pengembang?\nKami mengandalkan pengguna kami karena CoMaps tidak mengumpulkan informasi kesalahan secara otomatis. Terima kasih sebelumnya karena telah mendukung CoMaps!";
+"bugreport_alert_message" = "Apakah Anda ingin mengirim laporan bug ke pengembang?\nKami mengandalkan pengguna kami karena Arah tidak mengumpulkan informasi kesalahan secara otomatis. Terima kasih sebelumnya karena telah mendukung Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud Syncronization (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -901,9 +901,9 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";

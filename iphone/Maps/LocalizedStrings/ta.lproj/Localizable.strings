@@ -107,7 +107,7 @@
 "category_water" = "தண்ணீர்";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "RV வசதிகள்";
-"share_bookmarks_email_body" = "வணக்கம்! \n\nநான் சேமித்தவை இணைக்கப்பட்டுள்ளன; அவற்றை CoMaps இல் திறக்கவும். நீங்கள் அதை நிறுவவில்லை என்றால், அதை இங்கே பதிவிறக்கம் செய்யலாம்: https://www.comaps.app/download/ \n\nCoMaps மூலம் பயணம் செய்து மகிழுங்கள்!";
+"share_bookmarks_email_body" = "வணக்கம்! \n\nநான் சேமித்தவை இணைக்கப்பட்டுள்ளன; அவற்றை Arah இல் திறக்கவும். நீங்கள் அதை நிறுவவில்லை என்றால், அதை இங்கே பதிவிறக்கம் செய்யலாம்: https://github.com/ARAH-ORG/arah/ \n\nArah மூலம் பயணம் செய்து மகிழுங்கள்!";
 /* message title of loading file */
 "load_kmz_title" = "பிடித்தவைகளை ஏற்றுகிறது";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "உங்கள் இருப்பிடம் இன்னும் தீர்மானிக்கப்படவில்லை";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "ஏய், CoMaps இல் எனது பின்னை பாருங்கள்!";
+"bookmark_share_email_subject" = "ஏய், Arah இல் எனது பின்னை பாருங்கள்!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "ஏய், CoMaps வரைபடத்தில் எனது தற்போதைய இருப்பிடத்தைப் பாருங்கள்!";
+"my_position_share_email_subject" = "ஏய், Arah வரைபடத்தில் எனது தற்போதைய இருப்பிடத்தைப் பாருங்கள்!";
 /* Share by email button text, also used in editor and About. */
 "email" = "மின்னஞ்சல்";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "முடிந்தது";
 /* Prints version number in About dialog */
-"version" = "CoMaps பதிப்பு: %@";
+"version" = "Arah பதிப்பு: %@";
 "version %@ (%@)" = "பதிப்பு %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "பதிப்பு: %@ (%@) \nவரைபடத் தரவு: %@";
 /* Title for tracks category in bookmarks manager */
@@ -229,7 +229,7 @@
 /* Button in the About screen */
 "report_incorrect_map_bug" = "தவறான வரைபடத் தரவைப் புகாரளிக்கவும் அல்லது சரிசெய்யவும்";
 /* Button in the About screen */
-"volunteer" = "தன்னார்வத் தொண்டு மற்றும் CoMaps ஐ மேம்படுத்தவும்";
+"volunteer" = "தன்னார்வத் தொண்டு மற்றும் Arah ஐ மேம்படுத்தவும்";
 /* "Social media" section header in the About screen */
 "follow_us" = "எங்களுடன் இணையுங்கள்";
 /* Alert text */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "OpenStreetMap சுயவிவரம்";
 "osm_profile_promt" = "OpenStreetMap கணக்கை உருவாக்கவும் அல்லது உங்கள் வரைபட திருத்தங்களை உலகிற்கு வெளியிட உள்நுழையவும்.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) என்பது ஒரு இலவச மற்றும் திறந்த வரைபடத்தை உருவாக்குவதற்கான ஒரு சமூக திட்டமாகும். CoMaps இல் உள்ள வரைபடத் தரவின் முக்கிய சான்று இது மற்றும் விக்கிபீடியாவைப் போலவே செயல்படுகிறது. நீங்கள் இடங்களைச் சேர்க்கலாம் அல்லது திருத்தலாம் மற்றும் அவை உலகம் முழுவதும் உள்ள மில்லியன் கணக்கான பயனர்களுக்குக் கிடைக்கும். \nசமூகத்தில் சேர்ந்து அனைவருக்கும் சிறந்த வரைபடத்தை உருவாக்க உதவுங்கள்!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) என்பது ஒரு இலவச மற்றும் திறந்த வரைபடத்தை உருவாக்குவதற்கான ஒரு சமூக திட்டமாகும். Arah இல் உள்ள வரைபடத் தரவின் முக்கிய சான்று இது மற்றும் விக்கிபீடியாவைப் போலவே செயல்படுகிறது. நீங்கள் இடங்களைச் சேர்க்கலாம் அல்லது திருத்தலாம் மற்றும் அவை உலகம் முழுவதும் உள்ள மில்லியன் கணக்கான பயனர்களுக்குக் கிடைக்கும். \nசமூகத்தில் சேர்ந்து அனைவருக்கும் சிறந்த வரைபடத்தை உருவாக்க உதவுங்கள்!";
 "osm_profile_login" = "OpenStreetMap இல் உள்நுழைக";
 "osm_profile_reauthorize_promt" = "இந்த பயன்பாட்டிலிருந்து OpenStreetMap கணக்கு துண்டிக்கப்பட்டது";
 "osm_profile_reauthorize" = "OpenStreetMap உடன் மீண்டும் இணைக்கவும்";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "எந்தப் பொருளையும் இங்கு வைக்க முடியாது";
 /* Error dialog no space */
 "migration_no_space_message" = "பதிவிறக்க, உங்களுக்கு அதிக இடம் தேவை. தேவையற்ற தரவுகளை நீக்கவும்.";
-"editor_sharing_title" = "நான் CoMaps வரைபடங்களை மேம்படுத்தினேன்";
+"editor_sharing_title" = "நான் Arah வரைபடங்களை மேம்படுத்தினேன்";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d / %2$d";
 "download_over_mobile_header" = "செல்லுலார் பிணையம் இணைப்பு மூலம் பதிவிறக்கவா?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "OpenStreetMap தன்னார்வலர்களுக்கான குறிப்பு (விரும்பினால்)";
 "editor_detailed_description_hint" = "விரிவான கருத்து";
-"editor_detailed_description" = "நீங்கள் பரிந்துரைக்கும் வரைபட மாற்றங்கள் OpenStreetMap சமூகத்திற்கு அனுப்பப்படும். CoMaps இல் திருத்த முடியாத கூடுதல் விவரங்களை விவரிக்கவும்.";
+"editor_detailed_description" = "நீங்கள் பரிந்துரைக்கும் வரைபட மாற்றங்கள் OpenStreetMap சமூகத்திற்கு அனுப்பப்படும். Arah இல் திருத்த முடியாத கூடுதல் விவரங்களை விவரிக்கவும்.";
 "editor_more_about_osm" = "OpenStreetMap பற்றி மேலும்";
 "editor_operator" = "செயற்குறி";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "ஆபரேட்டர்: %@";
 "editor_category_unsuitable_title" = "பொருத்தமான வகையைக் கண்டுபிடிக்க முடியவில்லையா?";
-"editor_category_unsuitable_text" = "CoMaps எளிய புள்ளி வகைகளை மட்டும் சேர்க்க அனுமதிக்கிறது, அதாவது நகரங்கள், சாலைகள், ஏரிகள், கட்டிட அவுட்லைன்கள் போன்றவை இல்லை. அத்தகைய வகைகளை நேரடியாக <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> இல் சேர்க்கவும். விரிவான படிப்படியான வழிமுறைகளுக்கு எங்கள் <a href=\"https://www.comaps.app/support/advanced-map-editing/\">வழிகாட்டியைப்</a> பார்க்கவும்.";
+"editor_category_unsuitable_text" = "Arah எளிய புள்ளி வகைகளை மட்டும் சேர்க்க அனுமதிக்கிறது, அதாவது நகரங்கள், சாலைகள், ஏரிகள், கட்டிட அவுட்லைன்கள் போன்றவை இல்லை. அத்தகைய வகைகளை நேரடியாக <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> இல் சேர்க்கவும். விரிவான படிப்படியான வழிமுறைகளுக்கு எங்கள் <a href=\"https://github.com/ARAH-ORG/arah/\">வழிகாட்டியைப்</a> பார்க்கவும்.";
 "downloader_no_downloaded_maps_title" = "நீங்கள் எந்த வரைபடத்தையும் பதிவிறக்கம் செய்யவில்லை";
 "downloader_no_downloaded_maps_message" = "ஆஃப்லைனில் தேட மற்றும் செல்ல வரைபடங்களைப் பதிவிறக்கவும்.";
 "current_location_unknown_error_title" = "தற்போதைய இடம் தெரியவில்லை.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. தனியுரிமையைத் தேர்ந்தெடுக்கவும்";
 "location_services_disabled_on_device_3" = "3. இருப்பிட சேவைகளைத் தேர்ந்தெடுக்கவும்";
 "location_services_disabled_on_device_4" = "4. இருப்பிடச் சேவைகளை இயக்கவும்";
-"location_services_disabled_on_device_additional_message" = "அல்லது இருப்பிடம் இல்லாமல் CoMaps ஐப் பயன்படுத்துவதைத் தொடரவும்";
+"location_services_disabled_on_device_additional_message" = "அல்லது இருப்பிடம் இல்லாமல் Arah ஐப் பயன்படுத்துவதைத் தொடரவும்";
 /* abbreviation for meters */
 "m" = "மீ";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "முடக்கு";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "பாருங்கள்";
-"recent_track_background_dialog_message" = "CoMaps நீங்கள் அண்மைக் காலத்தில் பயணித்த வழியைப் பதிவுசெய்ய பின்னணியில் உங்கள் இருப்பிடத்தைப் பயன்படுத்துகிறது.";
+"recent_track_background_dialog_message" = "Arah நீங்கள் அண்மைக் காலத்தில் பயணித்த வழியைப் பதிவுசெய்ய பின்னணியில் உங்கள் இருப்பிடத்தைப் பயன்படுத்துகிறது.";
 "general_settings" = "பொது அமைப்புகள்";
 /* For the first routing */
 "accept" = "ஏற்றுக்கொள்";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "மின்தடம்";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "எங்கள் சமூகத்தால் உருவாக்கப்பட்ட வரைபடங்களைப் பயன்படுத்தியதற்கு நன்றி!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "நீங்கள் விரும்பும் வேகமான, தனியுரிமையை மையமாகக் கொண்ட, பயன்படுத்த எளிதான வரைபடங்களை உருவாக்குவதே எங்கள் முக்கிய குறிக்கோள்.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "நீங்கள் இப்போது ஃபோன் திரையில் CoMaps ஐப் பயன்படுத்துகிறீர்கள்";
+"car_used_on_the_phone_screen" = "நீங்கள் இப்போது ஃபோன் திரையில் Arah ஐப் பயன்படுத்துகிறீர்கள்";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "நீங்கள் இப்போது கார் திரையில் CoMaps ஐப் பயன்படுத்துகிறீர்கள்";
+"car_used_on_the_car_screen" = "நீங்கள் இப்போது கார் திரையில் Arah ஐப் பயன்படுத்துகிறீர்கள்";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "தொலைபேசியில் தொடரவும்";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "பட்டியல் இணைப்பு";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "டெவலப்பர்களுக்கு பிழை அறிக்கையை அனுப்ப விரும்புகிறீர்களா? \nCoMaps எந்தப் பிழைத் தகவலையும் தானாகச் சேகரிக்காது என்பதால் நாங்கள் எங்கள் பயனர்களை நம்பியுள்ளோம். CoMaps ஐ ஆதரித்ததற்கு முன்கூட்டியே நன்றி!";
+"bugreport_alert_message" = "டெவலப்பர்களுக்கு பிழை அறிக்கையை அனுப்ப விரும்புகிறீர்களா? \nArah எந்தப் பிழைத் தகவலையும் தானாகச் சேகரிக்காது என்பதால் நாங்கள் எங்கள் பயனர்களை நம்பியுள்ளோம். Arah ஐ ஆதரித்ததற்கு முன்கூட்டியே நன்றி!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "ஐமுகில் ஒத்திசைவு (ஆவண்ணா)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -902,9 +902,9 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";

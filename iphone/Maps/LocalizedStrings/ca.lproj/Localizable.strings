@@ -107,7 +107,7 @@
 "category_water" = "Aigua";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Instal·lacions per a autocaravanes";
-"share_bookmarks_email_body" = "Hola!\n\nAdjunto els meus marcadors de l'aplicació CoMaps. Obriu-los si teniu l'CoMaps instal·lat. O, si no teniu l'aplicació, baixeu-la per al vostre aparell iOS o Android seguint aquest enllaç: https://www.comaps.app/download/\n\nGaudiu viatjant amb l'CoMaps!";
+"share_bookmarks_email_body" = "Hola!\n\nAdjunto els meus marcadors de l'aplicació Arah. Obriu-los si teniu l'Arah instal·lat. O, si no teniu l'aplicació, baixeu-la per al vostre aparell iOS o Android seguint aquest enllaç: https://github.com/ARAH-ORG/arah/\n\nGaudiu viatjant amb l'Arah!";
 /* message title of loading file */
 "load_kmz_title" = "S'estan carregant els marcadors";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Encara no s’ha determinat la vostra ubicació";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Ep, mireu el meu marcador a l'CoMaps!";
+"bookmark_share_email_subject" = "Ep, mireu el meu marcador a l'Arah!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Ep, mireu la meva ubicació actual en el mapa del CoMaps!";
+"my_position_share_email_subject" = "Ep, mireu la meva ubicació actual en el mapa del Arah!";
 /* Share by email button text, also used in editor and About. */
 "email" = "Correu electrònic";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Fet";
 /* Prints version number in About dialog */
-"version" = "Versió de l’CoMaps: %@";
+"version" = "Versió de l’Arah: %@";
 "version %@ (%@)" = "Versió %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Versió: %@ (%@)\nDades del mapa: %@";
 /* Title for tracks category in bookmarks manager */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "Perfil de l’OpenStreetMap";
 "osm_profile_promt" = "Creeu un compte d'OpenStreetMap o inicieu sessió per publicar les vostres edicions de mapes al món.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) és un projecte comunitari per construir un mapa lliure i obert. És la font principal de dades de mapes a CoMaps i funciona de manera similar a la Viquipèdia. Pots afegir o editar llocs i estaran disponibles per a milions d'usuaris de tot el món. \nUneix-te a la comunitat i ajuda a crear un mapa millor per a tothom!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) és un projecte comunitari per construir un mapa lliure i obert. És la font principal de dades de mapes a Arah i funciona de manera similar a la Viquipèdia. Pots afegir o editar llocs i estaran disponibles per a milions d'usuaris de tot el món. \nUneix-te a la comunitat i ajuda a crear un mapa millor per a tothom!";
 "osm_profile_login" = "Inicies la sessió al compte d'OpenStreetMap";
 "osm_profile_reauthorize_promt" = "El compte d'OpenStreetMap s'ha desconnectat d'aquesta aplicació";
 "osm_profile_reauthorize" = "Torna a connectar-te amb OpenStreetMap";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "No s’ha trobat cap objecte aquí";
 /* Error dialog no space */
 "migration_no_space_message" = "Per a la baixada, us cal més espai. Suprimiu les dades no necessàries.";
-"editor_sharing_title" = "He millorat els mapes de l’CoMaps";
+"editor_sharing_title" = "He millorat els mapes de l’Arah";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d/%2$d";
 "download_over_mobile_header" = "Voleu baixar-ho a través d’una connexió de xarxa mòbil?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Nota per als voluntaris d'OpenStreetMap (opcional)";
 "editor_detailed_description_hint" = "Comentari detallat";
-"editor_detailed_description" = "Heu suggerit canvis en el mapa que s’enviaran a la comunitat de l’OpenStreetMap. Descriviu qualsevol detall addicional que no es pugui editar amb l’CoMaps.";
+"editor_detailed_description" = "Heu suggerit canvis en el mapa que s’enviaran a la comunitat de l’OpenStreetMap. Descriviu qualsevol detall addicional que no es pugui editar amb l’Arah.";
 "editor_more_about_osm" = "Més sobre l'OpenStreetMap";
 "editor_operator" = "Operador";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Operador: %@";
 "editor_category_unsuitable_title" = "No trobeu una categoria adequada?";
-"editor_category_unsuitable_text" = "CoMaps només permet afegir categories de punts simples, això vol dir que no hi ha ciutats, carreteres, llacs, contorns d'edificis, etc. Si us plau, afegiu aquestes categories directament a <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Consulteu la nostra <a href=\"https://www.comaps.app/support/advanced-map-editing/\">guia</a> per obtenir instruccions detallades pas a pas.";
+"editor_category_unsuitable_text" = "Arah només permet afegir categories de punts simples, això vol dir que no hi ha ciutats, carreteres, llacs, contorns d'edificis, etc. Si us plau, afegiu aquestes categories directament a <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Consulteu la nostra <a href=\"https://github.com/ARAH-ORG/arah/\">guia</a> per obtenir instruccions detallades pas a pas.";
 "downloader_no_downloaded_maps_title" = "No heu baixat cap mapa";
 "downloader_no_downloaded_maps_message" = "Baixeu mapes per a cercar una ubicacio i usar la navegació sense connexió.";
 "current_location_unknown_error_title" = "Es desconeix la ubicació actual.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Trieu «Privadesa»";
 "location_services_disabled_on_device_3" = "3. Trieu «Serveis d’ubicació»";
 "location_services_disabled_on_device_4" = "4. Activeu els serveis d'ubicació";
-"location_services_disabled_on_device_additional_message" = "O continuar utilitzant CoMaps sense ubicació";
+"location_services_disabled_on_device_additional_message" = "O continuar utilitzant Arah sense ubicació";
 /* abbreviation for meters */
 "m" = "m";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Desactiva";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Verifica";
-"recent_track_background_dialog_message" = "L’CoMaps usa la vostra ubicació en segon pla per a enregistrar el recorregut que heu fet recentment.";
+"recent_track_background_dialog_message" = "L’Arah usa la vostra ubicació en segon pla per a enregistrar el recorregut que heu fet recentment.";
 "general_settings" = "Paràmetres generals";
 /* For the first routing */
 "accept" = "Accepta";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Recorregut";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/ca/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Gràcies per utilitzar els nostres mapes creats per la comunitat!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "El nostre objectiu principal és crear mapes ràpids, centrats en la privadesa i fàcils d'utilitzar que us encantaran.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Ara esteu utilitzant els CoMaps a la pantalla del telèfon";
+"car_used_on_the_phone_screen" = "Ara esteu utilitzant els Arah a la pantalla del telèfon";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Ara esteu utilitzant els CoMaps a la pantalla del cotxe";
+"car_used_on_the_car_screen" = "Ara esteu utilitzant els Arah a la pantalla del cotxe";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Passa al telèfon";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Enllaç del menú";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Voleu enviar un informe d’error als desenvolupadors?\nEns refiem dels nostres usuaris, ja que l’CoMaps no recull cap informació d’errors automàticament. Gràcies per avançat per donar suport a CoMaps!";
+"bugreport_alert_message" = "Voleu enviar un informe d’error als desenvolupadors?\nEns refiem dels nostres usuaris, ja que l’Arah no recull cap informació d’errors automàticament. Gràcies per avançat per donar suport a Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud Syncronization (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -902,9 +902,9 @@
 "custom_map_server_error_scheme" = "L'adreça URL ha de començar per http:// o https://";
 "stars_4" = "4 estrelles";
 "stars_2" = "2 estrelles";
-"custom_map_server_map_series" = "Aquesta versió de CoMaps utilitza la sèrie de mapes %@.";
+"custom_map_server_map_series" = "Aquesta versió de Arah utilitza la sèrie de mapes %@.";
 "not_set" = "No definit";
 "custom_map_server" = "Servidor de mapes personalitzat";
 "stars_3" = "3 estrelles";
 "stars_1" = "1 estrella";
-"custom_map_server_message" = "Sobreescriu el servidor de descàrrega de mapes per defecte. Deixeu en blanc per a emprar el servidor de mapes per defecte de CoMaps.";
+"custom_map_server_message" = "Sobreescriu el servidor de descàrrega de mapes per defecte. Deixeu en blanc per a emprar el servidor de mapes per defecte de Arah.";
