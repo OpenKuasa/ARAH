@@ -2,6 +2,7 @@ project(platform)
 
 set(SRC
   ../../private.h  # To properly detect its changes with CMake.
+  arah_config.hpp
   battery_tracker.cpp
   battery_tracker.hpp
   chunks_download_strategy.cpp
