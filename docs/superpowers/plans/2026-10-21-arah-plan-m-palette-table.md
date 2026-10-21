@@ -19,6 +19,11 @@ Rules:
   role group (landuse, building, bridge, labels), in Lab.
 - **outdoors**: outdoors overrides of a Tenang default colour keep their offset from the default.
 - **keep**: left at CoMaps' value, with the reason.
+- **night labels** (final review fix): the neutral label greys in both dark palettes are lifted by 8 L* so road
+  names stay readable on Tenang's lighter night background (pinned by `Arah_DarkRoadNamesReadable`).
+- **duplicates**: vehicle palettes define `@water_label` twice (CoMaps added a second label block); kothic keeps
+  the last definition, so both get the Tenang value (pinned by `Arah_VehicleWaterLabels`).
+- Outdoors map modes re-declare the river rule in `outdoors/include/Basemap.mapcss`; it uses `@river` too.
 
 | file | variable | CoMaps | Arah | rule |
 |---|---|---|---|---|
@@ -419,3 +424,32 @@ Rules:
 | outdoors/dark/colors.mapcss | @secondary0_border | #9E803C | #7A6E50 | outdoors: Tenang default #5C5643 + outdoors offset |
 | outdoors/dark/colors.mapcss | @secondary1_border | #A9893F | #847247 | outdoors: Tenang default #5B5542 + outdoors offset |
 | outdoors/dark/colors.mapcss | @minor_road_border | #000000 | #000000 | keep: outdoors-only accent, not a Tenang default colour |
+
+## Final review fixes
+
+| file | variable | before | Arah |
+|---|---|---|---|
+| default/dark/colors.mapcss | @label_dark | #888888 | #9D9D9D |
+| default/dark/colors.mapcss | @label_medium | #777777 | #8B8B8B |
+| default/dark/colors.mapcss | @label_light | #666666 | #7A7A7A |
+| default/dark/colors.mapcss | @city_label | #999999 | #AEAEAE |
+| default/dark/colors.mapcss | @country_label | #555555 | #686868 |
+| default/dark/colors.mapcss | @state_label | #555555 | #686868 |
+| default/dark/colors.mapcss | @district_label | #7A7A7A | #8F8F8F |
+| default/dark/colors.mapcss | @housenumber | #747474 | #888888 |
+| default/dark/colors.mapcss | @building_label | #767676 | #8A8A8A |
+| default/dark/colors.mapcss | @poi_label | #8C8C8C | #A1A1A1 |
+| default/dark/colors.mapcss | @subway_label | #9E9E9E | #B3B3B3 |
+| vehicle/dark/colors.mapcss | @label_dark | #888888 | #9D9D9D |
+| vehicle/dark/colors.mapcss | @label_medium | #8C8C8C | #A1A1A1 |
+| vehicle/dark/colors.mapcss | @label_light | #666666 | #7A7A7A |
+| vehicle/dark/colors.mapcss | @city_label | #999999 | #AEAEAE |
+| vehicle/dark/colors.mapcss | @country_label | #444444 | #575757 |
+| vehicle/dark/colors.mapcss | @state_label | #444444 | #575757 |
+| vehicle/dark/colors.mapcss | @district_label | #555555 | #686868 |
+| vehicle/dark/colors.mapcss | @housenumber | #6C6C6C | #808080 |
+| vehicle/dark/colors.mapcss | @building_label | #737373 | #878787 |
+| vehicle/dark/colors.mapcss | @poi_label | #666666 | #7A7A7A |
+| vehicle/dark/colors.mapcss | @subway_label | #555555 | #686868 |
+| vehicle/light/colors.mapcss | @water_label (2nd) | #4499Bb | #3F7FAF |
+| vehicle/dark/colors.mapcss | @water_label (2nd) | #0A6074 | #7FB3D5 |
