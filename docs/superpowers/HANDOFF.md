@@ -42,7 +42,7 @@ widget's `CoMapsWidgetExtension/LiveActivity/AppLogo.swift`, and the `"Logo"` as
 - Plan 4 (next): iPhone screens and icon, including a Mapbox-like navigation view the owner showed: tilted 3D, big turn banner,
   arrival card, round floating buttons.
 - Plan 5: Android screens, icon and identity (`appId`, app name, Java links in `Constants.java`/`Utils.java`/`HelpFragment.java`,
-  About screen with "Based on CoMaps", share via `arah::ShareText`), Malay by default via CoMaps' language screen. Needs the
+  About screen with "Based on CoMaps"), Malay by default via CoMaps' language screen. Needs the
   Android SDK.
 - Plan 6: map hosting, signing key and metaserver (CoMaps has `docs/DEPLOY_OWN_MAP_SERVER.md`),
   store listings.
@@ -52,9 +52,12 @@ widget's `CoMapsWidgetExtension/LiveActivity/AppLogo.swift`, and the `"Logo"` as
 settings and the user-visible string literals in export, OSM-editing and app-name code (0 leaks). Still open:
 - **Plan 4:** CoMaps logo art in `Logo.imageset` (share previews and the "update your maps" screen), `Image("comaps")`,
   the widget `AppLogo`, and the app icon.
-- **Plan 5:** Android still shares `comaps.at` links (`Constants.java` share prefixes via `Framework.getHttpGe0Url`); move
-  it to `arah::ShareText` (needs JNI and the Android SDK). Android launcher, splash and notification art. No "Based on
-  CoMaps" credit on Android's About screen yet. None of feat-007's Android changes were compiled.
+- **Plan 5:** Android launcher, splash and notification art. No "Based on CoMaps" credit on Android's About screen yet.
+  None of feat-007's Android changes were compiled.
+- **feat-009 (not compiled yet):** Android shares places, bookmarks and "my position" as OpenStreetMap links in the
+  iPhone's text, through `arah::ShareText`/`ShareLink` (`ArahShare.java` + `arah_share_jni.cpp`, called from
+  `SharingUtils.java`). Build and try a share once the Android SDK is in. The "Check out" first line
+  (`arah_sharing_call_action_look`) has English and Malay only; other languages show English.
 - **Plan 6 / owner:** Apple team ID (`DEVELOPMENT_TEAM 534D2KJBUK` is CoMaps'), an Arah OSM OAuth app (`private.h`
   uses CoMaps' registration), Arah-hosted KML placemark icons (`libs/kml/serdes.cpp` links comaps.at).
 - **Malay:** the FAQ has no Malay section; the Malay store listing (`iphone/metadata/ms`, Play `listings/ms`) needs a
