@@ -114,7 +114,7 @@ ALLOWED_LINES = [
     ("android/app/build.gradle.kts", '"CoMaps Release"', "key alias; real value comes from secure.properties"),
     ("android/app/build.gradle.kts", '"CoMaps Debug"', "key alias stored inside the bundled debug keystore"),
     ("android/sdk/src/main/java/app/organicmaps/sdk/util/Constants.java", "SHARE_PREFIX",
-     "Android still shares CoMaps-format links; moving it to arah::ShareText is Plan 5 (needs JNI and the Android SDK)"),
+     "only read by upstream getHttpGe0Url helpers nothing calls; Android shares OpenStreetMap links (ArahShare)"),
     ("packaging/app.comaps.comaps.metainfo.xml", "app.comaps.comaps",
      "Linux app id, tied to the .desktop and metainfo file names; changes with Arah's real ids (Plan 6)"),
     ("qt/main.cpp", 'setDesktopFileName("app.comaps.comaps")', "must match the Linux .desktop file name"),

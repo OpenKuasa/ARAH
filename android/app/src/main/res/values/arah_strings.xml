@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Arah only: first line of a shared place, as on iPhone ("sharing_call_action_look" there). -->
+    <string name="arah_sharing_call_action_look">Check out</string>
+</resources>
