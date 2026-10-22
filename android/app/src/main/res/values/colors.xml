@@ -76,18 +76,18 @@
   <color name="bg_statusbar_translucent">#66000000</color>
 
   <!-- App icons background and foreground colors -->
-  <color name="bg_app_icon_release">#588157</color>
-  <color name="bg_app_icon_test">#588157</color>
+  <color name="bg_app_icon_release">#f4f1ea</color>
+  <color name="bg_app_icon_test">#e3f0ec</color>
   <color name="bg_app_icon_debug">#f8b42e</color>
 
-  <color name="fg_app_icon_white">#fefdf6</color>
-  <color name="fg_app_icon_release">#ccdfca</color>
-  <color name="fg_app_icon_debug_border">#fbe0a6</color>
-  <color name="fg_app_icon_debug_fill1">#f8c152</color>
-  <color name="fg_app_icon_debug_fill2">#facb6d</color>
-  <color name="fg_app_icon_test_border">#ccdfca</color>
-  <color name="fg_app_icon_test_fill1">#7a9d7a</color>
-  <color name="fg_app_icon_test_fill2">#89a687</color>
+  <color name="fg_app_icon_white">#ffffff</color>
+  <color name="fg_app_icon_release">#0f8b7e</color>
+  <color name="fg_app_icon_debug_border">#ffffff</color>
+  <color name="fg_app_icon_debug_fill1">#0f8b7e</color>
+  <color name="fg_app_icon_debug_fill2">#ffffff</color>
+  <color name="fg_app_icon_test_border">#0b6f65</color>
+  <color name="fg_app_icon_test_fill1">#0b6f65</color>
+  <color name="fg_app_icon_test_fill2">#ffffff</color>
 
   <!-- Buttons -->
   <color name="button_normal">#00000000</color>
