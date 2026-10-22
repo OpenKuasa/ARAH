@@ -112,6 +112,15 @@ class BrandCheckTest(unittest.TestCase):
         self.assertEqual(len(found), 1)
         self.assertIn("data/faq.html", found[0])
 
+    def test_internal_package_literal_ignored(self):
+        root = make_repo({"android/sdk/src/main/cpp/app/organicmaps/sdk/editor/Editor.cpp":
+                          '#include "app/organicmaps/sdk/Framework.hpp"\n'
+                          'jclass c = env->FindClass("app/organicmaps/sdk/editor/data/Language");\n'
+                          'std::string const kTag = "CoMaps ";\n'})
+        leaks = arah_brand_check.find_brand_leaks(root)
+        self.assertEqual(len(leaks), 1)
+        self.assertIn("kTag", leaks[0])
+
     def test_mail_composer_scanned(self):
         root = make_repo({"iphone/Maps/UI/MailComposer/MailComposer.swift": '    let body = "- CoMaps %@-%@"\n'})
         self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)

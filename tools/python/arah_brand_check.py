@@ -17,7 +17,12 @@ BRAND = re.compile(r"co ?maps|organic ?maps|omaps\.app", re.IGNORECASE)
 PLACEHOLDER = "ARAH-PLACEHOLDER"
 
 # String keys whose text must keep the upstream name (license attribution).
-ALLOWED_KEYS = {"about_based_on"}
+ALLOWED_KEYS = {
+    "about_based_on",
+    "pref_about",  # internal Android settings key, never shown
+    "pref_file_name",  # Android settings file name; renaming it would reset every user's settings
+    "download_resources_custom_url_hint",  # example map server URL: Arah uses CoMaps' servers until Plan 6
+}
 
 # User-visible app text, in every language.
 ANDROID_STRINGS = ["android/app/src/main/res/values*/*.xml", "android/sdk/src/main/res/values*/*.xml"]
@@ -71,6 +76,8 @@ CODE_FILES = [
     "android/sdk/src/main/java/app/organicmaps/sdk/util/Constants.java",
     "android/sdk/src/main/cpp/app/organicmaps/sdk/editor/Editor.cpp",
 ]
+# Java package paths and library names inside literals (JNI class lookups, includes) stay upstream's.
+INTERNAL = re.compile(r"app[./]organicmaps[\w./]*|liborganicmaps\.so")
 STRING_LITERAL = re.compile(r'"(?:[^"\\]|\\.)*"')
 # Credits that name upstream on purpose ("built on CoMaps", "berasaskan CoMaps").
 CREDIT = re.compile(r"(based on|built on|berasaskan|dibina (?:atas|berasaskan)|fork of|cabang daripada)\s+"
@@ -100,6 +107,14 @@ ALLOWED_LINES = [
     ("data/copyright.html", '<a href="https://github.com/organicmaps/organicmaps">Organic Maps</a>',
      "credit for Organic Maps"),
     ("data/copyright.html", "&copy; 2025 Organic Maps Contributors;", "credit for Organic Maps"),
+    ("android/app/build.gradle.kts", "comaps-test.keystore", "signing key file name"),
+    ("android/app/build.gradle.kts", "comaps-release.keystore", "signing key file name"),
+    ("android/app/build.gradle.kts", "comaps-debug.keystore", "signing key file name"),
+    ("android/app/build.gradle.kts", '"CoMaps Test"', "key alias stored inside the test keystore"),
+    ("android/app/build.gradle.kts", '"CoMaps Release"', "key alias; real value comes from secure.properties"),
+    ("android/app/build.gradle.kts", '"CoMaps Debug"', "key alias stored inside the bundled debug keystore"),
+    ("android/sdk/src/main/java/app/organicmaps/sdk/util/Constants.java", "SHARE_PREFIX",
+     "Android still shares CoMaps-format links; moving it to arah::ShareText is Plan 5 (needs JNI and the Android SDK)"),
     ("xcode/fastlane/Fastfile", "targets: ['CoMaps", "Xcode target names kept for upstream merges"),
     ("xcode/fastlane/Fastfile", "workspace: 'CoMaps.xcworkspace'", "Xcode workspace name kept for upstream merges"),
     ("xcode/fastlane/Fastfile", "scheme: 'CoMaps'", "Xcode scheme name kept for upstream merges"),
@@ -168,7 +183,7 @@ def find_brand_leaks(root):
         for n, line in enumerate(read_lines(root, rel), 1):
             if COMMENT.match(line) or allowed_line(rel, line):
                 continue
-            if any(BRAND.search(lit) for lit in STRING_LITERAL.findall(line)):
+            if any(BRAND.search(INTERNAL.sub("", lit)) for lit in STRING_LITERAL.findall(line)):
                 leaks.append(f"{rel}:{n}: {line.strip()[:120]}")
     for n, line in enumerate(read_lines(root, PBXPROJ), 1):
         if PBX_IDENTITY.search(line) and BRAND.search(line) and not allowed_line(PBXPROJ, line):
