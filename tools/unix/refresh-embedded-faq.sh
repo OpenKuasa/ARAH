@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Arah: this script is disabled on purpose.
+echo "Arah keeps its own FAQ in data/faq.html; this script would replace it with upstream's. Edit data/faq.html directly." >&2
+exit 1
+
 SCRIPT_DIR=$(dirname -- "${BASH_SOURCE[0]}")
 OUTPUT_FILE="$SCRIPT_DIR/../../data/faq.html"
 

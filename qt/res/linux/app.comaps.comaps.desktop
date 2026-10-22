@@ -1,8 +1,9 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=CoMaps
-Comment=Detailed Offline Maps of the World
+Name=Arah
+Comment=Offline maps and navigation for Malaysia
+Comment[ms]=Peta luar talian dan navigasi untuk Malaysia
 Comment[ast]=Mapes detallaos del mundu ensin conexón
 Comment[bg]=Детайлни офлайн карти на света
 Comment[ca]=Mapes detallats del món sense connexió
@@ -16,8 +17,8 @@ Comment[ru]=Подробная оффлайновая карта мира
 Comment[sr]=Детаљна офлајн мапа света
 Comment[uk]=Детальні офлайн-карти світу
 Icon=comaps
-TryExec=CoMaps
-Exec=CoMaps
+TryExec=Arah
+Exec=Arah
 Categories=Maps;Education;Geography;Geoscience;Qt;
-Keywords=Map;Maps;Offline Maps;CoMaps;OSM;OpenStreetMap;
+Keywords=Map;Maps;Offline Maps;Navigation;Arah;Peta;Navigasi;Malaysia;OSM;OpenStreetMap;
 X-KDE-FormFactor=desktop;tablet;handset;

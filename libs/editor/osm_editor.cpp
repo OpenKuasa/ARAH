@@ -998,7 +998,7 @@ void Editor::CreateNote(ms::LatLon const & latLon, FeatureID const & fid, featur
     if (!note.empty())
       sstr << '"' << note << "\"\n";
 
-    sstr << "A CoMaps user reported that the POI was visible on the map (see snapshot date below), "
+    sstr << "An Arah user reported that the POI was visible on the map (see snapshot date below), "
             "but was not found on the ground.\n";
     auto const features = m_features.Get();
     auto const isCreated = GetFeatureStatusImpl(*features, fid.m_mwmId, fid.m_index) == FeatureStatus::Created;

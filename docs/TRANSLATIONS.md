@@ -1,5 +1,8 @@
 # Translations
 
+> **Arah:** Arah's translations, including Malay, are changed in this repository by pull request
+> (https://github.com/OpenKuasa/ARAH), not on CoMaps' Weblate. Translations sent to CoMaps' Weblate go to CoMaps.
+
 Translations are managed through [Codeberg Translate][codeberg_translate], which is based on Weblate. Please [contribute][contribute] translations via the [Codeberg Translate][codeberg_translate], and the system and maintainers will handle the rest.
 
 ## Components

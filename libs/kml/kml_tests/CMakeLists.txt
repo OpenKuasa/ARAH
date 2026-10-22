@@ -1,6 +1,7 @@
 project(kml_tests)
 
 set(SRC
+  arah_gpx_tests.cpp
   color_parser_tests.cpp
   gpx_tests.cpp
   minzoom_quadtree_tests.cpp

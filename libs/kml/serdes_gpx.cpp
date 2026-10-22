@@ -38,7 +38,7 @@ std::string_view constexpr kCmt = "cmt";
 std::string_view constexpr kTime = "time";
 
 std::string_view constexpr kGpxHeader = R"(<?xml version="1.0"?>
-<gpx version="1.1" creator="CoMaps" xmlns="http://www.topografix.com/GPX/1/1"
+<gpx version="1.1" creator="Arah" xmlns="http://www.topografix.com/GPX/1/1"
     xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3"
     xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

@@ -1,4 +1,4 @@
 api_key_path "keys/appstore.json"
-app_identifier "app.comaps"
+app_identifier "my.arah.app" # ARAH-PLACEHOLDER: Arah bundle ID until the App Store record exists
 metadata_path "../iphone/metadata"
 screenshots_path "../screenshots/ios"

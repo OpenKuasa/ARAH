@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Project only name, app_name is added to strings in build.gradle & can contain "Debug" etc. prefixes. -->
-    <string name="project_name" translatable="false">CoMaps</string>
+    <string name="project_name" translatable="false">Arah</string>
     <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <!-- SECTION: Strings -->
     <!-- Button text (should be short) -->

@@ -17,7 +17,12 @@ BRAND = re.compile(r"co ?maps|organic ?maps|omaps\.app", re.IGNORECASE)
 PLACEHOLDER = "ARAH-PLACEHOLDER"
 
 # String keys whose text must keep the upstream name (license attribution).
-ALLOWED_KEYS = {"about_based_on"}
+ALLOWED_KEYS = {
+    "about_based_on",
+    "pref_about",  # internal Android settings key, never shown
+    "pref_file_name",  # Android settings file name; renaming it would reset every user's settings
+    "download_resources_custom_url_hint",  # example map server URL: Arah uses CoMaps' servers until Plan 6
+}
 
 # User-visible app text, in every language.
 ANDROID_STRINGS = ["android/app/src/main/res/values*/*.xml", "android/sdk/src/main/res/values*/*.xml"]
@@ -33,7 +38,50 @@ PLAIN_FILES = [
     "iphone/Maps/Model/Social Media.swift",
     "iphone/Maps/UI/Settings/CustomMapServerView.swift",
     "iphone/Maps/UI/MailComposer/*.swift",
+    # Pages bundled into the apps (FAQ, copyright, desktop welcome).
+    "data/faq.html",
+    "data/copyright.html",
+    "data/welcome.html",
+    # Shown on the GitHub repo page.
+    "funding.json",
+    ".github/FUNDING.yml",
+    # Store listings and the release settings that upload them.
+    "iphone/metadata/**/*.txt",
+    "android/app/src/*/play/**/*.txt",
+    "xcode/fastlane/*",
+    "iphone/upload_to_appstore.sh",
+    "packaging/*.xml",
 ]
+# Source files where only string literals reach users or leave the device (export names, OSM notes and
+# changeset tags, support emails, app names); identifiers and comments in them stay upstream's.
+CODE_FILES = [
+    "libs/map/bookmark_manager.cpp",
+    "libs/kml/serdes_gpx.cpp",
+    "libs/coding/zip_creator.cpp",
+    "libs/editor/osm_editor.cpp",
+    "libs/editor/server_api.cpp",
+    "libs/platform/platform_mac.mm",
+    "libs/platform/platform_linux.cpp",
+    "libs/platform/platform_win.cpp",
+    "libs/drape/vulkan/vulkan_context_factory.cpp",
+    "qt/main.cpp",
+    "qt/mainwindow.cpp",
+    "qt/CMakeLists.txt",
+    "iphone/Maps/Core/Editor/MWMEditorHelper.mm",
+    "iphone/Maps/Categories/UIKitCategories.m",
+    "android/app/build.gradle.kts",
+    "android/app/src/main/java/app/organicmaps/util/Utils.java",
+    "android/app/src/main/java/app/organicmaps/help/HelpFragment.java",
+    "android/app/src/main/java/app/organicmaps/settings/NavigationSettingsFragment.java",
+    "android/sdk/src/main/java/app/organicmaps/sdk/util/Constants.java",
+    "android/sdk/src/main/cpp/app/organicmaps/sdk/editor/Editor.cpp",
+]
+# Java package paths and library names inside literals (JNI class lookups, includes) stay upstream's.
+INTERNAL = re.compile(r"app[./]organicmaps[\w./]*|liborganicmaps\.so")
+STRING_LITERAL = re.compile(r'"(?:[^"\\]|\\.)*"')
+# Credits that name upstream on purpose ("built on CoMaps", "berasaskan CoMaps").
+CREDIT = re.compile(r"(based on|built on|berasaskan|dibina (?:atas|berasaskan)|fork of|cabang daripada)\s+"
+                    r"(?:<[^>]+>\s*)*(?:co ?maps|organic ?maps)", re.IGNORECASE)
 # Placeholder values written into app text; listed per file so --release fails until real values replace them.
 PLACEHOLDER_VALUES = re.compile(r"ARAH-ORG|arah\.invalid")
 # Keys Arah adds to iOS text. iOS has no per-key fallback to English, so every language needs them.
@@ -54,11 +102,35 @@ ALLOWED_LINES = [
      "internal product/module name kept for the upstream test target; users see INFOPLIST_KEY_CFBundleDisplayName"),
     ("iphone/Maps/Model/Social Media.swift", "return URL(string:",
      "CoMaps social accounts; the section is hidden by ArahConfig.socialMediaEnabled until Arah has accounts"),
+    ("data/copyright.html", '<a href="https://codeberg.org/comaps/comaps">CoMaps</a>', "credit for CoMaps"),
+    ("data/copyright.html", "&copy; 2025 CoMaps Contributors;", "credit for CoMaps"),
+    ("data/copyright.html", '<a href="https://github.com/organicmaps/organicmaps">Organic Maps</a>',
+     "credit for Organic Maps"),
+    ("data/copyright.html", "&copy; 2025 Organic Maps Contributors;", "credit for Organic Maps"),
+    ("android/app/build.gradle.kts", "comaps-test.keystore", "signing key file name"),
+    ("android/app/build.gradle.kts", "comaps-release.keystore", "signing key file name"),
+    ("android/app/build.gradle.kts", "comaps-debug.keystore", "signing key file name"),
+    ("android/app/build.gradle.kts", '"CoMaps Test"', "key alias stored inside the test keystore"),
+    ("android/app/build.gradle.kts", '"CoMaps Release"', "key alias; real value comes from secure.properties"),
+    ("android/app/build.gradle.kts", '"CoMaps Debug"', "key alias stored inside the bundled debug keystore"),
+    ("android/sdk/src/main/java/app/organicmaps/sdk/util/Constants.java", "SHARE_PREFIX",
+     "Android still shares CoMaps-format links; moving it to arah::ShareText is Plan 5 (needs JNI and the Android SDK)"),
+    ("packaging/app.comaps.comaps.metainfo.xml", "app.comaps.comaps",
+     "Linux app id, tied to the .desktop and metainfo file names; changes with Arah's real ids (Plan 6)"),
+    ("qt/main.cpp", 'setDesktopFileName("app.comaps.comaps")', "must match the Linux .desktop file name"),
+    ("libs/editor/osm_editor.cpp", 'kXmlRootNode = "comaps"', "root tag of the saved map-edits file; renaming it loses edits"),
+    ("libs/platform/platform_mac.mm", "organicmaps/", "paths that find the source checkout's data folder"),
+    ("libs/platform/platform_linux.cpp", "JoinPath(*execDir, \"..\"", "paths that find installed or built data folders"),
+    ("xcode/fastlane/Fastfile", "targets: ['CoMaps", "Xcode target names kept for upstream merges"),
+    ("xcode/fastlane/Fastfile", "workspace: 'CoMaps.xcworkspace'", "Xcode workspace name kept for upstream merges"),
+    ("xcode/fastlane/Fastfile", "scheme: 'CoMaps'", "Xcode scheme name kept for upstream merges"),
+    ("iphone/upload_to_appstore.sh", "CoMaps.xcworkspace", "Xcode workspace name kept for upstream merges"),
+    ("iphone/upload_to_appstore.sh", "-scheme CoMaps", "Xcode scheme name kept for upstream merges"),
 ]
 
 
 def allowed_line(rel, line):
-    return any(rel == path and sub in line for path, sub, _ in ALLOWED_LINES)
+    return CREDIT.search(line) is not None or any(rel == path and sub in line for path, sub, _ in ALLOWED_LINES)
 ANDROID_ENTRY = re.compile(r'<(string|plurals) name="([^"]+)"([^>]*)>(.*?)</\1>', re.S)
 IOS_LINE = re.compile(r'^\s*"((?:[^"\\]|\\.)*)"\s*=\s*"((?:[^"\\]|\\.)*)"\s*;')
 COMMENT = re.compile(r"^\s*(//|/\*|\*|<!--)")
@@ -67,7 +139,8 @@ COMMENT = re.compile(r"^\s*(//|/\*|\*|<!--)")
 def expand(root, patterns):
     out = []
     for pattern in patterns:
-        out += sorted(os.path.relpath(p, root) for p in glob.glob(os.path.join(root, pattern)))
+        out += sorted(os.path.relpath(p, root) for p in glob.glob(os.path.join(root, pattern), recursive=True)
+                      if os.path.isfile(p))
     return out
 
 
@@ -88,7 +161,7 @@ def find_brand_leaks(root):
     for rel in expand(root, ANDROID_STRINGS):
         text = read_text(root, rel)
         for m in ANDROID_ENTRY.finditer(text):
-            if 'translatable="false"' in m.group(3) or m.group(2) in ALLOWED_KEYS:
+            if m.group(2) in ALLOWED_KEYS:
                 continue
             if BRAND.search(m.group(4)):
                 line = text.count("\n", 0, m.start()) + 1
@@ -111,6 +184,12 @@ def find_brand_leaks(root):
     for rel in expand(root, PLAIN_FILES):
         for n, line in enumerate(read_lines(root, rel), 1):
             if BRAND.search(line) and not COMMENT.match(line) and not allowed_line(rel, line):
+                leaks.append(f"{rel}:{n}: {line.strip()[:120]}")
+    for rel in expand(root, CODE_FILES):
+        for n, line in enumerate(read_lines(root, rel), 1):
+            if COMMENT.match(line) or allowed_line(rel, line):
+                continue
+            if any(BRAND.search(INTERNAL.sub("", lit)) for lit in STRING_LITERAL.findall(line)):
                 leaks.append(f"{rel}:{n}: {line.strip()[:120]}")
     for n, line in enumerate(read_lines(root, PBXPROJ), 1):
         if PBX_IDENTITY.search(line) and BRAND.search(line) and not allowed_line(PBXPROJ, line):
@@ -140,7 +219,7 @@ def find_placeholders(root):
         for n, line in enumerate(lines, 1):
             if PLACEHOLDER in line:
                 found.append(f"{rel}:{n}: {line.strip()}")
-    for rel in expand(root, ANDROID_STRINGS + IOS_STRINGS + IOS_PLURALS):
+    for rel in expand(root, ANDROID_STRINGS + IOS_STRINGS + IOS_PLURALS + ["data/*.html"]):
         count = sum(1 for line in read_lines(root, rel) if PLACEHOLDER_VALUES.search(line))
         if count:
             found.append(f"{rel}: {count} placeholder value(s) (Arah website/email placeholders in text)")

@@ -26,11 +26,38 @@ class BrandCheckTest(unittest.TestCase):
         self.assertEqual(len(leaks), 1)
         self.assertIn("[k]", leaks[0])
 
-    def test_untranslatable_skipped(self):
+    def test_untranslatable_scanned(self):
         root = make_repo({"android/app/src/main/res/values/strings.xml":
                           '<resources>\n    <string name="project_name" translatable="false">CoMaps</string>\n'
                           '</resources>\n'})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)
+
+    def test_bundled_page_scanned(self):
+        root = make_repo({"data/faq.html": "<p>\n<title>CoMaps: Frequently Asked Questions</title>\n"})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)
+
+    def test_store_listing_scanned(self):
+        root = make_repo({"iphone/metadata/en-US/keywords.txt": "comaps,maps,offline\n",
+                          "android/app/src/fdroid/play/listings/en-US/title.txt": "CoMaps - Navigate\n"})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 2)
+
+    def test_funding_manifest_scanned(self):
+        root = make_repo({"funding.json": '{"name": "CoMaps"}\n'})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)
+
+    def test_credit_line_allowed(self):
+        root = make_repo({"iphone/metadata/en-US/description.txt": "Arah is built on CoMaps and OpenStreetMap.\n",
+                          "data/faq.html": "<p>Arah is based on CoMaps.</p>\n"})
         self.assertEqual(arah_brand_check.find_brand_leaks(root), [])
+
+    def test_code_string_literal_scanned(self):
+        root = make_repo({"libs/map/bookmark_manager.cpp":
+                          '// CoMaps keeps exports small.\n'
+                          'auto const name = CoMapsName();\n'
+                          'std::string const kName = "CoMaps Bookmarks and Tracks";\n'})
+        leaks = arah_brand_check.find_brand_leaks(root)
+        self.assertEqual(len(leaks), 1)
+        self.assertIn("Bookmarks and Tracks", leaks[0])
 
     def test_ios_leak_found(self):
         root = make_repo({"iphone/Maps/LocalizedStrings/ms.lproj/Localizable.strings":
@@ -78,6 +105,21 @@ class BrandCheckTest(unittest.TestCase):
         self.assertEqual(len(found), 1)
         self.assertIn("2 placeholder value", found[0])
         self.assertEqual(arah_brand_check.main(["--root", root, "--release"]), 1)
+
+    def test_placeholder_values_in_pages_listed(self):
+        root = make_repo({"data/faq.html": '<a href="mailto:support@arah.invalid">support@arah.invalid</a>\n'})
+        found = arah_brand_check.find_placeholders(root)
+        self.assertEqual(len(found), 1)
+        self.assertIn("data/faq.html", found[0])
+
+    def test_internal_package_literal_ignored(self):
+        root = make_repo({"android/sdk/src/main/cpp/app/organicmaps/sdk/editor/Editor.cpp":
+                          '#include "app/organicmaps/sdk/Framework.hpp"\n'
+                          'jclass c = env->FindClass("app/organicmaps/sdk/editor/data/Language");\n'
+                          'std::string const kTag = "CoMaps ";\n'})
+        leaks = arah_brand_check.find_brand_leaks(root)
+        self.assertEqual(len(leaks), 1)
+        self.assertIn("kTag", leaks[0])
 
     def test_mail_composer_scanned(self):
         root = make_repo({"iphone/Maps/UI/MailComposer/MailComposer.swift": '    let body = "- CoMaps %@-%@"\n'})

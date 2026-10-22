@@ -1,5 +1,8 @@
 # Building
 
+> **Arah:** Arah builds exactly like CoMaps, so this is CoMaps' build guide with Arah's repository URLs. Where it says
+> CoMaps, read Arah; the Xcode workspace, scheme and targets keep the name `CoMaps`.
+
 - [System requirements](#system-requirements)
 - [Getting sources](#getting-sources)
 - [Android](#android-app)
@@ -17,7 +20,7 @@ First of all get the source code. The full CoMaps sources repository is ~3Gb in 
 
 Clone the repository including all submodules (see [Special cases options](#special-cases-options) below)
 
-(if you plan to contribute and propose pull requests then use a web interface at https://codeberg.org/comaps/comaps to fork the repository first and use your fork's URL in the command below)
+(if you plan to contribute and propose pull requests then use the web interface at https://github.com/OpenKuasa/ARAH to fork the repository first and use your fork's URL in the command below)
 
 Follow the instructions for your OS, and afterwards the repository is prepared to build a CoMaps app!
 
@@ -28,7 +31,7 @@ Follow the instructions for your OS, and afterwards the repository is prepared t
 
 Clone the repository
 ```bash
-git clone --recurse-submodules --shallow-submodules https://codeberg.org/comaps/comaps.git
+git clone --recurse-submodules --shallow-submodules https://github.com/OpenKuasa/ARAH.git
 ```
 
 ### Install required packages for your specific Linux distro
@@ -73,7 +76,7 @@ and the venv step will be skipped.
 
 Go into the cloned repository and configure it for development:
 ```bash
-cd comaps
+cd ARAH
 ./configure.sh
 ```
 
@@ -122,7 +125,7 @@ git config --global core.symlinks true
 
 Clone the repository
 ```bash
-git clone --recurse-submodules --shallow-submodules https://codeberg.org/comaps/comaps.git
+git clone --recurse-submodules --shallow-submodules https://github.com/OpenKuasa/ARAH.git
 ```
 
 </details>
@@ -152,8 +155,8 @@ brew install wget optipng cmake ninja qt jq
 
 #### Clone and configure the repository
 ```bash
-git clone --recurse-submodules --shallow-submodules https://codeberg.org/comaps/comaps.git
-cd comaps
+git clone --recurse-submodules --shallow-submodules https://github.com/OpenKuasa/ARAH.git
+cd ARAH
 ./configure.sh
 ```
 </details>
@@ -553,7 +556,7 @@ Reconfigure the project to use your developer signing keys:
 - Open `xcode/CoMaps.xcworkspace` in Xcode.
 - Click on the "Maps" project and select the "CoMaps" target.
 - Open "Signing & Capabilities" tab.
-- Choose a unique bundle identifier (not app.comaps.debug) and your team.
+- Choose a unique bundle identifier (not my.arah.app.debug) and your team.
 - Select "Automatically manage signing".
 - Click on "CoMapsTests" target.
 - Choose a unique bundle identifier based on the one you chose previously (e.g. app.comapsdev.tests) and your team.

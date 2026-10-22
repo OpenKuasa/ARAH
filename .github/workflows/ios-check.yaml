@@ -37,7 +37,7 @@ jobs:
       LANG: en_US.UTF-8  # Fastlane complains that the terminal is using ASCII.
       LANGUAGE: en_US.UTF-8
       LC_ALL: en_US.UTF-8
-      TEST_RESULTS_BUNDLE_NAME: CoMaps-Test-Results
+      TEST_RESULTS_BUNDLE_NAME: Arah-Test-Results
       SIMULATOR_DEVICE: 'iPhone 17 Pro Max'
     strategy:
       fail-fast: false

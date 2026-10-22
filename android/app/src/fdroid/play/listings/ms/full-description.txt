@@ -1,0 +1,22 @@
+Arah ialah aplikasi peta dan navigasi percuma untuk pemandu harian di Malaysia. Aplikasi ini dibuka dalam Bahasa Melayu, terus berfungsi walaupun tiada isyarat, dan tidak menjejak anda.
+
+<b>Dibuat untuk Malaysia</b>
+• Bahasa Melayu didahulukan: aplikasi, carian dan arah suara dalam Bahasa Melayu. Bahasa Inggeris dan banyak bahasa lain juga tersedia.
+• Gaya peta "Tenang": warna lembut yang selesa di mata, siang dan malam.
+
+<b>Berfungsi di luar talian</b>
+• Muat turun peta sekali dan gunakannya tanpa data mudah alih. Peta seluruh dunia tersedia.
+• Cari tempat dan alamat, walaupun di luar talian.
+• Laluan untuk memandu, berbasikal, berjalan kaki dan pengangkutan awam, dengan arah suara di setiap belokan.
+
+<b>Tempat anda, data anda</b>
+• Simpan tempat kegemaran sebagai penanda dan rakam perjalanan anda sebagai jejak.
+• Tiada iklan dan tiada penjejakan. Anda tidak perlukan akaun untuk menggunakan peta.
+
+<b>Terbuka dan dibina bersama komuniti</b>
+• Arah ialah perisian sumber terbuka, berasaskan CoMaps, cabang komuniti Organic Maps.
+• Data peta datang daripada OpenStreetMap, yang dibina oleh sukarelawan. Nampak kesilapan? Betulkan terus dalam aplikasi, dan peta menjadi lebih baik untuk semua.
+
+Laporkan masalah dan kongsi cadangan: github.com/OpenKuasa/ARAH/issues
+
+Data peta © penyumbang OpenStreetMap.

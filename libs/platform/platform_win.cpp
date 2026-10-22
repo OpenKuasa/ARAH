@@ -24,7 +24,7 @@ static bool GetUserWritableDir(std::string & outDir)
   {
     outDir = pathBuf;
     ::CreateDirectoryA(outDir.c_str(), NULL);
-    outDir += "\\CoMaps\\";
+    outDir += "\\Arah\\";
     ::CreateDirectoryA(outDir.c_str(), NULL);
     return true;
   }

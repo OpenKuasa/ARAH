@@ -31,8 +31,9 @@ java {
     }
 }
 
-val appName = "CoMaps"
-val appId = "app.comaps"
+val appName = "Arah"
+// ARAH-PLACEHOLDER: Android application ID, to be confirmed before the first store upload.
+val appId = "my.arah.app"
 // These are properly set in the 'secure.properties.*' files but must be declared here for build sync to succeed.
 project.ext["secretTestStoreFile"] = "comaps-test.keystore"
 project.ext["secretTestStorePassword"] = ""
@@ -93,7 +94,8 @@ android {
         base.archivesName = "${appName.replace(" ", "")}-${defaultConfig.versionCode!!}"
         ndk.debugSymbolLevel = "full"
         buildConfigField("String", "REVIEW_URL", "\"\"")
-        buildConfigField("String", "SUPPORT_MAIL", "\"android@comaps.app\"") // Customized in flavors.
+        // ARAH-PLACEHOLDER: support email for all flavors, until Arah has a real support address.
+        buildConfigField("String", "SUPPORT_MAIL", "\"support@arah.invalid\"") // Customized in flavors.
         println("Version: ${versionName!!}")
         println("VersionCode: ${versionCode!!}")
     }
@@ -105,22 +107,23 @@ android {
             dimension = "default"
             applicationIdSuffix = ".google"
             versionName = "${android.defaultConfig.versionName!!}-Google"
-            buildConfigField("String", "SUPPORT_MAIL", "\"gplay@comaps.app\"")
-            buildConfigField("String", "REVIEW_URL", "\"market://details?id=app.comaps.google\"")
+            buildConfigField("String", "SUPPORT_MAIL", "\"support@arah.invalid\"")
+            // ARAH-PLACEHOLDER: Play store page of the google flavor (appId + ".google").
+            buildConfigField("String", "REVIEW_URL", "\"market://details?id=my.arah.app.google\"")
         }
 
         // Distributed directly by the project, e.g. in repo releases, chats, etc.
         create("web") {
             dimension = "default"
             versionName = android.defaultConfig.versionName!!
-            buildConfigField("String", "SUPPORT_MAIL", "\"apk@comaps.app\"")
+            buildConfigField("String", "SUPPORT_MAIL", "\"support@arah.invalid\"")
         }
 
         create("fdroid") {
             dimension = "default"
             applicationIdSuffix = ".fdroid"
             versionName = "${android.defaultConfig.versionName!!}-FDroid"
-            buildConfigField("String", "SUPPORT_MAIL", "\"fdroid@comaps.app\"")
+            buildConfigField("String", "SUPPORT_MAIL", "\"support@arah.invalid\"")
         }
 
         create("huawei") {
@@ -129,8 +132,9 @@ android {
             applicationIdSuffix = ".huawei"
             versionName = "${android.defaultConfig.versionName!!}-Huawei"
             versionCode = huaweiVersionCodeBase + android.defaultConfig.versionCode!!
-            buildConfigField("String", "SUPPORT_MAIL", "\"huawei@comaps.app\"")
-            buildConfigField("String", "REVIEW_URL", "\"appmarket://details?id=app.comaps\"")
+            buildConfigField("String", "SUPPORT_MAIL", "\"support@arah.invalid\"")
+            // Arah is not on Huawei AppGallery yet; an empty REVIEW_URL hides the "Rate the app" button.
+            buildConfigField("String", "REVIEW_URL", "\"\"")
         }
     }
 
@@ -193,7 +197,8 @@ android {
         getByName("debug") {
             storeFile = project.projectDir.resolve(File(comapsDebugKeystorePath))
             storePassword = "12345678"
-            keyAlias = "$appName Debug"
+            // The bundled comaps-debug.keystore holds the alias "CoMaps Debug"; it must not follow appName.
+            keyAlias = "CoMaps Debug"
             keyPassword = "12345678"
         }
         create("test") {

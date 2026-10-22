@@ -17,6 +17,7 @@ public final class Constants
      */
     @Deprecated
     public static final String SHORT_SHARE_PREFIX_OLD = "cm://";
+    // Kept as CoMaps values: the core (libs/ge0) generates comaps:// links and these are replaced in place.
     public static final String SHORT_SHARE_PREFIX = "comaps://";
     public static final String HTTP_SHARE_PREFIX = "https://comaps.at/";
 
@@ -24,12 +25,13 @@ public final class Constants
     public static final String MAIL_SUBJECT = "?subject=";
     public static final String MAIL_BODY = "&body=";
 
-    public static final String MATRIX = "https://matrix.to/#/%23comaps:matrix.org";
-    public static final String MASTODON = "https://floss.social/@comaps";
-    public static final String LEMMY = "https://sopuli.xyz/c/CoMaps";
-    public static final String BLUESKY = "https://bsky.app/profile/comaps.app";
-    public static final String PIXELFED = "https://pixelfed.social/comaps";
-    public static final String CODE_REPO = "https://codeberg.org/comaps/comaps";
+    // ARAH-PLACEHOLDER: Arah has no community/social accounts yet, so these point at the placeholder website.
+    public static final String MATRIX = "https://github.com/ARAH-ORG/arah";
+    public static final String MASTODON = "https://github.com/ARAH-ORG/arah";
+    public static final String LEMMY = "https://github.com/ARAH-ORG/arah";
+    public static final String BLUESKY = "https://github.com/ARAH-ORG/arah";
+    public static final String PIXELFED = "https://github.com/ARAH-ORG/arah";
+    public static final String CODE_REPO = "https://github.com/OpenKuasa/ARAH";
 
     public static final String COPYRIGHT = "file:///android_asset/copyright.html";
     public static final String FAQ = "file:///android_asset/faq.html";
