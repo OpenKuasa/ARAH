@@ -20,7 +20,8 @@ OpenStreetMap data). The goal is a Waze alternative for Malaysia. It is an open-
 - **Order of work:** the restyle and rebrand launch first. Then Phase 2, live alerts (jams, police, accidents, AWAS speed cameras). Then Phase 3, Arah's own Malaysia map data.
 - **Base and hosting:**
   - **Base:** CoMaps, staying connected to upstream (remote `comaps`, codeberg.org/comaps/comaps).
-  - **Arah's repo:** goes under the owner's separate GitHub account (account not yet supplied).
+  - **Arah's repo:** github.com/OpenKuasa/ARAH (public, remote `origin`). Commit as OpenKuasa only (this repo's git
+    identity); never as any other account.
   - **Hosting:** the whole world on Arah's own servers (details not yet supplied). Until then those values are marked `ARAH-PLACEHOLDER`.
 - **Share links:** no domain yet; places are shared as geo:/OpenStreetMap links.
 
@@ -30,7 +31,7 @@ OpenStreetMap data). The goal is a Waze alternative for Malaysia. It is an open-
 - **Generated files** (styles, translations) are regenerated with the repo's tools, never hand-edited, and committed separately.
 - **Malay text:** natural Malaysian Malay, not Indonesian. Use the glossary in the Plan 2 document and run `tools/python/arah_ms_check.py`.
 - **Branding:** `tools/python/arah_brand_check.py` finds upstream branding left in user-visible places, and lists placeholders.
-- **Process:** the owner uses the superpowers workflow (brainstorm → spec → plan → execute with TDD → one final review). The owner's global git rules (branch names `feat-###-…`, PRs, never delete branches) apply once Arah has its own remote. Until then, work on local branches and merge locally only when the owner says so.
+- **Process:** the owner uses the superpowers workflow (brainstorm → spec → plan → execute with TDD → one final review). The owner's global git rules apply: branch `feat-###-…` from `main`, push the branch, open a PR, squash-merge when the owner says so, never delete branches, never push to `main` directly. Contribution rules for others are in `CONTRIBUTING.md`.
 - **Build machine:**
   - **OS and tools:** macOS 27. Xcode 27 with the Metal Toolchain installed; the iOS simulator lives in Xcode's "Device Hub" app. Qt from Homebrew at `/opt/homebrew/opt/qt`.
   - **Build dirs:** use `build-<agent-name>`.
