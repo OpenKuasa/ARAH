@@ -37,31 +37,31 @@ Notes from the Plan 3 review:
 - `tools/python/arah_name_check.py` lists translations that may name upstream in their own script; rerun after renames.
 
 ## Next step
-Plan 4: iPhone screens and icon. CoMaps logos remain: the home-screen icon, `Image("comaps")` in `AboutCoMapsView`, the
-widget's `CoMapsWidgetExtension/LiveActivity/AppLogo.swift`, and the `"Logo"` asset in share link previews. Then:
-- Plan 4 (next): iPhone screens and icon, including a Mapbox-like navigation view the owner showed: tilted 3D, big turn banner,
-  arrival card, round floating buttons.
-- Plan 5: Android screens, icon and identity (`appId`, app name, Java links in `Constants.java`/`Utils.java`/`HelpFragment.java`,
-  About screen with "Based on CoMaps"), Malay by default via CoMaps' language screen. Needs the
-  Android SDK.
-- Plan 6: map hosting, signing key and metaserver (CoMaps has `docs/DEPLOY_OWN_MAP_SERVER.md`),
-  store listings.
+- **Plan 4 (next): iPhone screens**, including a Mapbox-like navigation view the owner showed: tilted 3D, big turn banner,
+  arrival card, round floating buttons. Waiting for the owner's reference screenshots. The icon part of Plan 4 is done.
+- **Plan 5: Android screens and identity.** Done already: app name, placeholder `appId` `my.arah.app`, Java links,
+  OpenStreetMap share links (feat-009), launcher/logo/notification art (feat-010). Left: a "Based on CoMaps" credit on
+  the About screen (`about_developed_by_enthusiasts` is translated in every language), Malay by default via CoMaps'
+  language screen, an Arah release signing key (debug builds use CoMaps' debug key, whose certificate says CoMaps).
+- **Plan 6:** map hosting, signing key and metaserver (CoMaps has `docs/DEPLOY_OWN_MAP_SERVER.md`), store art and
+  screenshots.
 
-## CoMaps branding audit (feat-007)
-`tools/python/arah_brand_check.py` now also scans the bundled FAQ/copyright/welcome pages, store listings, release
-settings and the user-visible string literals in export, OSM-editing and app-name code (0 leaks). Still open:
-- **Plan 4:** CoMaps logo art in `Logo.imageset` (share previews and the "update your maps" screen), `Image("comaps")`,
-  the widget `AppLogo`, and the app icon.
-- **Plan 5:** Android launcher, splash and notification art. No "Based on CoMaps" credit on Android's About screen yet.
-  None of feat-007's Android changes were compiled.
-- **feat-009 (not compiled yet):** Android shares places, bookmarks and "my position" as OpenStreetMap links in the
-  iPhone's text, through `arah::ShareText`/`ShareLink` (`ArahShare.java` + `arah_share_jni.cpp`, called from
-  `SharingUtils.java`). Build and try a share once the Android SDK is in. The "Check out" first line
-  (`arah_sharing_call_action_look`) has English and Malay only; other languages show English.
-- **Plan 6 / owner:** Apple team ID (`DEVELOPMENT_TEAM 534D2KJBUK` is CoMaps'), an Arah OSM OAuth app (`private.h`
-  uses CoMaps' registration), Arah-hosted KML placemark icons (`libs/kml/serdes.cpp` links comaps.at).
-- **Malay:** the FAQ has no Malay section; the Malay store listing (`iphone/metadata/ms`, Play `listings/ms`) needs a
-  native read. Play's default language stays `en-US` because `check_store_metadata.py` requires it.
+## Done since Plan 3 (feat-004 to feat-011)
+- **Branding (feat-007):** `tools/python/arah_brand_check.py` also scans the bundled FAQ/copyright/welcome pages, store
+  listings, release settings and the user-visible string literals in export, OSM-editing and app-name code: 0 leaks.
+- **Icon (feat-010):** "Pin Kompas" replaces every CoMaps logo and icon on iPhone, Android and desktop. Master art and
+  preview in `docs/arah-brand/`; `python3 tools/python/arah_icon_build.py` then `arah_icon_symbol.py` redraw every
+  asset (arrow centred by area, pointing at 45 degrees; `test_arah_icon_geom.py`).
+- **Malay FAQ (feat-008)** and **Android OpenStreetMap share links (feat-009)**, compiled; the share sheet itself
+  hasn't been tried on a phone. The "Check out" share line has English and Malay only.
+- **Android builds on this Mac (feat-011):** see `CLAUDE.md` for the commands.
+
+Still open:
+- **Owner:** Apple team ID (`DEVELOPMENT_TEAM 534D2KJBUK` is CoMaps'), an Arah OSM OAuth app (`private.h` uses
+  CoMaps' registration), Arah-hosted KML placemark icons (`libs/kml/serdes.cpp` links comaps.at).
+- **Malay:** the Malay store listing (`iphone/metadata/ms`, Play `listings/ms`) and a few FAQ phrases need a native
+  read. Play's default language stays `en-US` because `check_store_metadata.py` requires it. Not yet checked on a
+  device: whether the FAQ shows Malay when only Arah, not the phone, is set to Malay.
 - Seven map_tests and two kml serdes tests fail before and after feat-007 (upstream).
 
 ## Decision needed from the owner
