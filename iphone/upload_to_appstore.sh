@@ -28,6 +28,7 @@ xcodebuild archive \
 
 
 # Create a plist with upload options.
+# ARAH-PLACEHOLDER: provisioning profile key my.arah.app is Arah's placeholder bundle ID.
 PLIST="$BUILD_DIR/export.plist"
 cat > "$PLIST" <<EOM
 <?xml version="1.0" encoding="UTF-8"?>
@@ -42,7 +43,7 @@ cat > "$PLIST" <<EOM
   <string>534D2KJBUK</string>
   <key>provisioningProfiles</key>
   <dict>
-    <key>app.comaps</key>
+    <key>my.arah.app</key>
     <string>CarPlay AppStore</string>
   </dict>
 </dict>

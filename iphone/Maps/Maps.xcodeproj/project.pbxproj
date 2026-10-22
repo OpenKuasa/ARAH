@@ -5228,10 +5228,11 @@
 				CURRENT_PROJECT_VERSION = 0;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_KEY_CFBundleDisplayName = "Arah (Debug)";
+				INFOPLIST_KEY_CFBundleName = "Arah (Debug)";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 CoMaps Contributors. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Arah Contributors. Based on CoMaps.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Determining your location is necessary for navigation and for saving your recently travelled track.";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -5264,10 +5265,11 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_KEY_CFBundleDisplayName = Arah;
+				INFOPLIST_KEY_CFBundleName = Arah;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 CoMaps Contributors. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Arah Contributors. Based on CoMaps.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Determining your location is necessary for navigation and for saving your recently travelled track.";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -5330,7 +5332,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoMapsWidgetExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Arah;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 CoMaps Contributors. All rights reserved.";
+				INFOPLIST_KEY_CFBundleName = Arah;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Arah Contributors. Based on CoMaps.";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5360,7 +5363,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoMapsWidgetExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Arah;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 CoMaps Contributors. All rights reserved.";
+				INFOPLIST_KEY_CFBundleName = Arah;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Arah Contributors. Based on CoMaps.";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
