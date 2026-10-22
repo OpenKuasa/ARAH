@@ -222,13 +222,13 @@ tools/unix/build_omim.sh -d help
 
 The generated binaries appear in `../omim-build-<buildtype>`.
 
-A desktop app binary is `CoMaps`. To run e.g. a release version:
+A desktop app binary is `Arah`. To run e.g. a release version:
 
 <details>
   <summary><span style="font-size: 1em; font-weight: bold;">Linux</span></summary>
 
 ```bash
-../omim-build-release/CoMaps
+../omim-build-release/Arah
 ```
 </details>
 
@@ -241,11 +241,11 @@ the application will ask for it by opening a file dialog on startup.
 
 
 ```bash
-../omim-build-release/CoMaps.Designer optional/path/to/style.mapcss
+../omim-build-release/Arah.Designer optional/path/to/style.mapcss
 ```
 
 ```bash
-../omim-build-release/CoMaps.app/Contents/MacOS/CoMaps
+../omim-build-release/Arah.app/Contents/MacOS/Arah
 ```
 </details>
 

@@ -115,7 +115,7 @@ int main(int argc, char * argv[])
 
   Platform & platform = GetPlatform();
 
-  LOG(LINFO, ("CoMaps", platform.Version(), "built with QT:", QT_VERSION_STR, "runtime QT:", qVersion(),
+  LOG(LINFO, ("Arah", platform.Version(), "built with QT:", QT_VERSION_STR, "runtime QT:", qVersion(),
               "detected CPU cores:", platform.CpuCores()));
 
   gflags::SetUsageMessage("Desktop application.");
@@ -142,9 +142,9 @@ int main(int argc, char * argv[])
   platform.SetupMeasurementSystem();
 
 #ifdef BUILD_DESIGNER
-  QApplication::setApplicationName("CoMaps Designer");
+  QApplication::setApplicationName("Arah Designer");
 #else
-  QApplication::setApplicationName("CoMaps");
+  QApplication::setApplicationName("Arah");
 #endif
 
 #ifdef DEBUG

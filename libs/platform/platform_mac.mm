@@ -111,9 +111,9 @@ Platform::Platform()
       NSString * supportDir = [dirPaths objectAtIndex:0];
       m_writableDir = supportDir.UTF8String;
 #ifdef BUILD_DESIGNER
-      m_writableDir += "/CoMapsData.Designer/";
+      m_writableDir += "/ArahData.Designer/";
 #else // BUILD_DESIGNER
-      m_writableDir += "/CoMapsData/";
+      m_writableDir += "/ArahData/";
 #endif // BUILD_DESIGNER
       ::mkdir(m_writableDir.c_str(), 0755);
     }
