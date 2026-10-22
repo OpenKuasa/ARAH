@@ -1,6 +1,7 @@
 project(coding_tests)
 
 set(SRC
+  arah_zip_creator_test.cpp
   base64_test.cpp
   bit_streams_test.cpp
   bwt_coder_tests.cpp
