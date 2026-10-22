@@ -33,7 +33,48 @@ PLAIN_FILES = [
     "iphone/Maps/Model/Social Media.swift",
     "iphone/Maps/UI/Settings/CustomMapServerView.swift",
     "iphone/Maps/UI/MailComposer/*.swift",
+    # Pages bundled into the apps (FAQ, copyright, desktop welcome).
+    "data/faq.html",
+    "data/copyright.html",
+    "data/welcome.html",
+    # Shown on the GitHub repo page.
+    "funding.json",
+    ".github/FUNDING.yml",
+    # Store listings and the release settings that upload them.
+    "iphone/metadata/**/*.txt",
+    "android/app/src/*/play/**/*.txt",
+    "xcode/fastlane/*",
+    "iphone/upload_to_appstore.sh",
+    "packaging/*.xml",
 ]
+# Source files where only string literals reach users or leave the device (export names, OSM notes and
+# changeset tags, support emails, app names); identifiers and comments in them stay upstream's.
+CODE_FILES = [
+    "libs/map/bookmark_manager.cpp",
+    "libs/kml/serdes_gpx.cpp",
+    "libs/coding/zip_creator.cpp",
+    "libs/editor/osm_editor.cpp",
+    "libs/editor/server_api.cpp",
+    "libs/platform/platform_mac.mm",
+    "libs/platform/platform_linux.cpp",
+    "libs/platform/platform_win.cpp",
+    "libs/drape/vulkan/vulkan_context_factory.cpp",
+    "qt/main.cpp",
+    "qt/mainwindow.cpp",
+    "qt/CMakeLists.txt",
+    "iphone/Maps/Core/Editor/MWMEditorHelper.mm",
+    "iphone/Maps/Categories/UIKitCategories.m",
+    "android/app/build.gradle.kts",
+    "android/app/src/main/java/app/organicmaps/util/Utils.java",
+    "android/app/src/main/java/app/organicmaps/help/HelpFragment.java",
+    "android/app/src/main/java/app/organicmaps/settings/NavigationSettingsFragment.java",
+    "android/sdk/src/main/java/app/organicmaps/sdk/util/Constants.java",
+    "android/sdk/src/main/cpp/app/organicmaps/sdk/editor/Editor.cpp",
+]
+STRING_LITERAL = re.compile(r'"(?:[^"\\]|\\.)*"')
+# Credits that name upstream on purpose ("built on CoMaps", "berasaskan CoMaps").
+CREDIT = re.compile(r"(based on|built on|berasaskan|dibina (?:atas|berasaskan)|fork of|cabang daripada)\s+"
+                    r"(?:<[^>]+>\s*)*(?:co ?maps|organic ?maps)", re.IGNORECASE)
 # Placeholder values written into app text; listed per file so --release fails until real values replace them.
 PLACEHOLDER_VALUES = re.compile(r"ARAH-ORG|arah\.invalid")
 # Keys Arah adds to iOS text. iOS has no per-key fallback to English, so every language needs them.
@@ -58,7 +99,7 @@ ALLOWED_LINES = [
 
 
 def allowed_line(rel, line):
-    return any(rel == path and sub in line for path, sub, _ in ALLOWED_LINES)
+    return CREDIT.search(line) is not None or any(rel == path and sub in line for path, sub, _ in ALLOWED_LINES)
 ANDROID_ENTRY = re.compile(r'<(string|plurals) name="([^"]+)"([^>]*)>(.*?)</\1>', re.S)
 IOS_LINE = re.compile(r'^\s*"((?:[^"\\]|\\.)*)"\s*=\s*"((?:[^"\\]|\\.)*)"\s*;')
 COMMENT = re.compile(r"^\s*(//|/\*|\*|<!--)")
@@ -67,7 +108,8 @@ COMMENT = re.compile(r"^\s*(//|/\*|\*|<!--)")
 def expand(root, patterns):
     out = []
     for pattern in patterns:
-        out += sorted(os.path.relpath(p, root) for p in glob.glob(os.path.join(root, pattern)))
+        out += sorted(os.path.relpath(p, root) for p in glob.glob(os.path.join(root, pattern), recursive=True)
+                      if os.path.isfile(p))
     return out
 
 
@@ -88,7 +130,7 @@ def find_brand_leaks(root):
     for rel in expand(root, ANDROID_STRINGS):
         text = read_text(root, rel)
         for m in ANDROID_ENTRY.finditer(text):
-            if 'translatable="false"' in m.group(3) or m.group(2) in ALLOWED_KEYS:
+            if m.group(2) in ALLOWED_KEYS:
                 continue
             if BRAND.search(m.group(4)):
                 line = text.count("\n", 0, m.start()) + 1
@@ -111,6 +153,12 @@ def find_brand_leaks(root):
     for rel in expand(root, PLAIN_FILES):
         for n, line in enumerate(read_lines(root, rel), 1):
             if BRAND.search(line) and not COMMENT.match(line) and not allowed_line(rel, line):
+                leaks.append(f"{rel}:{n}: {line.strip()[:120]}")
+    for rel in expand(root, CODE_FILES):
+        for n, line in enumerate(read_lines(root, rel), 1):
+            if COMMENT.match(line) or allowed_line(rel, line):
+                continue
+            if any(BRAND.search(lit) for lit in STRING_LITERAL.findall(line)):
                 leaks.append(f"{rel}:{n}: {line.strip()[:120]}")
     for n, line in enumerate(read_lines(root, PBXPROJ), 1):
         if PBX_IDENTITY.search(line) and BRAND.search(line) and not allowed_line(PBXPROJ, line):

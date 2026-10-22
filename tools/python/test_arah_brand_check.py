@@ -26,11 +26,38 @@ class BrandCheckTest(unittest.TestCase):
         self.assertEqual(len(leaks), 1)
         self.assertIn("[k]", leaks[0])
 
-    def test_untranslatable_skipped(self):
+    def test_untranslatable_scanned(self):
         root = make_repo({"android/app/src/main/res/values/strings.xml":
                           '<resources>\n    <string name="project_name" translatable="false">CoMaps</string>\n'
                           '</resources>\n'})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)
+
+    def test_bundled_page_scanned(self):
+        root = make_repo({"data/faq.html": "<p>\n<title>CoMaps: Frequently Asked Questions</title>\n"})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)
+
+    def test_store_listing_scanned(self):
+        root = make_repo({"iphone/metadata/en-US/keywords.txt": "comaps,maps,offline\n",
+                          "android/app/src/fdroid/play/listings/en-US/title.txt": "CoMaps - Navigate\n"})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 2)
+
+    def test_funding_manifest_scanned(self):
+        root = make_repo({"funding.json": '{"name": "CoMaps"}\n'})
+        self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)
+
+    def test_credit_line_allowed(self):
+        root = make_repo({"iphone/metadata/en-US/description.txt": "Arah is built on CoMaps and OpenStreetMap.\n",
+                          "data/faq.html": "<p>Arah is based on CoMaps.</p>\n"})
         self.assertEqual(arah_brand_check.find_brand_leaks(root), [])
+
+    def test_code_string_literal_scanned(self):
+        root = make_repo({"libs/map/bookmark_manager.cpp":
+                          '// CoMaps keeps exports small.\n'
+                          'auto const name = CoMapsName();\n'
+                          'std::string const kName = "CoMaps Bookmarks and Tracks";\n'})
+        leaks = arah_brand_check.find_brand_leaks(root)
+        self.assertEqual(len(leaks), 1)
+        self.assertIn("Bookmarks and Tracks", leaks[0])
 
     def test_ios_leak_found(self):
         root = make_repo({"iphone/Maps/LocalizedStrings/ms.lproj/Localizable.strings":
