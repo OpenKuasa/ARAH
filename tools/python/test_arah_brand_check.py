@@ -106,6 +106,12 @@ class BrandCheckTest(unittest.TestCase):
         self.assertIn("2 placeholder value", found[0])
         self.assertEqual(arah_brand_check.main(["--root", root, "--release"]), 1)
 
+    def test_placeholder_values_in_pages_listed(self):
+        root = make_repo({"data/faq.html": '<a href="mailto:support@arah.invalid">support@arah.invalid</a>\n'})
+        found = arah_brand_check.find_placeholders(root)
+        self.assertEqual(len(found), 1)
+        self.assertIn("data/faq.html", found[0])
+
     def test_mail_composer_scanned(self):
         root = make_repo({"iphone/Maps/UI/MailComposer/MailComposer.swift": '    let body = "- CoMaps %@-%@"\n'})
         self.assertEqual(len(arah_brand_check.find_brand_leaks(root)), 1)

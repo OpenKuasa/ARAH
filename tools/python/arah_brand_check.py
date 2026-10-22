@@ -95,6 +95,11 @@ ALLOWED_LINES = [
      "internal product/module name kept for the upstream test target; users see INFOPLIST_KEY_CFBundleDisplayName"),
     ("iphone/Maps/Model/Social Media.swift", "return URL(string:",
      "CoMaps social accounts; the section is hidden by ArahConfig.socialMediaEnabled until Arah has accounts"),
+    ("data/copyright.html", '<a href="https://codeberg.org/comaps/comaps">CoMaps</a>', "credit for CoMaps"),
+    ("data/copyright.html", "&copy; 2025 CoMaps Contributors;", "credit for CoMaps"),
+    ("data/copyright.html", '<a href="https://github.com/organicmaps/organicmaps">Organic Maps</a>',
+     "credit for Organic Maps"),
+    ("data/copyright.html", "&copy; 2025 Organic Maps Contributors;", "credit for Organic Maps"),
     ("xcode/fastlane/Fastfile", "targets: ['CoMaps", "Xcode target names kept for upstream merges"),
     ("xcode/fastlane/Fastfile", "workspace: 'CoMaps.xcworkspace'", "Xcode workspace name kept for upstream merges"),
     ("xcode/fastlane/Fastfile", "scheme: 'CoMaps'", "Xcode scheme name kept for upstream merges"),
@@ -193,7 +198,7 @@ def find_placeholders(root):
         for n, line in enumerate(lines, 1):
             if PLACEHOLDER in line:
                 found.append(f"{rel}:{n}: {line.strip()}")
-    for rel in expand(root, ANDROID_STRINGS + IOS_STRINGS + IOS_PLURALS):
+    for rel in expand(root, ANDROID_STRINGS + IOS_STRINGS + IOS_PLURALS + ["data/*.html"]):
         count = sum(1 for line in read_lines(root, rel) if PLACEHOLDER_VALUES.search(line))
         if count:
             found.append(f"{rel}: {count} placeholder value(s) (Arah website/email placeholders in text)")
