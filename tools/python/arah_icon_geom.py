@@ -12,7 +12,7 @@ HEAD_R = 280.0      # radius of pin head
 TIP_Y = 830.0       # bottom tip of pin
 TIP_R = 40.0        # roundness of the tip
 
-ARROW_ANGLE = 10.0  # degrees clockwise (0 = straight up)
+ARROW_ANGLE = 45.0  # degrees clockwise (0 = straight up): points up-right
 ARROW_TIP = (0.0, -172.0)     # relative to head centre, before rotation
 ARROW_WING = (150.0, 118.0)   # right wing (left is mirrored)
 ARROW_NOTCH = (0.0, 40.0)
