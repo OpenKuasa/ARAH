@@ -47,6 +47,20 @@ widget's `CoMapsWidgetExtension/LiveActivity/AppLogo.swift`, and the `"Logo"` as
 - Plan 6: map hosting, signing key and metaserver (CoMaps has `docs/DEPLOY_OWN_MAP_SERVER.md`),
   store listings.
 
+## CoMaps branding audit (feat-007)
+`tools/python/arah_brand_check.py` now also scans the bundled FAQ/copyright/welcome pages, store listings, release
+settings and the user-visible string literals in export, OSM-editing and app-name code (0 leaks). Still open:
+- **Plan 4:** CoMaps logo art in `Logo.imageset` (share previews and the "update your maps" screen), `Image("comaps")`,
+  the widget `AppLogo`, and the app icon.
+- **Plan 5:** Android still shares `comaps.at` links (`Constants.java` share prefixes via `Framework.getHttpGe0Url`); move
+  it to `arah::ShareText` (needs JNI and the Android SDK). Android launcher, splash and notification art. No "Based on
+  CoMaps" credit on Android's About screen yet. None of feat-007's Android changes were compiled.
+- **Plan 6 / owner:** Apple team ID (`DEVELOPMENT_TEAM 534D2KJBUK` is CoMaps'), an Arah OSM OAuth app (`private.h`
+  uses CoMaps' registration), Arah-hosted KML placemark icons (`libs/kml/serdes.cpp` links comaps.at).
+- **Malay:** the FAQ has no Malay section; the Malay store listing (`iphone/metadata/ms`, Play `listings/ms`) needs a
+  native read. Play's default language stays `en-US` because `check_store_metadata.py` requires it.
+- Seven map_tests and two kml serdes tests fail before and after feat-007 (upstream).
+
 ## Decision needed from the owner
 - **Malay place names on the map.** CoMaps' map files carry no Malay names: its fixed 64-slot name-language table
   (`libs/i18n/localisation.hpp`) has no `ms`. So with the app in Malay, places show English names ("Royal Museum", not
