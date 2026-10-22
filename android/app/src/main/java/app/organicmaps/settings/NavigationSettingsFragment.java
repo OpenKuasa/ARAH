@@ -60,7 +60,8 @@ public class NavigationSettingsFragment extends BaseXmlSettingsFragment
     else if (key.equals(getString(R.string.pref_android_auto_support)))
     {
       if (!Utils.isAndroidAutoSupported(requireContext()))
-        Utils.openUrl(requireContext(), "https://www.comaps.app/support/how-to-use-android-auto/");
+        // ARAH-PLACEHOLDER: Arah has no Android Auto help page yet.
+        Utils.openUrl(requireContext(), "https://github.com/ARAH-ORG/arah");
     }
     return super.onPreferenceTreeClick(preference);
   }
