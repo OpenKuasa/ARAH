@@ -1,5 +1,9 @@
 # Contributing
 
+> **Arah:** This is CoMaps' contributing guide, kept for its technical detail. For Arah, report issues and send pull
+> requests at https://github.com/OpenKuasa/ARAH, and follow Arah's own [CONTRIBUTING.md](../CONTRIBUTING.md). CoMaps'
+> contacts, chats and donation links below are for CoMaps, not Arah.
+
 Thank you for your interest in contributing to CoMaps!
 
 ## How Can I Contribute?

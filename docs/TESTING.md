@@ -1,5 +1,8 @@
 # Testing
 
+> **Arah:** Report Arah bugs at https://github.com/OpenKuasa/ARAH/issues. Arah has no beta programme yet; the
+> TestFlight and Codeberg links below are CoMaps'.
+
 User testing is an important part of the pre-release process to make sure no bugs make it into the final release version.
 
 You can install test builds, which are pre-release versions of our app, and try to find new bugs before they make it to more people. You should be aware though that those test builds can be more unstable and prone to errors than the released versions. So don't use those test builds, if you really need to rely on our app working as stable and bug-free as possible.

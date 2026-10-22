@@ -1,5 +1,8 @@
 # Pull Request Guidelines
 
+> **Arah:** Arah's pull requests go to https://github.com/OpenKuasa/ARAH (see [CONTRIBUTING.md](../CONTRIBUTING.md)).
+> The review rules below still apply; CoMaps' Codeberg, DCO and chat links are CoMaps'.
+
 This document gives some guidelines to write and review PR with essential elements.
 
 ## Writing a Pull Request (PR):
