@@ -4,6 +4,9 @@
 Arah started on Organic Maps; that work is archived in `~/Documents/arah-archive/` (see its README). The owner then
 moved the base to **CoMaps** (see the amendment at the top of the design doc).
 
+Arah is on GitHub at **github.com/OpenKuasa/ARAH** (remote `origin`). `main` has Plan M and Plan 3, plus Arah's
+README, CONTRIBUTING, SECURITY, code of conduct and issue/PR templates. Work goes through `feat-###` branches and PRs.
+
 **Plan M is done** (`docs/superpowers/plans/2026-10-21-arah-plan-m-move-to-comaps.md`), merged into `feat-001-arah-setup`
 from `feat-002-move-to-comaps` (kept):
 - **Tenang map palette** on CoMaps' default, vehicle and outdoors styles, and so on every map mode (walking, cycling,
@@ -41,7 +44,7 @@ widget's `CoMapsWidgetExtension/LiveActivity/AppLogo.swift`, and the `"Logo"` as
 - Plan 5: Android screens, icon and identity (`appId`, app name, Java links in `Constants.java`/`Utils.java`/`HelpFragment.java`,
   About screen with "Based on CoMaps", share via `arah::ShareText`), Malay by default via CoMaps' language screen. Needs the
   Android SDK.
-- Plan 6: Arah GitHub repo, map hosting, signing key and metaserver (CoMaps has `docs/DEPLOY_OWN_MAP_SERVER.md`),
+- Plan 6: map hosting, signing key and metaserver (CoMaps has `docs/DEPLOY_OWN_MAP_SERVER.md`),
   store listings.
 
 ## Decision needed from the owner
@@ -54,7 +57,6 @@ widget's `CoMapsWidgetExtension/LiveActivity/AppLogo.swift`, and the `"Logo"` as
 ## Still needed from the owner
 - **IDs:** iOS bundle ID and Android package name.
 - **Map hosting:** server URLs, metaserver, and the key that signs `countries.txt`.
-- **GitHub:** the account for Arah's repo.
 - **OpenStreetMap:** register Arah as an OAuth app on openstreetmap.org.
 - **Web:** website, privacy policy and terms URLs, support email.
 - **Device check:** a manual pass of the Malay UI on iPhone (screens that need taps, small-screen clipping).
