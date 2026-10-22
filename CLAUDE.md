@@ -35,4 +35,7 @@ OpenStreetMap data). The goal is a Waze alternative for Malaysia. It is an open-
 - **Build machine:**
   - **OS and tools:** macOS 27. Xcode 27 with the Metal Toolchain installed; the iOS simulator lives in Xcode's "Device Hub" app. Qt from Homebrew at `/opt/homebrew/opt/qt`.
   - **Build dirs:** use `build-<agent-name>`.
-  - **Android:** the SDK is not installed yet.
+  - **Android:** SDK at `~/Library/Android/sdk` (NDK 28.2.13676358, CMake 3.31.6), Java from Android Studio. Build with
+    `export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"`,
+    `export PATH="$HOME/Library/Android/sdk/cmake/3.31.6/bin:$PATH"`, then in `android/`:
+    `./gradlew assembleFdroidDebug -Parm64` and `./gradlew testFdroidDebugUnitTest :sdk:testDebugUnitTest -Parm64`.
