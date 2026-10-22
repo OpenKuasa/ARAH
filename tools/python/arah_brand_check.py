@@ -95,6 +95,11 @@ ALLOWED_LINES = [
      "internal product/module name kept for the upstream test target; users see INFOPLIST_KEY_CFBundleDisplayName"),
     ("iphone/Maps/Model/Social Media.swift", "return URL(string:",
      "CoMaps social accounts; the section is hidden by ArahConfig.socialMediaEnabled until Arah has accounts"),
+    ("xcode/fastlane/Fastfile", "targets: ['CoMaps", "Xcode target names kept for upstream merges"),
+    ("xcode/fastlane/Fastfile", "workspace: 'CoMaps.xcworkspace'", "Xcode workspace name kept for upstream merges"),
+    ("xcode/fastlane/Fastfile", "scheme: 'CoMaps'", "Xcode scheme name kept for upstream merges"),
+    ("iphone/upload_to_appstore.sh", "CoMaps.xcworkspace", "Xcode workspace name kept for upstream merges"),
+    ("iphone/upload_to_appstore.sh", "-scheme CoMaps", "Xcode scheme name kept for upstream merges"),
 ]
 
 
