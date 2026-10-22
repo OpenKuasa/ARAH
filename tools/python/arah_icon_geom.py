@@ -93,9 +93,15 @@ def _arrow_pts():
   tip, wr, notch = ARROW_TIP, ARROW_WING, ARROW_NOTCH
   wl = (-wr[0], wr[1])
   pts = {k: _rot(v) for k, v in {'tip': tip, 'wr': wr, 'notch': notch, 'wl': wl}.items()}
-  xs = [p[0] for k, p in pts.items() if k != 'notch']
-  ys = [p[1] for k, p in pts.items() if k != 'notch']
-  bx, by = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
+  # Centre the arrow's area (its visual weight), not its bounding box: the tilt and the heavy wings
+  # would otherwise push it right of and below the head centre.
+  poly = [pts['tip'], pts['wr'], pts['notch'], pts['wl']]
+  a = bx = by = 0.0
+  for i, (x0, y0) in enumerate(poly):
+    x1, y1 = poly[(i + 1) % 4]
+    c = x0 * y1 - x1 * y0
+    a, bx, by = a + c, bx + (x0 + x1) * c, by + (y0 + y1) * c
+  bx, by = bx / (3 * a), by / (3 * a)
   return {k: (CX + v[0] - bx + ARROW_SHIFT_X, HEAD_CY + v[1] - by + ARROW_SHIFT_Y)
           for k, v in pts.items()}
 

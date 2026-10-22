@@ -9,10 +9,10 @@
     android:strokeWidth="@dimen/app_icon_border_width"
     android:strokeColor="@color/fg_app_icon_test_border"/>
   <path
-    android:pathData="M32.71,31.97A0.64,0.64 0 0,0 32.41,31.99L27.62,33.5A1.18,1.18 0 0,1 26.33,31.65L33.57,22.16A0.97,0.97 0 0,1 34.51,21.79Z"
+    android:pathData="M31.57,31.49A0.64,0.64 0 0,0 31.26,31.51L26.48,33.02A1.18,1.18 0 0,1 25.18,31.17L32.43,21.68A0.97,0.97 0 0,1 33.36,21.31Z"
     android:fillColor="@color/fg_app_icon_test_fill2"/>
   <path
-    android:pathData="M34.51,21.79A0.97,0.97 0 0,1 35.26,22.46L38.83,33.86A1.18,1.18 0 0,1 36.98,35.15L32.99,32.09A0.64,0.64 0 0,0 32.71,31.97Z"
+    android:pathData="M33.36,21.31A0.97,0.97 0 0,1 34.12,21.98L37.68,33.38A1.18,1.18 0 0,1 35.83,34.67L31.85,31.61A0.64,0.64 0 0,0 31.57,31.49Z"
     android:fillColor="@color/fg_app_icon_test_fill2"
     android:fillAlpha="0.85"/>
 </vector>
