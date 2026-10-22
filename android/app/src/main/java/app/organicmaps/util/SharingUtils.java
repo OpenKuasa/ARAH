@@ -9,11 +9,11 @@ import android.content.Intent;
 import android.location.Location;
 import android.net.Uri;
 import android.os.Build;
-import android.text.TextUtils;
 import android.util.Pair;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContract;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import app.organicmaps.R;
@@ -21,6 +21,8 @@ import app.organicmaps.SplashActivity;
 import app.organicmaps.sdk.Framework;
 import app.organicmaps.sdk.bookmarks.data.BookmarkInfo;
 import app.organicmaps.sdk.bookmarks.data.MapObject;
+import app.organicmaps.sdk.bookmarks.data.Metadata;
+import app.organicmaps.sdk.util.ArahShare;
 import app.organicmaps.sdk.util.StorageUtils;
 import app.organicmaps.sdk.util.log.Logger;
 
@@ -118,12 +120,8 @@ public class SharingUtils
     Intent intent = new Intent(Intent.ACTION_SEND);
     intent.setType(TEXT_MIME_TYPE);
 
-    final String geoUrl =
-        Framework.nativeGetGeoUri(loc.getLatitude(), loc.getLongitude(), Framework.nativeGetDrawScale(), "")
-            .replaceAll("\\?.*", ""); //Strip out the zoom and redundant coordinates that don't add much information and might make the link scary
-    final String httpUrl =
-        Framework.getHttpGe0Url(loc.getLatitude(), loc.getLongitude(), Framework.nativeGetDrawScale(), "");
-    final String text = context.getString(R.string.my_position_share_email, httpUrl, geoUrl);
+    final String text =
+        getMyPositionText(context, loc.getLatitude(), loc.getLongitude(), Framework.nativeGetDrawScale());
     intent.putExtra(Intent.EXTRA_TEXT, text);
 
     context.startActivity(Intent.createChooser(intent, context.getString(R.string.share)));
@@ -134,14 +132,15 @@ public class SharingUtils
     Intent intent = new Intent(Intent.ACTION_SEND);
     intent.setType(TEXT_MIME_TYPE);
 
-    final String geoUrl =
-        Framework.nativeGetGeoUri(object.getLat(), object.getLon(), object.getScale(), object.getName())
-            .replaceAll("\\?.*", ""); //Strip out the zoom and redundant coordinates that don't add much information and might make the link scary
-    final String httpUrl =
-        Framework.getHttpGe0Url(object.getLat(), object.getLon(), object.getScale(), object.getName());
-
-    final String text = object.isMyPosition() ? context.getString(R.string.my_position_share_email, httpUrl, geoUrl)
-        : context.getString(R.string.bookmark_share_email_subject, httpUrl, geoUrl);
+    // Arah shares OpenStreetMap links in the same text as on iPhone (MWMShareActivityItem.mm).
+    final String text =
+        object.isMyPosition()
+            ? getMyPositionText(context, object.getLat(), object.getLon(), object.getScale())
+            : getPlaceText(context, object.getName(),
+                           ArahShare.joinLines(
+                               object.getSubtitle(), object.getAddress(),
+                               ArahShare.formatPhones(object.getMetadata(Metadata.MetadataType.FMD_PHONE_NUMBER))),
+                           object.getLat(), object.getLon(), object.getScale());
     intent.putExtra(Intent.EXTRA_TEXT, text);
 
     context.startActivity(Intent.createChooser(intent, context.getString(R.string.share)));
@@ -152,22 +151,27 @@ public class SharingUtils
     Intent intent = new Intent(Intent.ACTION_SEND);
     intent.setType(TEXT_MIME_TYPE);
 
-    final String subject = context.getString(R.string.bookmark_share_email_subject);
-    final String geoUrl =
-        Framework.nativeGetGeoUri(bookmark.getLat(), bookmark.getLon(), bookmark.getScale(), bookmark.getName())
-            .replaceAll("\\?.*", ""); //Strip out the zoom and redundant coordinates that don't add much information and might make the link scary
-    final String httpUrl =
-        Framework.getHttpGe0Url(bookmark.getLat(), bookmark.getLon(), bookmark.getScale(), bookmark.getName());
-    StringBuilder text = new StringBuilder();
-    text.append(context.getString(R.string.bookmark_share_email_subject, httpUrl, geoUrl));
-    if (!TextUtils.isEmpty(bookmark.getAddress()))
-    {
-      text.append(UiUtils.NEW_STRING_DELIMITER);
-      text.append(bookmark.getAddress());
-    }
-    intent.putExtra(Intent.EXTRA_TEXT, text.toString());
+    final String text =
+        getPlaceText(context, bookmark.getName(), ArahShare.joinLines(bookmark.getFeatureType(), bookmark.getAddress()),
+                     bookmark.getLat(), bookmark.getLon(), bookmark.getScale());
+    intent.putExtra(Intent.EXTRA_TEXT, text);
 
     context.startActivity(Intent.createChooser(intent, context.getString(R.string.share)));
+  }
+
+  @NonNull
+  private static String getMyPositionText(@NonNull Context context, double lat, double lon, double zoomLevel)
+  {
+    final String link = ArahShare.getShareLink(lat, lon, zoomLevel);
+    return context.getString(R.string.my_position_share_email_subject) + " " + link;
+  }
+
+  @NonNull
+  private static String getPlaceText(@NonNull Context context, @Nullable String name, @NonNull String details,
+                                     double lat, double lon, double zoomLevel)
+  {
+    final String text = ArahShare.getShareText(name == null ? "" : name, details, lat, lon, zoomLevel);
+    return context.getString(R.string.arah_sharing_call_action_look) + "\n" + text;
   }
 
   private static void ProcessShareResult(@NonNull ContentResolver resolver, Pair<Uri, Uri> result)
