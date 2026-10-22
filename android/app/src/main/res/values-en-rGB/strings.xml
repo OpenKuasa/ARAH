@@ -26,8 +26,8 @@
     <string name="dialog_pedestrian_route_is_long_header">No metro route found</string>
     <string name="dialog_pedestrian_route_is_long_message">Please choose a start or end point closer to a metro station</string>
     <string name="bookmarks_and_tracks">Favourites</string>
-    <string name="share_bookmarks_email_subject">My CoMaps Favourites</string>
-    <string name="share_bookmarks_email_body">Hello! \n \nAttached are my Favourites, please open them in CoMaps. If you don\'t have it installed you can download it here: https://www.comaps.app/download/ \n \nEnjoy travelling with CoMaps!</string>
+    <string name="share_bookmarks_email_subject">My Arah Favourites</string>
+    <string name="share_bookmarks_email_body">Hello! \n \nAttached are my Favourites, please open them in Arah. If you don\'t have it installed you can download it here: https://github.com/ARAH-ORG/arah/ \n \nEnjoy travelling with Arah!</string>
     <string name="load_kmz_title">Loading Favourites</string>
     <string name="load_kmz_successful">Favourites loaded successfully! You can find them on the map or on the Favourites Manager screen.</string>
     <string name="load_kmz_failed">Failed to load Favourites. The file may be corrupted or defective.</string>
@@ -44,7 +44,7 @@
     <string name="app_tip_09">Our main goal is to build fast, privacy-focussed, easy-to-use maps that you will love.</string>
     <string name="location_is_disabled_long_text">You currently have all Location Services for this device or application disabled. Please enable them in Settings.</string>
     <string name="limited_accuracy">Limited Accuracy</string>
-    <string name="about_menu_title">About CoMaps</string>
+    <string name="about_menu_title">About Arah</string>
     <string name="about_proposition_1">• Easy to use and polished</string>
     <string name="about_developed_by_enthusiasts">Fully open source, not for profit, transparent decision-making and finances.</string>
     <string name="unsupported_phone">The app requires hardware accelerated OpenGL. Unfortunately, your device is not supported.</string>
@@ -54,7 +54,7 @@
     <string name="downloading_country_can_proceed">Downloading %1$s (%2$s). You can now \nproceed to the map.</string>
     <string name="download_country_ask">Download %1$s? (%2$s)</string>
     <string name="search">Search</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="back">Back</string>
     <string name="cancel">Cancel</string>
     <string name="delete">Delete</string>
@@ -74,7 +74,7 @@
     <string name="location_settings">Location Settings</string>
     <string name="close">Close</string>
     <string name="download">Download</string>
-    <string name="disconnect_usb_cable">Please disconnect USB cable or insert memory card to use CoMaps</string>
+    <string name="disconnect_usb_cable">Please disconnect USB cable or insert memory card to use Arah</string>
     <string name="update_country_ask">Update %1$s? (%2$s)</string>
     <string name="download_country_failed">%s download has failed</string>
     <string name="add_new_set">Add a New List</string>
@@ -118,9 +118,9 @@
     <string name="unknown_current_position">Your location hasn\'t been determined yet</string>
     <string name="cant_change_this_setting">Sorry, Map Storage settings are currently disabled</string>
     <string name="downloading_is_active">Map download is in progress now</string>
-    <string name="my_position_share_sms">Check out my current location in CoMaps! %1$s or %2$s Don\'t have offline maps? Download here: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">Check out my current location in Arah! %1$s or %2$s Don\'t have offline maps? Download here: https://github.com/ARAH-ORG/arah/</string>
     <string name="bookmark_share_email_subject">Follow this link %1$s or paste these coordinates %2$s into your maps app to see this location.</string>
-    <string name="my_position_share_email_subject">Hey, check out my current location on the CoMaps map!</string>
+    <string name="my_position_share_email_subject">Hey, check out my current location on the Arah map!</string>
     <string name="my_position_share_email">Follow this link %1$s or paste these coordinates %2$s into your maps app to see my location.</string>
     <string name="share">Share</string>
     <string name="email">Email</string>
@@ -151,5 +151,5 @@
     <string name="sort_categories">Sort Favourite Lists</string>
     <string name="pref_use_google_play">A proprietary service that combines GPS, Wi-Fi, cellular networks etc. to determine your location more accurately. It may connect to Google servers.</string>
     <string name="search_without_internet_advertisement">To start searching and creating routes, please download the map. After that you will no longer need an internet connection.</string>
-    <string name="editor_category_unsuitable_text">CoMaps is only able to add simple point categories, it isn\'t able to add towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Check our <a href="https://www.comaps.app/support/advanced-map-editing/">guide</a> for detailed step-by-step instructions.</string>
+    <string name="editor_category_unsuitable_text">Arah is only able to add simple point categories, it isn\'t able to add towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Check our <a href="https://github.com/ARAH-ORG/arah/">guide</a> for detailed step-by-step instructions.</string>
 </resources>

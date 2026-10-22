@@ -1,6 +1,7 @@
 project(map_tests)
 
 set(SRC
+  arah_share_tests.cpp
   address_tests.cpp
   bookmarks_test.cpp
   chart_generator_tests.cpp

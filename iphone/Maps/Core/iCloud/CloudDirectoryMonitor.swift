@@ -17,7 +17,7 @@ private let kDocumentsDirectoryName = "Documents"
 final class iCloudDocumentsMonitor: NSObject, CloudDirectoryMonitor {
 
   private static let sharedContainerIdentifier: String = {
-    var identifier = "iCloud.app.comaps"
+    var identifier = "iCloud.my.arah.app"
     #if DEBUG
     identifier.append(".debug")
     #endif

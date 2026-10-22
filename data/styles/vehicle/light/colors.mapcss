@@ -1,6 +1,6 @@
 /* BASE */
 
-@background: #E3E1D2;
+@background: #F4F1EA;
 
 /* BOUNDARIES */
 @border_country: #63635C;
@@ -10,16 +10,16 @@
 
 /* ROADS */
 
-@trunk0: #FF9140;
-@trunk1: #FF8742;
-@primary0:  #FF8726;
-@primary1: #FFAD57;
-@primary2: #FFAD57;
-@secondary0: #FFFFFF;
-@residential: #FCFCFC;
-@unclassified: #FCFCFC;
-@pedestrian: #FCFCFC;
-@footway: #FCFCFC;
+@trunk0: #E3863A;
+@trunk1: #E58E40;
+@primary0:  #F2A846;
+@primary1: #F4AF52;
+@primary2: #F6B65C;
+@secondary0: #FCC055;
+@residential: #FFFFFF;
+@unclassified: #FFFFFF;
+@pedestrian: #FFFFFF;
+@footway: #FFFFFF;
 @cycleway: #5654FF;
 @construction: #BBBBAA;
 @track: #635730;
@@ -28,14 +28,14 @@
 
 
 /* bridges */
-@bridge_background: #E5E4D5;
+@bridge_background: #F4F1EA;
 @bridge_casing: #808080;
-@casing_road:  #F5F3E4;
+@casing_road:  #D6CEBD;
 
 /* tunnels */
 
-@primary_tunnel: #FCA462;
-@trunk_tunnel: #FCA462;
+@primary_tunnel: #F5C690;
+@trunk_tunnel: #F5C690;
 @primary_tunnel_casing: #808080;
 @trunk_tunnel_casing: #808080;
 @secondary_tunnel: #FFFFFF;
@@ -65,13 +65,13 @@
 
 /* NATURAL */
 @glacier: #FFFFFF;
-@water: #8BD3E0;
-@water_bad: #9dc7c1;
-@river: #36B0BF;
-@wetland: #c9ddd6;
-@forest:  #C8DBAD;
+@water: #BCDCF3;
+@water_bad: #B9D6DD;
+@river: #8EC3E8;
+@wetland: #C9DDE6;
+@forest:  #CFE8D6;
 /*
-@park: #C8DBAD;
+@park: #CFE8D6;
 @natpark: #C8DBAD;
 */
 @beach: #FCEC7E;
@@ -79,20 +79,20 @@
 @desert: #EEE5B2;
 
 /*forest-park*/
-@green0: #C6D9AB;
-@green1: #C6D9AB;
-@green2: #C6D9AB;
-@green3: #C6D9AB;
-@green4: #C6D9AB;
-@green5: #C6D9AB;
-@green6: #888C38;
+@green0: #CFE8D6;
+@green1: #CFE8D6;
+@green2: #CFE8D6;
+@green3: #CFE8D6;
+@green4: #CFE8D6;
+@green5: #CFE8D6;
+@green6: #7FA88A;
 
 /* BUILDINGS */
 @housenumber: #65655E;
 @building_label: #61615A;
-@building0: #D4D3CA;
-@building1: #C7C6BF;
-@building_border0: #D4D3CA;
+@building0: #E6E1D6;
+@building1: #DFD9CC;
+@building_border0: #E6E1D6;
 
 /* LANDUSE */
 
@@ -100,16 +100,16 @@
 @unversity: #F8E4BA;
 @hospital: #F8D9D9;
 */
-@general_area: #FAEFE1;
-@industrial: #E1DCE3;
-@construction_area: #E4E3E6;
-@sport: #C8DBAD;
-@parking: #E8EFEC;
-@parking_l: #E1EDE9;
+@general_area: #F3E9DA;
+@industrial: #E7E5EC;
+@construction_area: #EAECEF;
+@sport: #CFE8D6;
+@parking: #F3F1D6;
+@parking_l: #F6F3D2;
 @military: #E53935;
 @prison: #727272;
-@farmland: #ededc3;
-@farmyard: #e8dabb;
+@farmland: #EAE6C4;
+@farmyard: #EADFC2;
 
 /* BARRIERS */
 @fence: #888888;
@@ -122,7 +122,7 @@
 @label_medium: #333333;
 @label_light: #444444;
 
-@label_halo_medium: #EDEBDB;
+@label_halo_medium: #F4F1EA;
 @label_halo_light: #FFFFFF;
 
 
@@ -146,9 +146,9 @@
 @culture_label: #82512D;
 @hotel_label: #54413B;
 @sport_label: #459177;
-@nature_label: #40662A;
-@water_label: #06829E;
-@water_light_label: #06829E;
+@nature_label: #416A5E;
+@water_label: #3F7FAF;
+@water_light_label: #076992;
 @neutral_label: #494F54;
 @healthcare_label: #A6454B;
 @public_transport_label: #234B73;
@@ -164,6 +164,6 @@
 @label_light: #444444;
 
 /* NATURAL LABELS */
-@water_label: #4499Bb;
-@park_label: #3A7921;
+@water_label: #3F7FAF;
+@park_label: #3E7D5A;
 @halo_park_label: #FFFFFF;

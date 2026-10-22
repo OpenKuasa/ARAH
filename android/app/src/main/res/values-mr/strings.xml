@@ -34,7 +34,7 @@
     <string name="country_status_download_failed">डाउनलोड अयशस्वी</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">पुन्हा प्रयत्न करा</string>
-    <string name="about_menu_title">CoMaps बद्दल</string>
+    <string name="about_menu_title">Arah बद्दल</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• बॅटरी संपत नाही, ऑफलाइन कार्य करते</string>
     <!-- Text in About screen -->
@@ -45,7 +45,7 @@
     <string name="unsupported_phone">ह्या ऍपला हार्डवेअर प्रवेगक OpenGL आवश्यक आहे. दुर्दैवाने, तुमच्या उपकरणाला ह्याचा आधार नाही.</string>
     <string name="download">डाउनलोड करा</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">CoMaps वापरण्यासाठी कृपया USB केबल काढून टाका किंवा मेमरी कार्ड घाला</string>
+    <string name="disconnect_usb_cable">Arah वापरण्यासाठी कृपया USB केबल काढून टाका किंवा मेमरी कार्ड घाला</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">कृपया ऍप वापरण्यासाठी प्रथम SD कार्ड/USB स्टोरेजवरील काही जागा मोकळी करा</string>
     <string name="download_resources">ऍपचा वापर सुरू करण्यापूर्वी, आम्हाला तुमच्या उपकरणावर जगाचा सामान्य नकाशा डाउनलोड करण्याची परवानगी द्या. \nते %s जागा वापरेल.</string>
@@ -134,8 +134,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">चिठ्ठया</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">CoMaps द्वारे तुम्हाला खूणपत्रे सामायिक केले</string>
-    <string name="share_bookmarks_email_body">नमस्कार! \n \nCoMaps ऍप मधील माझे खूणपत्रे संलग्न केले आहेत. तुम्ही CoMaps इन्स्टॉल केले असल्यास हे खूणपत्रे उघडा. इन्स्टॉल केले नसल्यास, पुढील दुव्यावर जाऊन तुमच्या iOS किंवा अँड्रॉइड उपकरणावर हे डाउनलोड करा: https://www.comaps.app/download/ \n \nCoMaps सह प्रवासाचा आनंद घ्या!</string>
+    <string name="share_bookmarks_email_subject">Arah द्वारे तुम्हाला खूणपत्रे सामायिक केले</string>
+    <string name="share_bookmarks_email_body">नमस्कार! \n \nArah ऍप मधील माझे खूणपत्रे संलग्न केले आहेत. तुम्ही Arah इन्स्टॉल केले असल्यास हे खूणपत्रे उघडा. इन्स्टॉल केले नसल्यास, पुढील दुव्यावर जाऊन तुमच्या iOS किंवा अँड्रॉइड उपकरणावर हे डाउनलोड करा: https://github.com/ARAH-ORG/arah/ \n \nArah सह प्रवासाचा आनंद घ्या!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">खूणपत्रे वाचत आहे</string>
     <!-- Kmz file successful loading -->
@@ -155,9 +155,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">नकाशा डाउनलोड होत आहे</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">मी आता इथे आहे %1$s किंवा %2$s CoMaps डाउनलोड करा: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">मी आता इथे आहे %1$s किंवा %2$s Arah डाउनलोड करा: https://github.com/ARAH-ORG/arah/</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">CoMaps द्वारे माझे वर्तमान स्थान पाठवत आहे!</string>
+    <string name="my_position_share_email_subject">Arah द्वारे माझे वर्तमान स्थान पाठवत आहे!</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">सामायिक</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -430,7 +430,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">समुदाय-निर्मित OpenStreetMap डेटा %s नुसार. OpenStreetMap.org वर नकाशा संपादित आणि अपडेट कसा करायचा याबद्दल अधिक जाणून घ्या</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) हा एक विनामूल्य आणि खुला नकाशा तयार करण्यासाठी एक समुदाय प्रकल्प आहे. CoMaps मधील नकाशा डेटाचा हा मुख्य स्त्रोत आहे आणि विकिपीडिया प्रमाणेच कार्य करतो. तुम्ही ठिकाणे जोडू किंवा संपादित करू शकता आणि ती जगभरातील लाखो वापरकर्त्यांसाठी उपलब्ध होतील. \nसमुदायामध्ये सामील व्हा आणि प्रत्येकासाठी चांगला नकाशा बनवण्यात मदत करा!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) हा एक विनामूल्य आणि खुला नकाशा तयार करण्यासाठी एक समुदाय प्रकल्प आहे. Arah मधील नकाशा डेटाचा हा मुख्य स्त्रोत आहे आणि विकिपीडिया प्रमाणेच कार्य करतो. तुम्ही ठिकाणे जोडू किंवा संपादित करू शकता आणि ती जगभरातील लाखो वापरकर्त्यांसाठी उपलब्ध होतील. \nसमुदायामध्ये सामील व्हा आणि प्रत्येकासाठी चांगला नकाशा बनवण्यात मदत करा!</string>
     <string name="login_to_make_edits_visible">एक OpenStreetMap खाते तयार करा किंवा तुमची नकाशा संपादने जगासमोर प्रकाशित करण्यासाठी लॉग इन करा.</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%2$d पैकी %1$d</string>
@@ -444,7 +444,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">OpenStreetMap स्वयंसेवकांसाठी टीप (पर्यायी)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">नकाशामधील त्रुटी किंवा CoMaps वापरून काय संपादित केले जाऊ शकत नाही याचे वर्णन करा</string>
+    <string name="editor_note_hint">नकाशामधील त्रुटी किंवा Arah वापरून काय संपादित केले जाऊ शकत नाही याचे वर्णन करा</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">तुमची संपादने सार्वजनिक <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> डेटाबेसवर अपलोड केली जातात. कृपया वैयक्तिक किंवा कॉपीराइट केलेली माहिती जोडू नका.</string>
     <string name="editor_more_about_osm">OpenStreetMap बद्दल अधिक</string>
@@ -454,7 +454,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">ऑपरेटर: %s</string>
     <string name="editor_category_unsuitable_title">योग्य श्रेणी शोधू शकत नाही?</string>
-    <string name="editor_category_unsuitable_text">CoMaps फक्त साध्या बिंदू श्रेणी जोडण्याची परवानगी देतात, म्हणजे शहरे, रस्ते, तलाव, इमारत बाह्यरेखा इ. कृपया अशा श्रेणी थेट <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> वर जोडा. तपशीलवार चरण-दर-चरण सूचनांसाठी आमचे <a href="https://www.comaps.app/support/advanced-map-editing/">मार्गदर्शक</a> पहा.</string>
+    <string name="editor_category_unsuitable_text">Arah फक्त साध्या बिंदू श्रेणी जोडण्याची परवानगी देतात, म्हणजे शहरे, रस्ते, तलाव, इमारत बाह्यरेखा इ. कृपया अशा श्रेणी थेट <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> वर जोडा. तपशीलवार चरण-दर-चरण सूचनांसाठी आमचे <a href="https://github.com/ARAH-ORG/arah/">मार्गदर्शक</a> पहा.</string>
     <string name="downloader_no_downloaded_maps_title">तुम्ही कोणतेही नकाशे डाउनलोड केलेले नाहीत</string>
     <string name="downloader_no_downloaded_maps_message">स्थान शोधण्यासाठी नकाशे डाउनलोड करा आणि ऑफलाइन मार्गनिर्देशन वापरा.</string>
     <string name="current_location_unknown_error_title">वर्तमान स्थान अज्ञात आहे.</string>
@@ -504,7 +504,7 @@
     <string name="mobile_data_option_ask">नेहमी विचारा</string>
     <string name="traffic_update_maps_text">वाहतूक माहिती दाखवण्यासाठी नकाशे अद्ययावत करणे आवश्यक आहे.</string>
     <string name="increase_font_size">नकाशावर अक्षरांचा आकार वाढवा</string>
-    <string name="traffic_update_app">कृपया CoMaps अद्ययावत करा</string>
+    <string name="traffic_update_app">कृपया Arah अद्ययावत करा</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">वाहतूक माहिती उपलब्ध नाही</string>
     <string name="enable_logging">लॉग चालू करा</string>
@@ -524,7 +524,7 @@
     <string name="placepage_remove_stop">थांबा काढा</string>
     <string name="placepage_add_stop">स्टॉप जोडा</string>
     <string name="dialog_error_storage_title">स्टोरेज प्रवेश समस्या</string>
-    <string name="dialog_error_storage_message">बाह्य साठ्याचा प्रवेश अपयशी. SD कार्ड कदाचित काढले गेले असेल, खराब झाले असेल किंवा फाइल सिस्टम ही केवळ-वाचनीय असावी. कृपया, तुमचे SD कार्ड तपासा किंवा support@comaps.app वर आमच्याशी संपर्क साधा</string>
+    <string name="dialog_error_storage_message">बाह्य साठ्याचा प्रवेश अपयशी. SD कार्ड कदाचित काढले गेले असेल, खराब झाले असेल किंवा फाइल सिस्टम ही केवळ-वाचनीय असावी. कृपया, तुमचे SD कार्ड तपासा किंवा support@arah.invalid वर आमच्याशी संपर्क साधा</string>
     <string name="setting_emulate_bad_storage">खराब साठ्याचे अनुकरण करा</string>
     <string name="error_enter_correct_name">कृपया योग्य नाव प्रविष्ट करा</string>
     <string name="bookmark_lists">याद्या</string>
@@ -688,7 +688,7 @@
     <!-- Current language of the map! -->
     <string name="change_map_locale">नकाशाची भाषा</string>
     <!-- Translated CoMaps site, add new translations here: https://translate.codeberg.org/projects/comaps/website -->
-    <string name="translated_om_site_url">https://comaps.app/mr/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">आमचे समुदाय-निर्मित नकाशे वापरल्याबद्दल धन्यवाद!</string>
     <!-- App tip #01 -->
@@ -710,9 +710,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">आमचे मुख्य ध्येय जलद, गोपनीयता-केंद्रित, वापरण्यास-सुलभ नकाशे तयार करणे आहे जे तुम्हाला आवडतील.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">तुम्ही आता फोन स्क्रीनवर CoMaps वापरत आहात</string>
+    <string name="car_used_on_the_phone_screen">तुम्ही आता फोन स्क्रीनवर Arah वापरत आहात</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">तुम्ही आता कार स्क्रीनवर CoMaps वापरत आहात</string>
+    <string name="car_used_on_the_car_screen">तुम्ही आता कार स्क्रीनवर Arah वापरत आहात</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">तुम्ही Android Auto शी कनेक्ट आहात</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -720,11 +720,11 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">कारच्या स्क्रीनकडे</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">CoMaps ला स्थान प्रवेश आवश्यक आहे. ते सुरक्षित असताना, तुमच्या फोनवरील सूचना तपासा.</string>
+    <string name="aa_location_permissions_request">Arah ला स्थान प्रवेश आवश्यक आहे. ते सुरक्षित असताना, तुमच्या फोनवरील सूचना तपासा.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">या अॅपला तुमची परवानगी आवश्यक आहे</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Android Auto मधील CoMaps प्रभावीपणे कार्य करण्यासाठी स्थान परवानगी आवश्यक आहे</string>
+    <string name="aa_request_permission_activity_text">Android Auto मधील Arah प्रभावीपणे कार्य करण्यासाठी स्थान परवानगी आवश्यक आहे</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">परवानग्या द्या</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
@@ -782,12 +782,12 @@
     <string name="pref_tts_street_names_description">चालू केल्यास, वळण घेण्यापूर्वी रस्त्याचे किंवा वळणाचे नाव बोलून सांगितले जाईल.</string>
     <string name="editor_share_to_all_dialog_message_2">OpenStreetMap संपादक बदल तपासतील व काही प्रश्न असल्यास तुमच्याशी संपर्क साधतील.</string>
     <string name="category_rv">कँपिंग वाहन सोयी</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <string name="wikimedia_commons">विकिमीडिया कॉमन्स</string>
     <string name="panoramax">Panoramax चित्र</string>
-    <string name="app_site_url">https://comaps.app/mr/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="saved">जतन केले</string>
 </resources>

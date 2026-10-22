@@ -61,6 +61,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>cm</string>
+				<string>arah</string>
 				<string>mapswithme</string>
 				<string>mapsme</string>
 				<string>ge0</string>
@@ -112,21 +113,21 @@
 	</dict>
 	<key>NSUbiquitousContainers</key>
 	<dict>
-		<key>iCloud.app.comaps</key>
+		<key>iCloud.my.arah.app</key>
 		<dict>
 			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
 			<true/>
 			<key>NSUbiquitousContainerName</key>
-			<string>CoMaps</string>
+			<string>Arah</string>
 			<key>NSUbiquitousContainerSupportedFolderLevels</key>
 			<string>ANY</string>
 		</dict>
-		<key>iCloud.app.comaps.debug</key>
+		<key>iCloud.my.arah.app.debug</key>
 		<dict>
 			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
 			<true/>
 			<key>NSUbiquitousContainerName</key>
-			<string>CoMapsDEBUG</string>
+			<string>ArahDEBUG</string>
 			<key>NSUbiquitousContainerSupportedFolderLevels</key>
 			<string>ANY</string>
 		</dict>

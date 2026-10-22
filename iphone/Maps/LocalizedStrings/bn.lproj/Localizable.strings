@@ -107,7 +107,7 @@
 "category_water" = "জল";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "আর ভি সুযোগ-সুবিধা";
-"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in CoMaps. If you don't have it installed you can download it here: https://www.comaps.app/download/\n\nEnjoy travelling with CoMaps!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Arah. If you don't have it installed you can download it here: https://github.com/ARAH-ORG/arah/\n\nEnjoy travelling with Arah!";
 /* message title of loading file */
 "load_kmz_title" = "প্রিয় তালিকা লোড করা হচ্ছে";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "আপনার অবস্থানটি এখনও অব্দি চিহ্নিত করা যায়নি";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "নমস্কার, আমার পিন টি CoMaps-এ দেখুন!";
+"bookmark_share_email_subject" = "নমস্কার, আমার পিন টি Arah-এ দেখুন!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "নমস্কার, আমার বর্তমান অবস্থানটি CoMaps অ্যাপে দেখুন!";
+"my_position_share_email_subject" = "নমস্কার, আমার বর্তমান অবস্থানটি Arah অ্যাপে দেখুন!";
 /* Share by email button text, also used in editor and About. */
 "email" = "ইমেইল";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "সম্পন্ন";
 /* Prints version number in About dialog */
-"version" = "CoMaps version: %@";
+"version" = "Arah version: %@";
 "version %@ (%@)" = "সংস্করণ %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "সংস্করণ: %@ (%@)\nমানচিত্রের তথ্য: %@";
 /* Title for tracks category in bookmarks manager */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "OpenStreetMap profile";
 "osm_profile_promt" = "Create an OpenStreetMap account or log in to publish your map edits to the world।";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) হল একটি সাম্প্রদায়িক প্রকল্প যা একটি মুক্ত ও উন্মুক্ত মানচিত্র তৈরি করে। এটি CoMaps-এ মানচিত্র তথ্যের প্রধান উৎস এবং উইকিপিডিয়ার মতোই কাজ করে। আপনি স্থান যোগ বা সম্পাদনা করতে পারেন এবং সেগুলো সারা বিশ্বের লক্ষ লক্ষ ব্যবহারকারীর জন্য উপলব্ধ হয়ে ওঠে।\nসম্প্রদায়ে যোগ দিন এবং সবার জন্য একটি আরও ভালো মানচিত্র তৈরি করতে সাহায্য করুন!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) হল একটি সাম্প্রদায়িক প্রকল্প যা একটি মুক্ত ও উন্মুক্ত মানচিত্র তৈরি করে। এটি Arah-এ মানচিত্র তথ্যের প্রধান উৎস এবং উইকিপিডিয়ার মতোই কাজ করে। আপনি স্থান যোগ বা সম্পাদনা করতে পারেন এবং সেগুলো সারা বিশ্বের লক্ষ লক্ষ ব্যবহারকারীর জন্য উপলব্ধ হয়ে ওঠে।\nসম্প্রদায়ে যোগ দিন এবং সবার জন্য একটি আরও ভালো মানচিত্র তৈরি করতে সাহায্য করুন!";
 "osm_profile_login" = "OpenStreetMap অ্যাকাউন্টে লগইন করুন";
 "osm_profile_reauthorize_promt" = "OpenStreetMap অ্যাকাউন্টটি এই অ্যাপ থেকে সংযোগ বিচ্ছিন্ন করা হয়েছে";
 "osm_profile_reauthorize" = "OpenStreetMap এর সাথে পুনরায় সংযোগ করুন";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "এখানে কোনও বস্তু পাওয়া যাচ্ছে না";
 /* Error dialog no space */
 "migration_no_space_message" = "To download, you need more space. Please delete any unnecessary data।";
-"editor_sharing_title" = "I improved the CoMaps maps";
+"editor_sharing_title" = "I improved the Arah maps";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%2$d এর মধ্যে %1$d";
 "download_over_mobile_header" = "সেলুলার নেটওয়ার্ক সংযোগের মাধ্যমে ডাউনলোড করতে চান?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "OpenStreetMap স্বেচ্ছাসেবকদের জন্য নোট (ঐচ্ছিক)";
 "editor_detailed_description_hint" = "Detailed comment";
-"editor_detailed_description" = "Your suggested map changes will be sent to the OpenStreetMap community. Please describe any additional details that cannot be edited in CoMaps।";
+"editor_detailed_description" = "Your suggested map changes will be sent to the OpenStreetMap community. Please describe any additional details that cannot be edited in Arah।";
 "editor_more_about_osm" = "আরো OpenStreetMap সম্বন্ধে";
 "editor_operator" = "Operator";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Operator: %@";
 "editor_category_unsuitable_title" = "উপযুক্ত শ্রেণী খুঁজে পাচ্ছেন না?";
-"editor_category_unsuitable_text" = "CoMaps শুধুমাত্র সাধারণ বিন্দু শ্রেণী যোগ করার অনুমতি দেয়, অর্থাৎ শহর, রাস্তা, হ্রদ, ভবনের রূপরেখা ইত্যাদি নয়। অনুগ্রহ করে এই ধরনের শ্রেণী সরাসরি <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> এ যোগ করুন। বিস্তারিত ধাপে ধাপে নির্দেশনার জন্য আমাদের <a href=\"https://www.comaps.app/support/advanced-map-editing/\">গাইড</a> টি দেখুন।";
+"editor_category_unsuitable_text" = "Arah শুধুমাত্র সাধারণ বিন্দু শ্রেণী যোগ করার অনুমতি দেয়, অর্থাৎ শহর, রাস্তা, হ্রদ, ভবনের রূপরেখা ইত্যাদি নয়। অনুগ্রহ করে এই ধরনের শ্রেণী সরাসরি <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> এ যোগ করুন। বিস্তারিত ধাপে ধাপে নির্দেশনার জন্য আমাদের <a href=\"https://github.com/ARAH-ORG/arah/\">গাইড</a> টি দেখুন।";
 "downloader_no_downloaded_maps_title" = "আপনি কোনো মানচিত্র ডাউনলোড করেননি";
 "downloader_no_downloaded_maps_message" = "Download maps to search and navigate offline।";
 "current_location_unknown_error_title" = "Current location is unknown।";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "২. গোপনীয়তা বাছুন";
 "location_services_disabled_on_device_3" = "3. Select Location Services";
 "location_services_disabled_on_device_4" = "4. Turn on Location Services";
-"location_services_disabled_on_device_additional_message" = "Or continue using CoMaps without Location";
+"location_services_disabled_on_device_additional_message" = "Or continue using Arah without Location";
 /* abbreviation for meters */
 "m" = "মি";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Disable";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Check out";
-"recent_track_background_dialog_message" = "CoMaps uses your location in the background to record your recently travelled route।";
+"recent_track_background_dialog_message" = "Arah uses your location in the background to record your recently travelled route।";
 "general_settings" = "General settings";
 /* For the first routing */
 "accept" = "স্বীকার করুন";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Track";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Thank you for using our community-built maps!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "Our main goal is to build fast, privacy-focused, easy-to-use maps that you will love।";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "You are now using CoMaps on the phone screen";
+"car_used_on_the_phone_screen" = "You are now using Arah on the phone screen";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "You are now using CoMaps on the car screen";
+"car_used_on_the_car_screen" = "You are now using Arah on the car screen";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Continue on the phone";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Menu Link";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Would you like to send a bug report to the developers?\nWe rely on our users as CoMaps doesn't collect any error information automatically. Thank you in advance for supporting CoMaps!";
+"bugreport_alert_message" = "Would you like to send a bug report to the developers?\nWe rely on our users as Arah doesn't collect any error information automatically. Thank you in advance for supporting Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud Syncronization (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -902,9 +902,10 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@।";
+"custom_map_server_map_series" = "This version of Arah is using map series %@।";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server।";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server।";
+"about_based_on" = "Based on CoMaps";

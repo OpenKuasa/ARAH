@@ -8,7 +8,7 @@
     <string name="search">Nadi</string>
     <string name="try_again">Ɛreḍ tikkelt niḍen</string>
     <string name="copyright">Izerfan n usuffeɣ</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="close">Mdel</string>
     <string name="download">Zdem</string>
     <string name="pause">Seṛǧu</string>
@@ -17,11 +17,11 @@
     <string name="address">Tansa</string>
     <string name="list">Tabdart</string>
     <string name="settings">Iɣewwaren</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="self_service">Aseqdec n yiman</string>
     <string name="panoramax">Tugna n Panoramax</string>
     <string name="kilometres">Ikilumitren</string>
@@ -91,7 +91,7 @@
     <string name="prefs_group_route">Tunigin</string>
     <string name="off">Ur irmid ara</string>
     <string name="on">D urmid</string>
-    <string name="about_menu_title">Ɣef CoMaps</string>
+    <string name="about_menu_title">Ɣef Arah</string>
     <string name="unknown_count">d arussin</string>
     <string name="unknown_power_output">d arussin</string>
     <string name="downloader_download_all_button">Sader-iten-id akk</string>

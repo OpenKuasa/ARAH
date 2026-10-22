@@ -34,7 +34,7 @@
     <string name="country_status_download_failed">Sikertelen letöltés</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Újrapróbálkozás</string>
-    <string name="about_menu_title">A CoMaps névjegye</string>
+    <string name="about_menu_title">A Arah névjegye</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Könnyen használható és letisztult</string>
     <!-- Text in About screen -->
@@ -49,7 +49,7 @@
     <string name="unsupported_phone">Hardveres gyorsítású OpenGL szükséges. Sajnos az Ön eszköze nem támogatott.</string>
     <string name="download">Letöltés</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">A CoMaps használatához válassza le az USB-kábelt vagy helyezze be a memóriakártyát</string>
+    <string name="disconnect_usb_cable">A Arah használatához válassza le az USB-kábelt vagy helyezze be a memóriakártyát</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Az alkalmazás használatához először szabadítson fel némi helyet az SD-kártyán/USB-tárolón</string>
     <string name="download_resources">Mielőtt elkezdené használni az alkalmazást, töltse le az áttekintő világtérképet az eszközére.\nEz %s tárhelyet fog igénybe venni.</string>
@@ -146,7 +146,7 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Jegyzetek</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Saját CoMaps kedvencek</string>
+    <string name="share_bookmarks_email_subject">Saját Arah kedvencek</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Kedvencek betöltése</string>
     <!-- Kmz file successful loading -->
@@ -166,9 +166,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">A térkép letöltése folyamatban van</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">Tekintse meg a tartózkodási helyemet a CoMaps alkalmazásban! %1$s vagy %2$s. Nincs offline térképe? Töltse le innen: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">Tekintse meg a tartózkodási helyemet a Arah alkalmazásban! %1$s vagy %2$s. Nincs offline térképe? Töltse le innen: https://github.com/ARAH-ORG/arah/</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">Tekintse meg a tartózkodási helyemet a CoMaps alkalmazásban!</string>
+    <string name="my_position_share_email_subject">Tekintse meg a tartózkodási helyemet a Arah alkalmazásban!</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Megosztás</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -445,7 +445,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">A közösségi OpenStreetMap adatok frissítésének időpontja: %s. Tudjon meg többet a térkép szerkesztéséről és frissítéséről az OpenStreetMap.org oldalon</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">Az OpenStreetMap.org (OSM) egy közösségi projekt, amelynek célja egy ingyenes és szabad térkép létrehozása. Ez a CoMaps alkalmazás térképadatainak fő forrása, és a Wikipédiához hasonlóan működik. Helyeket adhat hozzá vagy szerkeszthet, és azok világszerte felhasználók milliói számára válnak elérhetővé.\nCsatlakozzon a közösséghez, és segítsen jobb térképet készíteni mindenki számára!</string>
+    <string name="login_osm_presentation">Az OpenStreetMap.org (OSM) egy közösségi projekt, amelynek célja egy ingyenes és szabad térkép létrehozása. Ez a Arah alkalmazás térképadatainak fő forrása, és a Wikipédiához hasonlóan működik. Helyeket adhat hozzá vagy szerkeszthet, és azok világszerte felhasználók milliói számára válnak elérhetővé.\nCsatlakozzon a közösséghez, és segítsen jobb térképet készíteni mindenki számára!</string>
     <string name="login_to_make_edits_visible">Hozzon létre egy OpenStreetMap-fiókot vagy jelentkezzen be, hogy közzétehesse a térképszerkesztéseit a világ számára</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d / %2$d</string>
@@ -459,7 +459,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Megjegyzés az OpenStreetMap közreműködőinek (nem kötelező)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Írja le a térképen található hibákat vagy olyan dolgokat, amelyeket nem lehet a CoMaps segítségével szerkeszteni</string>
+    <string name="editor_note_hint">Írja le a térképen található hibákat vagy olyan dolgokat, amelyeket nem lehet a Arah segítségével szerkeszteni</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">A szerkesztései feltöltődnek a nyilvános <a href="https://wiki.openstreetmap.org/wiki/Hu:Névjegy">OpenStreetMap</a> adatbázisba. Ne adjon hozzá személyes vagy szerzői jogvédelem alatt álló információkat.</string>
     <string name="editor_more_about_osm">További részletek az OpenStreetMap adatbázisról</string>
@@ -469,7 +469,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">Üzemeltető: %s</string>
     <string name="editor_category_unsuitable_title">Nem találja a megfelelő kategóriát?</string>
-    <string name="editor_category_unsuitable_text">A CoMaps csak egyszerű pontkategóriák hozzáadását teszi lehetővé, nem tud városokat, utakat, tavakat, épületkörvonalakat stb. hozzáadni, az ilyen kategóriákat közvetlenül az <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> oldalon adhatja hozzá. A részletes, lépésről lépésre történő útmutatásért tekintse meg az <a href="https://www.comaps.app/support/advanced-map-editing/">útmutatónkat</a>.</string>
+    <string name="editor_category_unsuitable_text">A Arah csak egyszerű pontkategóriák hozzáadását teszi lehetővé, nem tud városokat, utakat, tavakat, épületkörvonalakat stb. hozzáadni, az ilyen kategóriákat közvetlenül az <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> oldalon adhatja hozzá. A részletes, lépésről lépésre történő útmutatásért tekintse meg az <a href="https://github.com/ARAH-ORG/arah/">útmutatónkat</a>.</string>
     <string name="downloader_no_downloaded_maps_title">Még nem töltött le térképet</string>
     <string name="downloader_no_downloaded_maps_message">Térképek letöltése az offline kereséshez és navigáláshoz</string>
     <!-- abbreviation for kilometers per hour -->
@@ -514,13 +514,13 @@
     <string name="mobile_data_option_ask">Mindig kérdezzen rá</string>
     <string name="traffic_update_maps_text">A forgalmi adatok megjelenítéséhez frissíteni kell a térképeket</string>
     <string name="increase_font_size">Betűméret növelése a térképen</string>
-    <string name="traffic_update_app">Frissítse a CoMaps alkalmazást</string>
+    <string name="traffic_update_app">Frissítse a Arah alkalmazást</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">Nem állnak rendelkezésre forgalmi adatok</string>
     <string name="enable_logging">Naplózás engedélyezése</string>
     <!-- Settings: "Send general feedback" button -->
     <string name="feedback_general">Általános visszajelzés</string>
-    <string name="prefs_languages_information">A CoMaps TTS-rendszert használ a hangnavigációhoz. Sok androidos eszköz használja a Google TTS-t; töltse le vagy frissítse a Google Play áruházból (https://play.google.com/store/apps/details?id=com.google.android.tts)</string>
+    <string name="prefs_languages_information">A Arah TTS-rendszert használ a hangnavigációhoz. Sok androidos eszköz használja a Google TTS-t; töltse le vagy frissítse a Google Play áruházból (https://play.google.com/store/apps/details?id=com.google.android.tts)</string>
     <string name="prefs_languages_information_off">Egyes nyelveknél másik beszédszintetizátort vagy további nyelvi csomagot kell telepítenie az alkalmazás-áruházból (Google Play, Galaxy Store, App Gallery, F-Droid).\nNyissa meg az eszköz beállításait → Nyelv és bevitel → Beszéd → Beszédfelismerés és -szintézis.\nItt kezelheti a beszédszintézis beállításait (például: nyelvi csomag letöltése kapcsolat nélküli használathoz) és másik szövegfelolvasót jelölhet ki.</string>
     <string name="prefs_languages_information_off_link">Ebben az útmutatóban további tájékoztatást talál</string>
     <string name="transliteration_title">Átírás latin betűkre</string>
@@ -534,7 +534,7 @@
     <string name="placepage_remove_stop">Megálló eltávolítása</string>
     <string name="placepage_add_stop">Köztes célpont hozzáadása</string>
     <string name="dialog_error_storage_title">Tárhelyhozzáférési probléma</string>
-    <string name="dialog_error_storage_message">Külső tárhely nem áll rendelkezésre, valószínűleg az SD-kártyát eltávolították vagy sérült, vagy rendszerfájl csak olvasható. Ellenőrizze, és lépjen kapcsolatba velünk a support@comaps.app címen</string>
+    <string name="dialog_error_storage_message">Külső tárhely nem áll rendelkezésre, valószínűleg az SD-kártyát eltávolították vagy sérült, vagy rendszerfájl csak olvasható. Ellenőrizze, és lépjen kapcsolatba velünk a support@arah.invalid címen</string>
     <string name="setting_emulate_bad_storage">Sérült tároló emulálása</string>
     <string name="error_enter_correct_name">Adjon meg egy érvényes nevet</string>
     <string name="bookmark_lists">Kedvenclisták</string>
@@ -691,7 +691,7 @@
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Térképadatok az OpenStreetMap adatbázisából</string>
     <!-- Translated CoMaps site, add new translations here: https://translate.codeberg.org/projects/comaps/website -->
-    <string name="translated_om_site_url">https://comaps.app/hu/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Hu:Névjegy</string>
     <!-- App Tip #00 -->
@@ -715,9 +715,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">A fő célunk az, hogy gyors, az adatvédelemre fókuszáló, könnyen használható térképeket készítsünk, amelyeket szeretni fog.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Ön most a CoMaps alkalmazást használja az eszköz képernyőjén</string>
+    <string name="car_used_on_the_phone_screen">Ön most a Arah alkalmazást használja az eszköz képernyőjén</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Ön most a CoMaps alkalmazást használja az autó képernyőjén</string>
+    <string name="car_used_on_the_car_screen">Ön most a Arah alkalmazást használja az autó képernyőjén</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Ön már kapcsolódva van az Android Auto rendszerhez</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -725,11 +725,11 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Az autó képernyőjére</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">A CoMaps alkalmazásnak szüksége van a helymeghatározáshoz való hozzáférésre. Ha biztonságos, ellenőrizze az értesítést az eszközén.</string>
+    <string name="aa_location_permissions_request">A Arah alkalmazásnak szüksége van a helymeghatározáshoz való hozzáférésre. Ha biztonságos, ellenőrizze az értesítést az eszközén.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Ennek az alkalmazásnak szüksége van az Ön engedélyére</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">A CoMaps az Android Autoban helymeghatározási engedélyeket igényel a hatékony működéshez</string>
+    <string name="aa_request_permission_activity_text">A Arah az Android Autoban helymeghatározási engedélyeket igényel a hatékony működéshez</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Engedélyek megadása</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
@@ -797,16 +797,16 @@
     <string name="error_enter_correct_vk_page">Adjon meg egy érvényes VK felhasználónevet vagy webcímet</string>
     <string name="editor_add_phone">Telefonszám hozzáadása</string>
     <string name="download_map_title">Áttekintő világtérkép letöltése</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="share_bookmarks_email_body">Üdvözlöm!\n\nCsatoltam a kedvenceimet; nyissa meg őket a CoMaps alkalmazásban. Ha még nem telepítette, akkor innen tudja letölteni: https://www.comaps.app/download/\n\nJó utat kívánok a CoMaps alkalmazással!</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="share_bookmarks_email_body">Üdvözlöm!\n\nCsatoltam a kedvenceimet; nyissa meg őket a Arah alkalmazásban. Ha még nem telepítette, akkor innen tudja letölteni: https://github.com/ARAH-ORG/arah/\n\nJó utat kívánok a Arah alkalmazással!</string>
     <string name="disconnect_usb_cable_title">USB-kábel leválasztása</string>
     <string name="error_enter_correct_facebook_page">Adjon meg egy érvényes Facebook webcímet, fiók- vagy oldalnevet</string>
     <string name="error_enter_correct_twitter_page">Adjon meg egy érvényes X (Twitter) felhasználónevet vagy webcímet</string>
     <string name="error_enter_correct_instagram_page">Adjon meg egy érvényes Instagram felhasználónevet vagy webcímet</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="panoramax">Panoramax kép</string>
-    <string name="app_site_url">https://comaps.app/hu/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="saved">Mentett</string>
     <string name="about_headline">Közösség által működtetett szabad projekt</string>
     <string name="closed_now">Jelenleg zárva</string>
@@ -902,7 +902,7 @@
     <string name="editor_submit">Elküldés</string>
     <string name="place_page_map_too_old_title">Elavult térképadatok</string>
     <string name="place_page_map_too_old_description">A jelenlegi térkép nagyon régi, frissítse a térképet.</string>
-    <string name="place_page_app_too_old_description">A jelenlegi térkép nagyon régi, frissítse a CoMaps alkalmazást.</string>
+    <string name="place_page_app_too_old_description">A jelenlegi térkép nagyon régi, frissítse a Arah alkalmazást.</string>
     <string name="place_page_update_too_old_map">Térképterület frissítése</string>
     <string name="place_page_too_old_to_edit">Az OpenStreetMap szerkesztése le van tiltva, mert a térképadatok túl régiek.</string>
     <string name="prefs_group_privacy_summary">Google Play szolgáltatások, keresési előzmények</string>
@@ -927,7 +927,7 @@
     <string name="prefs_speed_cameras_information">A sebességkamera-figyelmeztetések le vannak tiltva azokban az országokban, ahol ezeket tiltja a törvényt.</string>
     <string name="avoid_paved">Burkolt utak elkerülése</string>
     <string name="list_description_empty">A lista szerkesztése leírás hozzáadása céljából</string>
-    <string name="download_resources_custom_url_message">Az alapértelmezett térképletöltési kiszolgáló felülbírálása. A CoMaps alapértelmezésének használatához hagyja üresen.</string>
+    <string name="download_resources_custom_url_message">Az alapértelmezett térképletöltési kiszolgáló felülbírálása. A Arah alapértelmezésének használatához hagyja üresen.</string>
     <string name="download_resources_custom_url_summary_none">Nincs beállítva</string>
     <string name="download_resources_custom_url_error_scheme">Adjon meg egy http:// vagy https:// kezdetű webcímet</string>
     <string name="pref_alt_map_lang_handling">Alternatív térképnyelvek</string>
@@ -947,7 +947,7 @@
     <string name="not_following_route">Nem követi az útvonalat</string>
     <string name="route_recalculating">Útvonal újraszámítása…</string>
     <string name="pref_openexternallinks_title">Külső hivatkozások automatikus megnyitása</string>
-    <string name="pref_openexternallinks_summary">Külső hivatkozások automatikus megnyitása a CoMapsban</string>
+    <string name="pref_openexternallinks_summary">Külső hivatkozások automatikus megnyitása a Arahban</string>
     <string name="pref_aa_support_title">Android Auto</string>
     <string name="pref_aa_support_summary_yes">Az alkalmazás a Google Playből lett telepítve, így használhatja az autójában.</string>
     <string name="pref_aa_support_summary_no">Az alkalmazás nem a Google Playből lett telepítve, így nem használhatja az autójában. Koppintson a beállításra, hogy több információt kapjon a GYIK oldalunkon.</string>
@@ -958,6 +958,6 @@
     <string name="capacity_charging">Helyek töltővel: %s</string>
     <string name="capacity_charging_yes">Van hely töltővel</string>
     <string name="capacity_charging_no">Nincs hely töltővel</string>
-    <string name="permission_read_navigation_label">CoMaps navigáció adatok olvasása</string>
+    <string name="permission_read_navigation_label">Arah navigáció adatok olvasása</string>
     <string name="permission_read_navigation_description">élő navigációs információk felolvasása, mint a következő kanyarok, vagy a jelenleg használt út neve</string>
 </resources>

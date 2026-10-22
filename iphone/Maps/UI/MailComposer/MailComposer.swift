@@ -23,7 +23,7 @@ final class MailComposer: NSObject {
 
     func body() -> String {
       let appInfo = AppInfo.shared()
-      return String(format: "\n\n\n\n- %@ (%@)\n- CoMaps %@-%@\n- %@-%@\n- %@\n",
+      return String(format: "\n\n\n\n- %@ (%@)\n- Arah %@-%@\n- %@-%@\n- %@\n",
                     appInfo.deviceModel, UIDevice.current.systemVersion,
                     appInfo.bundleVersion, appInfo.buildNumber,
                     Locale.current.languageCode ?? "",

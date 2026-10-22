@@ -30,7 +30,7 @@
     <string name="country_status_download_failed">It-tniżżil falla</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Erġa pprova</string>
-    <string name="about_menu_title">Dwar CoMaps</string>
+    <string name="about_menu_title">Dwar Arah</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Faċli tużah u irfinut</string>
     <!-- Text in About screen -->
@@ -45,7 +45,7 @@
     <string name="unsupported_phone">L-applikazzjoni għanda bżonn \'hardware accelerated OpenGL\'. Sfortunatament, l-apparat tiegħek ma jissapportjahx.</string>
     <string name="download">Niżżel</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Jekk jogħġbok neħħi il-wajer USB jew daħħal kard tal-memorja biex tuża CoMaps</string>
+    <string name="disconnect_usb_cable">Jekk jogħġbok neħħi il-wajer USB jew daħħal kard tal-memorja biex tuża Arah</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Jekk jogħġbok żid ftit spazju fuq il-kard tal-memorja jew fil-ħażna USB biex tkun tista\' tuża l-applikazzjoni</string>
     <string name="download_resources">Qabel ma tibda tuża l-app, niżżel il-mappa ġenerali tad-dinja fuq l-apparat. \nDan ser juża %s ta\' ħażna.</string>
@@ -134,8 +134,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Noti</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">CoMaps bookmarks maqsuma miegħek</string>
-    <string name="share_bookmarks_email_body">Helow! \n \nMehmuża huma il-bookmarks; iftaħhom ġo CoMaps. Jekk mhuwiex installat tista tniżżlu min hawn: https://www.comaps.app/download/ \n \nĦu pjaċir ivvjaġġa ġo CoMaps!</string>
+    <string name="share_bookmarks_email_subject">Arah bookmarks maqsuma miegħek</string>
+    <string name="share_bookmarks_email_body">Helow! \n \nMehmuża huma il-bookmarks; iftaħhom ġo Arah. Jekk mhuwiex installat tista tniżżlu min hawn: https://github.com/ARAH-ORG/arah/ \n \nĦu pjaċir ivvjaġġa ġo Arah!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Tgħobijja tal-bookmarks</string>
     <!-- Kmz file successful loading -->
@@ -155,9 +155,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">It-tniżżil tal-mappa qed isir bħalissa</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">Ara il-lokażżjoni kurrenti tiegħi ġo CoMaps! %1$s or %2$s M\'għandekx mapep offlajn? Niżżel hawn: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">Ara il-lokażżjoni kurrenti tiegħi ġo Arah! %1$s or %2$s M\'għandekx mapep offlajn? Niżżel hawn: https://github.com/ARAH-ORG/arah/</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">Merħba, ara il-lokażżjoni kurrenti tiegħi fuq il-mappa ta\'CoMaps!</string>
+    <string name="my_position_share_email_subject">Merħba, ara il-lokażżjoni kurrenti tiegħi fuq il-mappa ta\'Arah!</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Aqsam</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -189,7 +189,7 @@
     <string name="rate_the_app">Agħti rata lil app</string>
     <string name="help">Għajnuna</string>
     <string name="faq">Mistoqsijiet Frekwenti</string>
-    <string name="how_to_support_us">Agħmel volontarjat u tejjeb CoMaps</string>
+    <string name="how_to_support_us">Agħmel volontarjat u tejjeb Arah</string>
     <string name="copyright">Drittijiet tal-awtur</string>
     <string name="report_a_bug">Irrapporta problema</string>
     <string name="enable_long_tap_fullscreen_description">Itteppja fit-tul darb’ oħra fuq il-mappa biex tara l-interface</string>
@@ -340,7 +340,7 @@
     <string name="mobile_data_option_ask">Staqsi Dejjem</string>
     <string name="traffic_update_maps_text">Biex tintwera d-dejta tat-traffiku, il-mapep iridu jiġu aġġornati</string>
     <string name="increase_font_size">Żid id-daqs għat-tikketti tal-mapep</string>
-    <string name="traffic_update_app">Aġġorna CoMaps</string>
+    <string name="traffic_update_app">Aġġorna Arah</string>
     <string name="enable_logging">Attiva l-illoggjar</string>
     <string name="prefs_languages_information_off_link">Għal aktar informazzjoni jekk jogħġbok iċċekkja din il-gwida</string>
     <string name="routing_add_finish_point">Uża t-tiftixa jew għafas fuq il-mappa biex iżżid punt tad-destinazzjoni</string>
@@ -348,7 +348,7 @@
     <string name="button_plan">Pjan</string>
     <string name="placepage_add_stop">Żid Waqfa</string>
     <string name="dialog_error_storage_title">Problema tal-aċċess għall-ħażna</string>
-    <string name="dialog_error_storage_message">Il-ħżin estern mhuwiex aċċessibbli. Il-kard tal-SD setgħet tneħħiet, saritilha l-ħsara, jew is-sistema tal-fajl tinqara biss. Jekk jogħġbok, iċċekkja l-karta tal-SD tiegħek jew ikkuntattjana fuq support@comaps.app</string>
+    <string name="dialog_error_storage_message">Il-ħżin estern mhuwiex aċċessibbli. Il-kard tal-SD setgħet tneħħiet, saritilha l-ħsara, jew is-sistema tal-fajl tinqara biss. Jekk jogħġbok, iċċekkja l-karta tal-SD tiegħek jew ikkuntattjana fuq support@arah.invalid</string>
     <string name="error_enter_correct_name">Daħħal isem korrett</string>
     <string name="bookmark_lists">Listi</string>
     <string name="bookmark_lists_hide_all">Aħbi kollox</string>
@@ -420,7 +420,7 @@
     <string name="app_tip_02">Togħġbok l-app tagħna? Jekk jogħġbok agħti donazzjoni biex tappoġġja l-iżvilupp! Għadha ma togħġbokx? Jekk jogħġbok għidilna għaliex, u nirranġawha!</string>
     <string name="app_tip_03">Jekk taf żviluppatur tas-softwer, tista’ titolbu jimplimenta il-karatteristika li għandek bżonn.</string>
     <string name="app_tip_06">Tista’ tgħin sabiex tittraduċi l-applikazzjoni tagħna fil-lingwa tiegħek.</string>
-    <string name="aa_request_permission_activity_text">CoMaps ġo\' Android Auto jeħtieġ permessi tal-post biex jaħdem b ’mod effettiv</string>
+    <string name="aa_request_permission_activity_text">Arah ġo\' Android Auto jeħtieġ permessi tal-post biex jaħdem b ’mod effettiv</string>
     <string name="aa_grant_permissions">Għati Permess</string>
     <string name="volume">Volum</string>
     <string name="bookmarks_export">Esporta l-bookmarks u l-korsiji kollha</string>
@@ -465,11 +465,11 @@
     <string name="common_check_internet_connection_dialog">Aċċerta ruħhek li t-tagħmir tiegħek huwa mqabbad mal-Internet.</string>
     <string name="editor_edit_place_category_title">Kategorija</string>
     <string name="avoid_motorways">Evita l-passaġġi ħielsa</string>
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) huwa proġett komunitarju biex tinbena mappa ħielsa u miftuħa. Huwa s-sors ewlieni tad-dejta tal-mapep fil-CoMaps u xogħlijiet simili għall-Wikipedija. Tista ’żżid jew teditja postijiet u dawn isiru disponibbli għal miljuni ta’ utenti madwar id-dinja kollha. \nIngħaqad mal-komunita’ u għen biex issir mappa aħjar għal kulħadd!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) huwa proġett komunitarju biex tinbena mappa ħielsa u miftuħa. Huwa s-sors ewlieni tad-dejta tal-mapep fil-Arah u xogħlijiet simili għall-Wikipedija. Tista ’żżid jew teditja postijiet u dawn isiru disponibbli għal miljuni ta’ utenti madwar id-dinja kollha. \nIngħaqad mal-komunita’ u għen biex issir mappa aħjar għal kulħadd!</string>
     <string name="sort">Issortja…</string>
     <string name="enable_show_on_lock_screen_description">Meta tkun attivata, l-applikazzjoni taħdem fuq il-lockscreen anki meta t-tagħmir ikun imsakkar.</string>
     <string name="editor_about_osm">L-editjar tiegħek jittella’ fid-database pubblika <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">ta’ OpenStreetMap</a>. Jekk jogħġbok iżżidx informazzjoni personali jew bid-drittijiet tal-awtur.</string>
-    <string name="editor_category_unsuitable_text">CoMaps jippermetti li jiżdiedu kategoriji punti sempliċi biss, li jfisser l-ebda bliet, toroq, lagi, linji ġenerali tal-bini, eċċ. Jekk jogħġbok żid dawn il-kategoriji direttament mal-<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Iċċekkja l-<a href="https://www.comaps.app/support/advanced-map-editing/">gwida</a> tagħna għal struzzjonijiet dettaljati.</string>
+    <string name="editor_category_unsuitable_text">Arah jippermetti li jiżdiedu kategoriji punti sempliċi biss, li jfisser l-ebda bliet, toroq, lagi, linji ġenerali tal-bini, eċċ. Jekk jogħġbok żid dawn il-kategoriji direttament mal-<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Iċċekkja l-<a href="https://github.com/ARAH-ORG/arah/">gwida</a> tagħna għal struzzjonijiet dettaljati.</string>
     <string name="learn_more">Tgħallem iktar</string>
     <string name="editor_share_to_all_dialog_message_1">Kun ċert li ma daħħalt l-ebda informazzjoni privata jew personali</string>
     <string name="error_enter_correct_instagram_page">Daħħal isem l-utent jew indirizz tal-web validu ta’ Instagram</string>
@@ -515,7 +515,7 @@
     <string name="editor_default_language_hint">Kif inhi miktuba bil-lingwa lokali</string>
     <string name="layers_title">Stili u Saffi tal-Mapep</string>
     <string name="fuel_places">Stazzjonijiet tal-Gass</string>
-    <string name="editor_note_hint">Iddeskrivi l-iżbalji fuq il-mappa jew l-affarijiet li ma jistgħux jiġu editjati ġewwa CoMaps</string>
+    <string name="editor_note_hint">Iddeskrivi l-iżbalji fuq il-mappa jew l-affarijiet li ma jistgħux jiġu editjati ġewwa Arah</string>
     <string name="placepage_remove_stop">Neħħi l-Waqfa</string>
     <string name="enable_logging_warning_message">Attiva din l-għażla biex tirrekordja u tibgħat manwalment dijanjostiċi dettaljati dwar il-kwistjoni tiegħek lilna billi tuża “Irrapporta problemi” fid-djalogu għajnuna. Ir-reġistri jistgħu jinkludu informazzjoni dwar il-post.</string>
     <string name="trip_finished">Wasalt!</string>
@@ -590,12 +590,12 @@
     <string name="start_track_recording">Rekord Track</string>
     <string name="enable_keep_screen_on">Żomm l-iskrin mixgħul</string>
     <string name="app_tip_00">Grazzi talli użajtu l-mapep tagħna mibnija mill-komunita’!</string>
-    <string name="car_used_on_the_car_screen">Issa qed tuża CoMaps fuq l-iskrin tal-karozza</string>
+    <string name="car_used_on_the_car_screen">Issa qed tuża Arah fuq l-iskrin tal-karozza</string>
     <string name="app_tip_09">L-għan ewlieni tagħna huwa li nibnu mapep veloċi, iffukati fuq il-privatezza, u faċli biex jintużaw li se jinħabbu.</string>
     <string name="app_tip_05">Kont taf li l-post attwali tiegħek fuq il-mappa jista’ jintgħażel?</string>
     <string name="select_option">Agħżel l-għażla</string>
     <string name="app_tip_08">Tista’ faċilment tirranġa u ttejjeb l-informazzjoni tal-mappa.</string>
-    <string name="car_used_on_the_phone_screen">Issa qed tuża CoMaps fuq l-iskrin tat-telefown</string>
+    <string name="car_used_on_the_phone_screen">Issa qed tuża Arah fuq l-iskrin tat-telefown</string>
     <string name="uri_open_location_failed">Ebda applikazzjoni installata li tista’ tiftaħ il-post</string>
     <string name="aa_connected_title">Int imqabbad ma’ Android Auto</string>
     <string name="car_continue_in_the_car">Lejn l-iskrin tal-karozza</string>
@@ -605,7 +605,7 @@
     <string name="error_no_file_manager_app">Ma jistax juri d-djalogu tal-għażla tal-fowlder għax l-ebda applikazzjoni xierqa mhi installata fuq it-tagħmir tiegħek. Installa applikazzjoni tal-maniġer tal-fajl u erġa ’pprova.</string>
     <string name="browser_not_available">Brawżer tal-web mhux disponibbli</string>
     <string name="view_menu">Ara l-Menu</string>
-    <string name="aa_location_permissions_request">CoMaps teħtieġ aċċess għall-post. Meta jkun sigur, iċċekkja n-notifika fuq il-mowbajl tiegħek.</string>
+    <string name="aa_location_permissions_request">Arah teħtieġ aċċess għall-post. Meta jkun sigur, iċċekkja n-notifika fuq il-mowbajl tiegħek.</string>
     <string name="pref_tts_no_system_tts">Is-settings tas-Sinteżi tad-diskors ma nstabux, żgur li t-tagħmir tiegħek jappoġġjah?</string>
     <string name="track_recording_alert_title">Issejvja fil-Bookmarks u l-Korsiji?</string>
     <string name="settings">Settings</string>
@@ -615,13 +615,13 @@
     <string name="read_in_wikipedia">Wikipedia</string>
     <string name="wikimedia_commons">Wikimedia Commons</string>
     <string name="twentyfour_seven">24/7</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="panoramax">Ritratt Panoramax</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="saved">Salvat</string>
     <string name="about_headline">Proġett miftuħ u imsaħħaħ mill-komunità</string>
     <string name="google_play_services">Servizz ta\' Lokazzjoni Google Fused</string>

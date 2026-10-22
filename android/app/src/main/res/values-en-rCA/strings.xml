@@ -4,8 +4,8 @@
     <string name="bookmarks_and_tracks">Favourites</string>
     <string name="choose_color">Choose Colour</string>
     <string name="bookmark_color">Colour for Favourite</string>
-    <string name="share_bookmarks_email_subject">My CoMaps Favourites</string>
-    <string name="share_bookmarks_email_body">Hello! \n \nAttached are my Favourites; please open them in CoMaps. If you don\'t have it installed you can download it here: https://www.comaps.app/download/ \n \nEnjoy travelling with CoMaps!</string>
+    <string name="share_bookmarks_email_subject">My Arah Favourites</string>
+    <string name="share_bookmarks_email_body">Hello! \n \nAttached are my Favourites; please open them in Arah. If you don\'t have it installed you can download it here: https://github.com/ARAH-ORG/arah/ \n \nEnjoy travelling with Arah!</string>
     <string name="load_kmz_title">Loading Favourites</string>
     <string name="load_kmz_successful">Favourites loaded successfully! You can find them on the map or on the Favourites Manager screen.</string>
     <string name="load_kmz_failed">Failed to load Favourites. The file may be corrupted or defective.</string>

@@ -14,12 +14,12 @@
     <string name="category_fuel">Fuel</string>
     <string name="cancel">Cancel</string>
     <string name="fuel_places">Service Stations</string>
-    <string name="editor_category_unsuitable_text">CoMaps is only able to add simple point categories, it isn\'t able to add towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Check our <a href="https://www.comaps.app/support/advanced-map-editing/">guide</a> for detailed step-by-step instructions.</string>
+    <string name="editor_category_unsuitable_text">Arah is only able to add simple point categories, it isn\'t able to add towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Check our <a href="https://github.com/ARAH-ORG/arah/">guide</a> for detailed step-by-step instructions.</string>
     <string name="search">Search</string>
     <string name="bookmarks_and_tracks">Favourites</string>
     <string name="measurement_units_summary">Choose between miles and kilometres</string>
-    <string name="share_bookmarks_email_subject">My CoMaps Favourites</string>
-    <string name="share_bookmarks_email_body">Hello! \n \nAttached are my Favourites, please open them in CoMaps. If you don\'t have it installed you can download it here: https://www.comaps.app/download/ \n \nEnjoy travelling with CoMaps!</string>
+    <string name="share_bookmarks_email_subject">My Arah Favourites</string>
+    <string name="share_bookmarks_email_body">Hello! \n \nAttached are my Favourites, please open them in Arah. If you don\'t have it installed you can download it here: https://github.com/ARAH-ORG/arah/ \n \nEnjoy travelling with Arah!</string>
     <string name="load_kmz_title">Loading Favourites</string>
     <string name="load_kmz_successful">Favourites loaded successfully! You can find them on the map or on the Favourites Manager screen.</string>
     <string name="load_kmz_failed">Failed to load Favourites. The file may be corrupted or defective.</string>

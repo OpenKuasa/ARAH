@@ -8,7 +8,7 @@ class iCloudDirectoryMonitorTests: XCTestCase {
   var cloudMonitor: iCloudDocumentsMonitor!
   var mockFileManager: FileManagerMock!
   var mockDelegate: UbiquitousDirectoryMonitorDelegateMock!
-  var cloudContainerIdentifier: String = "iCloud.app.comaps.debug"
+  var cloudContainerIdentifier: String = "iCloud.my.arah.app.debug"
 
   override func setUp() {
     super.setUp()

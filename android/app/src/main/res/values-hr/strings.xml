@@ -113,10 +113,10 @@
     <string name="trip_finished">Stigli ste!</string>
     <string name="sort">Sortiraj…</string>
     <string name="money">Novac</string>
-    <string name="app_site_url">https://comaps.app/hr/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="location_is_disabled_long_text">Trenutno su vam sve lokacijske usluge onemogućene za ovaj uređaj ili aplikaciju. Omogućite ih u Postavkama.</string>
     <string name="precise_location_is_disabled_long_text">Kako biste osigurali točnu navigaciju, uključite Preciznu lokaciju u postavkama</string>
-    <string name="about_menu_title">O CoMapsu</string>
+    <string name="about_menu_title">O Arahu</string>
     <string name="about_headline">Otvoreni projekt kojeg pokreće zajednica</string>
     <string name="about_proposition_1">• Jednostavan za korištenje i dotjeran</string>
     <string name="about_proposition_3">• Izvanmrežno, brz i kompaktan</string>
@@ -129,16 +129,16 @@
     <string name="zoom_out">Umanji</string>
     <string name="shops">Trgovine</string>
     <string name="parkings">Parkiralište</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="translated_om_site_url">https://comaps.app/hr/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="wikimedia_commons">Zajednički poslužitelj</string>
     <string name="self_service">Samoposluživanje</string>
     <string name="panoramax">Panoramax slika</string>
     <string name="saved">Spremljeno</string>
-    <string name="disconnect_usb_cable">Isključite USB kabel ili umetnite memorijsku karticu za korištenje CoMaps</string>
+    <string name="disconnect_usb_cable">Isključite USB kabel ili umetnite memorijsku karticu za korištenje Arah</string>
     <string name="not_enough_free_space_on_sdcard">Prvo oslobodite prostor na SD kartici/USB memoriji kako biste mogli koristiti aplikaciju</string>
     <string name="download_resources">Prije nego što počnete koristiti aplikaciju, preuzmite općenitu kartu svijeta na svoj uređaj.\nZauzeti će %s prostora za pohranu.</string>
     <string name="downloading_country_can_proceed">Preuzimanje %1$s (%2$s). Sada možete\nnastaviti na kartu.</string>
@@ -172,8 +172,8 @@
     <string name="category_police">Policija</string>
     <string name="category_water">Voda</string>
     <string name="category_rv">Objekti za kampere</string>
-    <string name="share_bookmarks_email_subject">Moji CoMaps favoriti</string>
-    <string name="share_bookmarks_email_body">Pozdrav!\n\nU privitku su moji favoriti; molim vas otvorite ih u CoMaps aplikaciji. Ako je nemate instaliranu, možete je preuzeti ovdje: https://www.comaps.app/download/\n\nUživajte u putovanju s CoMapsom!</string>
+    <string name="share_bookmarks_email_subject">Moji Arah favoriti</string>
+    <string name="share_bookmarks_email_body">Pozdrav!\n\nU privitku su moji favoriti; molim vas otvorite ih u Arah aplikaciji. Ako je nemate instaliranu, možete je preuzeti ovdje: https://github.com/ARAH-ORG/arah/\n\nUživajte u putovanju s Arahom!</string>
     <string name="load_kmz_title">Učitavanje favorita</string>
     <string name="load_kmz_successful">Favoriti su uspješno učitani! Možete ih pronaći na karti ili na zaslonu Upravitelj favorita.</string>
     <string name="load_kmz_failed">Učitavanje favorita nije uspjelo. Datoteka je možda oštećena ili neispravna.</string>
@@ -182,8 +182,8 @@
     <string name="unknown_current_position">Vaša lokacija još nije utvrđena</string>
     <string name="cant_change_this_setting">Žao nam je, postavke Pohrane karata trenutno su onemogućene</string>
     <string name="downloading_is_active">Preuzimanje karte je trenutno u tijeku</string>
-    <string name="my_position_share_sms">Pogledajte moju trenutnu lokaciju u CoMapsu! %1$s ili %2$s Nemate offline karte? Preuzmite ih ovdje: https://www.comaps.app/download/</string>
-    <string name="my_position_share_email_subject">Hej, pogledaj moju trenutnu lokaciju na CoMaps karti!</string>
+    <string name="my_position_share_sms">Pogledajte moju trenutnu lokaciju u Arahu! %1$s ili %2$s Nemate offline karte? Preuzmite ih ovdje: https://github.com/ARAH-ORG/arah/</string>
+    <string name="my_position_share_email_subject">Hej, pogledaj moju trenutnu lokaciju na Arah karti!</string>
     <string name="copied_to_clipboard">Kopirano u međuspremnik: %s</string>
     <string name="data_version">OpenStreetMap podaci: %s</string>
     <string name="tracks_title">Rute</string>
@@ -239,7 +239,7 @@
     <string name="search_show_on_map">Prikaži na karti</string>
     <string name="feedback">Povratne informacije</string>
     <string name="faq">Često postavljana pitanja</string>
-    <string name="how_to_support_us">Volontiraj i poboljšaj CoMaps</string>
+    <string name="how_to_support_us">Volontiraj i poboljšaj Arah</string>
     <string name="compass_calibration_recommended">Poboljšajte preciznost pokazivača smjera gibanja kruženjem telefona u obliku osmice kako biste kalibrirali kompas.</string>
     <string name="compass_calibration_required">Pomičite telefon u obliku figure osmice kako biste kalibrirali kompas i popravili strelicu indikatora smjera na karti.</string>
     <string name="enable_long_tap_fullscreen_description">Ponovno dugo dodirnite kartu da biste prikazali sučelje</string>
@@ -270,7 +270,7 @@
     <string name="pref_zoom_summary">Prikaz na karti</string>
     <string name="prefs_group_advanced">Napredno</string>
     <string name="download_resources_custom_url_title">Prilagođeni poslužitelj karata</string>
-    <string name="download_resources_custom_url_message">Zamijenite zadani poslužitelj za preuzimanje karata. Ostavite prazno za korištenje CoMaps zadanog poslužitelja.</string>
+    <string name="download_resources_custom_url_message">Zamijenite zadani poslužitelj za preuzimanje karata. Ostavite prazno za korištenje Arah zadanog poslužitelja.</string>
     <string name="download_resources_custom_url_summary_none">Nije postavljeno</string>
     <string name="download_resources_custom_url_error_scheme">Molimo unesite URL koji počinje s http:// ili https://</string>
     <string name="deep_orange">Tamno narančasta</string>
@@ -326,7 +326,7 @@
     <string name="editor_report_problem_other_title">Drugačiji problem</string>
     <string name="message_invalid_feature_position">Ovdje se ne može pronaći nijedan objekt</string>
     <string name="osm_presentation">Podaci OpenStreetMapa koje je kreirala zajednica od %s. Saznajte više o tome kako urediti i ažurirati kartu na OpenStreetMap.org</string>
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) je zajednički projekt stvaranja besplatnih i otvorenih karata. To je glavni izvor kartografskih podataka u CoMaps aplikaciji i funkcionira slično kao Wikipedia. Možete dodavati ili uređivati mjesta, a vaši će unosi postati dostupni milijunima korisnika diljem svijeta.\nPridružite se zajednici i pomozite stvarati još bolju kartu za sve!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) je zajednički projekt stvaranja besplatnih i otvorenih karata. To je glavni izvor kartografskih podataka u Arah aplikaciji i funkcionira slično kao Wikipedia. Možete dodavati ili uređivati mjesta, a vaši će unosi postati dostupni milijunima korisnika diljem svijeta.\nPridružite se zajednici i pomozite stvarati još bolju kartu za sve!</string>
     <string name="login_to_make_edits_visible">Kreiraj OpenStreetMap račun ili se prijavite kako biste svijetu objavili svoje izmjene na karti</string>
     <string name="downloader_of">%1$d od %2$d</string>
     <string name="download_over_mobile_header">Preuzeti putem mobilne podatkovne veze?</string>
@@ -337,7 +337,7 @@
     <string name="editor_zip_code">Poštanski broj</string>
     <string name="error_enter_correct_zip_code">Unesite važeći poštanski broj</string>
     <string name="editor_other_info">Napomena za volontere OpenStreetMapa (nije obavezno)</string>
-    <string name="editor_note_hint">Opišite pogreške na karti ili stvari koje se ne mogu uređivati u CoMaps‑u</string>
+    <string name="editor_note_hint">Opišite pogreške na karti ili stvari koje se ne mogu uređivati u Arah‑u</string>
     <string name="editor_about_osm">Vaše se izmjene prenose u javnu bazu podataka <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a>. Molimo vas da ne dodajete osobne podatke ili podatke zaštićene autorskim pravima.</string>
     <string name="editor_more_about_osm">Više o OpenStreetMapu</string>
     <string name="editor_osm_history">Vaša povijest uređivanja</string>
@@ -345,7 +345,7 @@
     <string name="editor_operator">Operator</string>
     <string name="operator">Operator: %s</string>
     <string name="editor_category_unsuitable_title">Ne možete pronaći odgovarajuću kategoriju?</string>
-    <string name="editor_category_unsuitable_text">**CoMaps** omogućuje dodavanje samo jednostavnih kategorija točaka, što znači da nije moguće dodavati gradove, ceste, jezera, tlocrte zgrada itd. Takve kategorije dodajte izravno na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Pogledajte naš <a href="https://www.comaps.app/support/advanced-map-editing/">vodič</a> za detaljne upute korak po korak.</string>
+    <string name="editor_category_unsuitable_text">**Arah** omogućuje dodavanje samo jednostavnih kategorija točaka, što znači da nije moguće dodavati gradove, ceste, jezera, tlocrte zgrada itd. Takve kategorije dodajte izravno na <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Pogledajte naš <a href="https://github.com/ARAH-ORG/arah/">vodič</a> za detaljne upute korak po korak.</string>
     <string name="downloader_no_downloaded_maps_title">Niste preuzeli nijednu kartu</string>
     <string name="downloader_no_downloaded_maps_message">Preuzmite karte za pretraživanje i navigaciju izvan mreže</string>
     <string name="current_location_unknown_error_title">Trenutna lokacija je nepoznata</string>
@@ -378,7 +378,7 @@
     <string name="placepage_add_place_button">Dodaj mjesto na OpenStreetMap</string>
     <string name="place_page_map_too_old_title">Podaci na karti su zastarjeli</string>
     <string name="place_page_map_too_old_description">Podaci vaše trenutne karte su vrlo stari, ažurirajte kartu.</string>
-    <string name="place_page_app_too_old_description">Podaci vaše trenutne karte su vrlo stari, ažurirajte aplikaciju CoMaps.</string>
+    <string name="place_page_app_too_old_description">Podaci vaše trenutne karte su vrlo stari, ažurirajte aplikaciju Arah.</string>
     <string name="place_page_update_too_old_map">Ažurirajte regiju karte</string>
     <string name="place_page_too_old_to_edit">Uređivanje OpenStreetMapa je onemogućeno jer su podaci karte prestari.</string>
     <string name="osm_note_hint">Ili ostavite bilješku OSM zajednici da netko drugi doda ili ispravi mjesto.</string>
@@ -397,7 +397,7 @@
     <string name="mobile_data_option_never">Nikad ne koristite</string>
     <string name="traffic_update_maps_text">Za prikaz podataka o prometu, karte moraju biti ažurirane</string>
     <string name="increase_font_size">Povećaj veličinu oznaka na karti</string>
-    <string name="traffic_update_app">Molimo ažurirajte CoMaps</string>
+    <string name="traffic_update_app">Molimo ažurirajte Arah</string>
     <string name="traffic_data_unavailable">Podaci o prometu nisu dostupni</string>
     <string name="enable_logging">Omogući zapisivanje</string>
     <string name="feedback_general">Opće povratne informacije</string>
@@ -414,7 +414,7 @@
     <string name="placepage_remove_stop">Ukloni zaustavljanje</string>
     <string name="placepage_add_stop">Dodaj zaustavljanje</string>
     <string name="dialog_error_storage_title">Problem s pristupom pohrani</string>
-    <string name="dialog_error_storage_message">Vanjska pohrana nije dostupna. SD kartica je možda uklonjena, oštećena ili je datotečni sustav samo za čitanje. Molimo provjerite svoju SD karticu ili nas kontaktirajte na support@comaps.app</string>
+    <string name="dialog_error_storage_message">Vanjska pohrana nije dostupna. SD kartica je možda uklonjena, oštećena ili je datotečni sustav samo za čitanje. Molimo provjerite svoju SD karticu ili nas kontaktirajte na support@arah.invalid</string>
     <string name="setting_emulate_bad_storage">Emuliraj lošu pohranu</string>
     <string name="error_enter_correct_name">Molimo unesite točno ime</string>
     <string name="bookmarks_error_title_share_empty">Pogreška dijeljenja</string>
@@ -537,14 +537,14 @@
     <string name="app_tip_07">Našu aplikaciju razvili su nekoliko entuzijasta i zajednica.</string>
     <string name="app_tip_08">Podatke karte možete jednostavno popraviti i poboljšati.</string>
     <string name="app_tip_09">Naš glavni cilj je izrada brzih, na privatnost usmjerenih i jednostavnih karata koje ćete obožavati.</string>
-    <string name="car_used_on_the_phone_screen">Sada koristite CoMaps na zaslonu telefona</string>
-    <string name="car_used_on_the_car_screen">Sada koristite CoMaps na zaslonu automobila</string>
+    <string name="car_used_on_the_phone_screen">Sada koristite Arah na zaslonu telefona</string>
+    <string name="car_used_on_the_car_screen">Sada koristite Arah na zaslonu automobila</string>
     <string name="aa_connected_title">Povezani ste s Android Autom</string>
     <string name="car_continue_on_the_phone">Nastavite na telefonu</string>
     <string name="car_continue_in_the_car">Na ekran automobila</string>
-    <string name="aa_location_permissions_request">CoMaps treba pristup lokaciji. Kad bude sigurno, provjeri obavijest na svom telefonu.</string>
+    <string name="aa_location_permissions_request">Arah treba pristup lokaciji. Kad bude sigurno, provjeri obavijest na svom telefonu.</string>
     <string name="aa_request_permission_notification">Ova aplikacija treba vaše dopuštenje</string>
-    <string name="aa_request_permission_activity_text">CoMaps u Android Auto zahtijeva dopuštenja za lokaciju kako bi učinkovito funkcionirao</string>
+    <string name="aa_request_permission_activity_text">Arah u Android Auto zahtijeva dopuštenja za lokaciju kako bi učinkovito funkcionirao</string>
     <string name="aa_grant_permissions">Dodijeli dopuštenja</string>
     <string name="button_layer_outdoor">Na otvorenom</string>
     <string name="browser_not_available">Web preglednik nije dostupan</string>

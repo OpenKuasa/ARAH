@@ -34,7 +34,7 @@
     <string name="country_status_download_failed">Lejupielāde neizdevās</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Mēģināt vēlreiz</string>
-    <string name="about_menu_title">Par „CoMaps“</string>
+    <string name="about_menu_title">Par „Arah“</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Vienkārši izmantojama un noslīpēta</string>
     <!-- Text in About screen -->
@@ -49,7 +49,7 @@
     <string name="unsupported_phone">Lietotnei nepieciešams „OpenGL“ aparatūras paātrinājums, bet diemžēl Jūsu ierīce to neatbalsta.</string>
     <string name="download">Lejupielādēt</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Lai lietotu „CoMaps“, atvienojiet USB kabeli vai ievietojiet atmiņas karti</string>
+    <string name="disconnect_usb_cable">Lai lietotu „Arah“, atvienojiet USB kabeli vai ievietojiet atmiņas karti</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Lietotnes izmantošanai atbrīvojiet vietu ierīces krātuvē</string>
     <string name="download_resources">Pirms sākt izmantot lietotni lejupielādējiet pasaules pārskata karti. \nTā ierīces krātuvē aizņems %s vietas.</string>
@@ -146,8 +146,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Piezīmes</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Mana “CoMaps” izlase</string>
-    <string name="share_bookmarks_email_body">Sveiciens! \n \nPielikumā ir mana izlase. Lūgums atvērt to lietotnē “CoMaps”. Ja tā nav uzstādīta, to var iegūt šeit: https://www.comaps.app/download/ \n \nIzbaudi ceļošanu ar “CoMaps”!</string>
+    <string name="share_bookmarks_email_subject">Mana “Arah” izlase</string>
+    <string name="share_bookmarks_email_body">Sveiciens! \n \nPielikumā ir mana izlase. Lūgums atvērt to lietotnē “Arah”. Ja tā nav uzstādīta, to var iegūt šeit: https://github.com/ARAH-ORG/arah/ \n \nIzbaudi ceļošanu ar “Arah”!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Ielādē izlasi</string>
     <!-- Kmz file successful loading -->
@@ -167,9 +167,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">Tagad notiek kartes lejupielāde</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">Apskatiet manu atrašanās vietu „CoMaps“ lietotnē! %1$s vai %2$s Vai Jums nav nesaistes kartes? Lejupielādējiet to: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">Apskatiet manu atrašanās vietu „Arah“ lietotnē! %1$s vai %2$s Vai Jums nav nesaistes kartes? Lejupielādējiet to: https://github.com/ARAH-ORG/arah/</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">Sveiciens! Apskati manu atrašanās vietu CoMaps kartē!</string>
+    <string name="my_position_share_email_subject">Sveiciens! Apskati manu atrašanās vietu Arah kartē!</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Kopīgot</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -241,7 +241,7 @@
     <!-- Button in the main menu -->
     <string name="donate">Ziedot</string>
     <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Iesaistīties un uzlabot CoMaps</string>
+    <string name="how_to_support_us">Iesaistīties un uzlabot Arah</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Autortiesības</string>
     <!-- Text in menu + Button in the main Help dialog -->
@@ -458,7 +458,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Kopienas veidotie OpenStreetMap dati, %s. Uzzināt vairāk par to, kā labot un atjaunināt karti, var OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) ir kopienas projekts, kura mērķis ir izveidot atvērtajos datos balstītu karti, kura ir pieejama bez maksas. Tas ir CoMaps galvenais karšu datu avots un darbojas līdzīgi kā Vikipēdija. Jūs varat pievienot vai rediģēt vietas, un tās kļūst pieejamas miljoniem lietotāju visā pasaulē.\nPievienojieties kopienai, lai palīdzētu izveidot labāku karti visiem!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) ir kopienas projekts, kura mērķis ir izveidot atvērtajos datos balstītu karti, kura ir pieejama bez maksas. Tas ir Arah galvenais karšu datu avots un darbojas līdzīgi kā Vikipēdija. Jūs varat pievienot vai rediģēt vietas, un tās kļūst pieejamas miljoniem lietotāju visā pasaulē.\nPievienojieties kopienai, lai palīdzētu izveidot labāku karti visiem!</string>
     <string name="login_to_make_edits_visible">Izveido OpenStreetMap kontu vai piesakies, lai padarītu savus karšu labojumus pieejamus visiem</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d no %2$d</string>
@@ -476,7 +476,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">Operators: %s</string>
     <string name="editor_category_unsuitable_title">Vai neatrodat atbilstošu kategoriju?</string>
-    <string name="editor_category_unsuitable_text">CoMaps ļauj pievienot tikai vienkāršu punktu kategorijas, tā nevar pievienot pilsētas, ceļus, ezerus, ēku aprises utt.. Šādas kategorijas lūdzam pievienot tiešā veidā <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Lai uzzinātu, kā to izdarīt, jāseko norādēm <a href="https://www.comaps.app/support/advanced-map-editing/">rokasgrāmatā</a>.</string>
+    <string name="editor_category_unsuitable_text">Arah ļauj pievienot tikai vienkāršu punktu kategorijas, tā nevar pievienot pilsētas, ceļus, ezerus, ēku aprises utt.. Šādas kategorijas lūdzam pievienot tiešā veidā <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Lai uzzinātu, kā to izdarīt, jāseko norādēm <a href="https://github.com/ARAH-ORG/arah/">rokasgrāmatā</a>.</string>
     <string name="downloader_no_downloaded_maps_title">Ierīcē nav lejupielādētu karšu</string>
     <string name="downloader_no_downloaded_maps_message">Lejupielādē kartes, lai meklētu un saņemtu pārvietošanās norādes bezsaistē</string>
     <string name="current_location_unknown_error_title">Pašreizējā atrašanās vieta nav zināma</string>
@@ -529,7 +529,7 @@
     <string name="mobile_data_option_ask">Jautāt vienmēr</string>
     <string name="traffic_update_maps_text">Lai attēlotu satiksmes datus, ir jāatjaunina kartes</string>
     <string name="increase_font_size">Palielināt fonta lielumu kartē</string>
-    <string name="traffic_update_app">Atjauniniet „CoMaps“</string>
+    <string name="traffic_update_app">Atjauniniet „Arah“</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">Satiksmes dati nav pieejami</string>
     <string name="enable_logging">Ieslēgt žurnalēšanu</string>
@@ -549,7 +549,7 @@
     <string name="placepage_remove_stop">Noņemt starppunktu</string>
     <string name="placepage_add_stop">Pievienot starppunktu</string>
     <string name="dialog_error_storage_title">Krātuves pieejas problēma</string>
-    <string name="dialog_error_storage_message">Ārējā krātuve nav pieejama. Iespējams, ir izņemta vai bojāta SD karte, vai arī datņu sistēma ir tikai lasāma. Pārbaudiet savu SD karti vai sazinieties ar mums, rakstot uz support@comaps.app</string>
+    <string name="dialog_error_storage_message">Ārējā krātuve nav pieejama. Iespējams, ir izņemta vai bojāta SD karte, vai arī datņu sistēma ir tikai lasāma. Pārbaudiet savu SD karti vai sazinieties ar mums, rakstot uz support@arah.invalid</string>
     <string name="setting_emulate_bad_storage">Simulēt bojātu krātuvi</string>
     <string name="error_enter_correct_name">Ierakstiet pareizu nosaukumu</string>
     <string name="bookmark_lists">Izlases saraksti</string>
@@ -720,7 +720,7 @@
     <!-- App tip #01 -->
     <string name="app_tip_01">Ar jūsu ziedojumiem un atbalstu varam izveidot pasaulē labākās kartes!</string>
     <!-- App tip #02 -->
-    <string name="app_tip_02">Vai jums patīk mūsu lietotne? Lūdzam ziedot tās attīstībai! Varbūt tā nepatīk? Tādā gadījumā lūdzam mums pastāstīt, kas tajā nepatīk, lai varam „CoMaps“ uzlabot!</string>
+    <string name="app_tip_02">Vai jums patīk mūsu lietotne? Lūdzam ziedot tās attīstībai! Varbūt tā nepatīk? Tādā gadījumā lūdzam mums pastāstīt, kas tajā nepatīk, lai varam „Arah“ uzlabot!</string>
     <!-- App tip #03 -->
     <string name="app_tip_03">Ja pazīstat kādu programmatūras izstrādātāju, varat viņam vai viņai palūgt ieviest funkciju, kas jums pietrūkst.</string>
     <!-- App tip #05 -->
@@ -734,9 +734,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">Mūsu mērķis ir izveidot viegli lietojamas kartes, kas respektē jūsu privātumu un kuras jums patiks.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Tagad „CoMaps“ izmantojat tālruņa ekrānā</string>
+    <string name="car_used_on_the_phone_screen">Tagad „Arah“ izmantojat tālruņa ekrānā</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Tagad „CoMaps“ izmantojat automobiļa ekrānā</string>
+    <string name="car_used_on_the_car_screen">Tagad „Arah“ izmantojat automobiļa ekrānā</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Savienojās ar „Android Audio“</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -784,7 +784,7 @@
     <string name="stop_without_saving">Pārtraukt bez saglabāšanas</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/About_OpenStreetMap</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="continue_recording">Turpināt ierakstīšanu</string>
     <string name="track_recording_alert_title">Pievienot izlasei?</string>
     <string name="editor_other_info">Piezīme OpenStreetMap brīvprātigajiem (nav obligāts)</string>
@@ -793,14 +793,14 @@
     <string name="uri_open_location_failed">Nav uzstādīta neviena lietotne, kas varētu atvērt atrašanās vietu</string>
     <string name="aa_request_permission_notification">Šai lietotnei ir nepieciešama jūsu atļauja</string>
     <string name="editor_about_osm">Jūsu labojumi tiek augšupielādēti sabiedriskajā <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> datubāzē. Lūdzu, nepievienojiet personisku vai ar autortiesībām aizsargātu informāciju.</string>
-    <string name="aa_location_permissions_request">CoMaps lietotnes darbībai ir nepieciešama piekļuve jūsu atrašanās vietai. Kad tas ir droši, pārbaudiet paziņojumu savā tālrunī.</string>
-    <string name="editor_note_hint">Aprakstiet kļūdas kartē vai lietas, ko nevar izlabot, izmantojot CoMaps</string>
-    <string name="aa_request_permission_activity_text">CoMaps lietotnei ir nepieciešama atrašanās vietas atļauja sekmīgai Android Auto darbībai</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
+    <string name="aa_location_permissions_request">Arah lietotnes darbībai ir nepieciešama piekļuve jūsu atrašanās vietai. Kad tas ir droši, pārbaudiet paziņojumu savā tālrunī.</string>
+    <string name="editor_note_hint">Aprakstiet kļūdas kartē vai lietas, ko nevar izlabot, izmantojot Arah</string>
+    <string name="aa_request_permission_activity_text">Arah lietotnei ir nepieciešama atrašanās vietas atļauja sekmīgai Android Auto darbībai</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
     <string name="panoramax">Panoramax attēls</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="saved">Saglabāts</string>
     <string name="about_headline">Atvērts projekts, kuru darbina kopiena</string>
     <string name="error_invalid_number">Nederīgs skaitlis</string>
@@ -838,7 +838,7 @@
     <string name="editor_submit">Iesniegt</string>
     <string name="place_page_map_too_old_title">Novecojuši kartes dati</string>
     <string name="place_page_map_too_old_description">Pašreizējie kartes dati ir ļoti veci, lūgums atjaunināt karti.</string>
-    <string name="place_page_app_too_old_description">Pašreizējie kartes dati ir ļoti veci, lūgums atjaunināt CoMaps lietotni.</string>
+    <string name="place_page_app_too_old_description">Pašreizējie kartes dati ir ļoti veci, lūgums atjaunināt Arah lietotni.</string>
     <string name="place_page_update_too_old_map">Atjaunināt karšu apgabalu</string>
     <string name="place_page_too_old_to_edit">OpenStreetMap labošana ir atspējota, jo kartes dati ir pārāk veci.</string>
     <string name="navigation_start_tts_disabled_message">Balss norādes atspējotas: nav pieejams teksta pārveidošanas runā dzinējs</string>
@@ -890,7 +890,7 @@
     <string name="power_management">Enerģijas pārvaldība</string>
     <string name="route_recalculating">Pārrēķina maršrutu…</string>
     <string name="pref_openexternallinks_title">Automātiski atvērt trešo pušu saites</string>
-    <string name="pref_openexternallinks_summary">Pēc noklusējuma atvērt trešo pušu saites CoMaps</string>
+    <string name="pref_openexternallinks_summary">Pēc noklusējuma atvērt trešo pušu saites Arah</string>
     <string name="stop">Apturēt</string>
     <string name="destination">Galamērķis</string>
     <string name="pref_alt_map_lang_handling">Kartes papildu valodas</string>

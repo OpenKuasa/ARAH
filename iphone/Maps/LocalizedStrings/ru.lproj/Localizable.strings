@@ -107,7 +107,7 @@
 "category_water" = "Вода";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Для автодомов";
-"share_bookmarks_email_body" = "Здравствуйте!\n\nВ прикреплённом файле мои метки из офлайновых карт CoMaps. Для того чтобы открыть этот файл, вам потребуется приложение CoMaps, которое можно установить по ссылке: https://www.comaps.app/download/\n\nСпасибо!";
+"share_bookmarks_email_body" = "Здравствуйте!\n\nВ прикреплённом файле мои метки из офлайновых карт Arah. Для того чтобы открыть этот файл, вам потребуется приложение Arah, которое можно установить по ссылке: https://github.com/ARAH-ORG/arah/\n\nСпасибо!";
 /* message title of loading file */
 "load_kmz_title" = "Загрузка избранных";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Ваше местоположение ещё не определено";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Моя метка на карте CoMaps!";
+"bookmark_share_email_subject" = "Моя метка на карте Arah!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Смотри моё текущее местоположение на карте CoMaps!";
+"my_position_share_email_subject" = "Смотри моё текущее местоположение на карте Arah!";
 /* Share by email button text, also used in editor and About. */
 "email" = "Email";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Готово";
 /* Prints version number in About dialog */
-"version" = "Версия CoMaps: %@";
+"version" = "Версия Arah: %@";
 "version %@ (%@)" = "Версия %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Версия: %@ (%@)\nКартографические данные: %@";
 /* Title for tracks category in bookmarks manager */
@@ -229,7 +229,7 @@
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Сообщить или исправить неправильные данные на карте";
 /* Button in the About screen */
-"volunteer" = "Стать добровольцем, чтобы сделать CoMaps лучше";
+"volunteer" = "Стать добровольцем, чтобы сделать Arah лучше";
 /* "Social media" section header in the About screen */
 "follow_us" = "Свяжитесь с нами";
 /* Alert text */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "Профиль OpenStreetMap";
 "osm_profile_promt" = "Создайте учетную запись OpenStreetMap или войдите в нее, чтобы опубликовать свои правки на карте для всего мира.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) - это открытый проект сообщества по созданию бесплатной карты. Он является основным источником картографических данных в CoMaps и работает как Википедия. Кто угодно может добавлять или редактировать места, которые позже увидят миллионы пользователей по всему миру. \nПрисоединяйтесь к сообществу и помогите сделать лучшую карту для всех!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) - это открытый проект сообщества по созданию бесплатной карты. Он является основным источником картографических данных в Arah и работает как Википедия. Кто угодно может добавлять или редактировать места, которые позже увидят миллионы пользователей по всему миру. \nПрисоединяйтесь к сообществу и помогите сделать лучшую карту для всех!";
 "osm_profile_login" = "Войти в аккаунт OpenStreetMap";
 "osm_profile_reauthorize_promt" = "Аккаунт OpenStreetMap был отключен от этого приложения";
 "osm_profile_reauthorize" = "Подключиться снова к OpenStreetMap";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "Объект не может находиться в этом месте";
 /* Error dialog no space */
 "migration_no_space_message" = "Для загрузки требуется больше свободного места. Пожалуйста, удалите ненужные данные.";
-"editor_sharing_title" = "Я улучшил карты CoMaps";
+"editor_sharing_title" = "Я улучшил карты Arah";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d из %2$d";
 "download_over_mobile_header" = "Загрузить через сотовую связь?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Примечание для волонтеров OpenStreetMap (необязательно)";
 "editor_detailed_description_hint" = "Подробный комментарий";
-"editor_detailed_description" = "Предложенные вами изменения на карте будут отправлены в OpenStreetMap. Опишите дополнительные сведения об объекте, которые CoMaps не позволяет отредактировать.";
+"editor_detailed_description" = "Предложенные вами изменения на карте будут отправлены в OpenStreetMap. Опишите дополнительные сведения об объекте, которые Arah не позволяет отредактировать.";
 "editor_more_about_osm" = "Подробнее об OpenStreetMap";
 "editor_operator" = "Оператор";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Оператор: %@";
 "editor_category_unsuitable_title" = "Нет подходящей категории?";
-"editor_category_unsuitable_text" = "CoMaps позволяет добавлять на карту только простые типы объектов, то есть никаких городов, дорог, озер, контуров зданий. Пожалуйста, добавляйте такие категории на сайте <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Также рекомендуем ознакомиться с нашими <a href=\"https://www.comaps.app/support/advanced-map-editing/\">подробными пошаговыми инструкциями и другими приложениями для редактирования карты</a>.";
+"editor_category_unsuitable_text" = "Arah позволяет добавлять на карту только простые типы объектов, то есть никаких городов, дорог, озер, контуров зданий. Пожалуйста, добавляйте такие категории на сайте <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Также рекомендуем ознакомиться с нашими <a href=\"https://github.com/ARAH-ORG/arah/\">подробными пошаговыми инструкциями и другими приложениями для редактирования карты</a>.";
 "downloader_no_downloaded_maps_title" = "У вас нет загруженных карт";
 "downloader_no_downloaded_maps_message" = "Загрузите необходимые карты, чтобы находить места и пользоваться навигацией без интернета.";
 "current_location_unknown_error_title" = "Местоположение не найдено.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Выберите Конфидециальность";
 "location_services_disabled_on_device_3" = "3. Выберите Службы геолокации";
 "location_services_disabled_on_device_4" = "4. Включите Службы геолокации";
-"location_services_disabled_on_device_additional_message" = "Или продолжите использование CoMaps без определения местоположения";
+"location_services_disabled_on_device_additional_message" = "Или продолжите использование Arah без определения местоположения";
 /* abbreviation for meters */
 "m" = "м";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Выключить";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Посмотри";
-"recent_track_background_dialog_message" = "CoMaps использует вашу геопозицию в фоновом режиме для записи недавно пройденного пути.";
+"recent_track_background_dialog_message" = "Arah использует вашу геопозицию в фоновом режиме для записи недавно пройденного пути.";
 "general_settings" = "Общие настройки";
 /* For the first routing */
 "accept" = "Принять";
@@ -692,7 +692,7 @@
 "ok" = "Ок";
 "speedcams_alert_title_carplay_1" = "Камеры";
 "speedcams_alert_title_carplay_2" = "Инфо о камерах";
-"download_map_carplay" = "Скачайте карты в приложении CoMaps на своём устройстве";
+"download_map_carplay" = "Скачайте карты в приложении Arah на своём устройстве";
 "carplay_roundabout_exit" = "%@ съезд";
 /* max. 10 symbols, both iOS and Android */
 "sort" = "Сортировать…";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Трек";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/ru/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Спасибо, что пользуетесь нашими картами, созданными сообществом!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "Наша главная цель — создать быстрые, конфиденциальные и простые в использовании карты, которые вам понравятся.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Сейчас Вы используете CoMaps на экране телефона";
+"car_used_on_the_phone_screen" = "Сейчас Вы используете Arah на экране телефона";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Сейчас Вы используете CoMaps на экране автомобиля";
+"car_used_on_the_car_screen" = "Сейчас Вы используете Arah на экране автомобиля";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Продолжить в телефоне";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Ссылка на меню";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Хотите отправить разработчикам сообщение об ошибке?\nМы полагаемся на наших пользователей, так как CoMaps не собирает информацию об ошибках автоматически. Заранее спасибо за поддержку CoMaps!";
+"bugreport_alert_message" = "Хотите отправить разработчикам сообщение об ошибке?\nМы полагаемся на наших пользователей, так как Arah не собирает информацию об ошибках автоматически. Заранее спасибо за поддержку Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "Синхронизация с iCloud (бета)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -808,7 +808,7 @@
 /* Title for the "iCloud Is Disabled" alert. */
 "icloud_disabled_title" = "iCloud отключен";
 /* Message for the "iCloud is Disabled" alert. */
-"icloud_disabled_message" = "Чтобы воспользоваться этой функцией, включите iCloud для CoMaps в настройках вашей учетной записи Apple.";
+"icloud_disabled_message" = "Чтобы воспользоваться этой функцией, включите iCloud для Arah в настройках вашей учетной записи Apple.";
 /* Title for the "Enable iCloud Synchronization" alert's "Enable" action button. */
 "enable" = "Включить";
 /* Title for the "Enable iCloud Synchronization" alert's "Backup" action button. */
@@ -902,9 +902,10 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";
+"about_based_on" = "Based on CoMaps";

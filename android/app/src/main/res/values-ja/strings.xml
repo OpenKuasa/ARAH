@@ -34,7 +34,7 @@
     <string name="country_status_download_failed">ダウンロードに失敗しました</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">再実行</string>
-    <string name="about_menu_title">CoMapsについて</string>
+    <string name="about_menu_title">Arahについて</string>
     <!-- Text in About screen -->
     <string name="about_headline">コミュニティ主導のオープンプロジェクト</string>
     <!-- Text in About screen -->
@@ -51,7 +51,7 @@
     <string name="unsupported_phone">ハードウェアアクセラレーションされたOpenGLが必要です。残念ながらご利用中のデバイスではサポートされていません。</string>
     <string name="download">ダウンロード</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">CoMapsを利用するにはUSBケーブルを抜くかメモリーカードを挿入してください</string>
+    <string name="disconnect_usb_cable">Arahを利用するにはUSBケーブルを抜くかメモリーカードを挿入してください</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">アプリを起動するにはSDカード/USBストレージの空き容量を確保する必要があります</string>
     <string name="download_resources">利用を開始する前におおまかな世界地図をダウンロードします。\nこれには%sの空き容量が必要です。</string>
@@ -148,8 +148,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">メモ</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">CoMapsお気に入りリスト</string>
-    <string name="share_bookmarks_email_body">"こんにちは！ \n \nお気に入りリストをファイルに添付しました。CoMapsで開いてください。もしCoMapsをインストールしていない場合は、https://www.comaps.app/download/  からダウンロードができます。\n \nCoMapsでの旅を楽しんでください！"</string>
+    <string name="share_bookmarks_email_subject">Arahお気に入りリスト</string>
+    <string name="share_bookmarks_email_body">"こんにちは！ \n \nお気に入りリストをファイルに添付しました。Arahで開いてください。もしArahをインストールしていない場合は、https://github.com/ARAH-ORG/arah/  からダウンロードができます。\n \nArahでの旅を楽しんでください！"</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">お気に入りを読み込み中</string>
     <!-- Kmz file successful loading -->
@@ -169,9 +169,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">マップのダウンロード中です</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">CoMaps で私の現在地が見れます！%1$s または %2$s オフラインマップはまだインストールしていないですか？ここからダウンロード： https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">Arah で私の現在地が見れます！%1$s または %2$s オフラインマップはまだインストールしていないですか？ここからダウンロード： https://github.com/ARAH-ORG/arah/</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">CoMapsで現在地を確認！</string>
+    <string name="my_position_share_email_subject">Arahで現在地を確認！</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">共有</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -240,7 +240,7 @@
     <!-- Button in the main menu -->
     <string name="donate">寄付</string>
     <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">ボランティアでCoMapsを改善する</string>
+    <string name="how_to_support_us">ボランティアでArahを改善する</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">著作権</string>
     <!-- Text in menu + Button in the main Help dialog -->
@@ -457,7 +457,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">コミュニティが作成した%s時点の OpenStreetMap のデータ。地図の編集や更新の方法については、OpenStreetMap.org を参照してください</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org(OSM)は、フリーでオープンな地図を構築するコミュニティ・プロジェクトです。OSMは、CoMapsの地図データの主要なソースであり、ウィキペディアと同じように機能します。あなたが場所を追加したり編集したりすると、世界中の何百万人ものユーザーがその場所を利用できるようになります。\nコミュニティに参加して、より良い地図を一緒に作りましょう！</string>
+    <string name="login_osm_presentation">OpenStreetMap.org(OSM)は、フリーでオープンな地図を構築するコミュニティ・プロジェクトです。OSMは、Arahの地図データの主要なソースであり、ウィキペディアと同じように機能します。あなたが場所を追加したり編集したりすると、世界中の何百万人ものユーザーがその場所を利用できるようになります。\nコミュニティに参加して、より良い地図を一緒に作りましょう！</string>
     <string name="login_to_make_edits_visible">OpenStreetMapアカウントを作成またはログインすると、あなたのマップ編集を世界中に公開できます</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%2$dのうち%1$d</string>
@@ -471,7 +471,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">OpenStreetMapボランティアへの注意（オプション）</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">地図上のエラーやCoMapsで編集できないものについて説明します</string>
+    <string name="editor_note_hint">地図上のエラーやArahで編集できないものについて説明します</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">あなたの編集は公開されている<a href="https://wiki.openstreetmap.org/wiki/JA:参加する">OpenStreetMap</a>データベースにアップロードされます。個人情報や著作権のある情報は追加しないでください。</string>
     <string name="editor_more_about_osm">OpenStreetMapについての詳細</string>
@@ -481,7 +481,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">運営者: %s</string>
     <string name="editor_category_unsuitable_title">適切なカテゴリーが見つからない？</string>
-    <string name="editor_category_unsuitable_text">つまり、町、道路、湖、建物の輪郭などは追加できない。そのようなカテゴリーは<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>に直接追加してほしい。私たちの<a href="https://www.comaps.app/support/advanced-map-editing/">ガイド</a>のステップバイステップの詳細な手順をチェックする。</string>
+    <string name="editor_category_unsuitable_text">つまり、町、道路、湖、建物の輪郭などは追加できない。そのようなカテゴリーは<a href="https://www.openstreetmap.org">OpenStreetMap.org</a>に直接追加してほしい。私たちの<a href="https://github.com/ARAH-ORG/arah/">ガイド</a>のステップバイステップの詳細な手順をチェックする。</string>
     <string name="downloader_no_downloaded_maps_title">マップをダウンロードしていません</string>
     <string name="downloader_no_downloaded_maps_message">ロケーションの検索とオフラインナビゲートのためにマップをダウンロードしてください</string>
     <string name="current_location_unknown_error_title">現在地は不明です</string>
@@ -534,7 +534,7 @@
     <string name="mobile_data_option_ask">常に確認</string>
     <string name="traffic_update_maps_text">交通データを表示するには、マップを更新する必要があります</string>
     <string name="increase_font_size">地図上のフォントサイズを大きくする</string>
-    <string name="traffic_update_app">CoMaps をアップデートしてください</string>
+    <string name="traffic_update_app">Arah をアップデートしてください</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">交通データは利用できません</string>
     <string name="enable_logging">ログを有効化</string>
@@ -554,7 +554,7 @@
     <string name="placepage_remove_stop">停留所を削除</string>
     <string name="placepage_add_stop">中間地点を追加</string>
     <string name="dialog_error_storage_title">ストレージアクセスの問題</string>
-    <string name="dialog_error_storage_message">外部ストレージは使用できません。おそらく SD カードが取り外されたか、破損しているか、あるいはファイルシステムが読み取り専用になっています。SD カードを確認するか、support@comaps.app までご連絡ください</string>
+    <string name="dialog_error_storage_message">外部ストレージは使用できません。おそらく SD カードが取り外されたか、破損しているか、あるいはファイルシステムが読み取り専用になっています。SD カードを確認するか、support@arah.invalid までご連絡ください</string>
     <string name="setting_emulate_bad_storage">壊れたストレージをシミュレートする</string>
     <string name="error_enter_correct_name">正しい名前を入力してください</string>
     <string name="bookmark_lists">リスト</string>
@@ -613,7 +613,7 @@
     <string name="power_managment_setting_never">無効</string>
     <string name="power_managment_setting_auto">自動</string>
     <string name="power_managment_setting_manual_max">最大電力節約</string>
-    <string name="enable_logging_warning_message">このオプションは診断目的でのデータ記録を有効にします。これはこのアプリケーションのトラブルシューティングを担当する当社のサポートスタッフの助けになります。このオプションはCoMapsにリクエストされた場合にのみ有効にしてください。</string>
+    <string name="enable_logging_warning_message">このオプションは診断目的でのデータ記録を有効にします。これはこのアプリケーションのトラブルシューティングを担当する当社のサポートスタッフの助けになります。このオプションはArahにリクエストされた場合にのみ有効にしてください。</string>
     <string name="routing_options_title">経路オプション</string>
     <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
     <string name="avoid_tolls">有料道路を避ける</string>
@@ -739,9 +739,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">私たちの主な目標は、ユーザーに気に入っていただける、プライバシーを重視した使いやすいマップを高速に構築することです。</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">端末の画面でCoMapsを使用している</string>
+    <string name="car_used_on_the_phone_screen">端末の画面でArahを使用している</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">あなたは今、車の画面でCoMapsを使用している</string>
+    <string name="car_used_on_the_car_screen">あなたは今、車の画面でArahを使用している</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Android Autoに接続している</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -749,11 +749,11 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">車のスクリーンへ</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">CoMapsは位置情報へのアクセスを必要とする。安全になったら、携帯電話の通知をチェックしよう。</string>
+    <string name="aa_location_permissions_request">Arahは位置情報へのアクセスを必要とする。安全になったら、携帯電話の通知をチェックしよう。</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">このアプリはあなたの許可を必要とする</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Android AutoのCoMapsを有効に機能させるには、位置情報の許可が必要です</string>
+    <string name="aa_request_permission_activity_text">Android AutoのArahを有効に機能させるには、位置情報の許可が必要です</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">許可を与える</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
@@ -805,15 +805,15 @@
     <!-- preference string for using auto theme only in navigation mode -->
     <string name="nav_auto">ナビゲーションオート</string>
     <string name="level_value_generic">階層：%s</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="error_enter_correct_bluesky_page">有効なBlueskyのユーザー名またはウェブアドレスを入力してください</string>
     <string name="saved">保存しました</string>
     <string name="error_enter_correct_fediverse_page">有効なMastodonのユーザー名またはウェブアドレスを入力してください</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="pref_left_button_title">左ボタンの設定</string>
     <string name="pref_left_button_disable">無効にする</string>
     <string name="vehicle">車両</string>
@@ -837,7 +837,7 @@
     <string name="pref_about_summary">問題を報告、助けを得る、寄付をお願いします\nVersion: v%1$s</string>
     <string name="prefs_group_advanced">高度な設定</string>
     <string name="download_resources_custom_url_title">カスタム地図サーバー</string>
-    <string name="download_resources_custom_url_message">デフォルトの地図ダウンロードサーバーをオーバーライドします。CoMapsのデフォルトサーバーを使用する場合は、空のままにしてください。</string>
+    <string name="download_resources_custom_url_message">デフォルトの地図ダウンロードサーバーをオーバーライドします。Arahのデフォルトサーバーを使用する場合は、空のままにしてください。</string>
     <string name="download_resources_custom_url_error_scheme">http:// または https:// から始めるURLを指定してください</string>
     <string name="prefs_group_interface">インターフェイス</string>
     <string name="prefs_group_interface_summary">ナイトモード、ボタン、言語</string>

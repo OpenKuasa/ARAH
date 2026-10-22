@@ -107,7 +107,7 @@
 "category_water" = "Vesi";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Haagiselamud";
-"share_bookmarks_email_body" = "Tere!\n\nManuses on minu salvestatud asukohad rakendusest CoMaps. Kui Sul on CoMaps nutiseadmesse paigaldatud, siis saad neid kohe vaadata. Või kui ei ole, laadi rakendus alla oma iOS või Android seadmesse, järgides seda linki: https:omaps.appget?kmz\n\nNaudi reisimist CoMapsiga!";
+"share_bookmarks_email_body" = "Tere!\n\nManuses on minu salvestatud asukohad rakendusest Arah. Kui Sul on Arah nutiseadmesse paigaldatud, siis saad neid kohe vaadata. Või kui ei ole, laadi rakendus alla oma iOS või Android seadmesse, järgides seda linki: https://github.com/ARAH-ORG/arah\n\nNaudi reisimist Arahiga!";
 /* message title of loading file */
 "load_kmz_title" = "Laadin lemmikuid";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Sinu asukoht ei ole veel tuvastatud";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Hei, vaata minu asukoha märget CoMapsi kaardil!";
+"bookmark_share_email_subject" = "Hei, vaata minu asukoha märget Arahi kaardil!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Hei, vaata minu praegust asukohta CoMapsi kaardil!";
+"my_position_share_email_subject" = "Hei, vaata minu praegust asukohta Arahi kaardil!";
 /* Share by email button text, also used in editor and About. */
 "email" = "E-post";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Valmis";
 /* Prints version number in About dialog */
-"version" = "CoMapsi versioon: %@";
+"version" = "Arahi versioon: %@";
 "version %@ (%@)" = "Versioon %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Versioon: %@ (%@)\nKaardiandmed: %@";
 /* Title for tracks category in bookmarks manager */
@@ -229,7 +229,7 @@
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Paranda vigaseid kaardiandmeid või teata neist";
 /* Button in the About screen */
-"volunteer" = "Osale ühistöös CoMapsi täiendamisel";
+"volunteer" = "Osale ühistöös Arahi täiendamisel";
 /* "Social media" section header in the About screen */
 "follow_us" = "Suhtle meiega";
 /* Alert text */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "OpenStreetMapi profiil";
 "osm_profile_promt" = "Loo OpenStreetMapi konto või logi sisse, et avaldada oma kaardimuudatused kogu maailmale.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) on kogukonna projekt, mille eesmärk on luua tasuta ja avatud kaart. See on CoMapsi peamine kaardiandmete allikas ja toimib sarnaselt Vikipeediaga. Saad lisada või muuta kohti ja need muutuvad kättesaadavaks miljonitele kasutajatele üle kogu maailma.\nLiitu kogukonnaga ja aita luua kõigi jaoks paremat kaarti!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) on kogukonna projekt, mille eesmärk on luua tasuta ja avatud kaart. See on Arahi peamine kaardiandmete allikas ja toimib sarnaselt Vikipeediaga. Saad lisada või muuta kohti ja need muutuvad kättesaadavaks miljonitele kasutajatele üle kogu maailma.\nLiitu kogukonnaga ja aita luua kõigi jaoks paremat kaarti!";
 "osm_profile_login" = "Logi sisse OpenStreetMapi kasutajakontole";
 "osm_profile_reauthorize_promt" = "OpenStreetMap kasutajakonto ühendus on siit rakendusest katkestatud";
 "osm_profile_reauthorize" = "Loo uuesti ühendus OpenStreetMapiga";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "Ükski objekt ei saa siin asuda";
 /* Error dialog no space */
 "migration_no_space_message" = "Allalaadimiseks vajad rohkem andmeruumi. Palun kustuta ebavajalikke andmeid.";
-"editor_sharing_title" = "Parandasin CoMaps kaarte";
+"editor_sharing_title" = "Parandasin Arah kaarte";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d/%2$d";
 "download_over_mobile_header" = "Kas laadime alla mobiilivõrgu kaudu?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Märkus OpenStreetMapi vabatahtlikele (valikuline)";
 "editor_detailed_description_hint" = "Üksikasjalik kommentaar";
-"editor_detailed_description" = "Sinu soovitatud kaardimuudatused saadetakse OpenStreetMapi kogukonnale. Kirjelda kõiki täiendavaid üksikasju, mida ei saa CoMapsis muuta.";
+"editor_detailed_description" = "Sinu soovitatud kaardimuudatused saadetakse OpenStreetMapi kogukonnale. Kirjelda kõiki täiendavaid üksikasju, mida ei saa Arahis muuta.";
 "editor_more_about_osm" = "Lisateave OpenStreetMapi kohta";
 "editor_operator" = "Käitaja";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Käitaja: %@";
 "editor_category_unsuitable_title" = "Ei leia sobivat kategooriat?";
-"editor_category_unsuitable_text" = "CoMaps võimaldab lisada ainult lihtsaid huvipunkte, see tähendab, et ei mingeid linnu, teid, järvi, hoonete piirjooni jne. Palun lisa sellised kategooriad otse <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> saidis. Vaata meie <a href=\"https://www.comaps.app/support/advanced-map-editing/\">juhendit</a> üksikasjalike samm-sammuliste juhiste saamiseks.";
+"editor_category_unsuitable_text" = "Arah võimaldab lisada ainult lihtsaid huvipunkte, see tähendab, et ei mingeid linnu, teid, järvi, hoonete piirjooni jne. Palun lisa sellised kategooriad otse <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> saidis. Vaata meie <a href=\"https://github.com/ARAH-ORG/arah/\">juhendit</a> üksikasjalike samm-sammuliste juhiste saamiseks.";
 "downloader_no_downloaded_maps_title" = "Sa ei ole kaarte alla laadinud";
 "downloader_no_downloaded_maps_message" = "Laadi alla kaardid asukoha otsimiseks ja võrguühenduseta tee juhatamiseks.";
 "current_location_unknown_error_title" = "Hetkeasukoht on teadmata.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Vali „Privaatsus“";
 "location_services_disabled_on_device_3" = "3. Vali „Asukohateenused“";
 "location_services_disabled_on_device_4" = "4. Lülita sisse asukohateenused";
-"location_services_disabled_on_device_additional_message" = "Või jätka CoMapsi kasutamist ilma asukohata";
+"location_services_disabled_on_device_additional_message" = "Või jätka Arahi kasutamist ilma asukohata";
 /* abbreviation for meters */
 "m" = "m";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Keela";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Vaata järele";
-"recent_track_background_dialog_message" = "CoMaps kasutab Sinu geograafilist asukohta taustal Sinu hiljuti läbitud teekonna salvestamiseks.";
+"recent_track_background_dialog_message" = "Arah kasutab Sinu geograafilist asukohta taustal Sinu hiljuti läbitud teekonna salvestamiseks.";
 "general_settings" = "Üldseadistused";
 /* For the first routing */
 "accept" = "Nõustu";
@@ -692,7 +692,7 @@
 "ok" = "Sobib";
 "speedcams_alert_title_carplay_1" = "Kiiruskaamerad";
 "speedcams_alert_title_carplay_2" = "Kiiruse hoiatused";
-"download_map_carplay" = "Palun laadi alla kaardid oma nutiseadme CoMaps rakenduses";
+"download_map_carplay" = "Palun laadi alla kaardid oma nutiseadme Arah rakenduses";
 "carplay_roundabout_exit" = "%@ ärapööre";
 /* max. 10 symbols, both iOS and Android */
 "sort" = "Järjesta…";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Rada";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/et/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Aitäh, et kasutad meie kogukonna koostatud kaarte!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "Meie põhieesmärk on luua kiireid, privaatsusele keskenduvaid ja hõlpsasti kasutatavaid kaarte, mis sulle meeldivad.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Nüüd kasutad telefoni ekraanil CoMapsi";
+"car_used_on_the_phone_screen" = "Nüüd kasutad telefoni ekraanil Arahi";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Nüüd kasutad auto ekraanil CoMapsi";
+"car_used_on_the_car_screen" = "Nüüd kasutad auto ekraanil Arahi";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Jätka telefonis";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Menüü link";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Kas soovid saata arendajatele veateate?\nMe toetume oma kasutajatele, kuna CoMaps ei kogu automaatselt mingit veateavet. Täname sind juba ette CoMapsi toetamise eest!";
+"bugreport_alert_message" = "Kas soovid saata arendajatele veateate?\nMe toetume oma kasutajatele, kuna Arah ei kogu automaatselt mingit veateavet. Täname sind juba ette Arahi toetamise eest!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "Sünkroonimine iCloudiga (Beeta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -902,9 +902,10 @@
 "custom_map_server_error_scheme" = "Võrguaadressi alguses peab olema http:// või https://";
 "stars_4" = "4 tärni";
 "stars_2" = "2 tärni";
-"custom_map_server_map_series" = "See CoMapsi versioon kasutab kaarti tunnusega %@.";
+"custom_map_server_map_series" = "See Arahi versioon kasutab kaarti tunnusega %@.";
 "not_set" = "Pole määratud";
 "custom_map_server" = "Sinu oma kaardiserver";
 "stars_3" = "3 tärni";
 "stars_1" = "1 tärn";
-"custom_map_server_message" = "Kui tahad kasutada oma kaardiserverit, siis lisa ta siia. CoMapsi vaikimisi serveri kasutamiseks jäta tühjaks.";
+"custom_map_server_message" = "Kui tahad kasutada oma kaardiserverit, siis lisa ta siia. Arahi vaikimisi serveri kasutamiseks jäta tühjaks.";
+"about_based_on" = "Based on CoMaps";

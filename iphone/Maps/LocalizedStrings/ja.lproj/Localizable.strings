@@ -107,7 +107,7 @@
 "category_water" = "水";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "RV用";
-"share_bookmarks_email_body" = "こんにちは！\n\n添付ファイルCoMapsのお気に入りリストです。もしインストールされていない場合はここからダウンロードができます： https://www.comaps.app/download/\n\n旅行を楽しむときはCoMapsを使用してください!";
+"share_bookmarks_email_body" = "こんにちは！\n\n添付ファイルArahのお気に入りリストです。もしインストールされていない場合はここからダウンロードができます： https://github.com/ARAH-ORG/arah/\n\n旅行を楽しむときはArahを使用してください!";
 /* message title of loading file */
 "load_kmz_title" = "お気に入りを読み込み中";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "現在の座標が未確定です";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "CoMapsでピン情報を確認！";
+"bookmark_share_email_subject" = "Arahでピン情報を確認！";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "CoMapsで現在地を確認！";
+"my_position_share_email_subject" = "Arahで現在地を確認！";
 /* Share by email button text, also used in editor and About. */
 "email" = "Eメール";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "完了";
 /* Prints version number in About dialog */
-"version" = "CoMapsバージョン: %@";
+"version" = "Arahバージョン: %@";
 "version %@ (%@)" = "バージョン %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "バージョン: %@ (%@)\n地図データ: %@";
 /* Title for tracks category in bookmarks manager */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "OpenStreetMap プロフィール";
 "osm_profile_promt" = "OpenStreetMapのアカウントを作成するかログインして、あなたの地図編集を世界中に公開しましょう。";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM)は、フリーでオープンな地図を構築するコミュニティ・プロジェクトです。OSMは、CoMapsの地図データの主要なソースであり、ウィキペディアと同じように機能します。あなたが場所を追加したり編集したりすると、世界中の何百万人ものユーザーがその場所を利用できるようになります。\nコミュニティに参加して、より良い地図を一緒に作りましょう！";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM)は、フリーでオープンな地図を構築するコミュニティ・プロジェクトです。OSMは、Arahの地図データの主要なソースであり、ウィキペディアと同じように機能します。あなたが場所を追加したり編集したりすると、世界中の何百万人ものユーザーがその場所を利用できるようになります。\nコミュニティに参加して、より良い地図を一緒に作りましょう！";
 "osm_profile_login" = "OpenStreetMapアカウントにログイン";
 "osm_profile_reauthorize_promt" = "OpenStreetMapアカウントがこのアプリから切断されました";
 "osm_profile_reauthorize" = "OpenStreetMapに再接続";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "ここにはオブジェクトを配置できません";
 /* Error dialog no space */
 "migration_no_space_message" = "ダウンロードするには空き容量が必要です。不要なデータを削除してください。";
-"editor_sharing_title" = "CoMapsの地図を改善しました";
+"editor_sharing_title" = "Arahの地図を改善しました";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%2$dのうち%1$d";
 "download_over_mobile_header" = "モバイル通信でダウンロードしますか？";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "OpenStreetMapボランティアへの注意（オプション）";
 "editor_detailed_description_hint" = "詳細コメント";
-"editor_detailed_description" = "提案した変更は、OpenStreetMapのコミュニティに送信されます。CoMapsで編集できない詳細を説明してください。";
+"editor_detailed_description" = "提案した変更は、OpenStreetMapのコミュニティに送信されます。Arahで編集できない詳細を説明してください。";
 "editor_more_about_osm" = "OpenStreetMapについての詳細";
 "editor_operator" = "オペレーター";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "運営者: %@";
 "editor_category_unsuitable_title" = "適切なカテゴリーが見つからない？";
-"editor_category_unsuitable_text" = "つまり、町、道路、湖、建物の輪郭などは追加できない。そのようなカテゴリーは<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>に直接追加してほしい。私たちの<a href=\"https://www.comaps.app/support/advanced-map-editing/\">ガイド</a>のステップバイステップの詳細な手順をチェックする。";
+"editor_category_unsuitable_text" = "つまり、町、道路、湖、建物の輪郭などは追加できない。そのようなカテゴリーは<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>に直接追加してほしい。私たちの<a href=\"https://github.com/ARAH-ORG/arah/\">ガイド</a>のステップバイステップの詳細な手順をチェックする。";
 "downloader_no_downloaded_maps_title" = "マップをダウンロードしていません";
 "downloader_no_downloaded_maps_message" = "ロケーションの検索とオフラインナビゲートのためにマップをダウンロードしてください。";
 "current_location_unknown_error_title" = "現在地は不明です。";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2.プライバシーを選択する";
 "location_services_disabled_on_device_3" = "3.位置情報サービスを選択する";
 "location_services_disabled_on_device_4" = "4.位置情報サービスをオンにする";
-"location_services_disabled_on_device_additional_message" = "または、位置情報なしでCoMapsを使い続ける";
+"location_services_disabled_on_device_additional_message" = "または、位置情報なしでArahを使い続ける";
 /* abbreviation for meters */
 "m" = "m";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "無効にする";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "ご覧ください";
-"recent_track_background_dialog_message" = "CoMapsは、あなたの位置情報をバックグラウンドで使用して最近の走行ルートを記録します。";
+"recent_track_background_dialog_message" = "Arahは、あなたの位置情報をバックグラウンドで使用して最近の走行ルートを記録します。";
 "general_settings" = "一般設定";
 /* For the first routing */
 "accept" = "了解";
@@ -643,7 +643,7 @@
 "power_managment_setting_never" = "無効";
 "power_managment_setting_auto" = "自動";
 "power_managment_setting_manual_max" = "最大電力節約";
-"enable_logging_warning_message" = "このオプションは診断目的でのデータ記録を有効にします。これはこのアプリケーションのトラブルシューティングを担当する当社のサポートスタッフの助けになります。このオプションはCoMapsにリクエストされた場合にのみ有効にしてください。";
+"enable_logging_warning_message" = "このオプションは診断目的でのデータ記録を有効にします。これはこのアプリケーションのトラブルシューティングを担当する当社のサポートスタッフの助けになります。このオプションはArahにリクエストされた場合にのみ有効にしてください。";
 "driving_options_title" = "経路オプション";
 /* Recommended length for CarPlay and Android Auto is around 25-27 characters */
 "avoid_tolls" = "有料道路を避ける";
@@ -692,7 +692,7 @@
 "ok" = "OK";
 "speedcams_alert_title_carplay_1" = "速度警告";
 "speedcams_alert_title_carplay_2" = "速度警告";
-"download_map_carplay" = "端末のCoMapsのアプリにマップをダウンロードしてください";
+"download_map_carplay" = "端末のArahのアプリにマップをダウンロードしてください";
 "carplay_roundabout_exit" = "第%@出口";
 /* max. 10 symbols, both iOS and Android */
 "sort" = "並べ替え…";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "トラック";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "私たちのコミュニティが作った地図をご利用いただき、ありがとうございます！";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "私たちの主な目標は、ユーザーに気に入っていただける、プライバシーを重視した使いやすいマップを高速に構築することです。";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "端末の画面でCoMapsを使用している";
+"car_used_on_the_phone_screen" = "端末の画面でArahを使用している";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "あなたは今、車の画面でCoMapsを使用している";
+"car_used_on_the_car_screen" = "あなたは今、車の画面でArahを使用している";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "電話で続ける";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "メニューリンク";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "開発者にバグレポートを送りたいか？\nCoMapsはエラー情報を自動収集しないため、我々はユーザーに依存している。CoMapsを応援してくださりありがとう！";
+"bugreport_alert_message" = "開発者にバグレポートを送りたいか？\nArahはエラー情報を自動収集しないため、我々はユーザーに依存している。Arahを応援してくださりありがとう！";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud Syncronization (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -902,9 +902,10 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";
+"about_based_on" = "Based on CoMaps";

@@ -105,7 +105,7 @@
 "category_water" = "מים";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "עבור קרוואנים";
-"share_bookmarks_email_body" = "שלום!\n\nמצורפות הסימניות שלי, אפשר לפתוח אותן ב-CoMaps. אם צריך, ניתן להוריד את האפליקצייה מכאן: https://www.comaps.app/download/\n\nתהנו לנווט עם CoMaps!";
+"share_bookmarks_email_body" = "שלום!\n\nמצורפות הסימניות שלי, אפשר לפתוח אותן ב-Arah. אם צריך, ניתן להוריד את האפליקצייה מכאן: https://github.com/ARAH-ORG/arah/\n\nתהנו לנווט עם Arah!";
 /* message title of loading file */
 "load_kmz_title" = "המועדפים נטענים";
 /* Kmz file successful loading */
@@ -117,9 +117,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "מיקומך לא אותר עדיין";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "היי, בדוק את הסיכה שלי במפה של CoMaps!";
+"bookmark_share_email_subject" = "היי, בדוק את הסיכה שלי במפה של Arah!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "היי, בדקו את המיקום הנוכחי שלי במפה של CoMaps!";
+"my_position_share_email_subject" = "היי, בדקו את המיקום הנוכחי שלי במפה של Arah!";
 /* Share by email button text, also used in editor and About. */
 "email" = "דוא\"ל";
 /* Text for message to copy something */
@@ -131,7 +131,7 @@
 /* Used for bookmark editing */
 "done" = "בוצע";
 /* Prints version number in About dialog */
-"version" = "גרסת מפות אורגניות: %@";
+"version" = "גרסת Arah: %@";
 "version %@ (%@)" = "גרסה %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "גרסה: %@ (%@)\nנתוני מפה: %@";
 /* Title for tracks category in bookmarks manager */
@@ -404,7 +404,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "פרופיל OpenStreetMap";
 "osm_profile_promt" = "צור חשבון OpenStreetMap או היכנס כדי לפרסם את עריכות המפה שלך לעולם.";
-"osm_profile_explanation" = "‏[OpenStreetMap.org](https://openstreetmap.org) (OSM) הוא פרויקט קהילתי לבניית מפה חופשית ופתוחה. זהו המקור העיקרי לנתוני מפות ב-CoMaps והוא פועל בדומה לוויקיפדיה. ניתן להוסיף או לערוך מקומות והם הופכים לזמינים למיליוני משתמשים בכל רחבי העולם. \nהצטרף לקהילה ועזור ליצור מפה טובה יותר לכולם!";
+"osm_profile_explanation" = "‏[OpenStreetMap.org](https://openstreetmap.org) (OSM) הוא פרויקט קהילתי לבניית מפה חופשית ופתוחה. זהו המקור העיקרי לנתוני מפות ב-Arah והוא פועל בדומה לוויקיפדיה. ניתן להוסיף או לערוך מקומות והם הופכים לזמינים למיליוני משתמשים בכל רחבי העולם. \nהצטרף לקהילה ועזור ליצור מפה טובה יותר לכולם!";
 "osm_profile_login" = "התחברות לחשבון OpenStreetMap";
 "osm_profile_reauthorize_promt" = "חשבון OpenStreetMap נותק מאפליקציה זו";
 "osm_profile_reauthorize" = "התחברות מחדש ל-OpenStreetMap";
@@ -461,7 +461,7 @@
 "message_invalid_feature_position" = "לא ניתן למקם כאן פריט";
 /* Error dialog no space */
 "migration_no_space_message" = "כדי להוריד, צריך עוד מקום. נא למחוק מידע שאינו הכרחי.";
-"editor_sharing_title" = "אני משפר את המפות של CoMaps";
+"editor_sharing_title" = "אני משפר את המפות של Arah";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d מתוך %2$d";
 "download_over_mobile_header" = "להוריד באמצעות חיבור אינטרנט סלולרי?";
@@ -477,13 +477,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "הערה למתנדבי OpenStreetMap (אופציונלי)";
 "editor_detailed_description_hint" = "הערה מפורטת";
-"editor_detailed_description" = "ההצעות שלך לשינוי המפה יישלחו לקהילת OpenStreetMap. יש לתאר פרטים נוספים שלא ניתן לערוך ב-CoMaps.";
+"editor_detailed_description" = "ההצעות שלך לשינוי המפה יישלחו לקהילת OpenStreetMap. יש לתאר פרטים נוספים שלא ניתן לערוך ב-Arah.";
 "editor_more_about_osm" = "עוד על OpenStreetMap";
 "editor_operator" = "מַפעִיל";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "מַפעִיל: %@";
 "editor_category_unsuitable_title" = "לא מוצאים קטגוריה מתאימה?";
-"editor_category_unsuitable_text" = "באמצעות CoMaps ניתן להוסיף קטגוריות נקודה פשוטות בלבד, כלומר לא ניתן להוסיף עיירות, כבישים, אגמים, מבנים וכו'. אנא הוסיפו קטגוריות כאלה ישירות ל-<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. עיינו <a href=\"https://www.comaps.app/support/advanced-map-editing/\">במדריך</a> שלנו לקבלת הוראות מפורטות.";
+"editor_category_unsuitable_text" = "באמצעות Arah ניתן להוסיף קטגוריות נקודה פשוטות בלבד, כלומר לא ניתן להוסיף עיירות, כבישים, אגמים, מבנים וכו'. אנא הוסיפו קטגוריות כאלה ישירות ל-<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. עיינו <a href=\"https://github.com/ARAH-ORG/arah/\">במדריך</a> שלנו לקבלת הוראות מפורטות.";
 "downloader_no_downloaded_maps_title" = "לא הורדת אף מפה";
 "downloader_no_downloaded_maps_message" = "הורד מפה כדי לחפש ולנווט ללא חיבור לאינטרנט.";
 "current_location_unknown_error_title" = "המיקום הנוכחי לא ידוע.";
@@ -497,7 +497,7 @@
 "location_services_disabled_on_device_2" = "2. בחר פרטיות";
 "location_services_disabled_on_device_3" = "3. בחר שירותי מיקום";
 "location_services_disabled_on_device_4" = "4. הפעל את שירותי המיקום";
-"location_services_disabled_on_device_additional_message" = "או המשך להשתמש ב-CoMaps ללא מיקום";
+"location_services_disabled_on_device_additional_message" = "או המשך להשתמש ב-Arah ללא מיקום";
 /* abbreviation for meters */
 "m" = "מ׳";
 /* abbreviation for kilometers */
@@ -545,7 +545,7 @@
 "off_recent_track_background_button" = "השבת";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Check out";
-"recent_track_background_dialog_message" = "האפליקצייה CoMaps משתמשת במיקום שלך ברקע כדי להקליט את המסלול האחרון שלך.";
+"recent_track_background_dialog_message" = "האפליקצייה Arah משתמשת במיקום שלך ברקע כדי להקליט את המסלול האחרון שלך.";
 "general_settings" = "הגדרות כלליות";
 /* For the first routing */
 "accept" = "קבל";
@@ -751,7 +751,7 @@
 /* edit track screen title */
 "track_title" = "מסלול";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah";
 /* App Tip #00 */
 "app_tip_00" = "תודה על השימוש במפות שנבנו בקהילה שלנו!";
 /* App tip #01 */
@@ -773,9 +773,9 @@
 /* App tip #09 */
 "app_tip_09" = "המטרה העיקרית שלנו היא לבנות מפות מהירות, ממוקדות פרטיות, קלות לשימוש שתאהבו.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "אתה משתמש כעת ב-CoMaps במסך הטלפון";
+"car_used_on_the_phone_screen" = "אתה משתמש כעת ב-Arah במסך הטלפון";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "אתה משתמש כעת ב-CoMaps במסך המכונית";
+"car_used_on_the_car_screen" = "אתה משתמש כעת ב-Arah במסך המכונית";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "המשך בטלפון";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -790,7 +790,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "קישור לתפריט";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "האם תרצה לשלוח דוח באג למפתחים?\nאנו סומכים על המשתמשים שלנו מכיוון ש-CoMaps לא אוספות כל מידע על שגיאות באופן אוטומטי. תודה מראש על התמיכה ב-CoMaps!";
+"bugreport_alert_message" = "האם תרצה לשלוח דוח באג למפתחים?\nאנו סומכים על המשתמשים שלנו מכיוון ש-Arah לא אוספות כל מידע על שגיאות באופן אוטומטי. תודה מראש על התמיכה ב-Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud Syncronization (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -900,9 +900,10 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";
+"about_based_on" = "Based on CoMaps";

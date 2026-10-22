@@ -107,7 +107,7 @@
 "category_water" = "Nước";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Dịch vụ hỗ trợ xe RV";
-"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in CoMaps. If you don't have it installed you can download it here: https://www.comaps.app/download/\n\nEnjoy travelling with CoMaps!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my bookmarks; please open them in Arah. If you don't have it installed you can download it here: https://github.com/ARAH-ORG/arah/\n\nEnjoy travelling with Arah!";
 /* message title of loading file */
 "load_kmz_title" = "Đang tải Ưa thích";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Chưa xác định được vị trí của bạn";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Này, hãy xem ghim của tôi tại CoMaps map";
+"bookmark_share_email_subject" = "Này, hãy xem ghim của tôi tại Arah map";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Này, hãy xem vị trí hiện tại của tôi trên ứng dụng CoMaps!";
+"my_position_share_email_subject" = "Này, hãy xem vị trí hiện tại của tôi trên ứng dụng Arah!";
 /* Share by email button text, also used in editor and About. */
 "email" = "Email";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Xong";
 /* Prints version number in About dialog */
-"version" = "Phiên bản CoMaps: %@";
+"version" = "Phiên bản Arah: %@";
 "version %@ (%@)" = "Phiên bản %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Phiên bản: %@ (%@)\nDữ liệu bản đồ: %@";
 /* Title for tracks category in bookmarks manager */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "Hồ sơ OpenStreetMap";
 "osm_profile_promt" = "Tạo tài khoản OpenStreetMap hoặc đăng nhập để xuất bản các chỉnh sửa bản đồ của bạn với thế giới.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) là một dự án cộng đồng nhằm xây dựng bản đồ mở và miễn phí. Đây là nguồn dữ liệu bản đồ chính trong CoMaps và hoạt động tương tự như Wikipedia. Bạn có thể thêm hoặc chỉnh sửa địa điểm và chúng sẽ có sẵn cho hàng triệu người dùng trên toàn thế giới. \nTham gia cộng đồng và giúp tạo bản đồ tốt hơn cho mọi người!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) là một dự án cộng đồng nhằm xây dựng bản đồ mở và miễn phí. Đây là nguồn dữ liệu bản đồ chính trong Arah và hoạt động tương tự như Wikipedia. Bạn có thể thêm hoặc chỉnh sửa địa điểm và chúng sẽ có sẵn cho hàng triệu người dùng trên toàn thế giới. \nTham gia cộng đồng và giúp tạo bản đồ tốt hơn cho mọi người!";
 "osm_profile_login" = "Đăng nhập vào tài khoản OpenStreetMap";
 "osm_profile_reauthorize_promt" = "Tài khoản OpenStreetMap đã bị ngắt kết nối khỏi ứng dụng này";
 "osm_profile_reauthorize" = "Kết nối lại với OpenStreetMap";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "Không đối tượng nào có thể đặt ở đây";
 /* Error dialog no space */
 "migration_no_space_message" = "Để tải xuống, bạn cần thêm dung lượng. Xin xóa mọi dữ liệu không cần thiết.";
-"editor_sharing_title" = "Tôi đã cải thiện các bản đồ CoMaps";
+"editor_sharing_title" = "Tôi đã cải thiện các bản đồ Arah";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d trên %2$d";
 "download_over_mobile_header" = "Tải xuống qua kết nối mạng di động?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Lưu ý dành cho tình nguyện viên OpenStreetMap (tùy chọn)";
 "editor_detailed_description_hint" = "Nhận xét chi tiết";
-"editor_detailed_description" = "Những thay đổi đề nghị của bạn sẽ được gửi đến cộng đồng OpenStreetMap. Mô tả các chi tiết không thể sửa trong CoMaps.";
+"editor_detailed_description" = "Những thay đổi đề nghị của bạn sẽ được gửi đến cộng đồng OpenStreetMap. Mô tả các chi tiết không thể sửa trong Arah.";
 "editor_more_about_osm" = "Thông tin bổ sung về OpenStreetMap";
 "editor_operator" = "Đơn vị vận hành";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Toán tử: %@";
 "editor_category_unsuitable_title" = "Không thể tìm thấy một danh mục phù hợp?";
-"editor_category_unsuitable_text" = "CoMaps chỉ cho phép thêm các danh mục điểm đơn giản, nghĩa là không có thị trấn, đường, hồ, đường viền tòa nhà, v.v. Vui lòng thêm các danh mục đó trực tiếp vào <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Hãy xem <a href=\"https://www.comaps.app/support/advanced-map-editing/\">hướng dẫn</a> của chúng tôi để biết hướng dẫn chi tiết từng bước.";
+"editor_category_unsuitable_text" = "Arah chỉ cho phép thêm các danh mục điểm đơn giản, nghĩa là không có thị trấn, đường, hồ, đường viền tòa nhà, v.v. Vui lòng thêm các danh mục đó trực tiếp vào <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Hãy xem <a href=\"https://github.com/ARAH-ORG/arah/\">hướng dẫn</a> của chúng tôi để biết hướng dẫn chi tiết từng bước.";
 "downloader_no_downloaded_maps_title" = "Bạn chưa tải về bất kỳ bản đồ nào";
 "downloader_no_downloaded_maps_message" = "Tải về bản đồ để tìm địa điểm và định hướng ngoại tuyến.";
 "current_location_unknown_error_title" = "Chưa biết địa điểm hiện tại.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Chọn Quyền riêng tư";
 "location_services_disabled_on_device_3" = "3. Chọn Dịch vụ định vị";
 "location_services_disabled_on_device_4" = "4. Bật Dịch vụ định vị";
-"location_services_disabled_on_device_additional_message" = "Hoặc tiếp tục sử dụng CoMaps mà không có Vị trí";
+"location_services_disabled_on_device_additional_message" = "Hoặc tiếp tục sử dụng Arah mà không có Vị trí";
 /* abbreviation for meters */
 "m" = "m";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Tắt";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Xem";
-"recent_track_background_dialog_message" = "CoMaps sử dụng định vị của bạn trong ứng dụng chạy nền để ghi lại tuyến đường đã đi gần đây của bạn.";
+"recent_track_background_dialog_message" = "Arah sử dụng định vị của bạn trong ứng dụng chạy nền để ghi lại tuyến đường đã đi gần đây của bạn.";
 "general_settings" = "Thiết lập chung";
 /* For the first routing */
 "accept" = "Chấp nhận";
@@ -692,7 +692,7 @@
 "ok" = "Ok";
 "speedcams_alert_title_carplay_1" = "Сam tốc độ";
 "speedcams_alert_title_carplay_2" = "Cảnh báo tốc độ";
-"download_map_carplay" = "Vui lòng tải xuống bản đồ trong ứng dụng CoMaps trên thiết bị của bạn";
+"download_map_carplay" = "Vui lòng tải xuống bản đồ trong ứng dụng Arah trên thiết bị của bạn";
 "carplay_roundabout_exit" = "Lối ra %@ của vòng xuyến";
 /* max. 10 symbols, both iOS and Android */
 "sort" = "Sắp xếp…";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Dấu chân";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Cảm ơn bạn đã sử dụng bản đồ do cộng đồng xây dựng của chúng tôi!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "Mục tiêu chính của chúng tôi là xây dựng các bản đồ nhanh chóng, tập trung vào quyền riêng tư, dễ sử dụng mà bạn sẽ yêu thích.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Bạn hiện đang sử dụng CoMaps trên màn hình điện thoại";
+"car_used_on_the_phone_screen" = "Bạn hiện đang sử dụng Arah trên màn hình điện thoại";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Bạn hiện đang sử dụng bản CoMaps trên màn hình ô tô";
+"car_used_on_the_car_screen" = "Bạn hiện đang sử dụng bản Arah trên màn hình ô tô";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Tiếp tục trên điện thoại";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Liên kết thực đơn";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Bạn có muốn gửi báo cáo lỗi cho nhà phát triển không?\nChúng tôi dựa vào người dùng của mình vì CoMaps không tự động thu thập bất kỳ thông tin lỗi nào. Cảm ơn bạn trước vì đã ủng hộ CoMaps!";
+"bugreport_alert_message" = "Bạn có muốn gửi báo cáo lỗi cho nhà phát triển không?\nChúng tôi dựa vào người dùng của mình vì Arah không tự động thu thập bất kỳ thông tin lỗi nào. Cảm ơn bạn trước vì đã ủng hộ Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud Syncronization (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -902,9 +902,10 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";
+"about_based_on" = "Based on CoMaps";

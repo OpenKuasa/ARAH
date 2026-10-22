@@ -1,6 +1,7 @@
 project(style_tests)
 
 set(SRC
+  arah_palette_test.cpp
   classificator_tests.cpp
   dashes_test.cpp
   helpers.hpp

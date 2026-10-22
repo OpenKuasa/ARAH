@@ -39,6 +39,7 @@
     <locale android:name="lt" />
     <locale android:name="lv" />
     <locale android:name="mr" />
+    <locale android:name="ms" />
     <locale android:name="mt" />
     <locale android:name="nb" />
     <locale android:name="nb-NO" />

@@ -107,7 +107,7 @@
 "category_water" = "Ilma";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Faċilitajiet tal-RV";
-"share_bookmarks_email_body" = "Helow!\n\nMehmuża huma il-bookmarks; iftaħhom ġo CoMaps. Jekk mhuwiex installat tista tniżżlu min hawn: https://www.comaps.app/download/\n\nĦu pjaċir ivvjaġġa ġo CoMaps!";
+"share_bookmarks_email_body" = "Helow!\n\nMehmuża huma il-bookmarks; iftaħhom ġo Arah. Jekk mhuwiex installat tista tniżżlu min hawn: https://github.com/ARAH-ORG/arah/\n\nĦu pjaċir ivvjaġġa ġo Arah!";
 /* message title of loading file */
 "load_kmz_title" = "Tgħobijja tal-bookmarks";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Il-lokażżjoni tiegħek mhuwiex determinat s'issa";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Merħba, ara il-pin tiegħi fuq CoMaps!";
+"bookmark_share_email_subject" = "Merħba, ara il-pin tiegħi fuq Arah!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Merħba, ara il-lokażżjoni kurrenti tiegħi fuq il-mappa ta'CoMaps!";
+"my_position_share_email_subject" = "Merħba, ara il-lokażżjoni kurrenti tiegħi fuq il-mappa ta'Arah!";
 /* Share by email button text, also used in editor and About. */
 "email" = "E-mejl";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Lest";
 /* Prints version number in About dialog */
-"version" = "Verżjoni ta' CoMaps: %@";
+"version" = "Verżjoni ta' Arah: %@";
 "version %@ (%@)" = "Verżjoni %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Verżjoni: %@ (%@)\nData tal-Mappa: %@";
 /* Title for tracks category in bookmarks manager */
@@ -229,7 +229,7 @@
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Irrapporta jew sewwi informazzjoni żbaljata tal-mappa";
 /* Button in the About screen */
-"volunteer" = "Agħmel volontarjat u tejjeb CoMaps";
+"volunteer" = "Agħmel volontarjat u tejjeb Arah";
 /* "Social media" section header in the About screen */
 "follow_us" = "Segwina";
 /* Alert text */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "Profil ta’ OpenStreetMap";
 "osm_profile_promt" = "Oħloq kont OpenStreetMap jew idħol biex tippubblika l-editjar tal-mapep tiegħek fid-dinja.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) huwa proġett komunitarju biex tinbena mappa ħielsa u miftuħa. Huwa s-sors ewlieni tad-dejta tal-mapep fil-CoMaps u xogħlijiet simili għall-Wikipedija. Tista ’żżid jew teditja postijiet u dawn isiru disponibbli għal miljuni ta’ utenti madwar id-dinja kollha. \nIngħaqad mal-komunita’ u għen biex issir mappa aħjar għal kulħadd!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) huwa proġett komunitarju biex tinbena mappa ħielsa u miftuħa. Huwa s-sors ewlieni tad-dejta tal-mapep fil-Arah u xogħlijiet simili għall-Wikipedija. Tista ’żżid jew teditja postijiet u dawn isiru disponibbli għal miljuni ta’ utenti madwar id-dinja kollha. \nIngħaqad mal-komunita’ u għen biex issir mappa aħjar għal kulħadd!";
 "osm_profile_login" = "Idħol fil-kont ta' OpenStreetMap";
 "osm_profile_reauthorize_promt" = "Il-kont ta' OpenStreetMap ġie skonnettjat minn din l-app";
 "osm_profile_reauthorize" = "Erġa' qabbad ma' OpenStreetMap";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "Ebda oġġett ma jista' jinstab hawn";
 /* Error dialog no space */
 "migration_no_space_message" = "To download, you need more space. Please delete any unnecessary data.";
-"editor_sharing_title" = "I improved the CoMaps maps";
+"editor_sharing_title" = "I improved the Arah maps";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d ta' %2$d";
 "download_over_mobile_header" = "Niżżel fuq konnessjoni tan-netwerk ċellulari?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Nota lill-voluntiera ta’ OpenStreetMap (fakultattiva)";
 "editor_detailed_description_hint" = "Detailed comment";
-"editor_detailed_description" = "Your suggested map changes will be sent to the OpenStreetMap community. Please describe any additional details that cannot be edited in CoMaps.";
+"editor_detailed_description" = "Your suggested map changes will be sent to the OpenStreetMap community. Please describe any additional details that cannot be edited in Arah.";
 "editor_more_about_osm" = "Aktar dwar OpenStreetMap";
 "editor_operator" = "Operatur";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Operator: %@";
 "editor_category_unsuitable_title" = "Ma tistax isib kategorija adattata?";
-"editor_category_unsuitable_text" = "CoMaps jippermetti li jiżdiedu kategoriji punti sempliċi biss, li jfisser l-ebda bliet, toroq, lagi, linji ġenerali tal-bini, eċċ. Jekk jogħġbok żid dawn il-kategoriji direttament mal-<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Iċċekkja l-<a href=\"https://www.comaps.app/support/advanced-map-editing/\">gwida</a> tagħna għal struzzjonijiet dettaljati.";
+"editor_category_unsuitable_text" = "Arah jippermetti li jiżdiedu kategoriji punti sempliċi biss, li jfisser l-ebda bliet, toroq, lagi, linji ġenerali tal-bini, eċċ. Jekk jogħġbok żid dawn il-kategoriji direttament mal-<a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Iċċekkja l-<a href=\"https://github.com/ARAH-ORG/arah/\">gwida</a> tagħna għal struzzjonijiet dettaljati.";
 "downloader_no_downloaded_maps_title" = "Ma niżżilt l-ebda mapep";
 "downloader_no_downloaded_maps_message" = "Niżżel mapep biex tfittex u tinnaviga mingħajr l-użu tal-Internet.";
 "current_location_unknown_error_title" = "Il-post attwali mhux magħruf.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Select Privacy";
 "location_services_disabled_on_device_3" = "3. Select Location Services";
 "location_services_disabled_on_device_4" = "4. Turn on Location Services";
-"location_services_disabled_on_device_additional_message" = "Or continue using CoMaps without Location";
+"location_services_disabled_on_device_additional_message" = "Or continue using Arah without Location";
 /* abbreviation for meters */
 "m" = "m";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Disable";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Check out";
-"recent_track_background_dialog_message" = "CoMaps uses your location in the background to record your recently travelled route.";
+"recent_track_background_dialog_message" = "Arah uses your location in the background to record your recently travelled route.";
 "general_settings" = "General settings";
 /* For the first routing */
 "accept" = "Aċċetta";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Track";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Grazzi talli użajtu l-mapep tagħna mibnija mill-komunita’!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "L-għan ewlieni tagħna huwa li nibnu mapep veloċi, iffukati fuq il-privatezza, u faċli biex jintużaw li se jinħabbu.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "Issa qed tuża CoMaps fuq l-iskrin tat-telefown";
+"car_used_on_the_phone_screen" = "Issa qed tuża Arah fuq l-iskrin tat-telefown";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Issa qed tuża CoMaps fuq l-iskrin tal-karozza";
+"car_used_on_the_car_screen" = "Issa qed tuża Arah fuq l-iskrin tal-karozza";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Kompli fuq il-mowbajl";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Link tal-menu";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Would you like to send a bug report to the developers?\nWe rely on our users as CoMaps doesn't collect any error information automatically. Thank you in advance for supporting CoMaps!";
+"bugreport_alert_message" = "Would you like to send a bug report to the developers?\nWe rely on our users as Arah doesn't collect any error information automatically. Thank you in advance for supporting Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud Syncronization (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -902,9 +902,10 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";
+"about_based_on" = "Based on CoMaps";

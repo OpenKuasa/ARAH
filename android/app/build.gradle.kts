@@ -311,6 +311,7 @@ android {
             "lt",
             "lv",
             "mr",
+            "ms",
             "mt",
             "nb",
             "nb-rNO",

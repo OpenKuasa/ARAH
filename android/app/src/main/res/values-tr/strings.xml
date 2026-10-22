@@ -34,7 +34,7 @@
     <string name="country_status_download_failed">İndirme başarısız oldu</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Tekrar Dene</string>
-    <string name="about_menu_title">CoMaps Hakkında</string>
+    <string name="about_menu_title">Arah Hakkında</string>
     <!-- Text in About screen -->
     <string name="about_headline">Gücünü topluluktan alan açık kaynaklı bir proje</string>
     <!-- Text in About screen -->
@@ -51,7 +51,7 @@
     <string name="unsupported_phone">Uygulama, donanım hızlandırmalı OpenGL gerektiriyor. Ne yazık ki aygıtınız desteklenmiyor.</string>
     <string name="download">İndir</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">CoMaps’i kullanabilmek için lütfen USB kablosunun bağlantısını kesin veya hafıza kartı takın</string>
+    <string name="disconnect_usb_cable">Arah’i kullanabilmek için lütfen USB kablosunun bağlantısını kesin veya hafıza kartı takın</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Uygulamayı kullanabilmek için lütfen SD kart/USB depolama aygıtında biraz alan boşaltın</string>
     <string name="download_resources">Uygulamayı kullanmadan önce lütfen aygıtınıza dünya genel görünüm haritasını indirin. \nBu, %s alan kullanacaktır.</string>
@@ -148,8 +148,8 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Notlar</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">CoMaps\'taki Yer İmlerim</string>
-    <string name="share_bookmarks_email_body">Merhaba! \n \nEktekiler benim CoMaps yer imlerim. Eğer CoMaps\'i yüklediyseniz lütfen ektekileri açın. Eğer yüklemediyseniz, bu bağlantıyı takip ederek iOS ve Android cihazınız için uygulamayı yükleyebilirsiniz: https://www.comaps.app/download/ \n \nCoMaps ile seyahat etmenin keyfini çıkarın!</string>
+    <string name="share_bookmarks_email_subject">Arah\'taki Yer İmlerim</string>
+    <string name="share_bookmarks_email_body">Merhaba! \n \nEktekiler benim Arah yer imlerim. Eğer Arah\'i yüklediyseniz lütfen ektekileri açın. Eğer yüklemediyseniz, bu bağlantıyı takip ederek iOS ve Android cihazınız için uygulamayı yükleyebilirsiniz: https://github.com/ARAH-ORG/arah/ \n \nArah ile seyahat etmenin keyfini çıkarın!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Yer İmleri Yükleniyor</string>
     <!-- Kmz file successful loading -->
@@ -169,9 +169,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">Harita indiriliyor</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">Hey, CoMaps’te geçerli konumumu incele! %1$s veya %2$s Çevrimdışı haritalar sende yok mu? Buradan indir: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">Hey, Arah’te geçerli konumumu incele! %1$s veya %2$s Çevrimdışı haritalar sende yok mu? Buradan indir: https://github.com/ARAH-ORG/arah/</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">Hey, CoMaps’te geçerli konumumu incele!</string>
+    <string name="my_position_share_email_subject">Hey, Arah’te geçerli konumumu incele!</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Paylaş</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -193,7 +193,7 @@
     <string name="pref_zoom_title">Yakınlaştırma düğmeleri</string>
     <string name="pref_zoom_summary">Haritada göster</string>
     <string name="download_resources_custom_url_title">Özel Harita Sunucusu</string>
-    <string name="download_resources_custom_url_message">Harita indirmek için kullanılan varsayılan sunucu yerine farklı sunucu kullanabilirsiniz. CoMaps varsayılan sunucusunu kullanmak için boş bırakın.</string>
+    <string name="download_resources_custom_url_message">Harita indirmek için kullanılan varsayılan sunucu yerine farklı sunucu kullanabilirsiniz. Arah varsayılan sunucusunu kullanmak için boş bırakın.</string>
     <!-- Settings «Map» category: «Night style» title -->
     <string name="pref_map_style_title">Gece Modu</string>
     <!-- Generic «Off» string -->
@@ -240,7 +240,7 @@
     <!-- Button in the main menu -->
     <string name="donate">Bağış yap</string>
     <!-- Button in the main Help dialog -->
-    <string name="how_to_support_us">Gönüllü olun ve CoMaps\'i iyileştirin</string>
+    <string name="how_to_support_us">Gönüllü olun ve Arah\'i iyileştirin</string>
     <!-- Button in the main Help dialog -->
     <string name="copyright">Telif hakkı</string>
     <!-- Text in menu + Button in the main Help dialog -->
@@ -455,7 +455,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">%s tarihine ait topluluk tarafından oluşturulmuş OpenStreetMap verilerini kullanıyorsunuz. OpenStreetMap.org adresinden haritayı nasıl düzenleyebileceğiniz hakkında bilgi edinebilirsiniz</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM), ücretsiz ve açık harita oluşturmayı amaçlayan bir topluluk projesidir. OSM, CoMaps\'teki harita verilerinin ana kaynağıdır ve Vikipedi\'ye benzer şekilde çalışır. Haritadaki yerleri ekleyebilir veya düzenleyebilirsiniz ve bunlar tüm dünyadaki milyonlarca kullanıcı tarafından kullanılabilir hale gelir. \nTopluluğa katılın ve herkes için daha iyi bir harita oluşturmaya yardımcı olun!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM), ücretsiz ve açık harita oluşturmayı amaçlayan bir topluluk projesidir. OSM, Arah\'teki harita verilerinin ana kaynağıdır ve Vikipedi\'ye benzer şekilde çalışır. Haritadaki yerleri ekleyebilir veya düzenleyebilirsiniz ve bunlar tüm dünyadaki milyonlarca kullanıcı tarafından kullanılabilir hale gelir. \nTopluluğa katılın ve herkes için daha iyi bir harita oluşturmaya yardımcı olun!</string>
     <string name="login_to_make_edits_visible">Harita düzenlemelerinizi herkese ulaştırmak için OpenStreetMap hesabı oluşturun veya oturum açın</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d/%2$d</string>
@@ -469,7 +469,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">OpenStreetMap gönüllülerine not (isteğe bağlı)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Haritadaki hataları veya CoMaps ile düzenlenemeyen şeyleri tanımlayın</string>
+    <string name="editor_note_hint">Haritadaki hataları veya Arah ile düzenlenemeyen şeyleri tanımlayın</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Düzenlemeleriniz halka açık <a href="https://wiki.openstreetmap.org/wiki/Tr:About">OpenStreetMap</a> veritabanına yüklenir. Lütfen kişisel veya telif hakkıyla korunan bilgiler eklemeyin.</string>
     <string name="editor_more_about_osm">OpenStreetMap ile ilgili ek bilgi</string>
@@ -479,7 +479,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">İşletici: %s</string>
     <string name="editor_category_unsuitable_title">Uygun bir kategori bulamıyor musunuz?</string>
-    <string name="editor_category_unsuitable_text">CoMaps yalnızca basit nokta kategorilerini eklemeye izin verir. Yani kasaba, yol, göl, bina vb. çizgi/alan verisi ekleme desteği yoktur. Lütfen bu tür kategorileri doğrudan <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> üzerinden ekleyin. Adım adım ayrıntılı yönergeler için <a href="https://www.comaps.app/support/advanced-map-editing/">rehberimize</a> göz atabilirsiniz.</string>
+    <string name="editor_category_unsuitable_text">Arah yalnızca basit nokta kategorilerini eklemeye izin verir. Yani kasaba, yol, göl, bina vb. çizgi/alan verisi ekleme desteği yoktur. Lütfen bu tür kategorileri doğrudan <a href="https://www.openstreetmap.org">OpenStreetMap.org</a> üzerinden ekleyin. Adım adım ayrıntılı yönergeler için <a href="https://github.com/ARAH-ORG/arah/">rehberimize</a> göz atabilirsiniz.</string>
     <string name="downloader_no_downloaded_maps_title">Hiç harita indirmediniz</string>
     <string name="downloader_no_downloaded_maps_message">İnternetsiz olarak biyerleri bulmak ve gezinmek için haritaları indirin.</string>
     <string name="current_location_unknown_error_title">Mevcut konum bilinmiyor.</string>
@@ -532,7 +532,7 @@
     <string name="mobile_data_option_ask">Her Zaman Sor</string>
     <string name="traffic_update_maps_text">Trafik verilerini görüntülemek için haritaların güncellenmesi gerekiyor</string>
     <string name="increase_font_size">Haritadaki yazı tipi boyutunu artır</string>
-    <string name="traffic_update_app">Lütfen CoMaps\'i güncelleyin</string>
+    <string name="traffic_update_app">Lütfen Arah\'i güncelleyin</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">Trafik verileri kullanılamıyor</string>
     <string name="enable_logging">Günlüğü etkinleştir</string>
@@ -552,7 +552,7 @@
     <string name="placepage_remove_stop">Durağı Kaldır</string>
     <string name="placepage_add_stop">Ara nokta ekle</string>
     <string name="dialog_error_storage_title">Depolama alanı erişim sorunu</string>
-    <string name="dialog_error_storage_message">Harici bellek kullanılamıyor, muhtemelen SD Kart çıkarılmış, hasarlı veya dosya sistemi salt okunur. Lütfen kontrol edin veya support@comaps.app adresinden bizimle iletişime geçin</string>
+    <string name="dialog_error_storage_message">Harici bellek kullanılamıyor, muhtemelen SD Kart çıkarılmış, hasarlı veya dosya sistemi salt okunur. Lütfen kontrol edin veya support@arah.invalid adresinden bizimle iletişime geçin</string>
     <string name="setting_emulate_bad_storage">Bozuk depolama alanını taklit et</string>
     <string name="error_enter_correct_name">Lütfen doğru ad girin</string>
     <string name="bookmark_lists">Yer İmleri Listeleri</string>
@@ -720,7 +720,7 @@
     <!-- Telegram group url for the "?" About page -->
     <!-- Instagram account url for the "?" About page -->
     <!-- Translated CoMaps site, add new translations here: https://translate.codeberg.org/projects/comaps/website -->
-    <string name="translated_om_site_url">https://comaps.app/tr/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <!-- Link to OSM wiki for Editor, Profile and About pages -->
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Tr:About_OpenStreetMap</string>
     <!-- App Tip #00 -->
@@ -744,9 +744,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">Temel amacımız hızlı, gizlilik odaklı, kullanımı kolay, seveceğiniz bir harita uygulaması oluşturmaktır.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Artık CoMaps\'i telefon ekranında kullanıyorsunuz</string>
+    <string name="car_used_on_the_phone_screen">Artık Arah\'i telefon ekranında kullanıyorsunuz</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Şu anda araç ekranında CoMaps kullanıyorsunuz</string>
+    <string name="car_used_on_the_car_screen">Şu anda araç ekranında Arah kullanıyorsunuz</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Android Auto\'ya bağlandınız</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -754,11 +754,11 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Arabada göster</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">CoMaps konum erişimine ihtiyacı vardır. Güvenli olduğunda, telefonunuzdaki bildirimi kontrol edin.</string>
+    <string name="aa_location_permissions_request">Arah konum erişimine ihtiyacı vardır. Güvenli olduğunda, telefonunuzdaki bildirimi kontrol edin.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Bu uygulamanın izninize ihtiyacı var</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">Android Auto\'daki CoMaps etkin bir şekilde çalışması için konum izni gerekiyor</string>
+    <string name="aa_request_permission_activity_text">Android Auto\'daki Arah etkin bir şekilde çalışması için konum izni gerekiyor</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">İzinleri Verin</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
@@ -812,10 +812,10 @@
     <string name="wikimedia_commons">Wikimedia Commons</string>
     <string name="menu">Menü</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="app_site_url">https://comaps.app/tr/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="telegram_url">https://t.me/CoMaps_TR</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="telegram_url">https://t.me/Arah_TR</string>
     <string name="pref_left_button_title">Sol alt tuş ataması</string>
     <string name="pref_left_button_disable">Devre dışı</string>
     <string name="error_enter_correct_fediverse_page">Gireceğiniz Mastodon kullanıcı adı ve adresi halihazırda mevcut olmalı</string>
@@ -886,14 +886,14 @@
     <string name="avoid_paved">Asfalt yollardan kaçın</string>
     <string name="place_page_map_too_old_title">Harita verisi güncel değil</string>
     <string name="place_page_map_too_old_description">Mevcut harita verileriniz çok eski, lütfen haritayı güncelleyin.</string>
-    <string name="place_page_app_too_old_description">Mevcut harita verileriniz çok eski, lütfen CoMaps uygulamasını güncelleyin.</string>
+    <string name="place_page_app_too_old_description">Mevcut harita verileriniz çok eski, lütfen Arah uygulamasını güncelleyin.</string>
     <string name="place_page_update_too_old_map">Bölge haritasını güncelle</string>
     <string name="place_page_too_old_to_edit">Harita verisi çok eski olduğu için OpenStreetMap düzenleyicisi devre dışı.</string>
     <string name="prefs_speed_cameras_information">Yerel yasalarca uyarıların yasaklandığı ülkelerde hız kamerası uyarıları devre dışıdır.</string>
     <string name="pref_speedlimit_title">Hız sınırını göster</string>
     <string name="power_management">Güç yönetimi</string>
     <string name="pref_openexternallinks_title">Üçüncü taraf bağlantıları otomatik aç</string>
-    <string name="pref_openexternallinks_summary">Üçüncü taraf bağlantıları varsayılan olarak CoMaps\'te aç</string>
+    <string name="pref_openexternallinks_summary">Üçüncü taraf bağlantıları varsayılan olarak Arah\'te aç</string>
     <string name="pref_alt_map_lang_handling">Alternatif Harita Dilleri</string>
     <string name="pref_alt_map_lang_handling_ignore_alternatives">Alternatif dil kullanma</string>
     <string name="pref_alt_map_lang_handling_system_order">Sistem dili sırasına göre kullan</string>
@@ -980,7 +980,7 @@
     <string name="capacity_charging">Sarj cihazlarının bulunduğu alanlara: %s</string>
     <string name="capacity_charging_yes">Sarj cihaz alanları var</string>
     <string name="capacity_charging_no">Şarj cihaz alanları yok</string>
-    <string name="permission_read_navigation_label">CoMaps navigasyon verisini oku</string>
+    <string name="permission_read_navigation_label">Arah navigasyon verisini oku</string>
     <string name="permission_read_navigation_description">yaklaşan dönüşler veya üzerinde bulunılan yolun adı gibi gerçek zamanlı navigasyon bilgilerini oku</string>
     <string name="opens_tomorrow_at">Yarın %s saatinde açılıyor</string>
 </resources>

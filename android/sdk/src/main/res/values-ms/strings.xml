@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mb">MB</string>
+    <string name="gb">GB</string>
+    <string name="core_my_position">Kedudukan saya</string>
+    <string name="core_my_places">Tempat saya</string>
+    <string name="maps_storage_internal">Storan peribadi dalaman</string>
+    <string name="maps_storage_shared">Storan kongsi dalaman</string>
+    <string name="maps_storage_removable">Kad SD</string>
+    <string name="maps_storage_external">Storan kongsi luaran</string>
+    <string name="category_wifi">WiFi</string>
+    <string name="postal_code">Poskod</string>
+    <string name="core_placepage_unknown_place">Titik peta</string>
+    <string name="m">m</string>
+    <string name="km">km</string>
+    <string name="mi">mi</string>
+    <string name="ft">ft</string>
+    <string name="core_exit">Pintu keluar</string>
+    <string name="core_entrance">Pintu masuk</string>
+    <string name="subway_data_unavailable">Peta rel transit tidak tersedia</string>
+    <string name="public_access">Akses awam</string>
+    <string name="limited_access">Akses terhad</string>
+    <string name="not_shared">Peribadi</string>
+    <string name="access_rules_author_only">Penyuntingan dalam talian</string>
+    <string name="today">Hari ini</string>
+    <string name="yesterday">Semalam</string>
+    <string name="days_ago">%s hari lalu</string>
+    <string name="week_ago">%s minggu lalu</string>
+    <string name="weeks_ago">%s minggu lalu</string>
+    <string name="month_ago">%s bulan lalu</string>
+    <string name="months_ago">%s bulan lalu</string>
+    <string name="year_ago">%s tahun lalu</string>
+    <string name="years_ago">%s tahun lalu</string>
+    <string name="accessibility_map_content_description_collapsed">Peta. Leret ke atas atau bawah dengan satu jari dan kembangkan untuk meneroka melalui sentuhan.</string>
+    <string name="accessibility_map_content_description_expanded">Peta. Ketik dan tahan untuk meneroka melalui sentuhan. Tempat akan dibacakan apabila jari anda mencapainya. Untuk berhenti, leret ke atas atau bawah dengan satu jari dan tutup.</string>
+    <string name="accessibility_map_action_expand_label">teroka melalui sentuhan</string>
+    <string name="accessibility_map_action_collapse_label">tamatkan penerokaan sentuhan</string>
+</resources>

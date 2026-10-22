@@ -34,7 +34,7 @@
     <string name="country_status_download_failed">Nedladdningen misslyckades</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Försök igen</string>
-    <string name="about_menu_title">Om CoMaps</string>
+    <string name="about_menu_title">Om Arah</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• Lättanvändlig och finslipad</string>
     <!-- Text in About screen -->
@@ -49,7 +49,7 @@
     <string name="unsupported_phone">Hårdvaruaccelererad OpenGL krävs. Din enhet stöds tyvärr inte.</string>
     <string name="download">Ladda ner</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">Vänligen koppla ifrån USB-kabeln eller sätt in ett minneskort för att använda CoMaps</string>
+    <string name="disconnect_usb_cable">Vänligen koppla ifrån USB-kabeln eller sätt in ett minneskort för att använda Arah</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Vänligen frigör utrymme på SD-kortet/USB-lagringen först för att använda appen</string>
     <string name="download_resources">Innan du börjar, ladda gärna ner den översiktliga världskartan på din enhet. \nDen behöver %s lagringsutrymme.</string>
@@ -142,7 +142,7 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Anteckningar</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Mina CoMaps-favoriter</string>
+    <string name="share_bookmarks_email_subject">Mina Arah-favoriter</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Läser in favoriter</string>
     <!-- Kmz file successful loading -->
@@ -162,9 +162,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">Kartan har börjat laddas ner</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">Hej, kolla på min nuvarande position på CoMaps! %1$s eller %2$s Har du inte offline-kartor? Ladda ner här: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">Hej, kolla på min nuvarande position på Arah! %1$s eller %2$s Har du inte offline-kartor? Ladda ner här: https://github.com/ARAH-ORG/arah/</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">Hej, kolla på min nuvarande position på CoMaps kartan!</string>
+    <string name="my_position_share_email_subject">Hej, kolla på min nuvarande position på Arah kartan!</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">Dela</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -440,7 +440,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">Community-skapade OpenStreetMap-data från och med %s. Läs mer om hur du redigerar och uppdaterar kartan på OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) är ett community-projekt för att bygga en fri och öppen karta. Det är den huvudsakliga källan till kartdata i CoMaps och fungerar på samma sätt som Wikipedia. Du kan lägga till eller redigera platser och de blir tillgängliga för miljontals användare över hela världen. \nGå med i samhället och hjälp till att skapa en bättre karta för alla!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) är ett community-projekt för att bygga en fri och öppen karta. Det är den huvudsakliga källan till kartdata i Arah och fungerar på samma sätt som Wikipedia. Du kan lägga till eller redigera platser och de blir tillgängliga för miljontals användare över hela världen. \nGå med i samhället och hjälp till att skapa en bättre karta för alla!</string>
     <string name="login_to_make_edits_visible">Skapa ett OpenStreetMap-konto eller logga in för att publicera dina kartredigeringar till hela världen</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d av %2$d</string>
@@ -454,7 +454,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">Meddelande till OpenStreetMap-volontärer (valfritt)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">Beskriv fel på kartan eller saker som inte kan redigeras med CoMaps</string>
+    <string name="editor_note_hint">Beskriv fel på kartan eller saker som inte kan redigeras med Arah</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">Dina redigeringar laddas upp till den offentliga <a href="https://wiki.openstreetmap.org/wiki/Sv:Om_OpenStreetMap">OpenStreetMap</a>-databasen. Lägg inte till personlig eller upphovsrättsskyddad information.</string>
     <string name="editor_more_about_osm">Mer om OpenStreetMap</string>
@@ -464,7 +464,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">Operatör: %s</string>
     <string name="editor_category_unsuitable_title">Hittar du ingen lämplig kategori?</string>
-    <string name="editor_category_unsuitable_text">CoMaps tillåter endast att lägga till enkla punktkategorier. Det betyder inga städer, vägar, sjöar, byggnadskonturer etc. Lägg till sådana kategorier direkt till <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Kontrollera vår <a href="https://www.comaps.app/support/advanced-map-editing/">guide</a> för detaljerade steg-för-steg-instruktioner.</string>
+    <string name="editor_category_unsuitable_text">Arah tillåter endast att lägga till enkla punktkategorier. Det betyder inga städer, vägar, sjöar, byggnadskonturer etc. Lägg till sådana kategorier direkt till <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. Kontrollera vår <a href="https://github.com/ARAH-ORG/arah/">guide</a> för detaljerade steg-för-steg-instruktioner.</string>
     <string name="downloader_no_downloaded_maps_title">Du har inte laddat ner några kartor</string>
     <string name="downloader_no_downloaded_maps_message">Ladda ner kartor för att hitta platsen och navigera offline</string>
     <string name="current_location_unknown_error_title">Den nuvarande platsen är okänd</string>
@@ -510,7 +510,7 @@
     <string name="mobile_data_option_ask">Fråga alltid</string>
     <string name="traffic_update_maps_text">Kartor måste uppdateras för att visa trafikdata</string>
     <string name="increase_font_size">Öka teckenstorlek på kartan</string>
-    <string name="traffic_update_app">Uppdatera CoMaps</string>
+    <string name="traffic_update_app">Uppdatera Arah</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">Trafikdata är inte tillgänglig</string>
     <string name="enable_logging">Aktivera loggning</string>
@@ -530,7 +530,7 @@
     <string name="placepage_remove_stop">Ta bort stoppet</string>
     <string name="placepage_add_stop">Lägg till stopp</string>
     <string name="dialog_error_storage_title">Lagringsåtkomstproblem</string>
-    <string name="dialog_error_storage_message">Extern lagring är inte tillgänglig. SD-kortet är borttaget, skadat eller så är filsystemet skrivskyddat. Kontrollera det och kontakta oss på support@comaps.app</string>
+    <string name="dialog_error_storage_message">Extern lagring är inte tillgänglig. SD-kortet är borttaget, skadat eller så är filsystemet skrivskyddat. Kontrollera det och kontakta oss på support@arah.invalid</string>
     <string name="setting_emulate_bad_storage">Emulera dålig lagring</string>
     <string name="error_enter_correct_name">Ange ett korrekt namn</string>
     <string name="bookmark_lists">Favoritlistor</string>
@@ -592,7 +592,7 @@
     <string name="power_managment_setting_never">Aldrig</string>
     <string name="power_managment_setting_auto">Vid lågt batteri</string>
     <string name="power_managment_setting_manual_max">Alltid</string>
-    <string name="enable_logging_warning_message">Aktivera denna funktion för att logga detaljer för diagnostiska ändamål. Detta hjälper utvecklarna att identifiera problem med appen. Slå på funktionen endast på begäran av CoMaps supporttjänst.</string>
+    <string name="enable_logging_warning_message">Aktivera denna funktion för att logga detaljer för diagnostiska ändamål. Detta hjälper utvecklarna att identifiera problem med appen. Slå på funktionen endast på begäran av Arah supporttjänst.</string>
     <string name="routing_options_title">Ruttinställningar</string>
     <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
     <string name="avoid_tolls">Undvik avgiftsbelagda vägar</string>
@@ -681,7 +681,7 @@
     <!-- OpenStreetMap text on splash screen -->
     <string name="splash_subtitle">Kartdata från OpenStreetMap</string>
     <!-- Translated CoMaps site -->
-    <string name="translated_om_site_url">https://comaps.app/sv/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
     <!-- App Tip #00 -->
     <string name="app_tip_00">Tack för att du använder våra community-byggda kartor!</string>
     <!-- App tip #01 -->
@@ -703,9 +703,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">Vårt huvudmål är att bygga snabba, integritetsfokuserade, lättanvända kartor som du kommer att älska.</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">Du använder nu CoMaps på telefonens skärm</string>
+    <string name="car_used_on_the_phone_screen">Du använder nu Arah på telefonens skärm</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Du använder nu CoMaps på bilskärmen</string>
+    <string name="car_used_on_the_car_screen">Du använder nu Arah på bilskärmen</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">Du är ansluten till Android Auto</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -713,11 +713,11 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">Till bilens skärm</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">CoMaps behöver platsåtkomst. När det är säkert kan du kontrollera aviseringen på din telefon.</string>
+    <string name="aa_location_permissions_request">Arah behöver platsåtkomst. När det är säkert kan du kontrollera aviseringen på din telefon.</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">Denna app behöver ditt tillstånd</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">CoMaps i Android Auto behöver ett platstillstånd för att fungera effektivt</string>
+    <string name="aa_request_permission_activity_text">Arah i Android Auto behöver ett platstillstånd för att fungera effektivt</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">Tilldela behörigheter</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
@@ -778,23 +778,23 @@
     <string name="level_value_generic">Nivå: %s</string>
     <string name="download_map_title">Ladda ner översiktskartan för hela världen</string>
     <string name="disconnect_usb_cable_title">Koppla ur USB-kabel</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
     <string name="editor_add_phone">Lägg till telefon</string>
     <string name="delete_place_empty_comment_error">Vänligen förklara varför platsen raderas</string>
     <string name="empty_street_name_error">Ange ett gatunamn</string>
     <string name="connection_failure">Anslutningen bröts</string>
     <string name="disk_error_title">Diskfel</string>
     <string name="enable_show_on_lock_screen">Visa på låsskärmen</string>
-    <string name="share_bookmarks_email_body">Hej! \n \nJag bifogar mina favoriter, öppna gärna dem med CoMaps. Om du inte redan har appen installerad, kan du ladda ner den här: https://www.comaps.app/download/ \n \nTrevlig resa med CoMaps!</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
+    <string name="share_bookmarks_email_body">Hej! \n \nJag bifogar mina favoriter, öppna gärna dem med Arah. Om du inte redan har appen installerad, kan du ladda ner den här: https://github.com/ARAH-ORG/arah/ \n \nTrevlig resa med Arah!</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Sv:Om_OpenStreetMap</string>
     <string name="change_map_locale">Kartspråk</string>
     <string name="comma_separated_pair">%1$s, %2$s</string>
     <string name="panoramax">Panoramax-bild</string>
     <string name="backup_interval_every_day">Dagligen</string>
     <string name="backup_interval_every_week">Veckovis</string>
-    <string name="app_site_url">https://comaps.app/sv/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="saved">Sparad</string>
     <string name="pref_left_button_title">Inställning för vänster knapp</string>
     <string name="pref_backup_title">Säkerhetskopiering av favoriter</string>
@@ -874,7 +874,7 @@
     <string name="prefs_group_advanced_summary">Aktivera loggning</string>
     <string name="download_resources_custom_url_summary_none">Inte angivet</string>
     <string name="editor_business_vacant_button">Företaget har upphört</string>
-    <string name="download_resources_custom_url_message">Ange en specifik server för kartnerladdning. Lämna tomt för att använda CoMaps standardserver.</string>
+    <string name="download_resources_custom_url_message">Ange en specifik server för kartnerladdning. Lämna tomt för att använda Arah standardserver.</string>
     <string name="tts_toggle_enable">Aktivera röstanvisningar</string>
     <string name="tts_toggle_disable">Inaktivera röstanvisningar</string>
     <string name="enable_long_tap_fullscreen">Tryck och håll för att dölja användargränssnittet</string>
@@ -896,7 +896,7 @@
     <string name="error_enter_correct_bluesky_page">Ange ett giltigt Bluesky-användarnamn eller en webaddress</string>
     <string name="place_page_map_too_old_title">Utdaterad kartdata</string>
     <string name="place_page_map_too_old_description">Nuvarande kartdata är mycket gammal. Uppdatera kartan.</string>
-    <string name="place_page_app_too_old_description">Nuvarande kartdata är mycket gammal. Uppdatera CoMaps appen.</string>
+    <string name="place_page_app_too_old_description">Nuvarande kartdata är mycket gammal. Uppdatera Arah appen.</string>
     <string name="place_page_update_too_old_map">Uppdatera kartregion</string>
     <string name="place_page_too_old_to_edit">Redigering av OpenStreetMap är inaktiverat, då kartdatan är för gammal.</string>
     <string name="osm_note_hint">Alternativt kan du lämna en kommentar på OpenStreetMap, så att någon annan kan lägga till eller korrigera en plats här.</string>
@@ -953,7 +953,7 @@
     <string name="not_following_route">Följer inte rutt</string>
     <string name="route_recalculating">Beräknar om rutten…</string>
     <string name="pref_openexternallinks_title">Öppna länkar från tredje parter automatiskt</string>
-    <string name="pref_openexternallinks_summary">Öppna länkar från tredje parter automatiskt i CoMaps</string>
+    <string name="pref_openexternallinks_summary">Öppna länkar från tredje parter automatiskt i Arah</string>
     <string name="pref_aa_support_title">Android Auto</string>
     <string name="pref_aa_support_summary_yes">Appen har installerats via Google Play, du kan använda den i din bil.</string>
     <string name="pref_aa_support_summary_no">Appen har inte installerats via Google Play, du kan inte använda den i din bil. Tryck på inställningen för att se mera information på vår sida för vanliga frågor.</string>

@@ -3,8 +3,21 @@
 
 #include "platform/platform.hpp"
 
+// Arah opens in Malay on first launch. Later launches keep whatever language the user picks in iOS Settings.
+static void ApplyArahDefaultLanguage()
+{
+  NSString * const kAppliedKey = @"ArahDefaultLanguageApplied";
+  NSUserDefaults * defaults = NSUserDefaults.standardUserDefaults;
+  // Unit tests run inside the app and expect upstream's English.
+  if ([defaults boolForKey:kAppliedKey] || NSProcessInfo.processInfo.environment[@"XCTestConfigurationFilePath"])
+    return;
+  [defaults setObject:@[@"ms"] forKey:@"AppleLanguages"];
+  [defaults setBool:YES forKey:kAppliedKey];
+}
+
 int main(int argc, char * argv[])
 {
+  ApplyArahDefaultLanguage();
   [MWMSettings initializeLogging];
 
   NSBundle * mainBundle = [NSBundle mainBundle];

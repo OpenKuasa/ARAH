@@ -564,6 +564,7 @@
 		EDF838C32C00B9D6007E4E67 /* UbiquitousDirectoryMonitorDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF838B12C00B9C7007E4E67 /* UbiquitousDirectoryMonitorDelegateMock.swift */; };
 		EDF838C42C00B9D6007E4E67 /* FileManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF838B32C00B9C7007E4E67 /* FileManagerMock.swift */; };
 		EDFDFB482B7139670013A44C /* Social Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFDFB472B7139670013A44C /* Social Media.swift */; };
+		A20BC5D9696FA4BF21A06E5D /* ArahConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804E312F4602240D56D2B7EC /* ArahConfig.swift */; };
 		EDFE1A4A2DF1989700FDEA38 /* UIAlertController+UnknownCurrentPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE1A492DF1989700FDEA38 /* UIAlertController+UnknownCurrentPosition.swift */; };
 		F623DA6C1C9C2731006A3436 /* opening_hours_how_to_edit.html in Resources */ = {isa = PBXBuildFile; fileRef = F623DA6A1C9C2731006A3436 /* opening_hours_how_to_edit.html */; };
 		F623DA6F1C9C2E62006A3436 /* MWMAddPlaceNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F653CE171C71F62400A453F1 /* MWMAddPlaceNavigationBar.xib */; };
@@ -1120,7 +1121,9 @@
 		34F73F751E082FF800AC1FD6 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		34F73F761E082FF800AC1FD6 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
 		34F73F771E082FF800AC1FD6 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BD44D6ABED50B48F45004B8C /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		34F73F781E082FF800AC1FD6 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		445825F21C51DADEB0FEAF00 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
 		34F73F791E082FF800AC1FD6 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		34F73F7A1E082FF800AC1FD6 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		34F73F7B1E082FF800AC1FD6 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1381,6 +1384,7 @@
 		A630D1F3207CA9AE00976DEA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A630D1F4207CA9B500976DEA /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = hu; path = hu.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A630D1F5207CA9BC00976DEA /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = id; path = id.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		AE08D9A4C40EA3D7610970DE /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ms; path = ms.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A630D1F6207CA9C500976DEA /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = it; path = it.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A630D1F7207CA9CC00976DEA /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ja; path = ja.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		A630D1F8207CA9D400976DEA /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ko; path = ko.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
@@ -1526,6 +1530,7 @@
 		ED8A91F52D759B81009E063B /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/LocalizableTypes.strings; sourceTree = "<group>"; };
 		ED8A91F62D759B83009E063B /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/LocalizableTypes.strings; sourceTree = "<group>"; };
 		ED8A91F72D759B84009E063B /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LocalizableTypes.strings; sourceTree = "<group>"; };
+		D02435D9E06AF69890EEFBF6 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/LocalizableTypes.strings; sourceTree = "<group>"; };
 		ED8A91F82D759B86009E063B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LocalizableTypes.strings; sourceTree = "<group>"; };
 		ED8A91F92D759B88009E063B /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LocalizableTypes.strings; sourceTree = "<group>"; };
 		ED8A91FA2D759B89009E063B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LocalizableTypes.strings; sourceTree = "<group>"; };
@@ -1579,6 +1584,7 @@
 		EDF838B32C00B9C7007E4E67 /* FileManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManagerMock.swift; sourceTree = "<group>"; };
 		EDF838B42C00B9C7007E4E67 /* MetadataItemStubs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetadataItemStubs.swift; sourceTree = "<group>"; };
 		EDFDFB472B7139670013A44C /* Social Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Social Media.swift"; sourceTree = "<group>"; };
+		804E312F4602240D56D2B7EC /* ArahConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArahConfig.swift; sourceTree = "<group>"; };
 		EDFE1A492DF1989700FDEA38 /* UIAlertController+UnknownCurrentPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+UnknownCurrentPosition.swift"; sourceTree = "<group>"; };
 		EE026F0511D6AC0D00645242 /* classificator.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = classificator.txt; path = ../../data/classificator.txt; sourceTree = SOURCE_ROOT; };
 		EED10A4411F78D120095FAD4 /* MapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.objcpp; lineEnding = 0; path = MapViewController.mm; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -2050,6 +2056,7 @@
 				27AF185B2E1DB64B00CD41E2 /* Settings Types */,
 				270C9C252E16AB6300ABA688 /* Profile.swift */,
 				EDFDFB472B7139670013A44C /* Social Media.swift */,
+				804E312F4602240D56D2B7EC /* ArahConfig.swift */,
 				271DC5162F532C68006399DA /* RegionsUpdater.swift */,
 			);
 			path = Model;
@@ -4214,6 +4221,7 @@
 				sr,
 				lv,
 				lt,
+				ms,
 				mt,
 				af,
 			);
@@ -4554,6 +4562,7 @@
 				47E3C72D2111E6A2008B3B27 /* FadeTransitioning.swift in Sources */,
 				34845DAF1E1649F6003D55B9 /* DownloaderNoResultsEmbedViewController.swift in Sources */,
 				EDFDFB482B7139670013A44C /* Social Media.swift in Sources */,
+				A20BC5D9696FA4BF21A06E5D /* ArahConfig.swift in Sources */,
 				993DF0B523F6B2EF00AC231A /* PlacePageTrackLayout.swift in Sources */,
 				44360A0D2A7D34990016F412 /* TransportRuler.swift in Sources */,
 				CD6E8677226774C700D1EDF7 /* CPConstants.swift in Sources */,
@@ -4999,6 +5008,7 @@
 				34F73F731E082FF800AC1FD6 /* fr */,
 				34F73F751E082FF800AC1FD6 /* hu */,
 				34F73F771E082FF800AC1FD6 /* id */,
+				BD44D6ABED50B48F45004B8C /* ms */,
 				34F73F791E082FF800AC1FD6 /* it */,
 				34F73F7B1E082FF800AC1FD6 /* ja */,
 				34F73F7D1E082FF800AC1FD6 /* ko */,
@@ -5053,6 +5063,7 @@
 				34F73F741E082FF800AC1FD6 /* fr */,
 				34F73F761E082FF800AC1FD6 /* hu */,
 				34F73F781E082FF800AC1FD6 /* id */,
+				445825F21C51DADEB0FEAF00 /* ms */,
 				34F73F7A1E082FF800AC1FD6 /* it */,
 				34F73F7C1E082FF800AC1FD6 /* ja */,
 				34F73F7E1E082FF800AC1FD6 /* ko */,
@@ -5107,6 +5118,7 @@
 				A630D1F3207CA9AE00976DEA /* fr */,
 				A630D1F4207CA9B500976DEA /* hu */,
 				A630D1F5207CA9BC00976DEA /* id */,
+				AE08D9A4C40EA3D7610970DE /* ms */,
 				A630D1F6207CA9C500976DEA /* it */,
 				A630D1F7207CA9CC00976DEA /* ja */,
 				A630D1F8207CA9D400976DEA /* ko */,
@@ -5171,6 +5183,7 @@
 				ED8A91F52D759B81009E063B /* hi */,
 				ED8A91F62D759B83009E063B /* hu */,
 				ED8A91F72D759B84009E063B /* id */,
+				D02435D9E06AF69890EEFBF6 /* ms */,
 				ED8A91F82D759B86009E063B /* it */,
 				ED8A91F92D759B88009E063B /* ja */,
 				ED8A91FA2D759B89009E063B /* ko */,
@@ -5214,7 +5227,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
+				INFOPLIST_KEY_CFBundleDisplayName = "Arah (Debug)";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
@@ -5233,7 +5246,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2026.01.01;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps.debug;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app.debug;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
@@ -5250,7 +5263,7 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_KEY_CFBundleDisplayName = "${PRODUCT_NAME}";
+				INFOPLIST_KEY_CFBundleDisplayName = Arah;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
@@ -5269,7 +5282,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2026.01.01;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
@@ -5283,7 +5296,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app.tests;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoMaps (Debug).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoMaps (Debug)";
 			};
@@ -5298,7 +5311,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app.tests;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoMaps (Debug).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoMaps (Debug)";
 			};
@@ -5316,7 +5329,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoMapsWidgetExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CoMaps;
+				INFOPLIST_KEY_CFBundleDisplayName = Arah;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 CoMaps Contributors. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5327,7 +5340,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2026.01.01;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps.debug.widgetextension;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app.debug.widgetextension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -5346,7 +5359,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoMapsWidgetExtension/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CoMaps;
+				INFOPLIST_KEY_CFBundleDisplayName = Arah;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 CoMaps Contributors. All rights reserved.";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -5356,7 +5369,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 2026.01.01;
-				PRODUCT_BUNDLE_IDENTIFIER = app.comaps.widgetextension;
+				PRODUCT_BUNDLE_IDENTIFIER = my.arah.app.widgetextension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -5373,7 +5386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Debug Icon";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_IDENTIFIER = app.comaps.debug;
+				BUNDLE_IDENTIFIER = my.arah.app.debug;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 534D2KJBUK;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -5416,7 +5429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUNDLE_IDENTIFIER = app.comaps;
+				BUNDLE_IDENTIFIER = my.arah.app;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = 534D2KJBUK;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;

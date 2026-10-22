@@ -14,9 +14,9 @@
 @railway_dark: #767566;
 @railway_dash: #F5F5F5;
 
-@motorway1_border: #673A00;
-@trunk1_border: #805419;
-@primary1_border: #806021;
-@primary2_border: #75581F;
-@secondary0_border: #80682D;
-@secondary1_border: #755F2A;
+@motorway1_border: #5C2C10;
+@trunk1_border: #744625;
+@primary1_border: #7A552F;
+@primary2_border: #714D25;
+@secondary0_border: #7D5B28;
+@secondary1_border: #73541A;

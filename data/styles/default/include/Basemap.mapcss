@@ -319,12 +319,14 @@ area|z13-[leisure=swimming_pool],
 area|z16-[amenity=fountain],
 {fill-opacity: 1;}
 
-line|z10-[waterway=river],
 line|z13-[waterway=stream],
 line|z13-[waterway=canal],
 line|z13-[waterway=fish_pass],
 line|z13-[natural=strait],
 {opacity: 1; color: @water;}
+
+line|z10-[waterway=river],
+{opacity: 1; color: @river;}
 
 /* 6.1 Area water(lake,pond etc.) */
 

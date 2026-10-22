@@ -1,6 +1,7 @@
 project(ge0_tests)
 
 set(SRC
+  arah_links_tests.cpp
   geo_url_tests.cpp
   parser_tests.cpp
   url_generator_tests.cpp

@@ -1,5 +1,5 @@
 "layers_option_outdoor" = "Outdoor";
-"editor_category_unsuitable_text" = "CoMaps allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Check our <a href=\"https://www.comaps.app/support/advanced-map-editing/\">guide</a> for detailed step by step instructions.";
+"editor_category_unsuitable_text" = "Arah allows to add simple point categories only, that means no towns, roads, lakes, building outlines, etc. Please add such categories directly to <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Check our <a href=\"https://github.com/ARAH-ORG/arah/\">guide</a> for detailed step by step instructions.";
 "pref_alt_map_lang_handling_local_only" = "Prefer and only use where native";
 "dialog_routing_location_turn_on" = "Enable location services";
 "zoom_in" = "Zoom in";
@@ -11,7 +11,7 @@
 "share_my_location" = "Share My Location";
 "dialog_routing_select_closer_end" = "Please select a destination point located closer to a road.";
 "pref_alt_map_lang_handling_ignore_alternatives" = "Don't use alternatives";
-"icloud_disabled_message" = "Please enable iCloud for CoMaps in your Apple Account's settings to use this feature.";
+"icloud_disabled_message" = "Please enable iCloud for Arah in your Apple Account's settings to use this feature.";
 "editor_more_about_osm" = "More about OpenStreetMap";
 "track_recording_alert_title" = "Save into Favourites?";
 "downloader_check_updates_error" = "Error checking for updates";
@@ -46,7 +46,7 @@
 "editor_reset_edits_button" = "Discard changes";
 "power_managment_setting_never" = "Never";
 "downloader_hide_screen" = "Hide Screen";
-"my_position_share_email_subject" = "Hey, check out my current location on the CoMaps map!";
+"my_position_share_email_subject" = "Hey, check out my current location on the Arah map!";
 "downloader_process" = "Downloading %@…";
 "category_shopping" = "Shopping";
 "dialog_routing_disclaimer_priority" = "— Road conditions, traffic laws, and road signs always take priority over navigation hints;";
@@ -113,7 +113,7 @@
 "carplay_roundabout_exit" = "%@ exit";
 "pref_tts_other_section_title" = "Other";
 "food_places" = "Food";
-"editor_detailed_description" = "Your suggested map changes will be sent to the OpenStreetMap community. Please describe any additional details that cannot be edited in CoMaps.";
+"editor_detailed_description" = "Your suggested map changes will be sent to the OpenStreetMap community. Please describe any additional details that cannot be edited in Arah.";
 "bookmarks_convert_error_title" = "Error";
 "select_cuisine" = "Select cuisine";
 "editor_share_to_all_dialog_message_2" = "OpenStreetMap editors will check the changes and contact you if they have any questions.";
@@ -169,7 +169,7 @@
 "downloader_status_outdated" = "Update";
 "pref_appearance_title" = "Appearance";
 "unknown_current_position" = "Your location hasn't been determined yet";
-"bugreport_alert_message" = "Would you like to send a bug report to the developers?\nWe rely on our users as CoMaps doesn't collect any error information automatically. Thank you in advance for supporting CoMaps!";
+"bugreport_alert_message" = "Would you like to send a bug report to the developers?\nWe rely on our users as Arah doesn't collect any error information automatically. Thank you in advance for supporting Arah!";
 "transliteration_title_disabled_summary" = "Disabled when always using the local language for the map";
 "whatsnew_editor_message_1" = "Add new places to the map, and edit existing ones directly from the app.";
 "osm_profile" = "OpenStreetMap profile";
@@ -178,7 +178,7 @@
 "dialog_routing_change_start_carplay" = "Unable to build a route from your current location";
 "bookmark_lists_hide_all" = "Hide all";
 "on" = "On";
-"editor_sharing_title" = "I improved the CoMaps maps";
+"editor_sharing_title" = "I improved the Arah maps";
 "email" = "Email";
 "edit" = "Edit";
 "routing_download_maps_along" = "Download all of the maps along your route";
@@ -196,7 +196,7 @@
 "unable_to_calc_alert_subtitle" = "A route could not be found. This may be caused by your routing options or incomplete OpenStreetMap data. Please change your routing options and retry.";
 "current_location_unknown_error_message" = "An error occurred while determining your location. Check that your device is working properly and try again later.";
 "medicine" = "Medicine";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) is a community project to build a free and open map. It's the main source of map data in CoMaps and works similar to Wikipedia. You can add or edit places and they become available to millions of users all over the World.\nJoin the community and help to make a better map for everyone!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) is a community project to build a free and open map. It's the main source of map data in Arah and works similar to Wikipedia. You can add or edit places and they become available to millions of users all over the World.\nJoin the community and help to make a better map for everyone!";
 "power_managment_title" = "Power saving mode";
 "opens_dayoftheweek_at" = "Opens %1$@ at %2$@";
 "category_bank" = "Bank";
@@ -220,12 +220,12 @@
 "add_language" = "Add a language";
 "others_sorttype" = "Others";
 "common_check_internet_connection_dialog" = "Please make sure your device is connected to the Internet.";
-"car_used_on_the_car_screen" = "You are now using CoMaps on the car screen";
+"car_used_on_the_car_screen" = "You are now using Arah on the car screen";
 "parkings" = "Parking";
 "yes" = "Yes";
-"location_services_disabled_on_device_additional_message" = "Or continue using CoMaps without Location";
+"location_services_disabled_on_device_additional_message" = "Or continue using Arah without Location";
 "offline_explanation_title" = "Offline Maps";
-"recent_track_background_dialog_message" = "CoMaps uses your location in the background to record your recently travelled route.";
+"recent_track_background_dialog_message" = "Arah uses your location in the background to record your recently travelled route.";
 "off" = "Off";
 "current_location_unknown_error_title" = "Current location is unknown.";
 "app_tip_07" = "Our app is developed by a few enthusiasts and the community.";
@@ -266,7 +266,7 @@
 "export_file_gpx" = "Export GPX";
 "pref_map_3d_title" = "Perspective view";
 "pref_tts_title" = "Voice Instructions";
-"version" = "CoMaps version: %@";
+"version" = "Arah version: %@";
 "add_opening_hours" = "Add opening hours";
 "general_settings" = "General settings";
 "bookmarks_error_title_share_empty" = "Sharing error";
@@ -292,7 +292,7 @@
 "choose_street" = "Choose a street";
 "category_food" = "Groceries";
 "p2p_to_here" = "Route to";
-"bookmark_share_email_subject" = "Hey, check out my pin in CoMaps!";
+"bookmark_share_email_subject" = "Hey, check out my pin in Arah!";
 "editor_operator" = "Operator";
 "pref_map_3d_buildings_disabled_summary" = "3D buildings are disabled in power saving mode";
 "dialog_routing_intermediate_not_determined" = "Please adjust your intermediate point.";
@@ -319,7 +319,7 @@
 "avoid_paved" = "Avoid paved roads";
 "category_police" = "Police";
 "dialog_routing_disclaimer_recommendations" = "— Suggested routes should only be understood as recommendations;";
-"translated_om_site_url" = "https://www.comaps.app/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 "download" = "Download";
 "email_error_body" = "The email client has not been set up. Please configure it or contact us at %@";
 "editor_time_allday" = "All Day (24 hours)";
@@ -374,7 +374,7 @@
 "editor_add_select_location" = "Select Location";
 "downloader_queued" = "Queued";
 "change_driving_options_btn" = "Routing options enabled";
-"car_used_on_the_phone_screen" = "You are now using CoMaps on the phone screen";
+"car_used_on_the_phone_screen" = "You are now using Arah on the phone screen";
 "category_hospital" = "Hospital";
 "redirect_route_alert" = "Do you want to rebuild the route?";
 "editor_add_select_category_recent_subtitle" = "Recently Used";
@@ -441,7 +441,7 @@
 "app_tip_04" = "Tap anywhere on the map to select anything. A long tap is used to hide and show the interface.";
 "enable" = "Enable";
 "osm_mapdata_explanation %@" = "Community-created map data as of *%@*. Learn more about how to edit and update the map at [OpenStreetMap.org](https://openstreetmap.org).";
-"share_bookmarks_email_body" = "Hello!\n\nAttached are my saved places; please open them in CoMaps. If you don't have it installed you can download it here: https://www.comaps.app/download/\n\nEnjoy travelling with CoMaps!";
+"share_bookmarks_email_body" = "Hello!\n\nAttached are my saved places; please open them in Arah. If you don't have it installed you can download it here: https://github.com/ARAH-ORG/arah/\n\nEnjoy travelling with Arah!";
 "postionmode_following" = "Following location with map roated towards North";
 "then_turn" = "Then";
 "disabled" = "Disabled";
@@ -511,7 +511,7 @@
 "no_available" = "No";
 "fuel_places" = "Service Stations";
 "sharing_call_action_look" = "Check out";
-"volunteer" = "Volunteer and improve CoMaps";
+"volunteer" = "Volunteer and improve Arah";
 "clear_search" = "Clear Search History";
 "downloader_download_all_button" = "Download All";
 "category_tourism" = "Sights";
@@ -644,9 +644,10 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";
+"about_based_on" = "Based on CoMaps";

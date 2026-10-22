@@ -34,7 +34,7 @@
     <string name="country_status_download_failed">การดาวน์โหลดล้มเหลว</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">ลองอีกครั้ง</string>
-    <string name="about_menu_title">เกี่ยวกับ CoMaps</string>
+    <string name="about_menu_title">เกี่ยวกับ Arah</string>
     <!-- Text in About screen -->
     <string name="about_proposition_1">• ไม่มีโฆษณาไม่มีการติดตามไม่มีการรวบรวมข้อมูล</string>
     <!-- Text in About screen -->
@@ -49,7 +49,7 @@
     <string name="unsupported_phone">จำเป็นต้องใช้ฮาร์ดแวร์ที่เพิ่มความเร็ว OpenGL โชคไม่ดีที่อุปกรณ์ของคุณไม่รองรับ</string>
     <string name="download">ดาวน์โหลด</string>
     <!-- Used in DownloadResources startup screen -->
-    <string name="disconnect_usb_cable">โปรดยกเลิกการเชื่อมต่อสาย USB หรือใส่การ์ดหน่วยความจำเพื่อใช้ CoMaps</string>
+    <string name="disconnect_usb_cable">โปรดยกเลิกการเชื่อมต่อสาย USB หรือใส่การ์ดหน่วยความจำเพื่อใช้ Arah</string>
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">โปรดเพิ่มพื้นที่บางส่วนบนการ์ด SD /พื้นที่จัดเก็บ USB ก่อนเพื่อใช้แอป</string>
     <string name="download_resources">ก่อนที่คุณจะเริ่มต้น โปรดให้เราดาวน์โหลดแผนที่โลกลงในอุปกรณ์ของคุณ \nจำเป็นต้องใช้ %s ของข้อมูล</string>
@@ -142,7 +142,7 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">บันทึก</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">แชร์บุ๊กมาร์กของ CoMaps แล้ว</string>
+    <string name="share_bookmarks_email_subject">แชร์บุ๊กมาร์กของ Arah แล้ว</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">กำลังโหลดบุ๊กมาร์ก</string>
     <!-- Kmz file successful loading -->
@@ -162,9 +162,9 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">กำลังดำเนินการดาวน์โหลดประเทศในตอนนี้</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">เฮ้อ ตรวจสอบตำแหน่งที่ตั้งปัจจุบันของฉันที่ CoMaps! %1$s หรือ %2$s ไม่มีการติดตั้งแผนที่แบบออฟไลน์? ดาวน์โหลดที่นี่: https://www.comaps.app/download/</string>
+    <string name="my_position_share_sms">เฮ้อ ตรวจสอบตำแหน่งที่ตั้งปัจจุบันของฉันที่ Arah! %1$s หรือ %2$s ไม่มีการติดตั้งแผนที่แบบออฟไลน์? ดาวน์โหลดที่นี่: https://github.com/ARAH-ORG/arah/</string>
     <!-- Subject for emailed position -->
-    <string name="my_position_share_email_subject">นี่ มาดูตำแหน่งปัจจุบันของฉันที่แผนที่ CoMaps สิ!</string>
+    <string name="my_position_share_email_subject">นี่ มาดูตำแหน่งปัจจุบันของฉันที่แผนที่ Arah สิ!</string>
     <!-- Share button text which opens menu with more buttons, like Message, EMail, Facebook etc. -->
     <string name="share">แชร์</string>
     <!-- Share by email button text, also used in editor and About. -->
@@ -437,7 +437,7 @@
     <!-- Text in About and OSM Login screens. First %@ is replaced by a local, human readable date. -->
     <string name="osm_presentation">ข้อมูล OpenStreetMap ที่สร้างโดยชุมชน ณ %s เรียนรู้เพิ่มเติมเกี่ยวกับวิธีแก้ไขและอัปเดตแผนที่ได้ที่ OpenStreetMap.org</string>
     <!-- OSM explanation on Android login screen -->
-    <string name="login_osm_presentation">OpenStreetMap.org (OSM) เป็นโครงการชุมชนเพื่อสร้างแผนที่แบบเปิดและเสรี เป็นแหล่งข้อมูลแผนที่หลักในCoMapsและทำงานคล้ายกับวิกิพีเดีย คุณสามารถเพิ่มหรือแก้ไขสถานที่ได้ และสถานที่เหล่านั้นจะพร้อมให้บริการแก่ผู้ใช้หลายล้านคนทั่วโลก \nเข้าร่วมชุมชนและช่วยสร้างแผนที่ที่ดีขึ้นสำหรับทุกคน!</string>
+    <string name="login_osm_presentation">OpenStreetMap.org (OSM) เป็นโครงการชุมชนเพื่อสร้างแผนที่แบบเปิดและเสรี เป็นแหล่งข้อมูลแผนที่หลักในArahและทำงานคล้ายกับวิกิพีเดีย คุณสามารถเพิ่มหรือแก้ไขสถานที่ได้ และสถานที่เหล่านั้นจะพร้อมให้บริการแก่ผู้ใช้หลายล้านคนทั่วโลก \nเข้าร่วมชุมชนและช่วยสร้างแผนที่ที่ดีขึ้นสำหรับทุกคน!</string>
     <string name="login_to_make_edits_visible">สร้างบัญชี OpenStreetMap หรือเข้าสู่ระบบเพื่อเผยแพร่การแก้ไขแผนที่ของคุณไปทั่วโลก</string>
     <!-- Downloaded 10 **of** 20 <- it is that "of" -->
     <string name="downloader_of">%1$d จาก %2$d</string>
@@ -451,7 +451,7 @@
     <!-- Title for OSM note section in the editor -->
     <string name="editor_other_info">หมายเหตุถึงอาสาสมัคร OpenStreetMap (ไม่บังคับ)</string>
     <!-- Hint of the input field in the OSM note section of the editor -->
-    <string name="editor_note_hint">อธิบายข้อผิดพลาดในแผนที่หรือสิ่งที่ไม่สามารถแก้ไขได้โดยใช้CoMaps</string>
+    <string name="editor_note_hint">อธิบายข้อผิดพลาดในแผนที่หรือสิ่งที่ไม่สามารถแก้ไขได้โดยใช้Arah</string>
     <!-- Information about OSM at the top of the editing page -->
     <string name="editor_about_osm">การแก้ไขของคุณจะถูกอัปโหลดไปยังฐานข้อมูล <a href="https://wiki.openstreetmap.org/wiki/About_OpenStreetMap">OpenStreetMap</a> สาธารณะ กรุณาอย่าเพิ่มข้อมูลส่วนบุคคลหรือข้อมูลที่มีลิขสิทธิ์</string>
     <string name="editor_more_about_osm">ข้อมูลเพิ่มเติมเกี่ยวกับ OpenStreetMap</string>
@@ -461,7 +461,7 @@
     <!-- To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... -->
     <string name="operator">ตัวดำเนินการ: %s</string>
     <string name="editor_category_unsuitable_title">ไม่พบหมวดหมู่ที่เหมาะสมใช่ไหม?</string>
-    <string name="editor_category_unsuitable_text">CoMapsอนุญาตให้เพิ่มหมวดหมู่จุดธรรมดาเท่านั้น ซึ่งหมายความว่าไม่มีเมือง ถนน ทะเลสาบ โครงร่างอาคาร ฯลฯ โปรดเพิ่มหมวดหมู่ดังกล่าวลงใน <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. ดู<a href="https://www.comaps.app/support/advanced-map-editing/">คำแนะนำ</a> ของเราเพื่อดูคำแนะนำโดยละเอียดทีละขั้นตอน</string>
+    <string name="editor_category_unsuitable_text">Arahอนุญาตให้เพิ่มหมวดหมู่จุดธรรมดาเท่านั้น ซึ่งหมายความว่าไม่มีเมือง ถนน ทะเลสาบ โครงร่างอาคาร ฯลฯ โปรดเพิ่มหมวดหมู่ดังกล่าวลงใน <a href="https://www.openstreetmap.org">OpenStreetMap.org</a>. ดู<a href="https://github.com/ARAH-ORG/arah/">คำแนะนำ</a> ของเราเพื่อดูคำแนะนำโดยละเอียดทีละขั้นตอน</string>
     <string name="downloader_no_downloaded_maps_title">คุณยังไม่ได้ดาวน์โหลดแผนที่</string>
     <string name="downloader_no_downloaded_maps_message">ดาวน์โหลดแผนที่เพื่อค้นหาสถานที่ และนำทางแบบออฟไลน์</string>
     <string name="current_location_unknown_error_title">ไม่ทราบชื่อของที่ตั้งปัจจุบัน</string>
@@ -507,7 +507,7 @@
     <string name="mobile_data_option_ask">ถามก่อนเสมอ</string>
     <string name="traffic_update_maps_text">ต้องอัปเดตแผนที่เพื่อแสดงข้อมูลการจราจร</string>
     <string name="increase_font_size">เพิ่มขนาดฟอนต์บนแผนที่</string>
-    <string name="traffic_update_app">กรุณาอัปเดต CoMaps</string>
+    <string name="traffic_update_app">กรุณาอัปเดต Arah</string>
     <!-- "traffic" as in "road congestion" -->
     <string name="traffic_data_unavailable">ไม่มีข้อมูลการจราจร</string>
     <string name="enable_logging">เปิดใช้งานการเก็บล็อก</string>
@@ -527,7 +527,7 @@
     <string name="placepage_remove_stop">ลบจุดแวะพัก</string>
     <string name="placepage_add_stop">เพิ่มจุดแวะพัก</string>
     <string name="dialog_error_storage_title">ปัญหาการเข้าถึงที่เก็บข้อมูล</string>
-    <string name="dialog_error_storage_message">ที่เก็บข้อมูลภายนอกไม่พร้อมใช้งาน อาจเป็นเพราะการ์ด SD ถูกถอดออกไป ได้รับความเสียหาย หรือระบบไฟล์ให้เขียนได้อย่างเดียว กรุณาตรวจสอบและติดต่อเราได้ที่ support@comaps.app</string>
+    <string name="dialog_error_storage_message">ที่เก็บข้อมูลภายนอกไม่พร้อมใช้งาน อาจเป็นเพราะการ์ด SD ถูกถอดออกไป ได้รับความเสียหาย หรือระบบไฟล์ให้เขียนได้อย่างเดียว กรุณาตรวจสอบและติดต่อเราได้ที่ support@arah.invalid</string>
     <string name="setting_emulate_bad_storage">จำลองแบบที่เก็บข้อมูลที่ไม่ดี</string>
     <string name="error_enter_correct_name">กรุณาใส่ชื่อที่ถูกต้อง</string>
     <string name="bookmark_lists">รายการ</string>
@@ -586,7 +586,7 @@
     <string name="power_managment_setting_never">ไม่ใช้</string>
     <string name="power_managment_setting_auto">อัตโนมัติ</string>
     <string name="power_managment_setting_manual_max">ประหยัดพลังงานสูงสุด</string>
-    <string name="enable_logging_warning_message">ออปชันเพื่อเปิดการบันทึกประวัติการทำงานเพื่อการวินิจฉัย ประวัติดังกล่าวอาจเป็นประโยชน์กับทีมงานช่วยเหลือของเราที่คอยจัดการกับปัญหาที่เจอระหว่างแอปทำงาน โปรดเปิดออปชันดังกล่าวจากการร้องข้อการสนับสนุนจาก CoMaps เท่านั้น</string>
+    <string name="enable_logging_warning_message">ออปชันเพื่อเปิดการบันทึกประวัติการทำงานเพื่อการวินิจฉัย ประวัติดังกล่าวอาจเป็นประโยชน์กับทีมงานช่วยเหลือของเราที่คอยจัดการกับปัญหาที่เจอระหว่างแอปทำงาน โปรดเปิดออปชันดังกล่าวจากการร้องข้อการสนับสนุนจาก Arah เท่านั้น</string>
     <string name="routing_options_title">ทางเลือกเส้นทางขับขี่</string>
     <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
     <string name="avoid_tolls">หลีกเลี่ยงถนนที่เก็บค่าผ่านทาง</string>
@@ -695,9 +695,9 @@
     <!-- App tip #09 -->
     <string name="app_tip_09">เป้าหมายหลักของเราคือการสร้างแผนที่ที่รวดเร็ว เน้นความเป็นส่วนตัว และใช้งานง่ายที่คุณจะหลงรัก</string>
     <!-- Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen -->
-    <string name="car_used_on_the_phone_screen">ขณะนี้คุณกำลังใช้CoMapsบนหน้าจอโทรศัพท์</string>
+    <string name="car_used_on_the_phone_screen">ขณะนี้คุณกำลังใช้Arahบนหน้าจอโทรศัพท์</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">ขณะนี้คุณกำลังใช้CoMapsบนหน้าจอรถยนต์</string>
+    <string name="car_used_on_the_car_screen">ขณะนี้คุณกำลังใช้Arahบนหน้าจอรถยนต์</string>
     <!-- Displayed on the phone screen. Android Auto connected -->
     <string name="aa_connected_title">คุณเชื่อมต่อกับ Android Auto แล้ว</string>
     <!-- Displayed on the phone screen. Button to display maps on the phone screen instead of a car -->
@@ -705,11 +705,11 @@
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">ไปที่หน้าจอรถ</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">CoMapsจำเป็นต้องเข้าถึงตำแหน่ง เมื่อปลอดภัยแล้ว ให้ตรวจสอบการแจ้งเตือนบนโทรศัพท์ของคุณ</string>
+    <string name="aa_location_permissions_request">Arahจำเป็นต้องเข้าถึงตำแหน่ง เมื่อปลอดภัยแล้ว ให้ตรวจสอบการแจ้งเตือนบนโทรศัพท์ของคุณ</string>
     <!-- Notification title for permission request from AA. -->
     <string name="aa_request_permission_notification">แอพนี้ต้องได้รับอนุญาตจากคุณ</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">CoMapsใน Android Auto ต้องได้รับอนุญาตจากตำแหน่งจึงจะทำงานได้อย่างมีประสิทธิภาพ</string>
+    <string name="aa_request_permission_activity_text">Arahใน Android Auto ต้องได้รับอนุญาตจากตำแหน่งจึงจะทำงานได้อย่างมีประสิทธิภาพ</string>
     <!-- Grant Permissions button. -->
     <string name="aa_grant_permissions">ให้สิทธิ์</string>
     <!-- Outdoors/hiking map style (activity) name in the Styles and Layers dialog -->
@@ -760,13 +760,13 @@
     <string name="uri_open_location_failed">ไม่มีการติดตั้งแอปที่สามารถเปิดตำแหน่งได้</string>
     <!-- preference string for using auto theme only in navigation mode -->
     <string name="nav_auto">อัตโนมัติในการนำทาง</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Th:เกี่ยวกับ_OpenStreetMap</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="wikimedia_commons">วิกิมีเดียคอมมอนส์</string>
     <string name="panoramax">ภาพถ่าย Panoramax</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="saved">บันทึกแล้ว</string>
 </resources>

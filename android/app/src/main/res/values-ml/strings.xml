@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/Ml:About_OpenStreetMap</string>
-    <string name="translated_om_site_url">https://comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="self_service">സെൽഫ് സർവീസ്</string>
     <string name="panoramax">Panoramax ചിത്രം</string>
     <string name="kilometres">കിലോമീറ്ററുകൾ</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="saved">സംരക്ഷിച്ചു</string>
     <string name="about_proposition_3">• ഓഫ്‌ലൈൻ, വേഗതയേറിയതും ഒതുക്കമുള്ളതും</string>
     <string name="search">തിരയുക</string>

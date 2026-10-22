@@ -3,7 +3,7 @@
     <string name="cancel">ರದ್ದು</string>
     <string name="search">ಹುಡುಕು</string>
     <string name="bookmarks_and_tracks">ಮೆಚ್ಚಿನವುಗಳು</string>
-    <string name="app_site_url">https://comaps.app/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="back">ಹಿಂದೆ</string>
     <string name="delete">ಅಳಿಸಿ</string>
     <string name="download_maps">ನಕ್ಷೆಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ</string>
@@ -19,7 +19,7 @@
     <string name="zoom_to_country">ನಕ್ಷೆಯಲ್ಲಿ ತೋರಿಸಿ</string>
     <string name="country_status_download_failed">ಡೌನ್‌ಲೋಡ್ ವಿಫಲವಾಗಿದೆ</string>
     <string name="try_again">ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ</string>
-    <string name="about_menu_title">CoMaps ಬಗ್ಗೆ</string>
+    <string name="about_menu_title">Arah ಬಗ್ಗೆ</string>
     <string name="about_headline">ಸಮುದಾಯದಿಂದ ನಡೆಸಲ್ಪಡುವ ಮುಕ್ತ ಯೋಜನೆ</string>
     <string name="about_proposition_1">• ಬಳಸಲು ಸುಲಭ</string>
     <string name="about_proposition_2">• ಗೌಪ್ಯತೆ-ಕೇಂದ್ರಿತ ಮತ್ತು ಜಾಹೀರಾತು-ಮುಕ್ತ</string>
@@ -29,7 +29,7 @@
     <string name="close">ಮುಚ್ಚಿ</string>
     <string name="unsupported_phone">ಈ ಅಪ್ಲಿಕೇಶನ್‌ಗೆ ಹಾರ್ಡ್‌ವೇರ್ ವೇಗವರ್ಧಿತ OpenGL ಅಗತ್ಯವಿದೆ. ದುರದೃಷ್ಟವಶಾತ್, ನಿಮ್ಮ ಸಾಧನವು ಬೆಂಬಲಿತವಾಗಿಲ್ಲ.</string>
     <string name="download">ಡೌನ್‌ಲೋಡ್</string>
-    <string name="disconnect_usb_cable">CoMaps ಬಳಸಲು ದಯವಿಟ್ಟು USB ಕೇಬಲ್ ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಿ ಅಥವಾ ಮೆಮೊರಿ ಕಾರ್ಡ್ ಸೇರಿಸಿ</string>
+    <string name="disconnect_usb_cable">Arah ಬಳಸಲು ದಯವಿಟ್ಟು USB ಕೇಬಲ್ ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಿ ಅಥವಾ ಮೆಮೊರಿ ಕಾರ್ಡ್ ಸೇರಿಸಿ</string>
     <string name="not_enough_free_space_on_sdcard">ಅಪ್ಲಿಕೇಶನ್ ಬಳಸಲು ಮೊದಲು SD ಕಾರ್ಡ್/USB ಸಂಗ್ರಹಣೆಯಲ್ಲಿ ಸ್ವಲ್ಪ ಜಾಗವನ್ನು ಮುಕ್ತಗೊಳಿಸಿ</string>
     <string name="download_resources">ನೀವು ಆಪ್ ಬಳಸಲು ಪ್ರಾರಂಭಿಸುವ ಮೊದಲು, ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸಾಧನಕ್ಕೆ ವಿಶ್ವ ಅವಲೋಕನ ನಕ್ಷೆಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ.\nಇದು ಸಂಗ್ರಹಣೆಯ %s ಅನ್ನು ಬಳಸುತ್ತದೆ.</string>
     <string name="download_resources_continue">ನಕ್ಷೆಗೆ ಹೋಗಿ</string>

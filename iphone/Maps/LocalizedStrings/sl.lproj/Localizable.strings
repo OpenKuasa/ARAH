@@ -107,7 +107,7 @@
 "category_water" = "Voda";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "Prostori za avtodome";
-"share_bookmarks_email_body" = "Pozdravljeni!\n\nV prilogi so moji zaznamki; odprite jih v CoMapsu. Če ga še nimate nameščenega, ga lahko prenesete tukaj: https://www.comaps.app/download/\n\nUživajte v potovanju s CoMaps!";
+"share_bookmarks_email_body" = "Pozdravljeni!\n\nV prilogi so moji zaznamki; odprite jih v Arahu. Če ga še nimate nameščenega, ga lahko prenesete tukaj: https://github.com/ARAH-ORG/arah/\n\nUživajte v potovanju s Arah!";
 /* message title of loading file */
 "load_kmz_title" = "Nalaganje zaznamkov";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "Vaša položaj še ni bil določen";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "Živjo, oglej si tale kraj na CoMaps!";
+"bookmark_share_email_subject" = "Živjo, oglej si tale kraj na Arah!";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "Živjo, poglej si moj trenutni položaj na zemljevidu CoMaps!";
+"my_position_share_email_subject" = "Živjo, poglej si moj trenutni položaj na zemljevidu Arah!";
 /* Share by email button text, also used in editor and About. */
 "email" = "E-pošta";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "Končano";
 /* Prints version number in About dialog */
-"version" = "Različica CoMaps: %@";
+"version" = "Različica Arah: %@";
 "version %@ (%@)" = "Različica %@ (%@)";
 "version: %@ (%@)\nmap data: %@" = "Različica: %@ (%@)\nPodatki zemljevida: %@";
 /* Title for tracks category in bookmarks manager */
@@ -229,7 +229,7 @@
 /* Button in the About screen */
 "report_incorrect_map_bug" = "Poročaj ali popravi napako v podatkih zemljevida";
 /* Button in the About screen */
-"volunteer" = "Postanite prostovoljec in izboljšajte CoMaps";
+"volunteer" = "Postanite prostovoljec in izboljšajte Arah";
 /* "Social media" section header in the About screen */
 "follow_us" = "Povežite se z nami";
 /* Alert text */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "Profil OpenStreetMap";
 "osm_profile_promt" = "Ustvarite si račun na OpenStreetMap ali se prijavite za objavo svojih urejanj zemljevida.";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) je projekt skupnosti, ki razvija brezplačen in odprt zemljevid. Je glavni vir podatkov v CoMaps in deluje podobno Wikipediji. Dodajate ali urejate lahko kraje in ti postanejo na voljo milijonom uporabnikom po vsem svetu.\nPridružite se skupnosti in pomagajte izboljšati zemljevid za vse!";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org) (OSM) je projekt skupnosti, ki razvija brezplačen in odprt zemljevid. Je glavni vir podatkov v Arah in deluje podobno Wikipediji. Dodajate ali urejate lahko kraje in ti postanejo na voljo milijonom uporabnikom po vsem svetu.\nPridružite se skupnosti in pomagajte izboljšati zemljevid za vse!";
 "osm_profile_login" = "Prijava v OpenStreetMap";
 "osm_profile_reauthorize_promt" = "Povzava računa OpenStreetMap na to orodje je bila prekinjena";
 "osm_profile_reauthorize" = "Ponovno povezovanje z OpenStreetMap";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "Tukaj ni mogoče postaviti objekta";
 /* Error dialog no space */
 "migration_no_space_message" = "Za prenos potrebujete več prostora. Izbrišite kakršnekoli nepotrebne podatke.";
-"editor_sharing_title" = "Izboljšal sem zemljevide CoMaps";
+"editor_sharing_title" = "Izboljšal sem zemljevide Arah";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d od %2$d";
 "download_over_mobile_header" = "Naj prenesem prek povezave mobilnega omrežja?";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "Komentar za prostovoljce na OpenStreetMap (neobvezno)";
 "editor_detailed_description_hint" = "Podrobni komentar";
-"editor_detailed_description" = "Spremembe zemljevida, ki ste jih predlagali, bodo poslane skupnosti OpenStreetMap. Opišite kakršnekoli podrobnosti, ki jih ne morete urediti v CoMapsu.";
+"editor_detailed_description" = "Spremembe zemljevida, ki ste jih predlagali, bodo poslane skupnosti OpenStreetMap. Opišite kakršnekoli podrobnosti, ki jih ne morete urediti v Arahu.";
 "editor_more_about_osm" = "Več o OpenStreetMap";
 "editor_operator" = "Izvajalec";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "Upravitelj: %@";
 "editor_category_unsuitable_title" = "Ne najdete primerne kategorije?";
-"editor_category_unsuitable_text" = "CoMaps omogoča dodajanje preprostih točkovnih kategorij, ne pa mest, cest, jezer, obrisov stavb itd. Tovrstne kategorije dodajte neposredno na <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Natančna navodila si preberite v <a href=\"https://www.comaps.app/support/advanced-map-editing/\">vodiču</a>.";
+"editor_category_unsuitable_text" = "Arah omogoča dodajanje preprostih točkovnih kategorij, ne pa mest, cest, jezer, obrisov stavb itd. Tovrstne kategorije dodajte neposredno na <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a>. Natančna navodila si preberite v <a href=\"https://github.com/ARAH-ORG/arah/\">vodiču</a>.";
 "downloader_no_downloaded_maps_title" = "Prenesli niste nobenih zemljevidov";
 "downloader_no_downloaded_maps_message" = "Prenesite zemljevide za iskanje in usmerjanje brez povezave.";
 "current_location_unknown_error_title" = "Trenutni položaj je neznan.";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. Izberite Zasebnost";
 "location_services_disabled_on_device_3" = "3. Izberite Položajne storitve";
 "location_services_disabled_on_device_4" = "4. Vklopite položajne storitve";
-"location_services_disabled_on_device_additional_message" = "Ali pa nadaljujete z uporabo CoMaps brez položaja";
+"location_services_disabled_on_device_additional_message" = "Ali pa nadaljujete z uporabo Arah brez položaja";
 /* abbreviation for meters */
 "m" = "m";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "Onemogoči";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "Poglejte si";
-"recent_track_background_dialog_message" = "CoMaps v ozadju dostopa do vašega položaja za snemanje vaše nedavno prepotovane poti.";
+"recent_track_background_dialog_message" = "Arah v ozadju dostopa do vašega položaja za snemanje vaše nedavno prepotovane poti.";
 "general_settings" = "Splošne nastavitve";
 /* For the first routing */
 "accept" = "Potrdi";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "Sled";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "Hvala, ker uporabljate naše javno narejene zemljevide!";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "Naš cilj je ustvariti učinkovite in enostavne zemljevide, ki spoštujejo zasebnost in vam koristijo.";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "CoMaps zdaj uporabljate na zaslonu telefona";
+"car_used_on_the_phone_screen" = "Arah zdaj uporabljate na zaslonu telefona";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "Trenutno uporabljate CoMaps na zaslonu vozila";
+"car_used_on_the_car_screen" = "Trenutno uporabljate Arah na zaslonu vozila";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "Nadaljuj na telefonu";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Povezava do menija";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "Želite razvijalcem poslati poročilo o napaki?\nZanašamo se na svoje uporabnike, saj CoMaps samodejno ne zbira nobenih podatkovo napakah. Vnaprej se vam zahvaljujemo za podporo CoMaps!";
+"bugreport_alert_message" = "Želite razvijalcem poslati poročilo o napaki?\nZanašamo se na svoje uporabnike, saj Arah samodejno ne zbira nobenih podatkovo napakah. Vnaprej se vam zahvaljujemo za podporo Arah!";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "Usklajevanje iCloud (Beta)";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -808,7 +808,7 @@
 /* Title for the "iCloud Is Disabled" alert. */
 "icloud_disabled_title" = "iCloud je onemogočen";
 /* Message for the "iCloud is Disabled" alert. */
-"icloud_disabled_message" = "Za uporabo te zmogljivosti omogočite iCloud za CoMaps v nastavitvah vašega Applovega računa.";
+"icloud_disabled_message" = "Za uporabo te zmogljivosti omogočite iCloud za Arah v nastavitvah vašega Applovega računa.";
 /* Title for the "Enable iCloud Synchronization" alert's "Enable" action button. */
 "enable" = "Omogoči";
 /* Title for the "Enable iCloud Synchronization" alert's "Backup" action button. */
@@ -902,9 +902,10 @@
 "custom_map_server_error_scheme" = "The URL must start with http:// or https://";
 "stars_4" = "4-star";
 "stars_2" = "2-star";
-"custom_map_server_map_series" = "This version of CoMaps is using map series %@.";
+"custom_map_server_map_series" = "This version of Arah is using map series %@.";
 "not_set" = "Not set";
 "custom_map_server" = "Custom Map Server";
 "stars_3" = "3-star";
 "stars_1" = "1-star";
-"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default CoMaps map server.";
+"custom_map_server_message" = "Override the default map download server used for map downloads. Leave empty to use the default Arah map server.";
+"about_based_on" = "Based on CoMaps";

@@ -61,7 +61,7 @@
     <string name="placepage_add_place_button">Agregar lugar a OpenStreetMap</string>
     <string name="transliteration_title">Transliteración al alfabeto latino</string>
     <string name="dialog_error_storage_title">Problema de acceso al almacenamiento</string>
-    <string name="dialog_error_storage_message">El almacenamiento externo no está disponible. Es posible que se haya quitado o dañado la tarjeta SD, o que el sistema de archivos solo permita la lectura. Revíselo y escríbanos a support@comaps.app</string>
+    <string name="dialog_error_storage_message">El almacenamiento externo no está disponible. Es posible que se haya quitado o dañado la tarjeta SD, o que el sistema de archivos solo permita la lectura. Revíselo y escríbanos a support@arah.invalid</string>
     <string name="setting_emulate_bad_storage">Emular el almacenamiento dañado</string>
     <string name="error_enter_correct_name">Introduzca el nombre correcto</string>
     <string name="bookmark_lists">Listas</string>
@@ -119,7 +119,7 @@
     <string name="power_managment_setting_never">Nunca</string>
     <string name="power_managment_setting_auto">Automático</string>
     <string name="power_managment_setting_manual_max">Máximo ahorro de energía</string>
-    <string name="enable_logging_warning_message">Esta opción está habilitada para las acciones de registro con fines de diagnóstico. Esto ayuda a nuestro equipo a identificar problemas con la aplicación. Habilite la opción solo a petición del apoyo de CoMaps.</string>
+    <string name="enable_logging_warning_message">Esta opción está habilitada para las acciones de registro con fines de diagnóstico. Esto ayuda a nuestro equipo a identificar problemas con la aplicación. Habilite la opción solo a petición del apoyo de Arah.</string>
     <string name="routing_options_title">Ajustes de desvío</string>
     <string name="unable_to_calc_alert_title">No se puede construir una ruta</string>
     <string name="unable_to_calc_alert_subtitle">Desafortunadamente, no pudimos construir una ruta con las opciones seleccionadas. Cambie la configuración y vuelva a intentarlo</string>
@@ -195,23 +195,23 @@
     <!-- Description in preferences -->
     <string name="enable_keep_screen_on_description">Cuando está habilitado, la pantalla siempre estará encendida cuando se muestre el mapa.</string>
     <!-- Text on the phone placeholder screen that maps are displayed on the car screen -->
-    <string name="car_used_on_the_car_screen">Ahora usa CoMaps en la pantalla del automóvil</string>
+    <string name="car_used_on_the_car_screen">Ahora usa Arah en la pantalla del automóvil</string>
     <!-- Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! -->
     <string name="car_continue_in_the_car">A la pantalla del auto</string>
     <!-- Ask user to grant location permissions -->
-    <string name="aa_location_permissions_request">CoMaps necesita acceder a la ubicación. Cuando sea seguro, revise la notificación en el teléfono.</string>
+    <string name="aa_location_permissions_request">Arah necesita acceder a la ubicación. Cuando sea seguro, revise la notificación en el teléfono.</string>
     <!-- The text in the activity for location permission request. -->
-    <string name="aa_request_permission_activity_text">CoMaps en Android Auto necesita un permiso de ubicación para funcionar de manera eficaz</string>
+    <string name="aa_request_permission_activity_text">Arah en Android Auto necesita un permiso de ubicación para funcionar de manera eficaz</string>
     <string name="drive_through">Servicio al auto</string>
     <string name="back">Atrás</string>
     <string name="cancel">Cancelar</string>
-    <string name="telegram_url">https://t.me/CoMapsApp/</string>
+    <string name="telegram_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="osm_wiki_about_url">https://wiki.openstreetmap.org/wiki/ES:Acerca_de_OpenStreetMap</string>
-    <string name="translated_om_site_url">https://comaps.app/es/</string>
-    <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
-    <string name="tts_info_link">https://www.comaps.app/support/tts-configuration-guide-for-android/</string>
+    <string name="translated_om_site_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="instagram_url">https://github.com/ARAH-ORG/arah/</string>
+    <string name="tts_info_link">https://github.com/ARAH-ORG/arah/</string>
     <string name="panoramax">Imagen Panoramax</string>
-    <string name="app_site_url">https://comaps.app/es/</string>
+    <string name="app_site_url">https://github.com/ARAH-ORG/arah/</string>
     <string name="about_headline">Proyecto abierto impulsado por la comunidad</string>
     <string name="saved">Guardado</string>
     <string name="about_proposition_3">• No necesita conexión a internet, rápido y compacto</string>
@@ -229,7 +229,7 @@
     <string name="zoom_to_country">Mostrar en el mapa</string>
     <string name="country_status_download_failed">La descarga ha fallado</string>
     <string name="try_again">Inténtalo de nuevo</string>
-    <string name="about_menu_title">Acerca de CoMaps</string>
+    <string name="about_menu_title">Acerca de Arah</string>
     <string name="about_proposition_2">• Centrado en la privacidad y sin anuncios</string>
     <string name="about_developed_by_enthusiasts">Totalmente de código abierto, sin fines de lucro, toma de decisiones y finanzas transparentes.</string>
     <string name="close">Cerrar</string>

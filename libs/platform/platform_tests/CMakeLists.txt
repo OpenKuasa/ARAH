@@ -1,6 +1,7 @@
 project(platform_tests)
 
 set(SRC
+  arah_config_tests.cpp
   country_file_tests.cpp
   distance_tests.cpp
   downloader_tests/downloader_test.cpp

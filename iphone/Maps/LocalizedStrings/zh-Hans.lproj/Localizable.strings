@@ -107,7 +107,7 @@
 "category_water" = "水";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "房车设施";
-"share_bookmarks_email_body" = "您好！\n\n附件是我保存的地点，请在 CoMaps 中打开。如果您没有安装 CoMaps，可以在这里下载：https://www.comaps.app/download/\n\n祝您使用 CoMaps 旅行愉快！";
+"share_bookmarks_email_body" = "您好！\n\n附件是我保存的地点，请在 Arah 中打开。如果您没有安装 Arah，可以在这里下载：https://github.com/ARAH-ORG/arah/\n\n祝您使用 Arah 旅行愉快！";
 /* message title of loading file */
 "load_kmz_title" = "正在加载收藏";
 /* Kmz file successful loading */
@@ -119,9 +119,9 @@
 /* Warning message when doing search around current position */
 "unknown_current_position" = "您的位置尚未确定";
 /* Subject for emailed bookmark */
-"bookmark_share_email_subject" = "嘿，看看我在 CoMaps 上标记的图钉吧！";
+"bookmark_share_email_subject" = "嘿，看看我在 Arah 上标记的图钉吧！";
 /* Subject for emailed position */
-"my_position_share_email_subject" = "嗨，到 CoMaps 查看我当前的位置！";
+"my_position_share_email_subject" = "嗨，到 Arah 查看我当前的位置！";
 /* Share by email button text, also used in editor and About. */
 "email" = "电子邮件";
 /* Text for message to copy something */
@@ -133,7 +133,7 @@
 /* Used for bookmark editing */
 "done" = "完成";
 /* Prints version number in About dialog */
-"version" = "CoMaps 版本：%@";
+"version" = "Arah 版本：%@";
 "version %@ (%@)" = "%@ (%@) 版本";
 "version: %@ (%@)\nmap data: %@" = "版本: %@ (%@)\n地图数据: %@";
 /* Title for tracks category in bookmarks manager */
@@ -229,7 +229,7 @@
 /* Button in the About screen */
 "report_incorrect_map_bug" = "报告或修复不正确的地图数据";
 /* Button in the About screen */
-"volunteer" = "志愿改进 CoMaps";
+"volunteer" = "志愿改进 Arah";
 /* "Social media" section header in the About screen */
 "follow_us" = "联系我们";
 /* Alert text */
@@ -411,7 +411,7 @@
 /* OpenStreetMap Profile */
 "osm_profile" = "OpenStreetMap 个人资料";
 "osm_profile_promt" = "创建 OpenStreetMap 账号或登录，向全世界发布您编辑的地图。";
-"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org)（OSM）是一个构建自由开放地图的社区项目。它是 CoMaps 中地图数据的主要来源，其工作原理类似于维基百科。您可以添加或编辑地点，可供全世界数以百万计的用户使用并受益。\n加入社区，让我们共绘更优质的地图吧！";
+"osm_profile_explanation" = "[OpenStreetMap.org](https://openstreetmap.org)（OSM）是一个构建自由开放地图的社区项目。它是 Arah 中地图数据的主要来源，其工作原理类似于维基百科。您可以添加或编辑地点，可供全世界数以百万计的用户使用并受益。\n加入社区，让我们共绘更优质的地图吧！";
 "osm_profile_login" = "登录 OpenStreetMap 帐户";
 "osm_profile_reauthorize_promt" = "OpenStreetMap 帐户已与此应用断开连接";
 "osm_profile_reauthorize" = "重新连接 OpenStreetMap";
@@ -468,7 +468,7 @@
 "message_invalid_feature_position" = "地点不能放置在这里";
 /* Error dialog no space */
 "migration_no_space_message" = "为了下载，您需要更多的存储空间。请删除不必要的文件。";
-"editor_sharing_title" = "我改进了 CoMaps 地图";
+"editor_sharing_title" = "我改进了 Arah 地图";
 /* Downloaded 10 **of** 20 <- it is that "of" */
 "downloader_of" = "%1$d / %2$d";
 "download_over_mobile_header" = "要通过移动网络连接下载吗？";
@@ -484,13 +484,13 @@
 /* Title for OSM note section in the editor */
 "editor_other_info" = "OpenStreetMap 志愿者注记（选填）";
 "editor_detailed_description_hint" = "详细备注";
-"editor_detailed_description" = "您建议的更改将发送至 OpenStreetMap 社区。说明无法在 CoMaps 编辑的详情。";
+"editor_detailed_description" = "您建议的更改将发送至 OpenStreetMap 社区。说明无法在 Arah 编辑的详情。";
 "editor_more_about_osm" = "关于 OpenStreetMap 的更多信息";
 "editor_operator" = "运营方";
 /* To indicate the operator of ATMs, bicycle rentals, electric vehicle charging stations... */
 "operator" = "运营方：%@";
 "editor_category_unsuitable_title" = "找不到合适的类别吗？";
-"editor_category_unsuitable_text" = "CoMaps 只允许添加简单的点类别，即无法添加城镇、道路、湖泊、建筑轮廓等类别。请直接向 <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> 添加此类类别。请查看我们的<a href=\"https://www.comaps.app/support/advanced-map-editing/\">指南</a>，了解详细的步骤说明。";
+"editor_category_unsuitable_text" = "Arah 只允许添加简单的点类别，即无法添加城镇、道路、湖泊、建筑轮廓等类别。请直接向 <a href=\"https://www.openstreetmap.org\">OpenStreetMap.org</a> 添加此类类别。请查看我们的<a href=\"https://github.com/ARAH-ORG/arah/\">指南</a>，了解详细的步骤说明。";
 "downloader_no_downloaded_maps_title" = "您尚未下载任何地图";
 "downloader_no_downloaded_maps_message" = "下载地图来查找位置和离线浏览。";
 "current_location_unknown_error_title" = "当前位置未知。";
@@ -504,7 +504,7 @@
 "location_services_disabled_on_device_2" = "2. 点击“隐私和安全性”";
 "location_services_disabled_on_device_3" = "3. 选择“定位服务”";
 "location_services_disabled_on_device_4" = "4. 打开“定位服务”";
-"location_services_disabled_on_device_additional_message" = "或没有定位继续使用 CoMaps";
+"location_services_disabled_on_device_additional_message" = "或没有定位继续使用 Arah";
 /* abbreviation for meters */
 "m" = "米";
 /* abbreviation for kilometers */
@@ -552,7 +552,7 @@
 "off_recent_track_background_button" = "禁用";
 /* For sharing via SMS and so on */
 "sharing_call_action_look" = "来看看";
-"recent_track_background_dialog_message" = "CoMaps 在后台使用您的位置记录您最近去过的路线。";
+"recent_track_background_dialog_message" = "Arah 在后台使用您的位置记录您最近去过的路线。";
 "general_settings" = "常规设置";
 /* For the first routing */
 "accept" = "接受";
@@ -759,7 +759,7 @@
 /* edit track screen title */
 "track_title" = "轨迹";
 /* Translated CoMaps site */
-"translated_om_site_url" = "https://www.comaps.app/zh-Hans/";
+"translated_om_site_url" = "https://github.com/ARAH-ORG/arah/";
 /* App Tip #00 */
 "app_tip_00" = "感谢您使用我们社区构建的地图！";
 /* App tip #01 */
@@ -781,9 +781,9 @@
 /* App tip #09 */
 "app_tip_09" = "我们的主要目标是构建您会喜欢的快速、注重隐私、易于使用的地图。";
 /* Text on the Android Auto or CarPlay placeholder screen that maps are displayed on the phone screen */
-"car_used_on_the_phone_screen" = "您现在正在手机屏幕上使用 CoMaps";
+"car_used_on_the_phone_screen" = "您现在正在手机屏幕上使用 Arah";
 /* Text on the phone placeholder screen that maps are displayed on the car screen */
-"car_used_on_the_car_screen" = "您现在正在汽车屏幕上使用 CoMaps";
+"car_used_on_the_car_screen" = "您现在正在汽车屏幕上使用 Arah";
 /* Displayed on the phone screen. Button to display maps on the phone screen instead of a car */
 "car_continue_on_the_phone" = "在手机上继续";
 /* Displayed on the Android Auto or CarPlay screen. Button to display maps on the car screen instead of a phone. Must be no more than 18 symbols! */
@@ -798,7 +798,7 @@
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "菜单链接";
 /* Message for the bug report alert. */
-"bugreport_alert_message" = "您想向开发人员发送错误报告吗？\n由于 CoMaps 不会自动收集任何错误信息，因此我们只能依靠我们的用户。感谢您对 CoMaps 的支持！";
+"bugreport_alert_message" = "您想向开发人员发送错误报告吗？\n由于 Arah 不会自动收集任何错误信息，因此我们只能依靠我们的用户。感谢您对 Arah 的支持！";
 /* Title for the iCloud synchronization setting */
 "icloud_sync" = "iCloud 同步（测试）";
 /* Title for the "Enable iCloud Synchronization" alert. */
@@ -808,7 +808,7 @@
 /* Title for the "iCloud Is Disabled" alert. */
 "icloud_disabled_title" = "iCloud 已禁用";
 /* Message for the "iCloud is Disabled" alert. */
-"icloud_disabled_message" = "请在您的 Apple 账号设置中为 CoMaps 启用 iCloud 以使用此功能。";
+"icloud_disabled_message" = "请在您的 Apple 账号设置中为 Arah 启用 iCloud 以使用此功能。";
 /* Title for the "Enable iCloud Synchronization" alert's "Enable" action button. */
 "enable" = "启用";
 /* Title for the "Enable iCloud Synchronization" alert's "Backup" action button. */
@@ -902,9 +902,10 @@
 "custom_map_server_error_scheme" = "URL 必须以 http:// 或 https:// 开头";
 "stars_4" = "4星";
 "stars_2" = "2星";
-"custom_map_server_map_series" = "此版本的 CoMaps 正在使用地图系列 %@。";
+"custom_map_server_map_series" = "此版本的 Arah 正在使用地图系列 %@。";
 "not_set" = "未设置";
 "custom_map_server" = "自定义地图服务器";
 "stars_3" = "3星";
 "stars_1" = "1星";
-"custom_map_server_message" = "覆盖用于地图下载的默认地图下载服务器。留空则使用默认的 CoMaps 地图服务器。";
+"custom_map_server_message" = "覆盖用于地图下载的默认地图下载服务器。留空则使用默认的 Arah 地图服务器。";
+"about_based_on" = "Based on CoMaps";
