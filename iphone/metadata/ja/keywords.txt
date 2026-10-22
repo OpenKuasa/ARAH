@@ -1,1 +1,0 @@
-comaps,地図,open street maps,osm,旅行,ハイキング,サイクリング,ドライブ,オフライン,プライバシー,航行,gps

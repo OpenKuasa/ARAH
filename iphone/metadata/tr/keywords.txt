@@ -1,1 +1,0 @@
-comaps,haritalar,open street map,osm,seyahat,yürüyüş,bisiklet,sürüş,internetsiz,navigasyon,konum

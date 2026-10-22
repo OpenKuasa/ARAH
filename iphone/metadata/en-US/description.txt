@@ -1,28 +1,22 @@
-A community-led free & open source maps app based on OpenStreetMap data and reinforced with commitment to transparency, privacy and being not-for-profit.
+Arah ("direction" in Malay) is a free maps and navigation app for everyday drivers in Malaysia. It opens in Bahasa Melayu, keeps working when you lose signal, and does not track you.
 
-‣ Simple and Polished: essential easy to use features that just work.
-‣ Offline-focused: Plan and navigate your trip abroad without the need for cellular service, search waypoints while on a distant hike, etc. All app functions are designed to work offline.
-‣ Respecting Privacy: The app is designed with privacy in mind - does not identify people, does not track, and does not collect personal information. Ads-free.
-‣ Saves Your Battery and Space: Doesn’t drain your battery like other navigation apps. Compact maps save precious space on your phone.
-‣ Free and Built by the Community: People like you helped build the app by adding places to OpenStreetMap, testing and giving feedback on features and contributing their development skills and money.
-‣ Open and Transparent Decision-making and Financials, Not-for-profit and Fully Open Source.
+Made for Malaysia
+• Malay first: the app, search and voice directions are in Bahasa Melayu. English and many other languages are available too.
+• The calm "Tenang" map style: soft colours that are easy on the eyes, by day and by night.
 
-Main Features:
-• Downloadable detailed maps with places which are not available in many commercial maps
-• Outdoor mode with highlighted hiking trails, campsites, water sources, peaks, contour lines, etc
-• Walking paths and cycleways
-• Points of interest like restaurants, gas stations, hotels, shops, sightseeings and many more
-• Search by name or an address or by point of interest category
-• Navigation with voice announcements for walking, cycling, or driving
-• Bookmark your favorite places with a single tap
-• iCloud sync for your bookmarks and tracks
-• Offline Wikipedia articles
-• Subway transit layer and directions
-• Track recording
-• Export and import bookmarks and tracks in KML, KMZ, GPX formats
-• A dark mode to use during the night
-• Improve map data for everyone using a basic built-in editor
-• CarPlay support
+Works offline
+• Download maps once and use them without mobile data. Maps of the whole world are available.
+• Search for places and addresses, even when you are offline.
+• Routes for driving, cycling, walking and public transport, with spoken directions at every turn.
 
-Freedom Is Here
-Discover your journey, navigate the world with privacy and community at the forefront!
+Your places, your data
+• Save favourite places as bookmarks and record your trips as tracks.
+• No ads and no tracking. You don't need an account to use the maps.
+
+Open and made with the community
+• Arah is open source software, built on CoMaps, the community fork of Organic Maps.
+• Map data comes from OpenStreetMap, made by volunteers. Spotted a mistake? Fix it right in the app, and the map gets better for everyone.
+
+Report problems and share ideas: github.com/OpenKuasa/ARAH/issues
+
+Map data © OpenStreetMap contributors.

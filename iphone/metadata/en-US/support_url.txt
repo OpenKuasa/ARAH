@@ -1,1 +1,1 @@
-https://codeberg.org/comaps/comaps/issues
+https://github.com/OpenKuasa/ARAH/issues
