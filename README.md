@@ -1,172 +1,61 @@
-<!-- Navigation Bar -->
-<p align="center">
-  <a href="https://codeberg.org/comaps#comaps">Project Intro</a> |
-  <a href="https://codeberg.org/comaps/Governance#comaps-project-governance-docs">Governance</a> |
-  <a href="https://codeberg.org/comaps/Governance/src/branch/main/FAQ.md">FAQ</a> |
-  <a href="#contributing">Contribute</a> |
-  <a href="https://www.comaps.app/donate">Donate</a> |
-  <a href="https://codeberg.org/comaps#keep-connected">Keep Connected</a>
-</p>
+# Arah
 
-<div align="center" >
-<img src="docs/badges/logo.svg" width="150">
-</div>
+**Offline maps and navigation for Malaysia, in Bahasa Melayu.**
 
+Arah ("direction" in Malay) is a free, open-source map and navigation app for everyday drivers in Malaysia. It is built
+on [CoMaps](https://codeberg.org/comaps/comaps), the community fork of Organic Maps, and uses map data from
+[OpenStreetMap](https://www.openstreetmap.org/).
 
-<div align="center">
-<h1><a href="https://comaps.app/">CoMaps</a></h1>
-<h2>Hike, Bike, Drive Offline - Easy Map Navigation with Privacy</h2>
-</div>
-<div align="center">
-  <p align="center">
-    <a href="https://codeberg.org/comaps/comaps/src/branch/main/LICENSE">
-      <img src="https://img.shields.io/github/license/comaps/comaps?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=588157" alt="License"/>
-    </a>
-    <a href="https://opencollective.com/comaps">
-      <img src="https://img.shields.io/opencollective/all/comaps?label=Open%20Collective%20Donors&logo=opencollective&logoColor=white&style=for-the-badge&color=588157" alt="Open Collective Donors"/>
-    </a>
-    <a href="https://liberapay.com/CoMaps">
-      <img src="https://img.shields.io/liberapay/patrons/CoMaps?label=Liberapay%20Patrons&logo=liberapay&logoColor=white&style=for-the-badge&color=588157" alt="Liberapay Patrons"/>
-    </a>
-  </p>
-</div>
+> [!NOTE]
+> Arah is in early development. There is no release in the App Store or Play Store yet.
 
----
+## What Arah adds to CoMaps
 
-A community-led free & open source maps app based on [OpenStreetMap](https://www.openstreetmap.org), built for transparency, privacy, and not-for-profit values. A fork of Organic Maps, originally based on Maps.ME.
+- **Malay first.** The app opens in Bahasa Melayu, with Malaysian Malay for the app, search categories and voice
+  directions. English and all of CoMaps' other languages stay available.
+- **The "Tenang" look.** A calm, light map style: teal, warm beige and amber warnings, on every map mode, day and night.
+- **Arah's own name**, with CoMaps credited on the About screen.
 
-<p align="center">
-  <a href="https://apps.apple.com/app/comaps/id6747180809">
-    <img src="docs/badges/apple-appstore.png" alt="App Store" width="160"/>
-  </a>
-  <a href="https://play.google.com/store/apps/details?id=app.comaps.google">
-    <img src="docs/badges/google-play.png" alt="Google Play" width="160"/>
-  </a>
-  <a href="https://f-droid.org/en/packages/app.comaps.fdroid/">
-    <img src="docs/badges/fdroid.png" alt="F-Droid" width="160"/>
-  </a>
-  <a href="https://flathub.org/apps/app.comaps.comaps">
-    <img src="docs/badges/flathub.png" alt="Flathub" width="160"/>
-  </a>
-  <a href="https://apt.izzysoft.de/fdroid/index/apk/app.comaps">
-    <img src="docs/badges/izzyondroid.png" alt="Obtainium" width="160"/>
-  </a>
-  <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://codeberg.org/comaps/comaps">
-    <img src="docs/badges/obtainium.png" alt="Obtainium" width="160"/>
-  </a>
-  <a href="https://codeberg.org/comaps/comaps/releases">
-    <img src="docs/badges/codeberg.png" alt="Codeberg" width="160"/>
-  </a>
-</p>
+Everything else comes from CoMaps: offline maps of the whole world, driving, cycling, walking and public transport
+routes, search, bookmarks, map editing, and no ads or tracking.
 
+## Plans
 
-<!-- Screenshots -->
-<p align="center">
-  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/1.png" width="180" />
-  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/2.png" width="180" />
-  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/3.png" width="180" />
-  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/4.png" width="180" />
-  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/5.png" width="180" />
-  <img src="android/app/src/fdroid/play/listings/en-US/graphics/phone-screenshots/6.png" width="180" />
-</p>
+1. **The rebrand (now):** the Malay app, the Tenang map style, Arah's iPhone and Android screens and icon.
+2. **Live alerts:** traffic jams, police, accidents and speed cameras, reported by drivers.
+3. **Arah's own Malaysia map data.**
 
----
+## Building
 
-## ⚡️ Highlights
+Arah builds exactly like CoMaps:
 
-- **Offline-first**: Navigate without a connection
-- **Privacy-respecting**: No tracking, ads or data collection
-- **Lightweight**: Battery- and space-efficient
-- **Simple**: Polished, user-focused interface
-- **Cross-platform**: Available for Android, iOS, MacOS, and Linux.
-- **Community-built**: Free, open source, and collaborative
-- **Transparent**: Open finances and governance
+- **First set-up:** [docs/INSTALL.md](docs/INSTALL.md), including `./configure.sh`, which generates the map styles,
+  strings and world maps.
+- **Desktop (Qt) and tests:** [docs/INSTALL_DESKTOP.md](docs/INSTALL_DESKTOP.md) and [docs/TESTING.md](docs/TESTING.md).
+- **iPhone:** open `xcode/CoMaps.xcworkspace` and run the `CoMaps` scheme. The app installs as "Arah".
 
----
+Arah-only code lives in files named `arah_*`, so updates from CoMaps keep merging cleanly.
 
-## 🚀 Main Features
+## Contributing
 
-- Downloadable detailed maps with places which are not available with Google Maps
+Bug reports, Malay wording, testing on real phones and code are all welcome. Start with
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
-- Outdoor mode with highlighted hiking trails, campsites, water sources, peaks, contour lines, etc
+- **A place or road is wrong on the map?** Fix it on [OpenStreetMap](https://www.openstreetmap.org/). Arah's maps
+  come from there.
+- **Found a security problem?** See [SECURITY.md](SECURITY.md). Please do not open a public issue.
 
-- Walking paths and cycleways
+Everyone taking part follows the [Code of Conduct](CODE_OF_CONDUCT.md).
 
-- Points of interest like restaurants, gas stations, hotels, shops, sightseeings and many more
+## Credits and licence
 
-- Search by name or an address or by point of interest category
+Arah is licensed under the [Apache License 2.0](LICENSE), like CoMaps. See [NOTICE](NOTICE) and
+[data/copyright.html](data/copyright.html) for the copyright of the code and libraries it includes.
 
-- Navigation with voice announcements for walking, cycling, or driving
+- [CoMaps](https://codeberg.org/comaps/comaps), [Organic Maps](https://organicmaps.app/) and MAPS.ME, whose
+  contributors wrote the app Arah is built on.
+- Map data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), available under the Open
+  Database License.
 
-- Bookmark your favorite places with a single tap
-
-- Offline Wikipedia articles
-
-- Subway transit layer and directions
-
-- Track recording
-
-- Export and import bookmarks and tracks in KML, KMZ, GPX formats
-
-- A dark mode to use during the night
-
-- Improve map data for everyone using a basic built-in editor
-
-- Android Auto and CarPlay support
-
- ***Freedom Is Here – Navigate the world with privacy and community at the forefront.***
-
----
-
-## 🤝 Contributing
-
-You can help by donating, contributing code, translating, or by telling others about it. To build the best maps app there is a need for software development, design, product, community development, and other areas. Reach out to us and let us know how you want to help.
-
-- Build instructions: [docs/INSTALL.md](docs/INSTALL.md)  
-- Contribution guide: [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md)
-
-There is a dedicated [Zulip](https://codeberg.org/comaps/Governance/src/branch/main/contribute.md#3-team-messaging) chat for active contributors.
-
----
-
-## 💬 Feedback
-
-- Rate us on [App Store](https://apps.apple.com/app/comaps/id6747180809) and [Google Play](https://play.google.com/store/apps/details?id=app.comaps.google)
-- Star our repos on Codeberg 
-- Report bugs or request features on the [issue tracker](https://codeberg.org/comaps/comaps/issues)
-
----
-
-## 💸 Funding
-
-CoMaps is free. To fund development, we rely on your voluntary support ♥️
-Donate via [OpenCollective](https://opencollective.com/comaps/donate) or [Liberapay](https://liberapay.com/CoMaps).  
-The project's financial information is completely open and transparent at [our Open Collective](https://opencollective.com/comaps).
-
----
-
-## 🔒 Privacy
-
-The Android app has been reviewed by [Exodus Privacy](https://reports.exodus-privacy.eu.org/en/reports/app.comaps.google/latest/).
-
-To [verify](https://developer.android.com/studio/command-line/apksigner#usage-verify) the APK, use the following signing certificate fingerprints:
-```
-SHA-256: 4894e8e6963627ef660031d8593fe77297f835acb4e23810003e926135023b4c
-SHA-1: 8b7b5739f917e9f7c681671ced0c9c8562123ade
-MD5: 9cce0ffea281dc2f0e0a154d6d2e281e
-```
-
-To verify CoMaps via [AppVerifier](https://github.com/soupslurpr/AppVerifier), use the following signing certificate fingerprint:
-```
-app.comaps
-48:94:E8:E6:96:36:27:EF:66:00:31:D8:59:3F:E7:72:97:F8:35:AC:B4:E2:38:10:00:3E:92:61:35:02:3B:4C
-```
----
-
-## ⚖️ License
-
-Licensed under the Apache License 2.0.  
-See [LICENSE](LICENSE), [NOTICE](NOTICE), and [data/copyright.html](data/copyright.html). 
-
-Our project is completely free and open source software. It had been reviewed by "[is it really FOSS?](https://isitreallyfoss.com/projects/comaps/)" and is listed as 100% FOSS, [see what that means](https://isitreallyfoss.com/about/categorisation/)
-
+Arah is an independent community project. It is not affiliated with or endorsed by CoMaps, Organic Maps or
+OpenStreetMap.

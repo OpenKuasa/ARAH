@@ -1,0 +1,67 @@
+name: Bug report
+description: Something in Arah is broken, or does not behave the way it should.
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this. Please search the open issues first in case it is already known.
+        A wrong place or road on the map is fixed on OpenStreetMap, not here. Security problems go through the security policy.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe what you saw. Screenshots or a screen recording help a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Search for ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of Arah is this in?
+      options:
+        - Navigation and voice directions
+        - Routes
+        - Search and places
+        - The map's look
+        - Malay or other wording
+        - Offline maps and downloads
+        - Bookmarks and tracks
+        - Settings
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone and system version
+      placeholder: iPhone 15 with iOS 26.1, Samsung Galaxy A55 with Android 16, ...
+    validations:
+      required: true
+  - type: input
+    id: language
+    attributes:
+      label: App language
+      placeholder: Bahasa Melayu, English, ...
+  - type: checkboxes
+    id: fix
+    attributes:
+      label: Would you like to fix it?
+      options:
+        - label: I would like to open a pull request for this

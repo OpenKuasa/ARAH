@@ -1,17 +1,33 @@
-## Reporting Vulnerabilities
-You can report a security vulnerability by creating an issue or send mail to security@comaps.app
+# Security Policy
 
-## Verifying Fingerprints
+## Reporting a vulnerability
 
-To [verify](https://developer.android.com/studio/command-line/apksigner#usage-verify) the APK, use the following signing certificate fingerprints:
-```
-SHA-256: 4894e8e6963627ef660031d8593fe77297f835acb4e23810003e926135023b4c
-SHA-1: 8b7b5739f917e9f7c681671ced0c9c8562123ade
-MD5: 9cce0ffea281dc2f0e0a154d6d2e281e
-```
+Please do not report security problems in a public issue, pull request or discussion.
 
-To verify CoMaps via [AppVerifier](https://github.com/soupslurpr/AppVerifier), use the following signing certificate fingerprint:
-```
-app.comaps
-48:94:E8:E6:96:36:27:EF:66:00:31:D8:59:3F:E7:72:97:F8:35:AC:B4:E2:38:10:00:3E:92:61:35:02:3B:4C
-```
+Report them privately through GitHub instead:
+
+1. Go to the repository's [Security tab](https://github.com/OpenKuasa/ARAH/security).
+2. Choose **Report a vulnerability**.
+3. Describe the problem, how to reproduce it, and what an attacker could do with it.
+
+Only the maintainers can see the report. We will reply there, work on a fix with you, and credit you in the advisory
+unless you would rather not be named.
+
+If the problem is also in CoMaps, we will pass it on to the CoMaps team once you agree.
+
+## What counts
+
+Anything that lets someone read or change data they should not have access to, such as your location history, saved
+places or OpenStreetMap account; that makes the app download or install something it should not; or that runs code
+on your phone or on Arah's servers.
+
+Ordinary bugs belong in a normal [bug report](https://github.com/OpenKuasa/ARAH/issues/new/choose).
+
+## Supported versions
+
+Arah has no releases yet. Fixes are made on `main` only.
+
+## Verifying the app
+
+Arah has no signed release yet. When it does, its signing certificate fingerprints will be listed here. Arah is signed
+with its own key, not CoMaps' key, so CoMaps' fingerprints will not match an Arah app.
