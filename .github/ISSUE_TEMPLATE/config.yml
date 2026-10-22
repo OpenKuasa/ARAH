@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A place, road or name is wrong on the map
+    url: https://www.openstreetmap.org/
+    about: Arah's maps come from OpenStreetMap. Fix the map there and Arah picks it up in a later map update.
+  - name: Report a security vulnerability
+    url: https://github.com/OpenKuasa/ARAH/security/advisories/new
+    about: Please report security problems privately, not in a public issue.
