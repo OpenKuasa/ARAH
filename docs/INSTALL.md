@@ -412,8 +412,12 @@ export PATH=$HOME/Android/Sdk/cmake/3.22.1/bin:$PATH
 _macOS:_
 
 ```bash
-export PATH=$HOME/Library/Android/Sdk/cmake/3.22.1/bin:$PATH
+export PATH=$HOME/Library/Android/sdk/cmake/3.31.6/bin:$PATH
 ```
+
+On macOS, `./configure.sh` (run by every Android build) needs CMake 3.25 or newer, so install a newer CMake from the
+SDK Manager (for example `sdkmanager "cmake;3.31.6"`) and put it on `PATH`; with 3.22.1 it fails with
+`Unknown CMake command "block"`.
 
 Check if you have a system-wide Java Runtime Environment (JRE) installed:
 
