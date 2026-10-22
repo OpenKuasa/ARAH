@@ -8,9 +8,6 @@
       "layers" : [
         {
           "blend-mode" : "normal",
-          "fill" : {
-            "solid" : "srgb:0.99608,0.99216,0.96471,1.00000"
-          },
           "glass" : true,
           "hidden" : false,
           "image-name" : "Part 1.svg",
@@ -18,8 +15,8 @@
           "position" : {
             "scale" : 1,
             "translation-in-points" : [
-              -100.2890625,
-              0.984375
+              0.0,
+              -57.1606
             ]
           }
         }
@@ -43,8 +40,8 @@
           "blend-mode" : "normal",
           "fill" : {
             "linear-gradient" : [
-              "display-p3:0.99608,0.99216,0.96471,0.00000",
-              "srgb:0.99608,0.99216,0.96471,1.00000"
+              "display-p3:1.00000,1.00000,1.00000,0.00000",
+              "srgb:1.00000,1.00000,1.00000,1.00000"
             ]
           },
           "glass" : true,
@@ -54,8 +51,8 @@
           "position" : {
             "scale" : 1,
             "translation-in-points" : [
-              -100.2890625,
-              0.984375
+              0.0,
+              -57.1606
             ]
           }
         }
@@ -75,7 +72,7 @@
       "layers" : [
         {
           "fill" : {
-            "solid" : "srgb:0.98431,0.87843,0.65098,1.00000"
+            "solid" : "srgb:0.07843,0.64706,0.57647,1.00000"
           },
           "hidden" : false,
           "image-name" : "Part 2.svg",
@@ -83,8 +80,8 @@
           "position" : {
             "scale" : 1,
             "translation-in-points" : [
-              119.9296875,
-              -6.0859375
+              0.0,
+              0.0
             ]
           }
         }
@@ -96,7 +93,7 @@
       },
       "translucency" : {
         "enabled" : true,
-        "value" : 0.5
+        "value" : 0.15
       }
     },
     {
@@ -105,8 +102,8 @@
         {
           "fill" : {
             "linear-gradient" : [
-              "display-p3:0.98431,0.87843,0.65098,0.00000",
-              "srgb:0.98431,0.87843,0.65098,1.00000"
+              "display-p3:0.07843,0.64706,0.57647,0.00000",
+              "srgb:0.07843,0.64706,0.57647,1.00000"
             ]
           },
           "hidden" : false,
@@ -115,8 +112,8 @@
           "position" : {
             "scale" : 1,
             "translation-in-points" : [
-              119.9296875,
-              -6.0859375
+              0.0,
+              0.0
             ]
           }
         }
@@ -129,7 +126,7 @@
       "specular" : true,
       "translucency" : {
         "enabled" : true,
-        "value" : 0.3
+        "value" : 0.15
       }
     }
   ],
